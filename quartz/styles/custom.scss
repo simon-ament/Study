@@ -1,3 +1,36 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+@font-face {
+    font-family: "Cabinet Grotesk";
+    src: url('/static/CabinetGrotesk-Variable.ttf');
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url('/static/SpaceMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('/static/Satoshi-Variable.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+thead {
+    font-weight: 800;
+}
+
+h2.page-title > a {
+    font-weight: 700;
+}
+
+footer {
+    opacity: 1;
+}

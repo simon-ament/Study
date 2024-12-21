@@ -1,6 +1,16 @@
 ---
-title: Welcome to Quartz
+title: IT Systems Engineering – Semester III
+---
+# 👩‍🏫 Vorlesungen
+1. [[🏗️ Software-Architektur/]]
+2. [[💽 Betriebssysteme/]]
+3. [[📷 3D-Computergraphik/]]
+4. [[🧠 Theoretische Informatik/]]
+5. [[🧮 Mathematik III/]]
+
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+# 📋 Checkliste
+
+- [ ] study.simonament.de hosten
+
