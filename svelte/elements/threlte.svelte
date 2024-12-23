@@ -8,6 +8,11 @@
 
 <ThrelteContainer>
     <Canvas>
-        <SurfacePlot func={(x, y) => Math.sin(Math.sqrt(x**2 + y**2))} xMin={0} xMax={10} yMin={0} yMax={10} high={1} low={-1} />
+        <SurfacePlot 
+            func={(x, y) => Math.sin(Math.sqrt(x**2 + y**2))}
+            xAxis={{name: 'x', min: 0, max: 10}}
+            yAxis={{name: 'y', min: 0, max: 10}}
+            zAxis={{name: 'z', min: -1, max: 1}} 
+        />
     </Canvas>
 </ThrelteContainer>
