@@ -1,7 +1,7 @@
 ---
 title: Wahrscheinlichkeitsräume
 ---
-# Zufallsexperimente[^1]
+# Zufallsexperimente
 - fiktives Experiment zum Zwecke der Modellierung
 - mehrere mögliche Ergebnisse (*outcomes*)
 - Formale Beschreibung der Ergebnisse mit **Mengentheorie**
@@ -46,7 +46,7 @@ Ein Wahrscheinlichkeitsraum ist ein Tripel $(\Omega, \mathcal{F}, P)$ bestehend 
 	3. **Normierung:** $P(\Omega) = 1$
 
 ---
-# Rechenregeln für Wahrscheinlichkeiten[^2]
+# Rechenregeln für Wahrscheinlichkeiten
 **Wahrscheinlichkeit des Gegenereignisses:** Für alle $A \in \mathcal{F}$ gilt:
 
 $$P(A) + P(\overline{A}) = 1$$
@@ -75,7 +75,7 @@ $$A \subseteq B \Rightarrow P(A) \leq P(B)$$
 
 $$P(A \cup B) \leq P(A) + P(B)$$
 
-*Folgt direkt aus der **endlichen Additivität** und Axiom 1 für $P(A \cap B)$.
+*Folgt direkt aus der **endlichen Additivität** und Axiom 1 für $P(A \cap B)$.*
 
 ---
 
@@ -115,7 +115,25 @@ Frage: Wie viele verschiedene Teilmengen der Größe $k$ aus einer Menge der Gr�
 
 Antwort: $\frac{n!}{k! \cdot (n - k)!} = \binom{n}{k}$
 
+---
 
+# Numerische Approximation
+Fakultätsfunktion wächst sehr schnell, aber Gleitkommadarstellung ist auf bis zu 380 Stellen begrenzt $\Rightarrow$ Wir speichern nur den **Logarithmus von Fakultäten**
 
-[^1]: Ab hier 241014Vorlesung.md
-[^2]: Ab hier 241017Vorlesung.md
+> [!caution] Gut zu wissen
+> $\log(a \cdot b) = \log(a) + \log(b)$\
+> $\log(a^b) = b \cdot \log(a)$
+
+**Stirlings Approximation:**
+
+$$\log(n!) = n \cdot \log(n) - n + \mathcal{O}(\log(n))$$
+
+*Herleitung über $\log(n!) = \log(1) + \log(2) + \dots + \log(n)$ und weiter $\int_{1}^{n} \log(x) dx$.*
+
+**Korrolar:** Für alle $n \in \mathbb{N}$ und $k \in \mathbb{N}$ mit $k \leq n$ gilt die folgende Approximation:
+
+$$\log(\binom{n}{k}) \approx n \cdot H(\frac{k}{n})$$
+
+wobei
+
+$$H(p) = -[p \cdot \log(p) + (1 - p) \cdot \log(1 - p)]$$

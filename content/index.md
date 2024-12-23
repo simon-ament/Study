@@ -12,5 +12,13 @@ title: IT Systems Engineering – Semester III
 
 # 📋 Checkliste
 
-- [ ] study.simonament.de hosten
+- [x] study.simonament.de hosten
+- [ ] Layout: Keine Backlinks auf Mobile
+- [ ] Threlte: Lazy Loading + Dark Mode
+
+## Mathe
+- [ ] Notizen vervollständigen
+- [ ] Notizen kürzen
+- [ ] Animationen hinzufügen
+
 
