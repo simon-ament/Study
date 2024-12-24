@@ -21,4 +21,11 @@ title: IT Systems Engineering – Semester III
 - [ ] Notizen kürzen
 - [ ] Animationen hinzufügen
 
+## 3D-Computergraphik
+- [ ] Notizen übertragen
+- [ ] Notizen vervollständigen
+- [ ] Notizen kürzen
+- [ ] Animationen hinzufügen
 
+## Betriebssysteme
+- [ ] Buch lesen

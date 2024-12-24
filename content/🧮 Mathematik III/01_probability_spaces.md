@@ -1,6 +1,7 @@
 ---
 title: Wahrscheinlichkeitsräume
 ---
+
 # Zufallsexperimente
 - fiktives Experiment zum Zwecke der Modellierung
 - mehrere mögliche Ergebnisse (*outcomes*)

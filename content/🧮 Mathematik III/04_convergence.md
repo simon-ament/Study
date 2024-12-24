@@ -1,6 +1,7 @@
 ---
 title: Konvergenzen
 ---
+
 # Konvergenz
 Gegeben eine Folge $(x_n)_{n \in \mathbb{N}}$ von Zahlen in $\mathbb{R}$, sagen wir, dass die Folge gegen eine Zahl $x$ konvergiert, $x_n \rightarrow x$, genau dann wenn für alle $\varepsilon > 0$ ein Index $N(\varepsilon)$ existiert, so dass
 

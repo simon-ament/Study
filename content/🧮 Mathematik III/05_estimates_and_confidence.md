@@ -1,6 +1,7 @@
 ---
 title: Parameterschätzung und Konfidenzintervalle
 ---
+
 # Stichproben
 ## Mittelwert
 Für eine Sequenz $x$ von Beobachtungen $x_1, \dots, x_n \in \mathbb{R}$ ist der Mittelwert $\overline{x}$ definiert als

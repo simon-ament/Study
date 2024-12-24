@@ -1,6 +1,7 @@
 ---
 title: Zufallsvariablen
 ---
+
 # Bedingte Wahrscheinlichkeit
 Gegeben zwei Ereignisse $A, B$. Das Ereignis $B$ ist bereits eingetreten (**sicheres Ereignis**). Dadurch muss die Eintrittswahrscheinlichkeit von $A$ neu bewertet werden:
 - $A$ kann nur noch eintreten, wenn $A \subseteq B$
