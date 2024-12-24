@@ -30,14 +30,23 @@
     const geometry = new PlaneGeometry(1, 1, 1000, 1000);
     const vertices = geometry.getAttribute('position').array;
     const colors = [];
+    let minX = 1000, maxX = -1000, minY = 1000, maxY = -1000;
     for (let i = 0; i < vertices.length; i += 3) {
-        const x = vertices[i] * (xAxis.max - xAxis.min); 
-        const y = vertices[i + 1] * (yAxis.max - yAxis.min);
-        vertices[i + 2] = (func(x, y) - zAxis.min) / (zAxis.max - zAxis.min);
+        const x = (vertices[i] + 0.5) * (xAxis.max - xAxis.min) + xAxis.min;
+        const y = (vertices[i + 1] + 0.5) * (yAxis.max - yAxis.min) + yAxis.min;
+        const z = func(x, y);
+        vertices[i + 2] = (z - zAxis.min) / (zAxis.max - zAxis.min) - 0.5;
+
+        if (x < minX) minX = x;
+        if (x > maxX) maxX = x;
+        if (y < minY) minY = y;
+        if (y > maxY) maxY = y;
+
         const color = new Color();
         color.setHSL(vertices[i + 2] / 2 + 0.5, 1, 0.5);
         colors.push(color.r, color.g, color.b);
     }
+    console.log(`x: [${minX}, ${maxX}], y: [${minY}, ${maxY}], z: [${zAxis.min}, ${zAxis.max}]`);
     geometry.setAttribute('color', new BufferAttribute(new Float32Array(colors), 3));
 
     geometry.computeVertexNormals() // needed for lighting
@@ -88,7 +97,7 @@
 <T.Mesh
     {geometry}
     rotation.x={DEG2RAD * -90}
-    position={[0, -0.5, 0]}
+    position={[0, 0, 0]}
 >
     <T.MeshStandardMaterial vertexColors side={DoubleSide} />
 </T.Mesh>

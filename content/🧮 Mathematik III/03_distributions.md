@@ -1,6 +1,7 @@
 ---
 title: Verteilungen
 ---
+
 # Bernoulliverteilung
 Experiment mit nur zwei Ausgängen:
 - Erfolg: $X = 1$
@@ -164,6 +165,9 @@ $$X_1 + X_2 \sim \text{Gam}(2, \lambda)$$
 Für zwei Parameter $\mu \in \mathbb{R}$ und $\sigma^2 \in \mathbb{R}_+$ bezeichnen wir die Wahrscheinlichkeitsverteilung $\mathcal{N}(\cdot; \mu, \sigma^2)$ auf dem Ereignisraum $(\mathbb{R}, \mathcal{B}(\mathbb{R}))$ als Normalverteilung, falls für alle $A \in \mathcal{B}(\mathbb{R})$ gilt, dass
 
 $$\mathcal{N}(A; \mu, \sigma^2) = \frac{1}{\sqrt{2 \cdot \pi \cdot \sigma^2}} \cdot \int_A \exp(- \frac12 \frac{(x - \mu)^2}{\sigma^2}) dx$$
+
+<script type="module" src="/svelte/threlte-normal-distribution.js"></script>
+<threlte-normal-distribution></threlte-normal-distribution>
 
 ## Lineartransformation normalverteilter Zufallsvariablen
 Seien $a, b \in \mathbb{R}$ und $X \sim \mathcal{N}(\mu, \sigma^2)$ eine reelle Zufallsvariable. Dann gilt
