@@ -246,5 +246,3 @@ $$E_{01} = (P.x - v_0.x) \cdot (v_1.y - v_0.y) - (P.y - v_0.y) \cdot (v_1.x - v_
 
 *Herleitung über Kreuzprodukt und dessen Orientierung*
 - $E_{01}$ entspricht der vorzeichenbehafteten Länge des Vektors, der durch das Kreuzprodukt zwischen $a$ und $b$ definiert wird
-
----

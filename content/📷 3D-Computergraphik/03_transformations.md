@@ -63,11 +63,13 @@ Erlauben die Spezifikation einer Orientierung, d. h. einer Winkellage, eines Obj
 - Drehung $R$ kann in drei Drehungen um die jeweiligen Achsen aufgeteilt
 
 # Smooth step function
-$$f(x) = \begin{cases}
+$$
+f(x) = \begin{cases}
 0 &\text{falls } x < 0 \\
 3x^2 - 2x^3 &\text{falls } 0 \leq x \leq 1 \\
 1 &\text{sonst}
-\end{cases}$$
+\end{cases}
+$$
 
 Eigenschaften:
 - $f(0) = f(1) = 0$
