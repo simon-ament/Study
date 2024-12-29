@@ -15,6 +15,7 @@ title: IT Systems Engineering – Semester III
 - [x] study.simonament.de hosten
 - [ ] Layout: Keine Backlinks auf Mobile
 - [ ] Threlte: Lazy Loading + Dark Mode
+- [ ] function-plot: Wrapper erstellen
 
 ## Mathe
 - [ ] Notizen vervollständigen
@@ -22,10 +23,16 @@ title: IT Systems Engineering – Semester III
 - [ ] Animationen hinzufügen
 
 ## 3D-Computergraphik
-- [ ] Notizen übertragen
+- [x] Notizen übertragen
 - [ ] Notizen vervollständigen
 - [ ] Notizen kürzen
 - [ ] Animationen hinzufügen
 
 ## Betriebssysteme
 - [ ] Buch lesen
+
+## Software-Architektur
+- [ ] Zusammenfassung erstellen (Squeak, Idiome, Patterns)
+
+## Theoretische Informatik
+- [ ] Spickzettel (DIN-A4 doppelseitig) erstellen

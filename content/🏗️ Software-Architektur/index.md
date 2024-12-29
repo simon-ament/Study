@@ -1,7 +1,6 @@
 ---
 title: 🏗️ Software-Architektur
 ---
-
 # Themengebiete
 1. [[01_basics_and_history|Basiswissen und Geschichte]]
 2. [[02_squeak|Squeak]]

@@ -1,5 +1,4 @@
 ---
 title: 💽 Betriebssysteme
 ---
-
 # Themengebiete
