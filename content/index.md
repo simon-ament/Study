@@ -9,30 +9,31 @@ title: IT Systems Engineering – Semester III
 5. [[🧮 Mathematik III/]]
 
 ---
-
 # 📋 Checkliste
 
 - [x] study.simonament.de hosten
-- [ ] Layout: Keine Backlinks auf Mobile
-- [ ] Threlte: Lazy Loading + Dark Mode
-- [ ] function-plot: Wrapper erstellen
+- [x] Wrapper für Threlte erstellen
+- [x] Layout: Keine Backlinks auf Mobile
 
-## Mathe
-- [ ] Notizen vervollständigen
-- [ ] Notizen kürzen
-- [ ] Animationen hinzufügen
+## Betriebssysteme
+- [ ] Buch lesen
 
 ## 3D-Computergraphik
 - [x] Notizen übertragen
 - [ ] Notizen vervollständigen
 - [ ] Notizen kürzen
-- [ ] Animationen hinzufügen
-
-## Betriebssysteme
-- [ ] Buch lesen
 
 ## Software-Architektur
 - [ ] Zusammenfassung erstellen (Squeak, Idiome, Patterns)
 
+## Mathe
+- [ ] Notizen vervollständigen
+- [ ] Notizen kürzen
+- [ ] Animationen hinzufügen 
+	- [ ] Wrapper für function-plot erstellen
+
 ## Theoretische Informatik
 - [ ] Spickzettel (DIN-A4 doppelseitig) erstellen
+
+## Optional
+- [ ] Threlte + function-plot: Lazy Loading + Dark Mode

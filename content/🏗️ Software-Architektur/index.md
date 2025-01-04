@@ -6,3 +6,6 @@ title: 🏗️ Software-Architektur
 2. [[02_squeak|Squeak]]
 3. [[03_idioms|Idiome]]
 4. [[04_patterns|Patterns]]
+
+# Links
+- https://refactoring.guru/refactoring

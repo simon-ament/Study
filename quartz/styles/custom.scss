@@ -34,3 +34,9 @@ h2.page-title > a {
 footer {
     opacity: 1;
 }
+
+@media (max-width: 800px) {
+    .desktop-only {
+        display: none !important; // temporary fix for Quartz bug
+    }
+}
