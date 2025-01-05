@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Canvas } from "@threlte/core"
-    import ThrelteContainer from "../components/ThrelteContainer.svelte";
+    import Container from "../components/Container.svelte";
     import SurfacePlot from "../components/SurfacePlot.svelte";
 
     const normalDistribution = (x, sigma) => {
@@ -11,7 +11,7 @@
 
 <svelte:options customElement="threlte-normal-distribution" />
 
-<ThrelteContainer>
+<Container>
     <Canvas>
         <SurfacePlot 
             func={normalDistribution}
@@ -20,4 +20,4 @@
             zAxis={{name: 'p(x)', min: -1, max: 1}} 
         />
     </Canvas>
-</ThrelteContainer>
+</Container>

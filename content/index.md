@@ -16,7 +16,8 @@ title: IT Systems Engineering – Semester III
 - [x] Layout: Keine Backlinks auf Mobile
 
 ## Betriebssysteme
-- [ ] Buch lesen
+- [x] Buch lesen
+- [ ] Groben Lernzettel erstellen (siehe Fragen-Liste)
 
 ## 3D-Computergraphik
 - [x] Notizen übertragen
@@ -30,7 +31,7 @@ title: IT Systems Engineering – Semester III
 - [ ] Notizen vervollständigen
 - [ ] Notizen kürzen
 - [ ] Animationen hinzufügen 
-	- [ ] Wrapper für function-plot erstellen
+	- [x] Wrapper für function-plot erstellen
 
 ## Theoretische Informatik
 - [ ] Spickzettel (DIN-A4 doppelseitig) erstellen

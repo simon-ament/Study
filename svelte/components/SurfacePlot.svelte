@@ -5,14 +5,9 @@
     import { T } from '@threlte/core'
     import { OrbitControls, Grid, Text, Suspense } from '@threlte/extras'
     import { type TextMesh } from '@threlte/extras/dist/components/Text/types'
+    import { type Axis } from '../types'
 
     /* props */
-    interface Axis {
-        name: string;
-        min: number;
-        max: number;
-    }
-
     interface Props {
         func: (x: number, y: number) => number;
         xAxis: Axis;
