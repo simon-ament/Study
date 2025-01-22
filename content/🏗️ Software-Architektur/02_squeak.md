@@ -4,6 +4,9 @@ title: Squeak
 > [!info] Cheat-Sheet
 > https://moodle.hpi.de/pluginfile.php/52730/mod_resource/content/2/squeakCheatSheet_4_0.pdf
 
+Squeak is based on principles of **Live and Exploratory Programming**
+- direct code changes $\Rightarrow$ instant visual / auditory effects
+
 # Collections
 ## contains | includes
 
@@ -52,3 +55,8 @@ title: Squeak
 
 ---
 # Commands
+
+---
+# Squeak Internals
+> [!info] Slides: Objects in Squeak/Smalltalk
+
