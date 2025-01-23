@@ -1,4 +1,0 @@
----
-title: Nebenläufigkeit
----
-# Synchronisation

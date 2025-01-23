@@ -11,13 +11,10 @@ title: IT Systems Engineering – Semester III
 ---
 # 📋 Checkliste
 
-- [x] study.simonament.de hosten
-- [x] Wrapper für Threlte erstellen
-- [x] Layout: Keine Backlinks auf Mobile
-
 ## Betriebssysteme
 - [x] Buch lesen
-- [ ] Groben Lernzettel erstellen (siehe Fragen-Liste)
+- [ ] Groben Lernzettel erstellen (Hausaufgaben-Blätter)
+- [ ] Lernzettel kürzen + vervollständigen
 
 ## 3D-Computergraphik
 - [x] Notizen übertragen
@@ -30,7 +27,7 @@ title: IT Systems Engineering – Semester III
 ## Mathe
 - [ ] Notizen vervollständigen
 - [ ] Notizen kürzen
-- [ ] Animationen hinzufügen 
+- [ ] (Animationen hinzufügen)
 	- [x] Wrapper für function-plot erstellen
 
 ## Theoretische Informatik
