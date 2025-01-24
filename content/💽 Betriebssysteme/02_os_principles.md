@@ -34,7 +34,9 @@ Sockets ermöglichen dies zusätzlich für die Kommunikation über ein Netzwerk.
 ---
 # Threads
 ## Thread-Kontext
-Unter einem Thread-Kontext versteht man seinen gesamten Zustand. Dazu gehören die Registerinhalte, der Stack und der zugeteilte Speicherbereich. Bei einem Kontextwechsel, wenn die CPU von einem Thread auf einen anderen umschaltet. Dazu wird zunächst der Kontext des aktuellen Threads gespeichert. Anschließend wird der Kontext des neuen Threads geladen, welcher vom Scheduler ausgewählt wurde. Dazu gehört auch der Programm Counter, sodass dieser Thread an der richtigen Stelle fortgesetzt werden kann. Im Unterschied dazu ist werden bei einem Kontextwechsel vom User- in den Kernelmodus nicht alle Register der CPU gespeichert, da der Thread nicht gewechselt wird. Daher ist auch kein Scheduler nötig um diesen Wechsel zu vollziehen. Insgesamt ist dieser Wechsel schneller als ein Kontextwechsel zwischen zwei Threads
+Unter einem Thread-Kontext versteht man seinen gesamten Zustand. Dazu gehören die Registerinhalte, der Stack und der zugeteilte Speicherbereich. Bei einem Kontextwechsel, wenn die CPU von einem Thread auf einen anderen umschaltet. Dazu wird zunächst der Kontext des aktuellen Threads gespeichert. Anschließend wird der Kontext des neuen Threads geladen, welcher vom Scheduler ausgewählt wurde. Dazu gehört auch der Programm Counter, sodass dieser Thread an der richtigen Stelle fortgesetzt werden kann. 
+
+Im Unterschied dazu ist werden bei einem Kontextwechsel vom User- in den Kernelmodus nicht alle Register der CPU gespeichert, da der Thread nicht gewechselt wird. Daher ist auch kein Scheduler nötig um diesen Wechsel zu vollziehen. Insgesamt ist dieser Wechsel schneller als ein Kontextwechsel zwischen zwei Threads
 
 ## Scheduling-Zustände
 > [!caution] Graphik einfügen

@@ -1,4 +1,0 @@
----
-title: Speicherverwaltung
----
-# Virtual Memory
