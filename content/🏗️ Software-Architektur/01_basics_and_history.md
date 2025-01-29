@@ -85,6 +85,3 @@ title: Basiswissen und Geschichte
 	- Treat modules as their interface
 - Abstraction mechanism: from the outside only the module abstraction is visible
 - Makes overall system structure visible (architectural thinking) | parts of a system can be zoomed into one at a time
-
----
-# Object Oriented History
