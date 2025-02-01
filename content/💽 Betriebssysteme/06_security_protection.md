@@ -98,3 +98,45 @@ title: Sicherheit
 	- **Active Directory:** contains a database storing information about domain objects
 	- **Net Logon:** responds to network logon request, handled as local logon via LSASS authentication service
 	- **Winlogon:** manages user sessions
+
+---
+# Protection
+Guiding Principle: **principle of least privilege**
+
+## Protection Rings
+- Components ordered by amount of privilege and protected from each other
+	- e.g. kernel ring and user application ring
+	- subset relation
+- Gates used to transfer between levels
+- **Privilege escalation** also possible through traps and interrupts
+
+## Domain of Protection
+- Each domain specifies set of objects and types of operations on them
+- Ability to execute an operation on an object is an **access right**
+	- `<object-name, right-set>`
+	- e.g. `<O_1, {read, write}>` for `D_1`
+- **UNIX:** Domain = user-id with ability to temporarily change user-id
+
+## Access Matrix
+> [!danger] Nachtragen
+
+- Domänen könne auch als Objekte betrachtet werden $\Rightarrow$ Wechsel in andere Domäne
+- control ==??==
+
+### Implementation
+- Option 1: Global Table
+	- Store ordered triples `<domain, object, right-set>` in table
+	- could be too large
+- Option 2: Access list for objects
+	- per-object list consisting of `<domain, rights-set>`
+	- easily extended to contain default set
+- Option 3: Capability list for domains
+	- list of objects together with operations allows on them
+- Option 4: Lock-key
+	- each object has list of unique bit patterns, called **locks**
+	- each domain as list of unique bit patterns called **keys**
+	- process in a domain can only access object if domain has key that matches one of the locks
+
+In der Praxis meist Mischung aus Access Listen und Capabilities
+
+> [!danger] Nachtragen: ACL + RWX, Kerebos, Windows Security Services
