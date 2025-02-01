@@ -61,9 +61,27 @@ Das Working Set eines Prozesses ist die Menge der Pages, auf die ohne [[#Page Fa
 ---
 # Seitenverwaltung
 ## Windows
-Seiten, die durch Working Set Replacement freigeben werden landen in der **Modified Page List**, falls sie verändert wurden, sonst in der **Standby Page List**. Aus diesen Listen können Seiten wieder in Prozesse geladen werden, falls sie erneut gebraucht werden. Wenn eine bestimmte Größe der Liste erreicht wird, beginnt der Modified Page Writer Thread Seiten aus der Modified List auf Disk zu schreiben und die Seite in die Standby Page List zu verschieben. Wenn ein Page Read aufgerufen wird können dafür Seiten aus der **Free Page List** genommen werden, welche allerdings garantieren müssen, diese direkt zu überschreiben. In dieser Liste stehen noch alte Werte (Junk). Der Zero Page Thread leert diese Seiten, wenn und verschiebt sie in die **Zero Page List**. Bei Demand Zero Page Faults werden Seiten aus dieser Liste entnommen. In der **Bad Page List** werden Seiten gesammelt die fehlerhaft sind, damit diese Seiten keinem Prozess zugewiesen werden. 
+Windows verwaltet Pages mittels der folgenden Listen:
+- **Standby Page List:** unveränderte Pages, die im Rahmen des Working Set Replacement freigegeben wurden
+- **Modified Page List:** veränderte Pages, die im Rahmen des Working Set Replacement freigegeben wurden
+	- ab einer gewissen Größe der Liste beginnt der **Modified Page Writer Thread** diese Pages auf Disk zu schreiben und die Einträge in die **Standby Page List** zu verschieben
+- **Free Page List:** Liste freier, aber nicht genullter Seiten
+	- Prozess muss garantieren, den vorhandenen Inhalt sofort zu überschreiben
+- **Zero Page List:** Liste genullter Seiten
+- **Bad Page List:** Liste fehlerhafter Seiten
+	- wird zum Beispiel beim Boot durch Lesen und  Schreiben von Bitmustern überprüft
 
-Die **Page Frame Number Database** enthält für jede physische Seite einen Eintrag von 24 Bit. Aktive/valide Seiten beinhalten den originalen PTE Wert, die virtuelle PTE-Adresse sowie einen Working Set Hint. Außerdem gibt es Flags für die oben genannten Listen. Der Share Count gibt an wie viele Prozesse auf diese Seite zugreifen und der Reference Count zählt die Anzahl an Prozessen die auf diese Seite referenzieren. Fällt der Reference Count auf $0$ kann diese Seite in die Free, Standby oder Modified Page List verschoben werden.
+### Page Frame Number Database
+Die **Page Frame Number Database** enthält für jede physische Seite einen Eintrag von 24 Bit. Aktive/valide Seiten beinhalten
+- den originalen PTE Wert
+- die virtuelle PTE-Adresse
+- einen Working Set Hint
+- Flags für die oben genannten Listen
+
+Der **Share Count** gibt an wie viele Prozesse auf diese Seite zugreifen und der **Reference Count** zählt die Anzahl an Prozessen die auf diese Seite referenzieren
+- fällt der Reference Count auf $0$ kann diese Seite in die Free, Standby oder Modified Page List verschoben werden
+
+> [!caution] Woher kommen die 24 Bit?, Was ist PTE? Share Count vs Reference Count
 
 ![[Screenshot from 2025-02-01 11-44-14.png]]
 ## Swapping vs. Page Replacement
@@ -74,11 +92,15 @@ Das Page-Replacement findet häufiger statt, da der Prozess weiterlaufen kann. S
 > [!caution] Thrashing definieren
 
 ## Shared Memory
-Die Page Table eines jeden Prozesses wird dazu verwendet, dessen eigenen logischen Adressraum (in Pages unterteilt) auf den physischen Adressraum (in gleich große Frames unterteilt) abzubilden. Da der physische Adressraum für alle Prozesse, die gerade im Hauptspeicher liegen, derselbe ist, versucht man normalerweise, die einzelnen Pages dieser Prozesse auf voneinander verschiedene Frames abzubilden. Im Rahmen der Interprozesskomunikation kann es jedoch von Nutzen sein, dass verschiedene Prozesse gemeinsam einen gewissen Speicherbereich lesen und beschreiben können.
-
-Mithilfe der bereits erwähnten [[#Page Table|Page Tables]] lässt sich dies ganz einfach so umsetzen, dass einzelne Pages dieser kommunizierenden Prozesse auf dasselbe physische Frame abgebildet werden. Für die beteiligten Prozesse ist die jeweilige Page damit weiterhin ein Bestandteil des eigenen, zusammenhängenden logischen Adressraumes, allerdings können eben diese geteilten Pages als Shared Memory eben auch von anderen Prozessen in ihrem logischen Adressraum gelesen und beschrieben werden.
+Mithilfe der bereits erwähnten [[#Page Table|Page Tables]] lässt sich **Shared Memory** ganz einfach so umsetzen, dass einzelne Pages dieser kommunizierenden Prozesse auf **dasselbe physische Frame** abgebildet werden
+- jeweilige Page ist weiterhin ein Bestandteil des zusammenhängenden logischen Adressraumes des Prozesses
+- andere Prozesse können aber ebenfalls auf das Frame zugreifen
 ## Copy-on-Write
-Die Idee hinter einem Copy-on-Write-Speicher ist es, die Bereitstellung neuer Pages für Prozesse, die mittels `fork`-Systemaufruf erzeugt wurden, zu verzögern. Gemäß der Semantik dieses Systemaufrufs übernimmt der neue Kind-Prozess eine Kopie des Adressraumes seine Elternprozesses. Häufig verwendet der Kind- Prozess jedoch nur bestimmte Pages in diesem Adressraum oder ruft sofort `exec` auf, womit er einen eigenen neuen Adressraum zugewiesen bekommt. Anstatt deshalb sofort nach dem `fork`-Aufruf alle Pages des Elternprozesses zu kopieren, werden diese als Copy-on-Write markiert und zunächst vom Eltern- und Kindprozess geteilt. Erst wenn einer der beiden Prozesse versucht, auf diese geteilte Page zu schreiben, wird eine ihm zugeordnete Kopie angelegt und von ihm beschrieben. Pages, die zum Beispiel ausschließlich Programmcode enthalten, müssen auf diese Weise nie kopiert werden.
+Die Idee hinter einem Copy-on-Write-Speicher ist die Verzögerung des Kopieren von Pages, etwa bei einem `fork`-Systemaufruf
+- Kind-Prozess verwendet meist nur einige Pages oder ruft eh direkt `exec` auf
+- Eltern- und Kind-Prozess verwenden deshalb zunächst dasselbe physische Frame ([[#Shared Memory]]), dieses wird allerdings als **Copy-on-Write** markiert
+	- versucht ein Prozess zu schreiben, so wird zunächst die benötigte Kopie erstellt
+	- Code-Pages müssen so nie kopiert werden
 ## Page-Replacement Algorithmen
 Der **First-In-First-Out (FIFO)** Algorithmus implementiert eine FIFO-Queue der Seiten eines Prozesses
 
@@ -86,7 +108,6 @@ Der **Least-Recently-Used (LRU)** Algorithmus ersetzt die Seite, die am längste
 - Implementierung über Timestamp je Page oder Stack, auf dem referenzierte Seiten nach oben gelegt werden ==???==
 
 Der **Second-Chance Algorithmus** speichert sich für jede Seite ein zusätzliches Bit. Dieses ist initial $0$. Eine Seite die erneut referenziert wird, bekommt das Bit auf $1$ gesetzt. Wenn eine Seite ersetzt werden muss, wird sequentiell nach einer Seite mit Bit=$0$ gesucht und diese ersetzt, wobei Bit=$1$ auf $0$ gesetzt wird.
-> [!caution] Wie heißt der Prozess, der das tut?
 
 ### Beispiele
 > [!caution] Beispiele Einfügen (Blatt 5 Aufgabe 12) - Fehler bei FiFo
