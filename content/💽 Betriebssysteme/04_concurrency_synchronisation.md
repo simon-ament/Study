@@ -1,5 +1,5 @@
 ---
-title: Nebenläufigkeit
+title: Nebenläufigkeit und Synchronisation
 ---
 # Begriffe
 ## Nebenläufigkeit

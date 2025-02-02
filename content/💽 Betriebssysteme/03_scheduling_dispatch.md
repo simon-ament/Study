@@ -7,9 +7,12 @@ Der Scheduler bestimmt, welcher Prozess als nächstes die CPU nutzen darf. Man u
 - **Long-Term-Scheduler** entscheidet, welche Prozesse in den Arbeitsspeicher geladen werden dürfen
 - **Short-Term-Scheduler** entscheidet, welche Prozesse direkt auf der CPU ausgeführt werden können
 
-Mittelscheduler (==???==) verlegt Prozesse zwischen Hauptspeicher und Sekundärspeicher.
+Er verwaltet dazu 2 Queues:
+- **Ready Queue:** Prozesse, die im Hauptspeicher liegen und auf Ausführung warten
+- **Waiting Queue:** Prozesse, die auf ein Event (z.B. I/O) warten
 
-## Varianten
+![[Screenshot from 2025-02-02 15-56-11.png]]
+
 ### Kooperativ
 Beim kooperativen Scheduling gibt ein Prozess, sollte er fertig sein oder auf etwas warten, die **CPU freiwillig für andere Prozesse frei**
 - $\Rightarrow$ einzelner Prozess kann System blockieren
@@ -31,6 +34,7 @@ Bei Echtzeit(-Scheduling) geht es darum, dass Aufgaben **innerhalb eines festen 
 	- z.B. verwendet bei Sensorik selbstfahrender Autos (Gefährdung von Menschenleben)
 - **weiche Echtzeit:** Deadines sollten zwar eingehalten werden, allerdings ist ein geringes Überschreiten dieser nicht problematisch. 
 	- z.B. Computerspiele (Framerate, Verzögerung verschlechtert Spielergebnis, aber ist akzeptabel)
+
 ### Anforderungen an Echtzeit-Scheduling-Verfahren
 Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse innerhalb ihrer festgelegten Zeit ausgeführt werden. Dazu sollte es:
 - die Startzeit eines Prozesses an seine Deadline anpassen können
@@ -42,15 +46,10 @@ Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse inne
 > [!danger] Nachtragen (Blatt 3 Aufgabe 6 + 7)
 ### FiFo
 
-#### Beispiel
-
 ### Prioritätsloser Round-Robin
-
-#### Beispiel
 
 ### Prioritätenbasierter Round-Robin
 
-#### Beispiel
 
 ## Starvation Avoidance
 Moderne Betriebssysteme verwenden verschiedene Fairness-Algorithmen, um auch Threads mit niedriger Priorität regelmäßig CPU-Zeit zuzuweisen. Zentraler Bestandteil solcher Fairness-Algorithmen sind häufig:

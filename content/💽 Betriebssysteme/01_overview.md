@@ -36,6 +36,7 @@ Nutzerfreundlichkeit, Sicherheit und Effizienz sind zugleich auch die obersten D
 - **Kompatibilität:** bestehende MS-DOS APIs und Programme weiter unterstützen
 	- darüber hinaus Kompatibilität mit UNIX, OS/2 und NetWare
 	- **Subsysteme** für Windows, OS/2 und POSIX (nach relevanz sortiert)
+		- dienen der Ausführung von Programmen, die für andere Betriebssysteme / APIs geschrieben wurden
 - **Performance:** Schnelligkeit und Responsivität im Rahmen der anderen Design-Ziele optimieren
 - **Architektur:**
 	- symmetrisches Multiprocessing unterstützen
