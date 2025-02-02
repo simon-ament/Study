@@ -95,12 +95,16 @@ Das Page-Replacement findet häufiger statt, da der Prozess weiterlaufen kann. S
 Mithilfe der bereits erwähnten [[#Page Table|Page Tables]] lässt sich **Shared Memory** ganz einfach so umsetzen, dass einzelne Pages dieser kommunizierenden Prozesse auf **dasselbe physische Frame** abgebildet werden
 - jeweilige Page ist weiterhin ein Bestandteil des zusammenhängenden logischen Adressraumes des Prozesses
 - andere Prozesse können aber ebenfalls auf das Frame zugreifen
+
+![[Screenshot from 2025-02-02 12-34-41.png]]
+
 ## Copy-on-Write
 Die Idee hinter einem Copy-on-Write-Speicher ist die Verzögerung des Kopieren von Pages, etwa bei einem `fork`-Systemaufruf
 - Kind-Prozess verwendet meist nur einige Pages oder ruft eh direkt `exec` auf
 - Eltern- und Kind-Prozess verwenden deshalb zunächst dasselbe physische Frame ([[#Shared Memory]]), dieses wird allerdings als **Copy-on-Write** markiert
 	- versucht ein Prozess zu schreiben, so wird zunächst die benötigte Kopie erstellt
 	- Code-Pages müssen so nie kopiert werden
+
 ## Page-Replacement Algorithmen
 Der **First-In-First-Out (FIFO)** Algorithmus implementiert eine FIFO-Queue der Seiten eines Prozesses
 

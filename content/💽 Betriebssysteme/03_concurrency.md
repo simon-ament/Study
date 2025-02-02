@@ -12,7 +12,11 @@ Parallelität ist die **physische Gleichzeitigkeit** von Prozessen
 
 ![[Screenshot from 2025-02-01 11-47-28.png]]
 
-> [!caution] Data-Parallelism
+> [!caution] Data-Parallelism, NUMA
+
+## Multiprocessing
+- **symmetrisch:** jeder Prozesse kann jede Aufgabe übernehmen
+- **asymmetrisch:** jeder Prozesse erhält eine spezifische Aufgabe
 
 ---
 # Synchronisation

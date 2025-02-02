@@ -1,6 +1,24 @@
 ---
 title: OS-Prinzipien
 ---
+# Begriffe
+## Programm
+Ein Programm ist eine Datei, die Code enthält und eine bestimmte Funktion umsetzt
+- Code: Befehle in einer Programmiersprache oder Maschinencode
+- Liegt auf dem Datenträger und verbraucht erst Ressourcen, wenn Ausführung gestartet wird ([[#Prozess]])
+
+## Prozess
+Ein Prozess ist ein **Programm in Ausführung**
+- wird durch das Betriebssystem verwaltet
+- sind gegeneinander isoliert (z.B. eigener Speicherabschnitt)
+- können Kind-Prozesse erstellen
+
+## Thread
+Ein Thread ist die **kleinste Ausführungseinheit** innerhalb eines Prozesses
+- mindestens ein Thread je Prozess
+- ermöglichen die **parallele Ausführung** von Aufgaben, Leistungssteigerung insbesondere bei Mehrkern-Prozessoren
+
+---
 # Prozess-Erstellung
 ## Windows
 Unter Windows wird mit `CreateProcess()` ein neuer Prozess erstellt und ein Programm in diesem Prozess geladen:
