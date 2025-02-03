@@ -83,7 +83,7 @@ Der **Share Count** gibt an wie viele Prozesse auf diese Seite zugreifen und der
 
 > [!caution] Woher kommen die 24 Bit?, Was ist PTE? Share Count vs Reference Count
 
-![[Screenshot from 2025-02-01 11-44-14.png]]
+![[Screenshot from 2025-02-01 11-44-14.png|500]]
 ## Swapping vs. Page Replacement
 Beim Swapping wird der gesamte Prozess aus dem Hauptspeicher auf Disk geschrieben, um Speicherplatz für andere Prozesse zu schaffen. Im Gegensatz dazu werden beim Page Replacement einzelne Seiten auf Disk geschrieben, um Platz für andere Seiten zu schaffen. Swapping wird in der Regel selten ausgeführt, da durch das Auslagern eines ganzen Prozesses eine hohe Latenzzeit entsteht. 
 
@@ -96,7 +96,7 @@ Mithilfe der bereits erwähnten [[#Page Table|Page Tables]] lässt sich **Shared
 - jeweilige Page ist weiterhin ein Bestandteil des zusammenhängenden logischen Adressraumes des Prozesses
 - andere Prozesse können aber ebenfalls auf das Frame zugreifen
 
-![[Screenshot from 2025-02-02 12-34-41.png]]
+![[Screenshot from 2025-02-02 12-34-41.png|500]]
 
 ## Copy-on-Write
 Die Idee hinter einem Copy-on-Write-Speicher ist die Verzögerung des Kopieren von Pages, etwa bei einem `fork`-Systemaufruf
@@ -114,4 +114,5 @@ Der **Least-Recently-Used (LRU)** Algorithmus ersetzt die Seite, die am längste
 Der **Second-Chance Algorithmus** speichert sich für jede Seite ein zusätzliches Bit. Dieses ist initial $0$. Eine Seite die erneut referenziert wird, bekommt das Bit auf $1$ gesetzt. Wenn eine Seite ersetzt werden muss, wird sequentiell nach einer Seite mit Bit=$0$ gesucht und diese ersetzt, wobei Bit=$1$ auf $0$ gesetzt wird.
 
 ### Beispiele
+
 > [!caution] Beispiele Einfügen (Blatt 5 Aufgabe 12) - Fehler bei FiFo

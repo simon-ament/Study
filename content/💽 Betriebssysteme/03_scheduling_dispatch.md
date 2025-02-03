@@ -2,6 +2,16 @@
 title: Scheduling und Dispatching
 ---
 # Scheduling
+Hat die Maximierung der CPU-Ausnutzung zu Ziel
+- **CPU-Burst:** Prozess führt Instruktionen direkt auf der CPU aus
+	- häufig kurze Bursts, selten lange
+- **I/O-Bursts:** Prozess wartet auf I/O-Event
+
+CPU-Scheduling kann nur stattfinden, wenn ein Prozess:
+1. von *running* zu *waiting* wechselt
+2. von *running* zu *ready* wechselt (nur *preemptive*)
+3. von *waiting* zu *ready* wechselt (nur *preemptive*)
+4. terminiert
 ## Scheduler
 Der Scheduler bestimmt, welcher Prozess als nächstes die CPU nutzen darf. Man unterscheidet zwei Formen:
 - **Long-Term-Scheduler** entscheidet, welche Prozesse in den Arbeitsspeicher geladen werden dürfen
@@ -11,7 +21,7 @@ Er verwaltet dazu 2 Queues:
 - **Ready Queue:** Prozesse, die im Hauptspeicher liegen und auf Ausführung warten
 - **Waiting Queue:** Prozesse, die auf ein Event (z.B. I/O) warten
 
-![[Screenshot from 2025-02-02 15-56-11.png]]
+![[Screenshot from 2025-02-02 15-56-11.png|500]]
 
 ### Kooperativ
 Beim kooperativen Scheduling gibt ein Prozess, sollte er fertig sein oder auf etwas warten, die **CPU freiwillig für andere Prozesse frei**
@@ -42,13 +52,56 @@ Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse inne
 - **periodische Prozesse**, die regelmäßig innerhalb derselben Deadline ausgeführt werden müssen, verwalten können
 - $\Rightarrow$ insbesondere auch präemptiv sein
 
-## Scheduling-Algorithmen
-> [!danger] Nachtragen (Blatt 3 Aufgabe 6 + 7)
-### FiFo
+---
+# Scheduling-Algorithmen
+## Kriterien für Scheduling-Algorithmen
+- **CPU-Ausnutzung** maximieren
+- **Throughput / Durchsatz:** Anzahl der Prozesse, die in einer Zeiteinheit fertig werden
+- **Turnaround time:** Zeit, die es braucht, einen spezifischen Prozess auszuführen
+- **Waiting time:** Zeit, die ein Prozess in der *ready queue* verbringt
+- **Response time:** Zeit, die vergeht, bis ein Prozess das erste Mal ausgeführt wird
 
-### Prioritätsloser Round-Robin
+## Beispiel
 
-### Prioritätenbasierter Round-Robin
+| Thread ID | Startzeit | Ausführungszeit | Priorität |
+| --------- | --------- | --------------- | --------- |
+| 1         | 0         | 8               | 9         |
+| 2         | 2         | 6               | 11        |
+| 3         | 2         | 6               | 10        |
+| 4         | 4         | 10              | 11        |
+
+- Quantum-Länge = 3
+
+## First-Come, First-Served / FiFo
+
+| Thread ID | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1         | R   | R   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 2         |     |     | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 3         |     |     | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |
+| 4         |     |     |     |     | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   | R   | R   | R   | R   |
+
+- **Convoy effect:** Kurze Prozesse (*I/O-bound*) können lange hinter langen Prozessen (*CPU-bound*) hängen
+
+## Prioritätsloser Round-Robin
+
+| Thread ID | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1         | R   | R   | R   | -   | -   | -   | -   | -   | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   |     |     |     |     |     |     |     |
+| 2         |     |     | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |
+| 3         |     |     | -   | -   | -   | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   |     |     |     |     |     |     |     |     |     |
+| 4         |     |     |     |     | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   | R   |
+
+## Prioritätenbasierter Round-Robin
+
+| Thread ID | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  |
+| --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1         | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   |
+| 2         |     |     | R   | R   | R   | -   | -   | -   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |
+| 3         |     |     | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |
+| 4         |     |     |     |     | -   | R   | R   | R   | -   | -   | -   | R   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |
+
+## Shortest Job First
 
 
 ## Starvation Avoidance
@@ -72,10 +125,15 @@ Dabei werden zwei Typen von Prozessen unterschieden:
 - **rechenintensive Prozesse:** benötigen weniger häufig, dafür aber mehr CPU-Zeit
 
 ---
-# Dispatching
-## Dispatcher
-Der Scheduler trifft eine Entscheidung, die der Dispatcher dann umsetzt, indem er
-1. den **Zustand des aktuellen Prozesses speichert** und dann
-2. den **neuen Prozess verbereitet und startet**
+# Dispatcher
+## Kontext-Wechsel
+CPU schaltet von einem Prozess auf einen anderen um:
+1. Kontext (gesamter, aktueller Zustand) des aktuellen Prozess im [[#Process Control Block (PCB)|PCB]] speichern
+2. Kontext des neuen Prozesses laden, welcher vom Scheduler ausgewählt wurde
+3. Fortsetzung der Programmausführung im **User-Mode** am aktuellen Programm-Counter
 
-> [!danger] Nachtragen: Scheduling-Kriterien
+**Dispatch-Latency:** Zeit zwischen dem Stoppen des einen uns Starten des anderen Prozesses
+
+Im Unterschied dazu ist werden bei einem Kontextwechsel vom User- in den Kernelmodus nicht alle Register der CPU gespeichert, da der Thread nicht gewechselt wird. Daher ist auch kein Scheduler nötig um diesen Wechsel zu vollziehen. Insgesamt ist dieser Wechsel schneller als ein Kontextwechsel zwischen zwei Threads.
+
+> [!caution] Letzten Absatz prüfen

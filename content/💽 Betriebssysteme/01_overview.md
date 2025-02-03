@@ -116,7 +116,7 @@ Nutzerprogramme greifen über System-Aufrufe auf Betriebssystem-Funktionen zu
 
 Man unterscheidet 6 Typen von System-Aufrufe:
 
-![[Screenshot from 2025-02-02 12-27-18.png]]
+![[Screenshot from 2025-02-02 12-27-18.png|500]]
 
 ---
 # UNIX-Werkzeuge
@@ -149,4 +149,4 @@ Beispielverwendung: `man 2 kill`
 ---
 # Evolution von Betriebssystemen
 
-![[Screenshot from 2025-02-02 12-08-11.png]]
+![[Screenshot from 2025-02-02 12-08-11.png|500]]
