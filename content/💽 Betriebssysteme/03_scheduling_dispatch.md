@@ -30,13 +30,6 @@ Beim kooperativen Scheduling gibt ein Prozess, sollte er fertig sein oder auf et
 Beim präemptiven Scheduling kann das Betriebsystem einem Prozess die CPU zwangsweise entziehen
 - $\Rightarrow$ faire Aufteilung der CPU-Zeit möglich
 - stabiler, aber aufwändiger zu implementieren
-#### Quantum-basiert
-Ein Quantum ist eine **kleine Zeiteinheit** von typischerweise $10$ bis $100$ Millisekunden.
-- Schranke für die zusammenhängende CPU-Zeit eines Prozesses
-- bei prioritätenlosem Scheduling (Round-Robin): $n$ Prozesse und Quantum $q$ $\Rightarrow$ jeder Prozess wartet maximal $(n−1) \cdot q$ Zeiteinheiten, bis er das nächste Mal ein Quantum zugewiesen bekommt
-- großes Quantum $\to$ FiFo
-- kleines Quantum $\to$ viele Kontextwechsel (Zeitverlust)
-- Quantum wird meist so gewählt, dass ca. $80\%$ der Prozesse in einem Quantum fertig werden
 
 ## Echtzeit-Scheduling
 Bei Echtzeit(-Scheduling) geht es darum, dass Aufgaben **innerhalb eines festen Zeitraums** erledigt werden müssen
@@ -83,7 +76,19 @@ Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse inne
 
 - **Convoy effect:** Kurze Prozesse (*I/O-bound*) können lange hinter langen Prozessen (*CPU-bound*) hängen
 
-## Prioritätsloser Round-Robin
+## Round-Robin
+- Jeder Prozess erhält ein Zeitquantum $q$, nachdem er unterbrochen wird, sofern er nicht bereits terminiert ist
+- **Durchsatz geringer** als bei FCFS, wenn der *overhead* für [[#Kontext-Wechsel]] hinzugerechnet wird
+
+### Quantum
+Ein Quantum ist eine **kleine Zeiteinheit** von typischerweise $10$ bis $100$ Millisekunden.
+- Schranke für die zusammenhängende CPU-Zeit eines Prozesses
+- bei prioritätenlosem Scheduling (Round-Robin): $n$ Prozesse und Quantum $q$ $\Rightarrow$ jeder Prozess wartet maximal $(n−1) \cdot q$ Zeiteinheiten, bis er das nächste Mal ein Quantum zugewiesen bekommt
+- großes Quantum $\to$ FiFo
+- kleines Quantum $\to$ viele Kontextwechsel (Zeitverlust)
+- Quantum wird meist so gewählt, dass ca. $80\%$ der Prozesse in einem Quantum fertig werden
+
+### Prioritätsloser RR
 
 | Thread ID | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  |
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,7 +97,10 @@ Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse inne
 | 3         |     |     | -   | -   | -   | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   |     |     |     |     |     |     |     |     |     |
 | 4         |     |     |     |     | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | -   | -   | -   | -   | -   | -   | -   | -   | R   | R   | R   | R   | R   | R   | R   |
 
-## Prioritätenbasierter Round-Robin
+### Prioritätenbasierter RR
+- Beim **Priority Scheduling** werden Prozesse mit höherer Priorität zuerst ausgeführt
+	- bei gleichen Prioritäten wird Round Robin angewandt
+- kann allerdings zu [[#Starvation Avoidance|Starvation]] führen
 
 | Thread ID | 0   | 1   | 2   | 3   | 4   | 5   | 6   | 7   | 8   | 9   | 10  | 11  | 12  | 13  | 14  | 15  | 16  | 17  | 18  | 19  | 20  | 21  | 22  | 23  | 24  | 25  | 26  | 27  | 28  | 29  |
 | --------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -102,20 +110,27 @@ Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse inne
 | 4         |     |     |     |     | -   | R   | R   | R   | -   | -   | -   | R   | R   | R   | R   | R   | R   | R   |     |     |     |     |     |     |     |     |     |     |     |     |
 
 ## Shortest Job First
-
+- SJF ist optimal in Bezug auf durchschnittliche Wartezeit (Gegenteil vom *Convoy effect*)
+- präemptive Variante heißt **Shortest Remaining Time First**
+- SJF ist eine Variante von [[#Prioritätenbasierter RR|prioritätenbasiertem Scheduling]], wobei die Priorität invers zur nächsten CPU-Burst-Dauer ist
+- Länge des nächsten CPU-Burst muss jeweils geschätzt werden:
+	- Es sei $t_n$ die tatsächliche Länge des $n$-ten CPU-Bursts, $\tau_n$ die geschätzte Länge des $n$-ten CPU-Bursts und $0 \leq \alpha \leq 1$ (oft $\frac12$). Dann schätzen wir mittels: $$\tau_{n+1} = \alpha t_n + (1 - \alpha) \tau_n$$
 
 ## Starvation Avoidance
 Moderne Betriebssysteme verwenden verschiedene Fairness-Algorithmen, um auch Threads mit niedriger Priorität regelmäßig CPU-Zeit zuzuweisen. Zentraler Bestandteil solcher Fairness-Algorithmen sind häufig:
 - Tracken der Wartezeiten der zur Ausführung bereiten Threads
 - dynamische Anpassen der Thread-Prioritäten
 	- häufig ausgeführte Threads: Priorität wird verringert
-	- selten ausgeführte Threads: Priorität wird erhöht, um Starvation zu vermeiden (Aging)
+	- selten ausgeführte Threads: Priorität wird erhöht, um Starvation zu vermeiden (**Aging**)
+	- **Boosting:** Belohnung für langes Warten, z.B. auf I/O-Event
 
 > [!caution] Boosting und Aging unterscheiden, Code-Beispiel einbauen
 
 ## Multilevel-Queue Scheduler
 Ein Multilevel-Queue Scheduler teilt Prozesse in **verschiedene Priority-Queues** auf, abhängig von Priorität und Aufgabe
 - Jede Priority-Queue hat ihr eigenes Vorgehen und ihre eigenen Regeln für das Scheduling
+- Auch die Auswahl der zu bearbeitenden Queue kann mittels Scheduling-Verfahren definiert werden
+- **Multilevel-Feedback-Queue:** ein Prozesse kann zwischen den verschiedene Queues wechseln, z.B. hilfreich für die Implementierung von [[#Starvation Avoidance|Aging]]
 
 ## Completely Fair Scheduler (Linux)
 Im Gegensatz dazu gibt es beim Completely Fair Scheduler von Linux keine festen Prioritäten, sondern jedem Prozess wird eine gewisse, fair-verteilte Menge an CPU-Zeit zugewiesen, die proportional zu seinen Anforderungen sein soll

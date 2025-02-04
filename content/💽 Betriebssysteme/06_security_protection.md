@@ -2,32 +2,47 @@
 title: Sicherheit
 ---
 # Security
-- A system is **secure** if resources used and accessed as intended under all circumstances
-	- unachievable
-	- **safety:** A system does not cause harm to it's environment
-- **Security Violation Categories**
-	- Breach of confidentiality (unauthorized data read)
-	- Breach of integrity (unauthorized data modification)
-	- Breach of availability (unauthorized data destruction ==???==)
-	- Theft of service (unauthorized use of resources)
-	- Denial of service (DOS)
-- **Principle of Least Privilege:** Every program and every privileged user of the system should operate using the least amount of privilege necessary to complete the job
-- **Four Layers:**
-	1. Application
-	2. Operating System
-	3. Network
-	4. Physical
+A system is **secure** if resources used and accessed as intended under all circumstances (*unachievable*)
+- **Safety:** A system does not cause harm to it's environment
+
+## Security Violation Categories
+- Breach of confidentiality (unauthorized data read)
+- Breach of integrity (unauthorized data modification)
+- Breach of availability (unauthorized data destruction)
+- Theft of service (unauthorized use of resources)
+- Denial of service (DOS)
+
+## Security Violation Methods
+- Masquerading (breach authentication)
+- Replay attack (resend original or modified message)
+- Man-in-the-middle attack (masquerading as sender to receiver and vice versa)
+- Session hijacking (intercept of already-established session)
+- Privilege escalation (access beyond intended)
+	- **Principle of Least Privilege:** Every program and every privileged user of the system should operate using the least amount of privilege necessary to complete the job
+
+![[Screenshot from 2025-02-04 00-50-55.png|500]]
+
+## Security Measure Levels
+1. Application
+2. Operating System
+3. Network
+4. Physical
+
 ## Program Threats
-**Malware:** Software designed to exploit, disable, or damage computer
-- **Trojan Horse**
-	- **Spyware**
-	- **Ransomware**
-	- **Trap Door**
+- **Malware:** Software designed to exploit, disable, or damage computer
+- **Trojan Horse:** Program, that hides a malicious subprogramm
+	- **Spyware:** captures user data
+	- **Ransomware:** locks up data via encryption, demands payment
+	- **Trap Door / Backdoor:** Specific user id or password, that circumvents normal security procedures
+	- **Logic bomb:** acts malicious as soon as some event (e.g. date) has occured
+	- etc.
 - **Code Injection:** System code is not malicious, but has bugs allowing executable code to be added or modified
+	- **Buffer overflow** can be used to overwrite return address (*trampoline*)
 	- *Possible Protection for buffer overflows:* disable stack or page execution
-- **Virus:** Embedded in legitimate program | self-replicating, designed to infect other computers
+- **Virus:** Embedded in legitimate program
+	- self-replicating, designed to infect other computers
 	- **Virus Dropper:** Inserts virus onto the system
-- **Worms:** similar to virus, distribution over networks
+- **Worms:** similar to viruses, distribution over networks
 
 ## Attack Methods
 - **Port scanning:** Automated attempt to connect to a range of ports on one or a range of IP addresses
@@ -41,74 +56,81 @@ title: Sicherheit
 ---
 # Cryptography
 - broadest security tool available
-- Source and destination of messages on network cannot be trusted without cryptography
-- based on secrets (**keys**)
+- source and destination of messages **on network** cannot be trusted without cryptography
+- based on secrets (*keys*)
 
 ## Encryption
+Encryption algorithm $E$: Given a cyphertext $c$, a Computer can compute $m$ such that $E_k(m) = c$ only if it possesses the key $k$
 - **Symmetric:** Same key used to encrypt and decrypt
-	- plaintext $\Rightarrow$ encryption $\Rightarrow$ **cyphertext**
-	- a secure medium is needed to exchange key, only then communication via insecure channels is possible (**out of band**)
-	- based on transformations (fast)
-- **Asymmetric:** Each user has to keys: **public** (used for encryption) and **private** (known to only individual user, used for decryption)
-	- based on mathematical functions (slow)
-	- can be stored on **key ring** (==???==)
+	- **based on transformations** (fast)
+	- plaintext $\to$ encryption $\to$ **cyphertext**
+	- a secure medium is needed to exchange key, only then communication via insecure channels is possible (*out of band*)
+- **Asymmetric:** Each user has two keys: **public** (used for encryption) and **private** (known to only individual user, used for decryption)
+	- **based on mathematical problems functions** (slow)
+		- problem with no efficient algorithm, but easily verifiable solution
+	- can be stored on **key ring**
 	- man-in-the-middle-attack still possible
 
-> [!danger] RSA anschauen (eigenes Interesse)
+![[Screenshot from 2025-02-04 16-57-58.png|500]]
 
 ## Authentication
-- Constraining set of potential senders of a message
-	- can prove message unmodified
-	- can be based on **hash functions**
-	- can be based on **digital signature** (inversion of asymmetric encryption, public and private key)
-	- **Digital Certificates:** proof who or what owns a public key
-- **Passwords**
-	- only encrypted passwords stored (hash function with salt)
-	- one-time password can be generated by the computer
-	- can be replaced with biometrics
-	- can be extended to multi-factor authentication
+Constraining set of potential senders of a message (complementary to encryption)
+- for a message $m$ a computer can generate an authenticator $a$ such that $V_k(m,a) = \text{true}$ only if it posses $k$
+	- subset of encryption (authenticators shorter than message, confidentiality might not be needed)
+- can prove message to be *unmodified*
+- **hash functions** are basis for authentication, but not useful as authenticators
+- **Message-authentication code (MAC):** Cryptographic checksum generated from message using secret key
+	- can securely authenticate short message, long messages can be hashed
+	- whoever can verify authenticators can also generate them
+- **Digital Signature:** inversion of asymmetric encryption
+	- based on public and private key
+	- anyone can verify authenticity
+- **Digital Certificates:** proof who or what owns a public key
+	- **Certificate authority:** trusted party, digitally sign public keys
+
+### Passwords
+- only encrypted passwords stored (hash function with *salt*), but still kept secret
+- one-time password can be generated by the computer
+- can be replaced with biometrics
+- can be extended to multi-factor authentication
 
 ## Example: TLS
 - used in transport layer
+	- encryption can be implemented at various layers (depending on knowledge needed)
 - also called SLL (Secure Socket Layer)
-- Used between web servers and browsers for secure communication (socket creation)
+- used between web servers and browsers for secure communication (socket creation)
+- establishes a secure session key (*symmetric*) using *asymmetric* encryption in the first place
 
 ---
 # Defenses
 - **signature based:** spot known bad patterns
 - **anomaly detection:** spot difference from normal behavior
-	- can also detect **zero-day** attakcs
+	- can also detect **zero-day** attacks
 - **sandboxing:** execute untrusted programs in a VM
 - avoid human error (educate users)
-- keep software up to date and trusted
+- keep software up to date and trusted (*safe computing*)
+- encrypted file system protects data while OS is offline
 
 ## Firewall
-- placed between trusted and untrusted hosts
-- can be tunneled (disallowed protocal via allowed protocol) or spoofed (avoid IP address based rules)
+- placed **between trusted and untrusted hosts**
+- can be **tunneled** (disallowed protocol via allowed protocol) or **spoofed** (avoid IP address based rules by faking it)
 
----
-# Windows
-- Permission can be applied to all shareable resources (NTFS but not FAT file system)
-- Encrypted File System protects data while OS is offline
-- **Local Security Authority (LSA)** runs as local user-mode process
-	- implements policies (e.g. password, logon, authentication, logs)
-	- another LSA on domain controller (network)
-	- Security Reference Monitor running in Kernel
-	- **Security Accounts Manager (SAM):** manages database of users and passwords
-	- **Active Directory:** contains a database storing information about domain objects
-	- **Net Logon:** responds to network logon request, handled as local logon via LSASS authentication service
-	- **Winlogon:** manages user sessions
+![[Screenshot from 2025-02-04 17-29-07.png|500]]
 
 ---
 # Protection
-Guiding Principle: **principle of least privilege**
+Protection Problem: Ensure that each object is accessed correctly and only by those processes that are allowed to do so
+- Guiding Principle: **principle of least privilege**
+- **Domain** can be user, process, procedure, etc.
+- **Audit trail:** recording all protection-orientated activities $\Rightarrow$ what happened? what wasn't supposed to happen?
+- **Need to know principle:** Process should only have access to objects it needs to complete its task
 
 ## Protection Rings
 - Components ordered by amount of privilege and protected from each other
 	- e.g. kernel ring and user application ring
 	- subset relation
 - Gates used to transfer between levels
-- **Privilege escalation** also possible through traps and interrupts
+	- **Privilege escalation** also possible through traps and interrupts
 
 ## Domain of Protection
 - Each domain specifies set of objects and types of operations on them
@@ -116,12 +138,21 @@ Guiding Principle: **principle of least privilege**
 	- `<object-name, right-set>`
 	- e.g. `<O_1, {read, write}>` for `D_1`
 - **UNIX:** Domain = user-id with ability to temporarily change user-id
+	1. controlled by `setuid` bit on executed file)
+	2. `su` temporarily switches to another user's domain when password is provided
+	3. `sudo` executes command in another domain (privilege or password needed)
 
 ## Access Matrix
-> [!danger] Nachtragen
 
-- Domänen könne auch als Objekte betrachtet werden $\Rightarrow$ Wechsel in andere Domäne
-- control ==??==
+|       | $O_1$            | $O_2$          | $0_3$                   |
+| ----- | ---------------- | -------------- | ----------------------- |
+| $D_1$ | owner<br>execute |                | write                   |
+| $D_2$ |                  | read*<br>owner | read*<br>owner<br>write |
+| $D_3$ | execute          |                |                         |
+
+- `owner` can always *copy* or *remove* right in other domains
+- `*` denotes that this domain can *copy* its right to other domains
+- Domänen könne auch als Objekte betrachtet werden $\Rightarrow$ Wechsel in andere Domäne mittels `switch` (kontrolliert durch `control`)
 
 ### Implementation
 - Option 1: Global Table
@@ -131,12 +162,37 @@ Guiding Principle: **principle of least privilege**
 	- per-object list consisting of `<domain, rights-set>`
 	- easily extended to contain default set
 - Option 3: Capability list for domains
-	- list of objects together with operations allows on them
+	- per-domain list consisting of `<object, right-set>`
+	- inversion of access lists
 - Option 4: Lock-key
 	- each object has list of unique bit patterns, called **locks**
 	- each domain as list of unique bit patterns called **keys**
 	- process in a domain can only access object if domain has key that matches one of the locks
 
-In der Praxis meist Mischung aus Access Listen und Capabilities
+In practice most systems use combination of access lists and capabilities:
+- **First access:** access list of the object is searched
+	- if allowed, capability created and attached to process
+- **Additional accesses:** only local capability needs to be checked
+- **Last access:** capability is destroyed
 
-> [!danger] Nachtragen: ACL + RWX, Kerebos, Windows Security Services
+### Further Access Control Mechanisms
+- **Role-based (RBAC):** Users are assigned *roles* granting access to privileges and programs
+- **Mandatory (MAC):** In contrast to discretionary access control (DAC), even root users can't circumvent
+- **Capability-based:** Fine grained control over privileged operations (e.g. `CAP_NET_RAW` in POSIX)
+
+---
+# Windows
+## Security Descriptors
+
+
+## Security Services
+- Permission can be applied to all shareable resources (NTFS but not FAT file system)
+	- each object has a **security descriptor** (owner ID, group security ID, DACL, SACL)
+- **Local Security Authority (LSA)** runs as local user-mode process
+	- implements policies (e.g. password, logon, authentication, logs)
+	- another LSA on domain controller (network)
+	- Security Reference Monitor running in Kernel
+	- **Security Accounts Manager (SAM):** manages database of users and passwords
+	- **Active Directory:** contains a database storing information about domain objects
+	- **Net Logon:** responds to network logon request, handled as local logon via LSASS authentication service
+	- **Winlogon:** manages user sessions
