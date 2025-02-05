@@ -32,7 +32,7 @@ Nutzerfreundlichkeit, Sicherheit und Effizienz sind zugleich auch die obersten D
 	- Hardware Abstraction Layer (HAL) versteckt Maschinen-spezifische Details
 	- Unterstützung für x86, MIPS, Alpha AXP, PowerPC, Itanium
 - **Erweiterbarkeit:** Code muss an Erwartungen des Marktes angepasst werden können
-- **Zuverlässigkeit:** Schutz des Betriebssystems gegen Prozess sowie dieser untereinander
+- **Zuverlässigkeit:** Schutz des Betriebssystems gegen Prozesse sowie dieser untereinander
 - **Kompatibilität:** bestehende MS-DOS APIs und Programme weiter unterstützen
 	- darüber hinaus Kompatibilität mit UNIX, OS/2 und NetWare
 	- **Subsysteme** für Windows, OS/2 und POSIX (nach relevanz sortiert)
@@ -69,7 +69,7 @@ Systemaufrufe sind vom Betriebssystem unter anderem für Nutzer-Software bereitg
 
 ## Kernel-Philosphien
 - **Monolithischer Kernel:** wichtige Hardware-Treiber wie etwa ein Graphikkartentreiber sowie andere erweiterte Funktionen direkt im Kernel enthalten
-	- einfachen Bedienbarkeit
+	- einfache Bedienbarkeit
 	- schnelle und direkte Zugriffe auf Speicher und CPU (Geschwindigkeit)
 - **Mikrokernel:** minimale Menge an Betriebssystem-Funktionen verfügbar
 	- kann durch Prozesse im User-Mode, die etwa als Hardware-Treiber fungieren, erweitert werden
@@ -122,14 +122,15 @@ Man unterscheidet 6 Typen von System-Aufrufe:
 # UNIX-Werkzeuge
 ## Man-Pages
 Sammlung von Hilfe- und Dokumentationsseiten unter Unix und verwandten Betriebssystemen. Unterteilt in:
-7. **User Commands and Deamons**
-8. **System Calls and Kernel Services**
-9. Subroutines
-10. Special Files, Device Drivers and Hardware
-11. Configuration Files
-12. Games
-13. Miscellaneous Commands
-14. Administrative Commands and Deamons
+
+1. **User Commands and Deamons**
+2. **System Calls and Kernel Services**
+3. Subroutines
+4. Special Files, Device Drivers and Hardware
+5. Configuration Files
+6. Games
+7. Miscellaneous Commands
+8. Administrative Commands and Deamons
 
 Beispielverwendung: `man 2 kill`
 

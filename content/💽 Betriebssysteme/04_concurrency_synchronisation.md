@@ -126,7 +126,7 @@ monitor monitor-name
 
 ### Single Resource Allocation
 Dient der Zuteilung einer Ressource unter konkurrierenden Prozesse, wobei jeweils eine maximale Nutzungsdauer der Ressource angegeben wird
-- Interface z.B. `R.acquire(t)` und `R.release`
+- Interface z.B. `R.acquire(t)` und `R.release()`
 - Prozess mit der kürzesten Nutzungsdauer wird bevorzugt
 - implementierbar mit **prioritäten-basiertem Monitor**
 

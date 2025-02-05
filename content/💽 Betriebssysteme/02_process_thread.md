@@ -45,8 +45,6 @@ Unter Windows wird mit `CreateProcess()` ein neuer Prozess erstellt und ein Prog
 - kann bestimmte Handles (z. B. Dateien, Sockets) erben, sofern der Elternprozess diese explizit weitergibt
 - erhält Kopie der Umgebungsvariablen des Elternprozesses
 
-> [!caution] Copy-on-Write auch möglich, aber wie?
-
 ## Linux
 Unter Linux wird mit `fork()` ein Prozess erstellt, der eine Kopie des Elternprozesses ist
 - Zuweisung eigener Pages wird verzögert (*Copy-on-write*)
@@ -61,8 +59,9 @@ Mit `wait()` kann der Elternprozess darauf warten, dass der Kindprozess terminie
 - Kindprozess terminiert und übergibt Status-Information via `exit()`
 - Kindprozesse kann mittels `abort()` vorzeitig beendet werden
 	- einige Betriebssystem erlauben keine laufenden Kindprozesse, wenn der Elternprozess beendet wird
-- **Zombie:** Kindprozess, dessen Elternprozess nicht wartet (nicht `wait()` aufgerufen hat)
-- **Orphan:** Kindprozess, denn Elternprozess ohne Aufruf von `wait()` beendet wurde
+- **Zombie:** Kindprozess, der beendet wurde, aber dessen Elternprozess nicht wartet (nicht `wait()` aufgerufen hat)
+- **Orphan:** Kindprozess, dessen Elternprozess ohne Aufruf von `wait()` beendet wurde
+	- wird vom **init**-Prozess adoptiert, der mittels `wait()` wartet
 
 ![[Screenshot from 2025-02-02 16-08-30.png|500]]
 
@@ -202,7 +201,7 @@ Compiler übernimmt Erstellung und Verwaltung von Threads
 
 ## Thread Cancellation
 zum Beispiel über `pthread_cancel(tid)`
-- **Asnychronous Cancellation:** Thread wird sofort beendet
+- **Asynchronous Cancellation:** Thread wird sofort beendet
 - **Deffered Cancellation:** Thread überprüft regelmäßig, ob er sich selbst beenden muss
 	- z.B. mittels `pthread_testcancel()` (*cancellation point*)
 	- Standard-Einstellung

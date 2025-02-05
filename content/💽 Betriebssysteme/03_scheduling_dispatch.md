@@ -132,8 +132,6 @@ Moderne Betriebssysteme verwenden verschiedene Fairness-Algorithmen, um auch Thr
 	- selten ausgeführte Threads: Priorität wird erhöht, um Starvation zu vermeiden (**Aging**)
 	- **Boosting:** Belohnung für langes Warten, z.B. auf I/O-Event (Windows)
 
-> [!caution] Boosting und Aging unterscheiden, Code-Beispiel einbauen
-
 ## Multilevel-Queue Scheduler
 Ein Multilevel-Queue Scheduler teilt Prozesse in **verschiedene Priority-Queues** auf, abhängig von Priorität und Aufgabe
 - Jede Priority-Queue hat ihr eigenes Vorgehen und ihre eigenen Regeln für das Scheduling

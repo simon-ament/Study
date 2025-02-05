@@ -140,17 +140,14 @@ Darüber hinaus erhält jeder Prozess ein **Working Set Minimum** und ein **Work
 - wenn der freie Speicherplatz im System zu gering wird, wird **Automatic Working Set Trimming** auf allen Prozessen ausgeführt, die ihr Minimum überschreiten
 
 ### Page Frame Number Database
-
-> [!danger] Woher kommen die 24 Bit?, Was ist PTE? Share Count vs Reference Count
-
 Die **Page Frame Number Database** enthält für jede physische Seite einen Eintrag von 24 Bit. Aktive/valide Seiten beinhalten
 - den originalen PTE Wert
 - die virtuelle PTE-Adresse
 - einen Working Set Hint
 - Flags für die oben genannten Listen
 
-Der **Share Count** gibt an wie viele Prozesse auf diese Seite zugreifen und der **Reference Count** zählt die Anzahl an Prozessen die auf diese Seite referenzieren
-- fällt der Reference Count auf $0$ kann diese Seite in die Free, Standby oder Modified Page List verschoben werden
+Der **Share Count** gibt an wie viele Prozesse auf diese Seite zugreifen
+- fällt der Share Count auf $0$ kann diese Seite in die Free, Standby oder Modified Page List verschoben werden
 
 ![[Screenshot from 2025-02-01 11-44-14.png|500]]
 ## Swapping vs. Page Replacement
