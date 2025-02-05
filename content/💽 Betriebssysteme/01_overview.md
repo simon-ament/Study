@@ -150,3 +150,7 @@ Beispielverwendung: `man 2 kill`
 # Evolution von Betriebssystemen
 
 ![[Screenshot from 2025-02-02 12-08-11.png|500]]
+
+## Windows-Komponenten
+
+![[Screenshot from 2025-02-05 14-11-38.png|500]]

@@ -220,6 +220,8 @@ Zudem:
 - **Real-time class:** 16 - 31
 - Eine Queue je Priorität
 - **Boosting:** nach langem Warten sowie 3x für Fenster im Vordergrund
+- **kein zentraler Scheduler**, stattdessen werden Scheduling Routinen aufgerufen, wann immer sich der *ready state* eines Threads ändert
+	- *event driven* $\Rightarrow$ keine harte Echtzeit
 
 ![[Screenshot from 2025-02-05 12-23-53.png|500]]
 
