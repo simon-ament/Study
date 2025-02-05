@@ -183,7 +183,40 @@ In practice most systems use combination of access lists and capabilities:
 ---
 # Windows
 ## Security Descriptors
+Der Zugriff auf Objekte wird durch den **Security Reference Monitor (SRM)** überwacht
+- **Access Validation:** besteht aus gewünschtem Zugriff, Token (Nutzer-SID, Gruppen-SIDs und Privilegien) und dem **Security Descriptor** des Objekts (DACL)
+	- Ein erfolgreicher Zugriff erzeugt eine Handle, die von zukünftigen Änderungen der *security* unberührt bleibt
 
+![[Screenshot from 2025-02-05 10-20-20.png|500]]
+
+- **Security Descriptor:** werden den Objekten wie z.B. Dateien zugewiesen
+	- bestehen aus Owner-SID, Primary Group (POSIX), DACL-Pointer, SACL-Pointer
+
+![[Screenshot from 2025-02-05 10-23-24.png|500]]
+
+- **Win32 Security:** Nahezu allen teilbaren Objekten kann bei der Erstellung ein **Security Attribute** (Security Descriptor (+ Länge) + Inheritance) zugewiesen werden
+	- **Access Control List (ACL):** Sammlung von **Access Control Entries (ACEs)**
+	- Windows verwendet **DACL** für Zugriff-Schutz (First-Fit Algorithmus) und **SACL** für Auditing (Logging)
+	- Jedes Objekt kann bis zu 16 **Access Types:**
+		- z.B. `SYNCHRONIZE`, `WRITE_OWNER`, `WRITE_DAC`, `READ_CONTROL`, `WRITE_CONTROL`, `DELETE`, `FILE_GENERIC_READ`, `FILE_GENERIC_WRITE`, `FILE_GENERIC_EXECUTE`
+	- **Security Descriptor** ohne DACL erlaubt alle Zugriffe, ansonsten müssen `DENY`- und `ALLOW`-Einträge geprüft werden
+	- **Take-Owner-Privilege:** bevor die DACL geprüft wird, wird `WRITE_OWNER`-Zugriff erteilt
+		- Privilegien können Nutzern oder Gruppen zugeordnet werden
+		- Privilegien sind standardmäßig deaktiviert und müssen programmatisch mittels System call aktiviert werden
+		- **Backup-Privilege:** kann jede Datei lesen
+		- **Restore-Privilege:** kann jede Datei schreiben
+		- **Debug-Privilege:** kann jeden Prozess öffnen, lesen und modifizieren
+		- **Load Driver:** kann beliebige Treiber (Kernel-Code) laden
+		- **Create Token:** kann sich als beliebiger Nutzer ausgeben
+		- etc.
+	- **Caller is owner:** `READ_CONTROL` und `WRITE_CONTROL` werden erteilt, mit denen sich der **Security Descriptor** lesen und verändern lässt
+
+![[Screenshot from 2025-02-05 10-25-47.png|500]]
+
+- **Auditing:** Kann genutzt werden, um Zugriffe auf Objekte zu dokumentieren
+	- Anlegen einer **SACL** genügt nicht, ein Administrator muss das Auditing im **Local Security Policy Editor** aktivieren
+- **Impersonation:** Wird bei Server-Anwendungen genutzt, um dad Sicherheits-Profil eines anderen Nutzers einzunehmen
+	- Threads können Access Token des Prozesses verwenden oder ein eigenes Token zur Impersonation halten
 
 ## Security Services
 - Permission can be applied to all shareable resources (NTFS but not FAT file system)
@@ -196,3 +229,6 @@ In practice most systems use combination of access lists and capabilities:
 	- **Active Directory:** contains a database storing information about domain objects
 	- **Net Logon:** responds to network logon request, handled as local logon via LSASS authentication service
 	- **Winlogon:** manages user sessions
+	- **GINA:** graphical identification and authentication
+
+![[Screenshot from 2025-02-05 10-42-43.png|500]]

@@ -56,8 +56,6 @@ Speichert Basisadressen zu den jeweiligen Page-Nummern sowie weitere Status-Bits
 - **Valid-Bit:** wird gesetzt, wenn für eine Page das passende Frame im Hauptspeicher geladen ist (bzw. ob der Zugriff legal ist)
 - Weitere Bits für Lese-, Schreib- und Execute-Zugriffe sind möglich
 
-> [!caution] Weitere Bits nachtragen (Windows), Reference vs Accessed?
-
 ### Hierarchical Page Table
 Bei mehrstufigen Page-Tabellen wird die Page-Nummer wiederholt unterteilt
 - **Large Page-Bit:** gibt an, dass bspw. 4MB statt den typischen 4KB Seitengröße verwendet wurde
@@ -89,6 +87,7 @@ Es werden immer nur diejenigen Seiten geladen, die tatsächlich gebraucht werden
 - Programme sind nicht mehr durch physische Speichergröße beschränkt
 - Programme brauchen zur Laufzeit weniger Speicher $\Rightarrow$ mehr Programme können zugleich im Speicher liegen
 	- Prozesse können auch effizienter erstellt werden und Seiten teilen
+	- basierend auf dem Prinzip einer **Lokalität**
 - weniger I/O-Aufwand für Swapping
 - **Pager:** ein Swapper, der nur einzelne Pages swappt
 - **benötigter Hardware-Support:** Page-Table mit *valid/invalid*-bit, Sekundärspeicher (*swap*) und Instruktions-Neustart (bei Page Fault)
@@ -106,8 +105,10 @@ Ein Seitenzugriffsfehler tritt auf, wenn ein Prozess versucht eine Seite zu lade
 
 ## Working Set
 Das Working Set eines Prozesses ist die Menge der Pages, auf die ohne [[#Page Fault]] zugegriffen werden kann
-- es dient als Schätzung der Lokalität, in der ein Prozess sich derzeit bewegt
+- es dient als Schätzung der **Lokalität**, in der ein Prozess sich derzeit bewegt
 - oft ermittelt als die Menge der Pages, deren letzte Verwendung durch den Prozess maximal eine gewisse feste Zeitspanne (oft $\Delta$) zurückliegt
+- kann mittels *Timer Interrupt* und *Reference bit* approximiert werden
+- **Page Fault Frequency:** direkterer Ansatz, bei dem grundsätzlich [[#Frame Allocation|local replacement]] verwendet wird, der Prozess aber zusätzliche Frames erhält, wenn seine Page-Fault-Rate zu hoch ist (bzw. umgekehrt welche verliert bei niedriger Rate)
 
 ---
 # Swapping
@@ -135,7 +136,13 @@ Windows verwaltet Pages mittels der folgenden Listen (**Page-Buffering Algorithm
 - **Bad Page List:** Liste fehlerhafter Seiten
 	- wird zum Beispiel beim Boot durch Lesen und  Schreiben von Bitmustern überprüft
 
+Darüber hinaus erhält jeder Prozess ein **Working Set Minimum** und ein **Working Set Maximum** zugewiesen
+- wenn der freie Speicherplatz im System zu gering wird, wird **Automatic Working Set Trimming** auf allen Prozessen ausgeführt, die ihr Minimum überschreiten
+
 ### Page Frame Number Database
+
+> [!danger] Woher kommen die 24 Bit?, Was ist PTE? Share Count vs Reference Count
+
 Die **Page Frame Number Database** enthält für jede physische Seite einen Eintrag von 24 Bit. Aktive/valide Seiten beinhalten
 - den originalen PTE Wert
 - die virtuelle PTE-Adresse
@@ -145,15 +152,11 @@ Die **Page Frame Number Database** enthält für jede physische Seite einen Eint
 Der **Share Count** gibt an wie viele Prozesse auf diese Seite zugreifen und der **Reference Count** zählt die Anzahl an Prozessen die auf diese Seite referenzieren
 - fällt der Reference Count auf $0$ kann diese Seite in die Free, Standby oder Modified Page List verschoben werden
 
-> [!caution] Woher kommen die 24 Bit?, Was ist PTE? Share Count vs Reference Count
-
 ![[Screenshot from 2025-02-01 11-44-14.png|500]]
 ## Swapping vs. Page Replacement
 Beim Swapping wird der gesamte Prozess aus dem Hauptspeicher auf Disk geschrieben, um Speicherplatz für andere Prozesse zu schaffen. Im Gegensatz dazu werden beim Page Replacement einzelne Seiten auf Disk geschrieben, um Platz für andere Seiten zu schaffen. Swapping wird in der Regel selten ausgeführt, da durch das Auslagern eines ganzen Prozesses eine hohe Latenzzeit entsteht. 
 
-Das Page-Replacement findet häufiger statt, da der Prozess weiterlaufen kann. Solange kein **Thrashing** auftritt ist das Page Replacement der effizientere Weg.
-
-> [!caution] Thrashing definieren
+Das Page-Replacement findet häufiger statt, da der Prozess weiterlaufen kann. Solange kein [[#Thrashing]] auftritt ist das Page Replacement der effizientere Weg.
 
 ## Shared Memory
 Mithilfe der bereits erwähnten [[#Page Table|Page Tables]] lässt sich **Shared Memory** ganz einfach so umsetzen, dass einzelne Pages dieser kommunizierenden Prozesse auf **dasselbe physische Frame** abgebildet werden
@@ -199,7 +202,39 @@ Bei einen **Counter Algorithmus** werden die Anzahlen dern Seitenzugriffe gezäh
 - **Most Frequently Used (MFU):** die am häufigsten verwendete Seite wird ersetzt, da seltener verwendete Seiten wohl in Zukunft noch verwendet werden
 
 ## Frame Allocation
+- **Minimale** Anzahl an Frames je Prozess: Wird bestimmt durch Anzahl der in einer Instruktion adressierbaren Pages (inklusive Zugriffe auf Page-Grenzen)
+- **Maximale** Anzahl an Frames je Prozess: Gesamtzahl der Frames im System
+- **Fixed Allocation:** feste Anzahl, entweder stets gleich oder proportional zur Prozess-Größe
+- **Priority Allocation:** proportionale Verteilung basierend auf Prioritäten, bei einem Page Fault wird ein Frame eines Prozesses mit niedrigerer Priorität ersetzt
+- **Global replacement:** Ersatz-Frame wird aus allen Frames (auch andere Prozesse) ausgewählt
+- **Local replacement:** Ersatz-Frame wird auch den Prozess-eigenen Frames ausgewählt
+- **Reclaiming pages:** es wird verhindert, dass die *Free Frame List* leer wird, indem sich das Betriebssystem ab einer gewissen Grenze Frames in diese zurückholt
+- **NUMA:** Speicher sollte nahe an der CPU zugeteilt werden, auf der der Thread läuft
 
+![[Screenshot from 2025-02-05 09-17-01.png|500]]
+
+### Thrashing
+Wenn ein Prozess zu wenig Seiten im Speicher liegen hat, so ersetzt er diese regelmäßig miteinander (Lokalität $>$ verfügbarer Speicher) und hat eine sehr hohe Page-Fault-Rate
+- in diesem Fall muss entweder die Anzahl der Frames für den Prozess erhöht oder der Prozess unterbrochen und ausgelagert (*Swapping*) werden
+
+### Kernel Memory
+Braucht oft zusammenhängenden Speicher (z.B. für I/O-Geräte)
+- **Buddy System:** Speicher wird zur nächsten Zweierpotenz aufgerundet | wenn der aktuelle *chunk* zu groß ist, wird er (rekursiv) in zwei gleich Große *buddies* geteilt
+	- ungenutzte *chunks* können wieder zu größerem kombiniert werden
+	- ggf. viel interne und externe Fragmentation
+- **Slab allocator:** Eine **slab** besteht aus einer oder mehreren zusammenhängenden Frames, ein **cache** aus einer oder mehreren **slabs**
+	- für jede Kernel-Datenstruktur wird ein **cache** angelegt und mit *free objects* gefüllt
+	- sind alle Objekte *used*, so wird auf die nächste **slab** zugegriffen bzw. eine neue angelegt (**slab**-Zustände: *full, partial, empty*)
+	- **Linux:** `struct task_sctruct` (~ 1.7 KB)
+
+![[Screenshot from 2025-02-05 09-39-44.png|500]]
+
+## Weitere Überlegungen
+- **Prepaging:** Seiten vorladen, um initiale Page Faults zu verhindern
+- **Page size:** meist 4KB bis 4MB | beeinflusst Fragmentation, Page-Table- und TLB-Größe, I/O-*overheads*, Lokalitäten, etc.
+- **TLB Reach:** TLB-Größe $\times$ Page-Größe | sollte mindestens das Working Set jedes Prozesses halten können
+- **I/O Interlock:** Seiten müssen manchmal fest im Speicher gehalten werden (z.B. Kopieren von I/O-Gerät)
+- **Clustering:** auch Seiten neben einer durch **Page Fault** betroffenen Seite werden geladen (z.B. verwendet von Windows)
 
 ### Beispiele
 

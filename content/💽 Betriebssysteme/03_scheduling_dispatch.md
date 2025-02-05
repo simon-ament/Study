@@ -38,11 +38,19 @@ Bei Echtzeit(-Scheduling) geht es darum, dass Aufgaben **innerhalb eines festen 
 - **weiche Echtzeit:** Deadines sollten zwar eingehalten werden, allerdings ist ein geringes Überschreiten dieser nicht problematisch. 
 	- z.B. Computerspiele (Framerate, Verzögerung verschlechtert Spielergebnis, aber ist akzeptabel)
 
+Das Echtzeit-Scheduling wird durch zwei Formen von Latenz erschwert:
+- **Interrupt Latency:** Zeit, die zwischen dem Eintreffen eines Interrupts und dem Ausführen der Service Routine vergeht
+- **Dispatch Latency:** Zeit, die benötigt wird, um den aktuelle laufenden Prozess zu stoppen und den neuen zu starten (inkl. niedrig-prioritäte Prozesse, die Ressourcen freigeben müssen)
+
 ### Anforderungen an Echtzeit-Scheduling-Verfahren
 Ein echtzeitfähiges Scheduling-Verfahren muss sicherstellen, dass Prozesse innerhalb ihrer festgelegten Zeit ausgeführt werden. Dazu sollte es:
 - die Startzeit eines Prozesses an seine Deadline anpassen können
 - Prozesse mit kürzeren Deadlines bevorzugen können
 - **periodische Prozesse**, die regelmäßig innerhalb derselben Deadline ausgeführt werden müssen, verwalten können
+	- **Rate Monotonic Scheduling:** Jeder Prozess erhält eine Priorität, die invers zu seiner Perioden-Länge ist
+		- Problem: Prozesse mit hoher Priorität können andere unnötig am Einhalten ihrer Deadline hindern
+	- **Earliest Deadline First Scheduling (EDF):** Je früher die Deadline, desto höher die Priorität
+	- **Proportional Share Scheduling:** $T$ Anteile an der CPU-Laufzeit werden unter allen Prozessen verteilt
 - $\Rightarrow$ insbesondere auch präemptiv sein
 
 ---
@@ -122,7 +130,7 @@ Moderne Betriebssysteme verwenden verschiedene Fairness-Algorithmen, um auch Thr
 - dynamische Anpassen der Thread-Prioritäten
 	- häufig ausgeführte Threads: Priorität wird verringert
 	- selten ausgeführte Threads: Priorität wird erhöht, um Starvation zu vermeiden (**Aging**)
-	- **Boosting:** Belohnung für langes Warten, z.B. auf I/O-Event
+	- **Boosting:** Belohnung für langes Warten, z.B. auf I/O-Event (Windows)
 
 > [!caution] Boosting und Aging unterscheiden, Code-Beispiel einbauen
 
@@ -132,23 +140,86 @@ Ein Multilevel-Queue Scheduler teilt Prozesse in **verschiedene Priority-Queues*
 - Auch die Auswahl der zu bearbeitenden Queue kann mittels Scheduling-Verfahren definiert werden
 - **Multilevel-Feedback-Queue:** ein Prozesse kann zwischen den verschiedene Queues wechseln, z.B. hilfreich für die Implementierung von [[#Starvation Avoidance|Aging]]
 
-## Completely Fair Scheduler (Linux)
-Im Gegensatz dazu gibt es beim Completely Fair Scheduler von Linux keine festen Prioritäten, sondern jedem Prozess wird eine gewisse, fair-verteilte Menge an CPU-Zeit zugewiesen, die proportional zu seinen Anforderungen sein soll
+## Bewertung von Algorithmen
+- **Deterministic Model:** Berechnet die Effizienz basierend auf einer vordefinierten Workload
+- **Queuing Model:** Computer wird als Menge von Queues modelliert und stochastische Wahrscheinlichkeiten für Ankunftszeiten und Burst-Zeiten angenommen
+	- **Little's Formula:** Es sei $n$ die durchschnittliche Queue-Länge, $W$ die durchschnittliche Wartezeit in einer Queue und $\lambda$ die durchschnittliche Ankunftsrate in einer Queue. Nach **Little's law** muss nun die Anzahl der eintreffenden Prozesse gleich der abgeschlossenen sein (*steady state*): $$n = \lambda \cdot W$$
+- **Simulation:** Programmiertes Modell eines echten Computers, auf dem Workloads ausgeführt und ausgewertet werden (Zufallszahlgeneratoren, stochastische Verteilungen oder *Trace Tapes* aus echtem System)
+- **Implementation:** Neuer Scheduler wird schlicht implementiert und getestet
+	- hohe Kosten, hohes Risiko, wechselnde Verwendung
+	- flexible Scheduler können in jedem System anders konfiguriert oder per API modifiziert werden
 
-Dabei werden zwei Typen von Prozessen unterschieden:
-- **interaktive Prozesse:** benötigen häufig CPU-Zeit, um schnell reagieren zu können
-- **rechenintensive Prozesse:** benötigen weniger häufig, dafür aber mehr CPU-Zeit
+![[Screenshot from 2025-02-05 12-32-34.png|500]]
+
+## Thread Scheduling
+Sofern Threads unterstützt werden, werden diese anstelle von Prozessen gescheduled
+- **System contention scope (SCS):** Kernel Threads werden direkt auf die CPU gescheduled und konkurrieren gegeneinander
+- **Process contention scope (PCS):** Bei *Many-to-one* und *Many-to-may* Modellen muss die Thread-Bibliothek entscheiden, welcher Thread dem laufenden Kernel-Thread zugeordnet wird
+	- häufig werden programmatisch gesetzte Prioritäten verwendet
+
+## Multiple-Processor Scheduling
+- **Symmetric multiprocessing (SMP):** Jeder Prozessor ist für eigenes Scheduling verantwortlich (gemeinsame *ready* Queue, private *run* Queue je Kern)
+	- wenn jeder Kern mehrere Threads hält, kann er bei einem *memory stall* schnell wechseln | **Chip-multithreading (CMT)** $\Rightarrow$ wenn jeder Kern 2 Threads (*hardware threads*) hält, sind *logisch* doppelt so viele Kerne sichtbar
+
+![[Screenshot from 2025-02-05 11-39-12.png|500]]
+
+- **Load Balancing:** Alle CPUs sollten bestmöglich ausgelastet werden
+	- **Push migration:** Periodischer Prozess prüft die Auslastung der Kerne und schiebt ggf. Threads zu einem weniger ausgelasteten Kern
+	- **Pull migration:** Kern im Leerlauf zieht sich selbst einen Thread von einem anderen Kern
+- **Processor Affinitiy:** Ein Thread, der einmal auf einem Prozessor gelaufen ist, hat sich dort bereits *Caches* befüllt
+	- *Load Balancing* könnte damit zu weniger effizienten Ausführung führen
+	- **Soft affinity:** OS versucht den Thread auf dem selben Prozessor zu halten, garantiert es aber nicht
+	- **Hard affinity:** Prozess / Thread darf einen Satz an Prozessoren auswählen, auf dem er laufen darf
+	- **NUMA:** Wenn das OS *NUMA-aware* ist, wird des versuchen, Speicher nahe an dem jeweiligen Prozessor zuzuweisen
 
 ---
 # Dispatcher
 ## Kontext-Wechsel
-CPU schaltet von einem Prozess auf einen anderen um:
+CPU schaltet von einem **Prozess** auf einen anderen um:
 1. Kontext (gesamter, aktueller Zustand) des aktuellen Prozess im [[#Process Control Block (PCB)|PCB]] speichern
 2. Kontext des neuen Prozesses laden, welcher vom Scheduler ausgewählt wurde
 3. Fortsetzung der Programmausführung im **User-Mode** am aktuellen Programm-Counter
 
 **Dispatch-Latency:** Zeit zwischen dem Stoppen des einen uns Starten des anderen Prozesses
 
-Im Unterschied dazu ist werden bei einem Kontextwechsel vom User- in den Kernelmodus nicht alle Register der CPU gespeichert, da der Thread nicht gewechselt wird. Daher ist auch kein Scheduler nötig um diesen Wechsel zu vollziehen. Insgesamt ist dieser Wechsel schneller als ein Kontextwechsel zwischen zwei Threads.
+---
+# Praxis
+## Linux
+### Bis Version 2.5
+- Präemptiv, Prioritäten-basiert, $\mathcal{O}(1)$
+- **Real-time:** 0 bis 99
+- **Time-Sharing:** 100 bis 140 (Niceness: -20 bis 19)
+- längeres Quantum $q$ für höhere Prioritäten
+- Jede Task ist *active* (lauffähig), bis ihr Quantum aufgebraucht ist
+	- wird erst wieder aufgefüllt, wenn alle Tasks *expired* (Quantum abgelaufen) sind
+	- implementiert über zwei *priority arrays*
+- Hat gut funktioniert, aber schlechte Antwortzeit für interaktive Prozesse
 
-> [!caution] Letzten Absatz prüfen
+### Ab Version 2.6.23 (CFS)
+Im Gegensatz dazu gibt es beim **Completely Fair Scheduler** keine festen Prioritäten, sondern jedem Prozess wird eine gewisse, fair-verteilte Menge an CPU-Zeit zugewiesen, die proportional zu seinen Anforderungen sein soll. Dabei werden zwei Typen von Prozessen unterschieden:
+- **interaktive Prozesse:** benötigen häufig CPU-Zeit, um schnell reagieren zu können
+- **rechenintensive Prozesse:** benötigen weniger häufig, dafür aber mehr CPU-Zeit
+
+Weiterhin:
+- **Real-time:** 0 bis 99
+- **Time-Sharing:** 100 bis 140 (Niceness: -20 bis 19)
+
+**Virtual run time:**
+- je Task wird eine `vruntime`-Variable geführt, die speichert, wie lange der Prozess bereits gelaufen ist
+	- je niedriger die Priorität, desto höher die Verfallsrate (echte Laufzeit $\to$ virtuelle Laufzeit)
+	- bei *default* Priorität: echte Laufzeit $=$ virtuelle Laufzeit
+- Scheduler wählt Task mit niedrigster virtueller Laufzeit in höchster Klasse (*real-time, time-sharing*) aus
+
+Zudem:
+- unterstützt *Load Balancing*, ist aber auch *NUMA-aware*
+
+## Windows
+- präemptiv, Prioritäten-basiert
+- **Variable class:** 1 - 15
+	- Memory Management Thread auf 0
+- **Real-time class:** 16 - 31
+- Eine Queue je Priorität
+- **Boosting:** nach langem Warten sowie 3x für Fenster im Vordergrund
+
+![[Screenshot from 2025-02-05 12-23-53.png|500]]
+
