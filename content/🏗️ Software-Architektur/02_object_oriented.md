@@ -17,5 +17,28 @@
 	- **Growth** by having same mechanisms everywhere
 	- **Reuse** by providing services
 
+## Object Oriented Programming
+- Messages
+- Objects
+	- contain code and data
+	- can be called through messaging
+	- internals are inaccessible from the outside
+- Classes
+	- blueprint of objects (object creation)
+	- specializations of other classes
+	- organization of concepts and code
+
+---
+# Squeak / Smalltalk
+- The Lisp of object-oriented languages
+	- very little syntax, highly reflective
+- Dynamic Typing
+	- unrestricted polymorphism, very late binding
+- Virtual Machine
+	- write one, run everywhere
+	- Bytecode compiler
+	- Important files: Virtual Machine, Image file, Sources file, Changes file
+- WIMP interface: Windows, Icons, Menus, Pointing Device (Mouse)
+
 
 

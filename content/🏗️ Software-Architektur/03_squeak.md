@@ -60,3 +60,16 @@ Squeak is based on principles of **Live and Exploratory Programming**
 # Squeak Internals
 > [!info] Slides: Objects in Squeak/Smalltalk
 
+---
+# Live and Exploratory Programming
+**Benefits of short feedback loops:**
+- understand code and its effect on the system
+- check whether the program works as expected
+- tests (unit, integration, acceptance)
+- investigate bugs
+- explore unfamiliar code
+
+**Programming system vs. programming language:**
+- Integration von Sprache und Werkzeugen in einer IDE
+
+![[Screenshot from 2025-02-08 09-36-22.png|500]]
