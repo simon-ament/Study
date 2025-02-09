@@ -330,7 +330,7 @@ Patterns are collections of recurring design structures that promote valuable de
 > [!details]
 > https://refactoring.guru/design-patterns/strategy
 
-## Template Methode
+## Template Method
 **Template Method** is a behavioral design pattern that defines the skeleton of an algorithm in the superclass but lets subclasses override specific steps of the algorithm without changing its structure.
 
 ![[Pasted image 20250207201535.png|500]]

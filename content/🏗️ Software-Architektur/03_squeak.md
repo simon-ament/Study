@@ -73,3 +73,21 @@ Squeak is based on principles of **Live and Exploratory Programming**
 - Integration von Sprache und Werkzeugen in einer IDE
 
 ![[Screenshot from 2025-02-08 09-36-22.png|500]]
+
+---
+# Framework
+## Morphic
+- `#drawOn:`
+- `#mouseDown:`
+- `#addMorph`
+
+## Observer
+- `#changed:`
+- `#update:(with:)`
+- `#addDependent`
+
+## Prototype
+- `#copy`
+- `#postCopy`
+- `#deepCopy`
+- `#veryDeepCopy`
