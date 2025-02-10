@@ -7,11 +7,31 @@ Low-level patterns **specific to a programming language**
 - may include guidelines for code formatting
 
 ---
-# Modularity
-## Criteria
+# Idioms
+## Double Dispatch
 
 
-## Rules
+## Self / Super
 
 
-## Principles
+## Pluggable Behavior / Selector / Block
+
+
+---
+# Collections
+## contains | includes
+
+
+## allSatisfy | anySatisfy
+
+
+## select | reject | detect
+
+
+## fold | inject
+
+
+## collect
+
+
+## do | doWithIndex | withIndexDo

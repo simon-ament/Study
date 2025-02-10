@@ -75,31 +75,6 @@ ObjectSubclass>>descriptionForPartsBin
 - Class specific: e.g. `Color orange` or `Color r: 1.0 g: 0.6 b: 0.0`
 
 ---
-# Collections
-## contains | includes
-
-
-## allSatisfy | anySatisfy
-
-
-## select | reject | detect
-
-
-## fold | inject
-
-
-## collect
-
-
-## do | doWithIndex | withIndexDo
-
-
----
-# Morphic
-## Mouse and Keyboard Input
-
-
----
 # Self and Super
 ## Similarities
 - Refer to same object when used in same context
@@ -136,7 +111,7 @@ ObjectSubclass>>descriptionForPartsBin
 ![[Screenshot from 2025-02-08 09-36-22.png|500]]
 
 ---
-# Framework
+# ==Framework==
 ## Morphic
 - `#drawOn:`
 - `#mouseDown:`
