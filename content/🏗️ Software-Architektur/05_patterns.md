@@ -41,14 +41,18 @@ Patterns are collections of recurring design structures that promote valuable de
 	- the may also return objects from a cache / pool / etc. instead of creating **new** ones all the time
 
 ### Pros
-- 
+- avoids tight coupling between creator and concrete products
+- **Single Responsibility Principle:** product creation code in one single place
+- **Open-Closed Principle:** new types of products can be added without breaking existing code
 ### Cons
-- 
+- complexity through new subclasses
+	- best case: introduced into an existing hierarchy of creator classes
 ### Relations to other Patterns
-- 
+- may evolve into [[#Abstract Factory]], [[#Prototype (Clone)]] or [[#Builder]]
 
 > [!details] 
 > https://refactoring.guru/design-patterns/factory-method
+
 ## Abstract Factory
 **Abstract Factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
 
@@ -61,11 +65,14 @@ Patterns are collections of recurring design structures that promote valuable de
 5. The `Client` can work with any factory / product variant, as long as it communicates with their objects via abstract interfaces
 
 ### Pros
-- 
+- products are guaranteed to be compatible
+- avoids tight coupling between concrete products and client code
+- **Single Responsibility Principle:** product creation code in one single place
+- **Open-Closed Principle:** new variants of products can be added without breaking existing code
 ### Cons
-- 
+- complexity through new interfaces and classes
 ### Relations to other Patterns
-- 
+- often based on a set of [[#Factory Method (Virtual Constructor)|Factory Methods]], but can also use [[#Prototype (Clone)]] to compose the methods on these classes
 
 > [!details]
 > https://refactoring.guru/design-patterns/abstract-factory
@@ -84,11 +91,14 @@ Patterns are collections of recurring design structures that promote valuable de
 5. The `Client` must associate one of the builder objects with the director. This can either be done via the builders constructor or as a dynamic argument to the production method
 
 ### Pros
-- 
+- objects can be constructed step-by-step (steps can be deferred or be run recursively)
+- same construction code for various representations of products
+- **Single Responsibility Principle:** complex construction code can be isolated from business logic
 ### Cons
-- 
+- complexity through new classes
 ### Relations to other Patterns
-- 
+- can be combined with [[#Bridge]]: director as abstraction, builders as implementations
+- can be used recursively to construct [[#Composite (Object Tree)|Composite]] trees
 
 > [!details]
 > https://refactoring.guru/design-patterns/builder
@@ -104,11 +114,15 @@ Patterns are collections of recurring design structures that promote valuable de
 3. The `Client` can produce a copy of any object that follow the prototype interface
 
 ### Pros
-- 
+- cloning without coupling to concrete class
+- getting rid of repeated initialization code in favor of cloning pre-built prototypes
+- complex objects can be produced more conveniently
+- alternative to inheritance when dealing with configuration presets for complex objects
 ### Cons
-- 
+- cloning objects with circular references can be very tricky
 ### Relations to other Patterns
-- 
+- can help cloning complex [[#Composite (Object Tree)]] or [[#Decorator (Wrapper)]] structures
+- [[#Factory Method (Virtual Constructor)]] is based on inheritance, but doesn't require an initialization step (*here:* before cloning)
 
 > [!details]
 > https://refactoring.guru/design-patterns/prototype
@@ -122,11 +136,14 @@ Patterns are collections of recurring design structures that promote valuable de
 	- The Singleton's constructor should be hidden from the client code, so that calling `getInstance` becomes the only way of getting the Singleton object
 
 ### Pros
-- 
+- make sure that a class has only a single instance
+- global access point to that instance
+- singleton object is initialized only when requested for the first time
 ### Cons
-- 
-### Relations to other Patterns
-- 
+- introduces global state
+- can mask bad design (e.g. components know to much about each other)
+- requires special treatment in a multithreaded environment
+- hard to test (overriding through inheritance often not possible)
 
 > [!details]
 > https://refactoring.guru/design-patterns/singleton
@@ -145,11 +162,12 @@ Patterns are collections of recurring design structures that promote valuable de
 4. The `Adapter` implements the client interface, while wrapping the service object. The adapter receives calls from the client vie the client interface and translates them into calls to the wrapped service object
 
 ### Pros
-- 
+- **Single Responsibility Principle:** separate interface or data conversion from primary business logic
+- **Open-Closed Principe:** new adapters can be introduced without breaking existing code (as long as they work with the adapters through the client interface)
 ### Cons
-- 
+- complexity through new interfaces and classes
 ### Relations to other Patterns
-- 
+- With [[#Proxy]] the interface stays the same, with [[#Decorator (Wrapper)]] it stays the same or gets extended, **Facade** defines a new interface, [[#Adapter (Wrapper)]] makes an existing interface usable
 
 > [!details]
 > https://refactoring.guru/design-patterns/adapter
@@ -167,11 +185,14 @@ Patterns are collections of recurring design structures that promote valuable de
 4. Usually, the `Client` is only interested in working with the abstraction. However, it's the client's job to link the abstraction object with one of the implementation objects
 
 ### Pros
-- 
+- can be used to create platform-independent classes and apps
+- client code works with high-level abstraction (not platform details)
+- **Open-Closed Principle:** new abstractions and implementations can be introduced independently from each other
+- **Single Responsibility Principle:** high-level logic on abstraction, platform details in the implementation
 ### Cons
-- 
+- code might become more complicated by applying pattern to a highly cohesive class
 ### Relations to other Patterns
-- 
+- when some abstractions defined by [[#Bridge]] can only work with specific implementations, an [[#Abstract Factory]] can encapsulate these relations and hide the complexity from the client code
 
 > [!details]
 > https://refactoring.guru/design-patterns/bridge
@@ -188,14 +209,12 @@ Patterns are collections of recurring design structures that promote valuable de
 4. The `Client` code works with all elements through the component interface, regardless of their complexity
 
 ### Pros
-- 
+- work with complex tree structures more conveniently by exploiting polymorphism and recursion
+- **Open-Closed Principle:** new element types can be introduced without breaking existing code
 ### Cons
-- 
+- when the functionality of the classes differs to much, the component interface might need to be overgeneralized (harder to comprehend)
 ### Relations to other Patterns
-- 
-
-### Composition vs. Inheritance
-
+- [[#Visitor]] can be used to execute an operation over an entire [[#Composite (Object Tree)|Composite]] tree
 
 > [!details]
 > https://refactoring.guru/design-patterns/composite
@@ -212,11 +231,18 @@ Patterns are collections of recurring design structures that promote valuable de
 5. The `Client` can wrap components in multiple layers of decorators (as long as they comply with the component interface)
 
 ### Pros
-- 
+- extend object's behavior without making new subclass
+- add or remove responsibilities from an object at run-time
+- combine several behaviors by wrapping multiple decorators
+- **Single Responsibility Principle:** divide monolithic class that implements many possible variants of behavior into several smaller classes
 ### Cons
-- 
+- hard to remove specific wrapper form stacked wrappers
+- hard to implement decorators such that their order is irrelevant
+- configuration code for wrapper layers might look pretty ugly
 ### Relations to other Patterns
-- 
+- [[#Decorator (Wrapper)]] lets you change the skin of an object, while [[#Strategy]] lets you change the guts
+- [[#Proxy]] manages the object's lifecycle, while [[#Decorator (Wrapper)]] is controlled by client and modifies behavior
+	- both built on **composition principle (delegation)**
 
 > [!details]
 > https://refactoring.guru/design-patterns/decorator
@@ -233,11 +259,13 @@ Patterns are collections of recurring design structures that promote valuable de
 4. The `Client` should work with both services and proxies via the same interface. This way you can pass a proxy into any code that expects a service object
 
 ### Pros
-- 
+- control the service object without clients knowing about it
+- manage the lifecycle of the service object (when clients don't care about it)
+- proxy work even when service objects isn't ready or is not available
+- **Open-Closed Principle:** new proxies can be introduced without changing service or clients
 ### Cons
-- 
-### Relations to other Patterns
-- 
+- complexity through new classes
+- response from service might get delayed
 
 > [!details]
 > https://refactoring.guru/design-patterns/proxy
@@ -256,11 +284,16 @@ Patterns are collections of recurring design structures that promote valuable de
 3. `Concrete Mediators` encapsulate relations between various components. They often keep references to all components they manage and sometimes even manage their lifecycle
 
 ### Pros
-- 
+- **Single Responsibility Principle:** extract communication between various components into a single place
+- **Open-Closed Principle:** introduce new mediators without having to change the components
+- (reduce coupling between various components)
+- (reuse individual components more easily)
 ### Cons
-- 
+- hides existing dependencies / coupling, instead of cleaning it up
+- can evolve into God Object
 ### Relations to other Patterns
-- 
+- can be implemented using [[#Observer (Event-Subscriber, Listener)]]
+	- differences often elusive: central component with dependents
 
 > [!details]
 > https://refactoring.guru/design-patterns/mediator
@@ -277,11 +310,10 @@ Patterns are collections of recurring design structures that promote valuable de
 4. The `Client` creates publisher and subscriber objects separately and then registers subscribers for publisher updates
 
 ### Pros
-- 
+- **Open-Closed Principle:** introduce new subscriber classes without having to change the publisher's code (and vice-versa, if publisher interface stays the same)
+- relations between objects can be established at run-time
 ### Cons
-- 
-### Relations to other Patterns
-- 
+- Subscribers are notified in random order
 
 > [!details]
 > https://refactoring.guru/design-patterns/observer
@@ -300,11 +332,14 @@ Patterns are collections of recurring design structures that promote valuable de
 		- **State changes:** happen by replacing the state object linked in the context and can be performed by both context or state objects
 
 ### Pros
-- 
+- **Single Responsibility Principle:** organize code related to different stest into separate classes
+- **Open-Closed Principle:** introduce new states without changing existing classes or the context
+- simplify the code of the context be elimination bulky *state machine* conditionals
 ### Cons
-- 
+- can be overkill if *state machines* has only a few states or rarely changes
 ### Relations to other Patterns
-- 
+- can be considered an extension of [[#Strategy]]
+	- [[#Strategy]] objects are unaware of each other, [[#State]] objects can directly alter the state of the context (dependency between concrete states)
 
 > [!details]
 > https://refactoring.guru/design-patterns/state
@@ -321,11 +356,17 @@ Patterns are collections of recurring design structures that promote valuable de
 4. The `Client` creates a specific strategy object and passes it to the context
 
 ### Pros
-- 
+- swap algorithms used inside an object at run-time
+- isolate the implementation details of an algorithm from the code that uses it
+- replace inheritance with composition
+- **Open-Closed Principle:** introduce new strategies without having to change the context
 ### Cons
-- 
+- complexity through new interfaces and classes
+	- especially for a few / rarely changing algorithms
+- clients must be aware of different strategies to choose correct one
+- often (depending on programming language support) a set of anonymous functions could be used instead of extra classes and interfaces
 ### Relations to other Patterns
-- 
+- [[#Template Method]] is based on inheritance (static), while [[#Strategy]] is based on composition (dynamic at run-time)
 
 > [!details]
 > https://refactoring.guru/design-patterns/strategy
@@ -339,11 +380,15 @@ Patterns are collections of recurring design structures that promote valuable de
 2. `Concrete Classes` can override all of the steps, but not the template method itself
 
 ### Pros
-- 
+- clients override only certain parts of an algorithm and are not affected by changes on the other parts
+- duplicate code can be moved into a superclass
 ### Cons
-- 
+- clients may be limited by the provided skeleton of an algorithm
+- **Liskov Substitution Principle** might be violated by suppressing a default step implementation via a subclass
+- Template methods tend to be harder to maintain the more steps they have
 ### Relations to other Patterns
-- 
+- [[#Factory Method (Virtual Constructor)]] is a specialization of [[#Template Method]]
+	- at the same time, a [[#Factory Method (Virtual Constructor)]] may serve as a step in a large [[#Template Method]]
 
 > [!details]
 > https://refactoring.guru/design-patterns/template-method
@@ -363,13 +408,13 @@ Patterns are collections of recurring design structures that promote valuable de
 	- Usually, client's aren't aware of all the concrete element classes because they work with objects from that collection via some abstract interface
 
 ### Pros
-- 
+- **Open-Closed Principle:** introduce new behavior that can work with objects of different classes without changing these classes
+- **Single Responsibility Principle:** move multiple versions of the same behavior into the same class
+- a visitor object can accumulate some useful information while working with various objects
+	- handy on complex data structures like [[#Composite (Object Tree)]]
 ### Cons
-- 
-### Relations to other Patterns
-- 
-
-### Double Dispatch
+- all visitors need to be updated when new class is added or removed from the element hierarchy
+- visitors may lack the necessary access to the private fields and methods of the elements that they're supposed to work with
 
 > [!details]
 > https://refactoring.guru/design-patterns/visitor

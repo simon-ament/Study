@@ -115,12 +115,12 @@ ObjectSubclass>>descriptionForPartsBin
 ## Morphic
 - `#drawOn:`
 - `#mouseDown:`
-- `#addMorph`
+- `#addMorph:`
 
 ## Observer
 - `#changed:`
 - `#update:(with:)`
-- `#addDependent`
+- `#addDependent:`
 
 ## Prototype
 - `#copy`
