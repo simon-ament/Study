@@ -6,7 +6,7 @@ title: Basiswissen und Geschichte
 **Cause:** vanishing hardware limitations, reduced hardware costs
 
 **Positive Tendencies:**
-- improved methodologies, tools, libraries, etc
+- improved methodologies, tools, libraries, etc.
 - increased qualification and experience
 - **generative AI**
 
@@ -124,6 +124,7 @@ imposed on design methods
 2. **Few interfaces:** every module should communicate with as few others as possible
 	- for $n$ modules: stay closer to minimum of $n - 1$ connections than maximum of $n * (n - 1) / 2$
 	- **Solution:** layers and levels of indirection (layered reference, e.g. [[05_memory_management#Hierarchical Page Table|hierarchical page tables]], intermediate representation in compilers / virtual machines)
+	- [[04_idioms#Law of Demeter|Law of Demeter]]
 3. **Small interfaces:** communicating modules should exchange as little information as possible
 	- **Counter example:** Fortran's garbage common block (shared variables)
 	- **Follows from:** continuity (local changes) + protection
@@ -135,7 +136,7 @@ imposed on design methods
 1. **Linguistic modular units:** Modules must correspond to syntactic units in the language used
 	- language: programming language (separately compilable), design language, specification language, etc.
 	- restriction introduced based on used language (if it does not offer the modular construct)
-	- **Follows from:** continuity (local changes) + decomposability + composability + protection
+	- **Follows from:** continuity (local changes) + decomposability + composability + protection + direct mapping
 	- *Program what, not how*
 2. **Self-documentation:** information about the module should be part of the module itself
 	- $\Rightarrow$ internal documentation. no separate documentation documents

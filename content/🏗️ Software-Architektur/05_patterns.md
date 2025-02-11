@@ -60,7 +60,7 @@ Patterns are collections of recurring design structures that promote valuable de
 
 ![[Pasted image 20250127214554.png|500]]
 
-1. `Abstract Products` declare interfaces fora set of distinct but related products (product family)
+1. `Abstract Products` declare interfaces for a set of distinct but related products (product family)
 2. `Concrete Products` are various implementations of abstract products, grouped by variants. Each abstract product must be implemented in all variants.
 3. The `Abstract Factory` interface declares a set of methods for creating each of the abstract products
 4. `Concrete Factories` implement creation methods of the abstract factory corresponding to exactly one product variant
@@ -161,7 +161,7 @@ Patterns are collections of recurring design structures that promote valuable de
 2. The `ClientInterface` describes a protocol that other classes must follow to be able to collaborate the the client code
 	- The client code does't get coupled to the concrete adapter class. Therefore, adapters can easily be replaced or introduced without breaking the existing client code
 3. The `Service` ist some useful class (usually 3rd-party or legacy). The client can't use this class directly because it has an incompatible interface
-4. The `Adapter` implements the client interface, while wrapping the service object. The adapter receives calls from the client vie the client interface and translates them into calls to the wrapped service object
+4. The `Adapter` implements the client interface, while wrapping the service object. The adapter receives calls from the client via the client interface and translates them into calls to the wrapped service object
 
 ### Pros
 - **Single Responsibility Principle:** separate interface or data conversion from primary business logic
@@ -179,12 +179,12 @@ Patterns are collections of recurring design structures that promote valuable de
 
 ![[Pasted image 20250207112626.png|500]]
 
-1. The `Abstraction` provides high-level control logic. It relies on the implementation object to do the actual low-level work
+5. The `Abstraction` provides high-level control logic. It relies on the implementation object to do the actual low-level work
 	- *Optional:* `Refined Abstractions` provide variants of control logic
-2. The `Implementation` declares the interface that's common for all concrete implementations. An abstraction can only communicate with an implementation object via methods declared here
+6. The `Implementation` declares the interface that's common for all concrete implementations. An abstraction can only communicate with an implementation object via methods declared here
 	- These methods may be the same as those provided by the abstraction, but usually the abstraction declares some complex behaviors that rely on a wide variety of primitive operations declared by the implementation
-3. `Concrete Implementations` contain platform-specific code
-4. Usually, the `Client` is only interested in working with the abstraction. However, it's the client's job to link the abstraction object with one of the implementation objects
+7. `Concrete Implementations` contain platform-specific code
+8. Usually, the `Client` is only interested in working with the abstraction. However, it's the client's job to link the abstraction object with one of the implementation objects
 
 ### Pros
 - can be used to create platform-independent classes and apps
@@ -204,7 +204,7 @@ Patterns are collections of recurring design structures that promote valuable de
 
 ![[Pasted image 20250207114306.png|500]]
 
-1. The `Component` interface describes operations that are common the both simple and complex elements of the tree
+1. The `Component` interface describes operations that are common to both simple and complex elements of the tree
 2. The `Leaf` is a basic element of a tree that doesn't have sub-elements
 	- Usually, leaf components end up doing most of the real work, since they don't have anyone to delegate the work to
 3. The `Composite` (aka *container*) is an element that has sub-elements: leaves or other containers. It delegates work to them using the component interface and then processes and returns a final result
@@ -257,7 +257,7 @@ Patterns are collections of recurring design structures that promote valuable de
 1. The `ServiceInterface` declares the interface of the service. The proxy must follow this interface to be able to disguise itself as a service object
 2. The `Service` is a class that provides some useful business logic
 3. The `Proxy` class has a reference field that points to a service object. After the proxy finished its processing (e.g. lazy initialization, logging, access control, caching, etc.), it passes the request to the service object
-	1. Usually, proxies manage the full lifecycle of their service objects
+	- Usually, proxies manage the full lifecycle of their service objects
 4. The `Client` should work with both services and proxies via the same interface. This way you can pass a proxy into any code that expects a service object
 
 ### Pros
@@ -271,6 +271,9 @@ Patterns are collections of recurring design structures that promote valuable de
 
 > [!details]
 > https://refactoring.guru/design-patterns/proxy
+
+## Adapter, Bridge, Decorator, and Proxy
+![[Screenshot from 2025-02-11 16-28-12.png|500]]
 
 ---
 # Behavioral Patterns
@@ -334,7 +337,7 @@ Patterns are collections of recurring design structures that promote valuable de
 		- **State changes:** happen by replacing the state object linked in the context and can be performed by both context or state objects
 
 ### Pros
-- **Single Responsibility Principle:** organize code related to different stest into separate classes
+- **Single Responsibility Principle:** organize code related to different states into separate classes
 - **Open-Closed Principle:** introduce new states without changing existing classes or the context
 - simplify the code of the context be elimination bulky *state machine* conditionals
 ### Cons
@@ -366,7 +369,7 @@ Patterns are collections of recurring design structures that promote valuable de
 - complexity through new interfaces and classes
 	- especially for a few / rarely changing algorithms
 - clients must be aware of different strategies to choose correct one
-- often (depending on programming language support) a set of anonymous functions could be used instead of extra classes and interfaces
+- often (depending on programming language support) a set of anonymous functions could be used instead of extra classes and interfaces ([[04_idioms#Pluggable Behavior / Selector / Block|Pluggable Blocks]])
 ### Relations to other Patterns
 - [[#Template Method]] is based on inheritance (static), while [[#Strategy]] is based on composition (dynamic at run-time)
 
@@ -407,7 +410,7 @@ Patterns are collections of recurring design structures that promote valuable de
 4. Each `Concrete Element` must implement the acceptance method. The purpose of this method is to redirect the call to the proper visitor's method corresponding to the current element class
 	- Even if a base element class implements this method, it must be overwritten by all subclasses to call the appropriate method on the visitor object
 5. The `Client` usually represents a collection or some other complex object (e.g. a [[#Composite (Object Tree)]])
-	- Usually, client's aren't aware of all the concrete element classes because they work with objects from that collection via some abstract interface
+	- Usually, clients aren't aware of all the concrete element classes because they work with objects from that collection via some abstract interface
 
 ### Pros
 - **Open-Closed Principle:** introduce new behavior that can work with objects of different classes without changing these classes

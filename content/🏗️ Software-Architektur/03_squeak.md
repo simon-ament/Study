@@ -125,7 +125,7 @@ ObjectSubclass>>descriptionForPartsBin
 
 ## Prototype
 - `#copy` | executes `#shallowCopy` and then `#postCopy`
-	- `#shallowCopy` | returns a copy of the receiver which shares the receiver's instance variables
+	- `#shallowCopy` | returns a copy of the receiver which shares the receiver's instance variables (sharing by reference)
 	- `#postCopy` | should be overridden by subclasses to complete the full copy
 - `#deepCopy` | returns a copy of the receiver with its own **copy of each instance variable**
 	- recursively calls `#deepCopy`
