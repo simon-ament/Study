@@ -26,7 +26,7 @@ Low-level patterns **specific to a programming language**
 - hardly comprehensible code
 
 ## Style Guides
-- Ease reading and writing (object-oriented) code
+- ease reading and writing of (object-oriented) code
 - clear, easy to read, easy to understand $\Rightarrow$ more likely **correct** and **reliable**, easier to **adapt**, **maintain** and **evolve**
 - consistent coding style $\Rightarrow$ **pretty-printing** can be supported by automated tools (support and check the programmer)
 - *Best guidelines are those that people want to follow* (because they appreciate the benefit)
@@ -75,9 +75,9 @@ SubFigure>>initialize
 
 ## Pluggable Behavior / Selector / Block
 Parameterize **behavior of an object:** add a variable that will be used to trigger different behavior
-- **Pluggable Selector:** add a variable that contains a selector the be performed (ends with 'Message')
+- **Pluggable Selector:** add a variable that contains a selector to be performed (ends with 'Message')
 	- used for simple instance-specific behavior
-- **Pluggable Block:** add a variable to store block (ends with 'Block')
+- **Pluggable Block:** add a variable to store a block (ends with 'Block')
 	- used for complex Pluggable Behavior, that is not quite worth its own class
 
 ```smalltalk
@@ -153,7 +153,7 @@ PluggableAdaptor>>value
 >- **Method object:** move temporary variables to instance variables and computation to `#compute` on a new class, replace method with instantiation and computation ob this object
 >
 >```smalltalk
-Controller>>controlActivity
+> Controller>>controlActivity
 >
 >	self
 >		controlInitialize;
@@ -224,7 +224,7 @@ Controller>>controlActivity
 
 **Equality method:** `Object>>= anObject`
 - checks for equality
-- must be protected to only fully test compatible classes
+- must be protected to fully test only compatible classes
 - needed for **Set**
 
 ```smalltalk
@@ -242,7 +242,7 @@ Book>>= aBook
 - `isEmpty` / `ifEmpty: aBlock`
 - `notEmpty` / `ifNotEmpty: aBlock`
 
-## contains | includes
+## includes | contains
 - `includes: anObject` checks if element is included
 - `contains: aBlock` equivalent to `anySatisfy: aBlock`
 
@@ -257,7 +257,7 @@ Book>>= aBook
 	- not finding an element can be caught with `... ifNone: aBlock`
 - can be optimized by using a **Dictionary** instead
 
-## fold | inject
+## inject | fold
 - `inject: anObject into: aBlock` can be used to to keep a running value while iterating
 - `fold: binaryBlock` can be used for simple fold operations (without initial value)
 

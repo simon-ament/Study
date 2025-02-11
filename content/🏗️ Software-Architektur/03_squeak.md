@@ -58,7 +58,7 @@ Morph subclass: #CalculatorMorph
 
 ## Method Definition
 - usually defined in a browser (directly invoking the compiler also possible)
-- always return an object (default is `self`)
+- always returns an object (default is `self`)
 
 ```smalltalk
 ObjectSubclass>>descriptionForPartsBin
@@ -111,19 +111,25 @@ ObjectSubclass>>descriptionForPartsBin
 ![[Screenshot from 2025-02-08 09-36-22.png|500]]
 
 ---
-# ==Framework==
+# Framework
 ## Morphic
-- `#drawOn:`
-- `#mouseDown:`
-- `#addMorph:`
+- `#drawOn: aCanvas` | draws an Morph or similar onto a canvs 
+- `#handlesMouseDown: evt` and `#mouseDown: evt` | override to handle mouse events
+- `#handlesKeyboard: evt` and `#keyDown: enEvent` | override to handle keyboard events
+- `#addMorph: aMorph` | adds a submorph 
 
 ## Observer
-- `#changed:`
-- `#update:(with:)`
-- `#addDependent:`
+- `#changed: aParameter` or `#changed: anAspect with: anObject` | inform all the dependents about a change on the receiver
+- `#update: aParameter` or  `#update: anAspect with: anObject` | override to receive a change notice from an object of whom the receiver is a dependent
+- `#addDependent: anObject` | make the given object one of the receiver's dependents  
 
 ## Prototype
-- `#copy`
-- `#postCopy`
-- `#deepCopy`
-- `#veryDeepCopy`
+- `#copy` | executes `#shallowCopy` and then `#postCopy`
+	- `#shallowCopy` | returns a copy of the receiver which shares the receiver's instance variables
+	- `#postCopy` | should be overridden by subclasses to complete the full copy
+- `#deepCopy` | returns a copy of the receiver with its own **copy of each instance variable**
+	- recursively calls `#deepCopy`
+	- does **not preserve object identities in cycles** in the object graph
+- `#veryDeepCopy` | does a complete tree copy using a [[04_idioms#Collections|Dictionary]]
+	- an object appearing twice in the tree is only copied once
+	- all references to the object in the copy of the tree will point to the new copy

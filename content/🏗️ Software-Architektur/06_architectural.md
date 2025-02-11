@@ -36,7 +36,7 @@ The Layers architectural pattern helps to structure applications that can be dec
 - Dependencies kept **local**
 
 ### Cons
-- **Cascades** of changing behavipr
+- **Cascades** of changing behavior
 - Lower **efficiency**
 	- **Unnecessary work:** e.g. packing and unpacking
 - Difficult to establish correct granularity of layers
@@ -150,7 +150,7 @@ CRC cards are frequently employed during the design phase of system and software
 ---
 # Frameworks
 A framework is the design for an application or subsystem
-- A set of abstract classes and the way objects in those classes collaborate (Ralph. E. Johnson)
+- A set of abstract classes and the way objects in those classes collaborate (Ralph E. Johnson)
 - **Object-oriented:** A collection of cooperating classes that together define a **generic or template solution** to a **family of domain specific requirements**
 - Dictate **overall structure** of a **family of applications**
 	- partitioning into **components** + their **responsibilities** and **interaction**
@@ -159,13 +159,14 @@ A framework is the design for an application or subsystem
 - $\Rightarrow$ **Design reuse** (domain concepts) + **Implementation reuse** (instantiate concrete and inherit abstract classes)
 
 **A framework defines:**
-4. A **model** of some domain (or aspect thereof)
-5. The **abstract design** of this model as a set of interfaces
+
+1. A **model** of some domain (or aspect thereof)
+2. The **abstract design** of this model as a set of interfaces
 	- The **space of possible run-time object configurations**
 	- The **object coupling** on an abstract level
 	- The allowed **control flow** between objects
 	- The **distribution of responsibilities** between classes
-6. Possible **implementations** and the **constrains** thereon by means of a partial (abstract) implementation
+3. Possible **implementations** and the **constrains** thereon by means of a partial (abstract) implementation
 	- Generic reusable functionality
 	- A reuse skeleton and a reuse contract
 
@@ -185,7 +186,7 @@ A framework is the design for an application or subsystem
 ## White-box vs. black-box
 **White-box:** Customized by **subclassing** existing framework classes and providing concrete implementations
 - hooks within the framework's **hot-spot** regions
-- need to know the framework implementation in more details
+- need to know the framework implementation in more detail
 
 **Black box:** Customized through **composition**
 - Filling in parameters or plugging together compatible components from a library of prefabricated components
@@ -201,7 +202,7 @@ A framework is the design for an application or subsystem
 - Workaround: one thread per framework
 
 **Integration with legacy code:**
-- Workaround: use Adapter design pattern
+- Workaround: use [[05_patterns#Adapter (Wrapper)|Adapter]] design pattern
 
 **Architectural mismatches:**
 - Different models of integrated framework components
@@ -209,10 +210,10 @@ A framework is the design for an application or subsystem
 - Different pragmatics ([[02_object_oriented|OO]], [[06_architectural#Pipes and Filters|Pipes and Filters]], etc.)
 
 ## Documenting a Framework
-7. Intention
-8. Default behavior
-9. Constraints
-10. Override instructions
+1. Intention
+2. Default behavior
+3. Constraints
+4. Override instructions
 
 ![[Screenshot from 2025-02-09 09-46-08.png|500]]
 
@@ -247,8 +248,9 @@ The Null Object provides a surrogate for another object that shares the **same i
 
 ## Extension Object
 An extension object **anticipates** that an objects's **interface** needs to be **extended in the future**
-- The Extension Object pattern proposes to **package** the spell checker **interface into a separate object**
+- The Extension Object pattern proposes to **package** the extended **interface into a separate object**
 	- Clients that want to use this extended interface can query whether a component supports it (e.g. **named extensions**)
+	- e.g. spell checker in editor
 
 ![[Screenshot from 2025-02-09 14-57-50.png|500]]
 
@@ -261,7 +263,7 @@ An extension object **anticipates** that an objects's **interface** needs to be 
 - Extensions can be **abused to model concepts** that should be explicit (comprehensibility)
 
 **Implementation:**
-- Manage extensions internally or externally?
+- Manage (create, know, etc.) extensions internally or externally (subject vs. client)?
 - How to identify extensions?
 - When to release / free an extension?
 

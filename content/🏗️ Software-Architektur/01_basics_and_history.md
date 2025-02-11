@@ -119,7 +119,7 @@ imposed on design methods
 	- **Counter example:** undisciplined use of exceptions (useful to separate erroneous cases, but must be used carefully)
 
 ### Rules
-1. **Direct mapping:** modular structure devised in the process of building a software system should remain compatible with any modular structure devised in the process if modeling the problem
+1. **Direct mapping:** modular structure devised in the process of building a software system should remain compatible with any modular structure devised in the process of modeling the problem
 	- **Follows from:** continuity (local changes) + decomposability
 2. **Few interfaces:** every module should communicate with as few others as possible
 	- for $n$ modules: stay closer to minimum of $n - 1$ connections than maximum of $n * (n - 1) / 2$
@@ -127,15 +127,15 @@ imposed on design methods
 3. **Small interfaces:** communicating modules should exchange as little information as possible
 	- **Counter example:** Fortran's garbage common block (shared variables)
 	- **Follows from:** continuity (local changes) + protection
-4. **Explicit interfaces:** Whenever to modules A and B communicate, this must be obvious from the text of A or B or both
-5. **Information hiding:** every module should only expose a subset of its properties an keep the rest private from clients
+4. **Explicit interfaces:** Whenever two modules A and B communicate, this must be obvious from the text of A or B or both
+5. **Information hiding:** every module should only expose a subset of its properties and keep the rest private from clients
 	- $\Rightarrow$ abstraction as design technique 
 
 ### Principles
 1. **Linguistic modular units:** Modules must correspond to syntactic units in the language used
-	- language: programming language (separately sompilable), design language, specification language, etc.
+	- language: programming language (separately compilable), design language, specification language, etc.
 	- restriction introduced based on used language (if it does not offer the modular construct)
-	- **Follow from:** continuity (local changes) + decomposability + composability + protection
+	- **Follows from:** continuity (local changes) + decomposability + composability + protection
 	- *Program what, not how*
 2. **Self-documentation:** information about the module should be part of the module itself
 	- $\Rightarrow$ internal documentation. no separate documentation documents
@@ -155,7 +155,7 @@ imposed on design methods
 	- **Approaches:** Inheritance and late binding allow flexible extension
 5. **Single choice:** Whenever a software system must support a set of alternatives, one and only one module in the system should know their exhaustive list
 	- $\Rightarrow$ distribution of knowledge, ==need-to-know== policy
-	- **Follow from:** continuity (local changes) + open-closed principle
+	- **Follows from:** continuity (local changes) + open-closed principle
 	- strong form of information hiding (hide list of variants)
 
 > Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification. – Robert C. Martin

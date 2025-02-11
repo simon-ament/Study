@@ -27,6 +27,8 @@ Patterns are collections of recurring design structures that promote valuable de
 - Documentation: patterns and their implications describe a system (better than prose)
 - Clean-up: organize existing code and prepare it for changes
 
+![[Pasted image 20250211114105.png|500]]
+
 ---
 # Creational Patterns
 ## Factory Method (Virtual Constructor)

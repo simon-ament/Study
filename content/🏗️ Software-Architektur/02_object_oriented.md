@@ -1,3 +1,6 @@
+---
+title: Objekt-Orientierung
+---
 # History
 ## Philosophy
 - Model the objects of the world (domain objects and relationships)
@@ -24,7 +27,7 @@
 - Dynamic Typing
 	- unrestricted polymorphism, very late binding
 - Virtual Machine
-	- write one, run everywhere
+	- *write ocne, run everywhere*
 	- Bytecode compiler
 	- Important files: Virtual Machine, Image file, Sources file, Changes file
 - WIMP interface: Windows, Icons, Menus, Pointing Device (Mouse)
@@ -35,10 +38,10 @@
  **50% to 75% of global software development effort** is spent on maintenance, the bulk of which being **new functionality**
  
 **Lehman's Laws:**
-1. Continuing change (1): A [...] program that is used must be continually adapted else it becomes progressively less satisfactory
-2. Increasing Complexity (2): As a program is evolved its complexity increases unless work is done to maintain or reduce it
-3. Continuing Growth (6): Functional content of a program must be continually increased to maintain user satisfaction over its lifetime
-4. Declining Quality (7): [...] Programs will be perceived as of declining quality unless rigorously maintained and adapted to a changing operational environment
+1. **Continuing change** (1): A [...] program that is used must be continually adapted else it becomes progressively less satisfactory
+2. **Increasing Complexity** (2): As a program is evolved its complexity increases unless work is done to maintain or reduce it
+3. **Continuing Growth** (6): Functional content of a program must be continually increased to maintain user satisfaction over its lifetime
+4. **Declining Quality** (7): [...] Programs will be perceived as of declining quality unless rigorously maintained and adapted to a changing operational environment
 
 $\Rightarrow$ successful software must **adapt** and **evolve**
 
