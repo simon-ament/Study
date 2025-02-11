@@ -1,3 +1,6 @@
+---
+title: Architectural Styles
+---
 # Why Architectural Styles?
 Express fundamental structural organization schemas for software systems
 - **Subsystems** and their **responsibilities** + **relationships** between them
