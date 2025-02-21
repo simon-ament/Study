@@ -52,7 +52,7 @@ title: CG-Systeme
 	- 1 - 6 fps: keine Interaktivität gegeben
 	- 6 - 15 fps: grundlegende Interaktivität gegeben
 	- 15 - 72 fps: volle Interaktivität, kontinuierlicher Bildfluss, „real-time“
-	- > 72 fps: durch den Menschen nicht weiter verbessert wahrnehmbar (Displays, VR höher)
+	- $>$ 72 fps: durch den Menschen nicht weiter verbessert wahrnehmbar (Displays, VR höher)
 - Notwendig für interaktive, grafische Anwendungen
 - Kennzeichen:
 	- Prozessierung polygonaler 3D-Modelle (insbesondere Dreiecksnetze)

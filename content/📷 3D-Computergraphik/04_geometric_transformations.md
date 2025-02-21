@@ -22,7 +22,7 @@ Das Euklidische Standardskalarprodukt im $\mathbb{R}^n$ ist definiert als $\lang
 Zum Beispiel: $u = \begin{pmatrix} 1 \\ 2 \\ -7 \end{pmatrix}$ und $v = \begin{pmatrix}4 \\ 2 \\ 3\end{pmatrix}$, $\langle u,v \rangle = 1 \cdot 4 + 2 \cdot 2 + (-7) \cdot 3 = 13$
 
 ## Anwendungen
-- ==**Orthogonale Projektion eines Punktes** auf eine Ebene==
+- **Orthogonale Projektion eines Punktes** auf eine Ebene (==???==)
 
 ### Längenmessung
 Die Länge eines Vektors entspricht dessen Betrag:
@@ -157,7 +157,8 @@ $$T(d_x, d_y, d_z) =
 0 & 1 & 0 & d_y \\
 0 & 0 & 1 & d_z \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Eigenschaften:**
 - Verkettung / Vertauschung: $T(d_1)T(d_2) = T(d_2)T(d_1) = T(d_1 + d_2)$
@@ -178,7 +179,8 @@ $$R_x(\theta) =
 0 & \cos(\theta) & -\sin(\theta) & 0 \\
 0 & \sin(\theta) & \cos(\theta) & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 $$R_y(\theta) =
 \begin{pmatrix}
@@ -186,7 +188,8 @@ $$R_y(\theta) =
 0 & 1 & 0 & 0 \\
 -\sin(\theta) & 0 & \cos(\theta) & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 $$R_z(\theta) =
 \begin{pmatrix}
@@ -194,7 +197,8 @@ $$R_z(\theta) =
 \sin(\theta) & \cos(\theta) & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Eigenschaften:**
 - Verkettung / Vertauschung (*achsengleich*): $R_a(\phi)R_a(\theta) = R_a(\phi + \theta) = R_a(\theta)R_a(\phi)$
@@ -211,7 +215,8 @@ s_x & 0 & 0 & 0 \\
 0 & s_y & 0 & 0 \\
 0 & 0 & s_z & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 **Eigenschaften:**
 - Verkettung / Vertauschung: $S(s_{1_x}, s_{1_y}, s_{1_z})S(s_{2_x}, s_{2_y}, s_{2_z}) = S(s_{1_x}s_{2_x}, s_{1_y}s_{2_y}, s_{1_z}s_{2_z}) = S(s_{2_x}, s_{2_y}, s_{2_z})S(s_{1_x}, s_{1_y}, s_{1_z})$ 
@@ -229,7 +234,8 @@ $$M_x =
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 $$M_y =
 \begin{pmatrix}
@@ -237,7 +243,8 @@ $$M_y =
 0 & -1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 $$M_z =
 \begin{pmatrix}
@@ -245,7 +252,8 @@ $$M_z =
 0 & 1 & 0 & 0 \\
 0 & 0 & -1 & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 ## Scherung
 - Allgemeine Scherungstransformation: $H_{xy}, H_{xz}, H_{yx}, H_{yz}, H_{zx}, H_{zy}$
@@ -259,7 +267,8 @@ $$H_{xz}(s) =
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 ![[Screenshot from 2025-02-18 23-41-16.png|500]]
 
@@ -272,7 +281,17 @@ $$H_{xz}(s) =
 **Orthogonale Matrix:** Eine Matrix $A \in GL(n, \mathbb{R})$ heißt orthogonal, falls gilt $AA^T = E$ als $A^{-1} = A^T$.
 - Jede Rotationsmatrix ist orthogonal
 
-$$A^T = \begin{pmatrix}\cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta)\end{pmatrix} = \begin{pmatrix}\cos(\theta) & -\sin(-\theta) \\ \sin(-\theta) & \cos(\theta)\end{pmatrix} = A^{-1}$$
+$$
+A^T =
+\begin{pmatrix}
+\cos(\theta) & \sin(\theta) \\ -\sin(\theta) & \cos(\theta)
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos(\theta) & -\sin(-\theta) \\ \sin(-\theta) & \cos(\theta)
+\end{pmatrix}
+= A^{-1}
+$$
 
 **Orthonormalbasis (ONB):** Eine Orthonormalbasis eines Vektorraums $V$ ist eine Basis, deren Vektoren alle die Länge 1 haben (normiert sind) und paarweise orthogonal sind, unterschiedliche Basisvektoren haben also das Skalarprodukt 0.
 - Für beliebige $x,y \in \mathbb{R}^n$ und orthogonale Matrix $A$ gilt $\langle Ax. Ay \rangle = \langle x,y \rangle$, das heißt orthogonale Transformationen erhalten Längen und Winkel (*Rigid-Body-Transformation*)
@@ -335,11 +354,13 @@ Erlauben die Spezifikation einer Orientierung, d. h. einer Winkellage, eines Obj
 - Drehung $R$ kann in drei Drehungen um die jeweiligen Achsen aufgeteilt
 
 # Smooth step function
-$$f(x) = \begin{cases}
+$$f(x) =
+\begin{cases}
 0 &\text{falls } x < 0 \\
 3x^2 - 2x^3 &\text{falls } 0 \leq x \leq 1 \\
 1 &\text{sonst}
-\end{cases}$$
+\end{cases}
+$$
 
 Eigenschaften:
 - $f(0) = f(1) = 0$

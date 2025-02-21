@@ -25,14 +25,18 @@ title: Geometrische Projektionen
 
 $$T_\text{lookAt}(\text{eye}, \text{center}, \text{up}) = R(u,v,n)^{-1} T(-\text{eye})$$
 1. Translation von $\text{eye}$ in den Ursprung
-2. Rotation in das $(u,v,n)$ Koordinatensystem über ==Orthonormalbasis==: $$
+2. Rotation in das $(u,v,n)$ Koordinatensystem über ==Orthonormalbasis==: 
+
+$$
 R(u,v,n)^{-1} = 
 \begin{pmatrix} 
 u_x & u_y & u_z & 0 \\
 v_x & v_y & v_z & 0 \\
 n_x & n_y & n_z & 0 \\
 0 & 0 & 0 & 1
-\end{pmatrix}$$
+\end{pmatrix}
+$$
+
 - Verwendung der inversen $R$-Transformation
 - danach ist das Sichtvolumen (Pyramidenstumpf) im Ursprung zentriert und die *Look*-Richtung verläuft entlang der negativen $z$-Achse
 
@@ -76,7 +80,8 @@ $$S_{xy}(\theta_W, \theta_H) =
 0 & \cot(\theta_H/2) & 0 & 0 \\
 0 & 0 & 1 & 0 \\
 0 & 0 & 0 & 1 \\
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 ### 2. Skalierung des Sichtvolumens
 - Far-Clipping-Plane soll bei $z = -1$ liegen
@@ -106,7 +111,8 @@ $$D(\text{near}, \text{far}) =
 0 & 1 & 0 & 0 \\
 0 & 0 & 1 / (k-1) & k/(k-1) \\
 0 & 0 & -1 & 0
-\end{pmatrix}$$
+\end{pmatrix}
+$$
 
 Ein Punkt $(x, y, z, 1)^T$ wird dadurch abgebildet auf $(x, y, z/(k-1) + k(k - 1), -z)^T$, wobei bei der Umwandlung in nicht-homogene Koordinaten die ersten drei Komponenten durch $-z$ geteilt werden
 - ein Punkt auf der Far-Clipping-Plane ($z = -1$) wird dadurch final auf $(x,y,1)^T$ abgebildet, ein Punkt auf der Near-Clipping-Plane ($z = -k$) auf $(x / k, y / k, 0)^T$
@@ -124,10 +130,14 @@ $$D(\text{near}, \text{far}) \cdot S_{xyz}(1 / \text{far}) \cdot S_{xy}(\theta_H
 - Punkte mit $z = n$ werden auf $-1$ abgebildet
 - OpenGL: spiegelt die $z$-Koordinate, sodass $0 < n' < f'$
 
-$$P = \begin{pmatrix}2n / (r - l) & 0 & -(r+l)/ (r - l) & 0 \\
+$$P = 
+\begin{pmatrix}
+2n / (r - l) & 0 & -(r+l)/ (r - l) & 0 \\
 0 & 2n / (t- b) & -(t+b) / (t-b) & 0 \\
 0 & 0 & (f+n)/(f - n) & -2fn/(f- n) \\
-0 & 0 & 1 & 0\end{pmatrix}$$
+0 & 0 & 1 & 0
+\end{pmatrix}
+$$
 
 ![[Screenshot from 2025-02-19 15-27-39.png|500]]
 
@@ -232,10 +242,11 @@ for(pixel in raster)
 ```
 
 ## Vergleich
-- Laufzeit: Bei einer **überschaubaren Anzahl von Objekten** (z. B. bis zu 1000 Szenenobjekte) erscheint zunächst der **objektpräzise** Ansatz grundsätzlich im Vorteil, da bildpräzise Ansätze mit Pixelmengen von z. B. $q = 1920 \times 1080$ arbeiten
-- In der **Praxis** sind jedoch **bildpräzise** Algorithmen fast immer im Vorteil, da die zum Einsatz kommenden Berechnungen (numerisch gesehen) wesentlich einfacher und Hardware-unterstützt und hoch parallel ablaufen
-- Die Berechnung objektpräziser sichtbarer Geometrie mit Verfahren der algorithmischen Geometrie besitzt numerische, robustheitsbezogene Schwächen und muss mit Sonderfällen umgehen. Bereits kleine Änderungen der Kameraeinstellung können zu großen Änderungen bei der ermittelten sichtbaren Geometrie führen
-- Die Verlagerung der Sichtbarkeitsermittlung auf die Fragmente ermöglichte, historisch gesehen, erst die Echtzeitcomputergrafik
+- Laufzeit: Bei **überschaubaren Anzahl von Objekten** (z. B. bis zu 1000 Szenenobjekte) erscheint zunächst der **objektpräzise** Ansatz im Vorteil, da bildpräzise Ansätze mit Pixelmengen von z. B. $q = 1920 \times 1080$ arbeiten
+	- Berechnung Verfahren der algorithmischen Geometrie besitzt **numerische, robustheitsbezogene Schwächen** und muss mit **Sonderfällen** umgehen
+	- bereits **kleine Änderungen der Kameraeinstellung** können zu großen Änderungen bei der ermittelten sichtbaren Geometrie führen
+- In der **Praxis** sind **bildpräzise** Algorithmen fast immer im Vorteil, da die zum Einsatz kommenden Berechnungen (numerisch gesehen) **wesentlich einfacher** und **Hardware-unterstützt und hoch parallel** ablaufen
+- Verlagerung der Sichtbarkeitsermittlung auf die Fragmente ermöglichte, historisch gesehen, erst die Echtzeitcomputergrafik
 
 ## Z-Buffer-Algorithmus
 - hardware-unterstützt
