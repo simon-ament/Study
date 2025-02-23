@@ -109,7 +109,7 @@ Punkte werden durch Vektoren beschrieben
 	- Ortsvektor eines Punktes $p$: $(p-o) \in V^3$
 - ==Affine Kombination zweier Punkte==
 
-Affine Abbildung $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv. invertierbar)
+**Affine Abbildung** $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv. invertierbar)
 - Isometrische Abbildung
 	- Invariante: Abstände
 	- Reflexionen, starre Körper (Rotation und Translation)
@@ -319,7 +319,7 @@ Der Vektor $r_3$ soll auf $e_3$ abgebildet werden. Da $P_1P_2$ auf der $z$-Achse
 
 $$r_3 = \frac{P_2 - P_1}{||P_2 - P_1||}$$
 
-Unter ==Verwendung des Kreuzprodukts== definieren wir weiter
+Unter [[#Kreuzprodukt|Verwendung des Kreuzprodukts]] definieren wir weiter
 
 $$r_2 = \frac{(P_3 - P_1) \times (P_2 - P_1)}{||(P_3 - P_1) \times (P_2 - P_1)||}, r_1 = \frac{r_2 \times r_3}{||r_2 \times r_3||}$$
 
@@ -343,7 +343,7 @@ Alternative Sichtweise auf Transformationen: nicht Punkte werden überführt, so
 - Linkshändiges: $z$-Achse schaut vom Betrachter weg
 - WebGL / OpenGL schreiben die Verwendung nicht vor, aber:
 	- Konvention in Mathematik, Physik, 3D-Modellierung und *view/eye*-Koordinaten ist rechtshändig
-	- *clip space* Koordinatensystem und ==*normalized device coordinates*== sind linkshändig
+	- *clip space* Koordinatensystem und *[[05_geometric_projections#Normalized Screen Coordinates / Normalized Device Coordinates (NDC)|normalized device coordinates]]* sind linkshändig
 
 ![[Screenshot from 2025-02-19 14-49-22.png|500]]
 

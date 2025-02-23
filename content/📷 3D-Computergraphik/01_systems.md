@@ -15,7 +15,7 @@ title: CG-Systeme
 **Image Synthesis:**
 - *auch Rendering, Bilderzeugung, Bildsynthese*
 - Methoden zur automatischen Generierung von Bildern von 3D-Modellen durch den Rechner
-- Eingabe: 3D-Modelle, 2D-Bilddaten / Rasterdaten (Texturen), Video Streams, prozedurale Modelle, Sound, ==Scene Graph== (Szenenbeschreibung) | **Modellraum**
+- Eingabe: 3D-Modelle, 2D-Bilddaten / Rasterdaten (Texturen), Video Streams, prozedurale Modelle, Sound, [[#Szenengraph|Scene Graph]] (Szenenbeschreibung) | **Modellraum**
 - Ausgabe: 2D-Bilddaten (Frames), Tiefenbild (zBuffer), Stereo Images, Video Streams | **Bildraum**
 
 **Computer Vision:**
@@ -60,7 +60,7 @@ title: CG-Systeme
 	- Unterstützung durch Computergrafik-Hardware, insbesondere für Texturierung, Beleuchtung, Schattierung und Rasterisierung
 
 ## Szenengraph
-- meist ==DAG== (nicht normiert)
+- meist DAG (*directed acyclic graph*, nicht normiert)
 - **Bestandteile:** geometrische Objekte (z.B. Dreiecksnetze), graphische Attribute (z.B. Material, Textur), Umgebungseinstellungen (z.B. Lichtquellen, virtuelle Kameraeinstellung)
 - **Real-Time Rendering:** Auswertung des Szenengraphen für jedes Frame
 

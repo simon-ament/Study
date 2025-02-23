@@ -230,7 +230,7 @@ Erweiterung der [[#Winged-Edge Polygon Meshes]], wobei jede Kante in zwei gegenl
 **Vorteile von Dreiecken**
 - kann in jede gewölbte Oberfläche eingebettet werden (siehe vier Tischbeine) oder umgekehrt: Dreiecke sind stets planar
 - stets konvex
-- parametrisierbar (siehe ==Baryzentrische Koordinaten==)
+- parametrisierbar (siehe [[03_rasterization#Baryzentrischen Koordinaten|Baryzentrische Koordinaten]])
 - $\Rightarrow$ GPU-unterstützt
 
 **Tesselation:**
@@ -253,7 +253,7 @@ Zerlegen einer gegebenen Oberfläche in ein Dreiecksnetz
 - Laufzeit $\mathcal{O}(n)$ | mittels Stack
 
 **Einfache Polygone:**
-- Jedes ==einfache Polygon== mit $n$ Ecken besitzt eine Triangulierung mit $n - 2$ Dreiecken und $n - 3$ Diagonalen
+- Jedes [[#Polygoncharakteristiken|einfache Polygon]] mit $n$ Ecken besitzt eine Triangulierung mit $n - 2$ Dreiecken und $n - 3$ Diagonalen
 	- jedes einfache Polygon besitzt *strikt konvexe Ecke* und damit auch eine Diagonale im Inneren
 - ähnliche große und gleichmäßige Polygone insbesondere für Beleuchtung wünschenswert (Berechnung nur an den Eckpunkten)
 

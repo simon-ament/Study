@@ -25,7 +25,7 @@ title: Geometrische Projektionen
 
 $$T_\text{lookAt}(\text{eye}, \text{center}, \text{up}) = R(u,v,n)^{-1} T(-\text{eye})$$
 1. Translation von $\text{eye}$ in den Ursprung
-2. Rotation in das $(u,v,n)$ Koordinatensystem über ==Orthonormalbasis==: 
+2. Rotation in das $(u,v,n)$ Koordinatensystem über [[04_geometric_transformations#Begriffe|Orthonormalbasis]]: 
 
 $$
 R(u,v,n)^{-1} = 
@@ -61,14 +61,16 @@ Sonderfälle:
 	- reduziert Rendering-Aufwand, indem Objekte nahe an oder hinter der Kamera sowie weit entfernte Objekte ignoriert werden
 - Sichtwinkel (*width angle* bzw. *height angle*)
 - Verhältnis von Breite und Höhe des Bildes (*aspect ratio*)
-- ==Strahlensatz==
+
+![[Screenshot from 2025-02-23 11-58-08.png|500]]
 
 **Sichtvolumen (view frustum):**
 - Konisches Sichtvolument: rund, zu teuer (Lösen quadratischer Gleichungen)
 - Pyramidensychtvolumen: perspektivische Projektion, Clipping mit 6 Halbebenen
 - Rechtwinkliges Sichtvolumen (3D-Block): Parallelprojektion, Clipping mit 6 Halbebenen
 - allgemein: durch zwei Halbebenen abgeschnittenes Solid (*Clipping*)
-- ==Bild?==
+
+![[Screenshot from 2025-02-23 11-58-41.png]]
 
 ### 1. Winkeländerung des Sichtvolumens
 - Frustum hat Öffnungswinkel $\theta_W$ und $\theta_H$ $\Rightarrow$ sollen auf $90°$ skaliert werden ($45°$ in jede Richtung)
@@ -101,7 +103,6 @@ $$
 - Punktkoordinaten müssen entsprechend ihrere Tiefe perspektivisch verkürzt werden
 - Mittels homogenen Koordinaten: resultierende ==2D-Punkte== haben eine $w$-Komponente, die bei der Umwandlung in nicht-homogene Koordinaten eine perspektivische Verkürzung bewirken
 - Sichtbarkeitsermittlung: meist mittels $z$-Buffer mit Wertebereich $[0, 1]$ (DirectX) oder $[-1, 1]$ (OpenGL) $\Rightarrow$ Tiefenbereich $[-1, 0]$ muss entsprechend abgebildet werden
-- ==Bild der Wirkungsweise==
 
 Sei $k = \frac{\text{near}}{\text{far}}$
 
@@ -117,12 +118,14 @@ $$
 Ein Punkt $(x, y, z, 1)^T$ wird dadurch abgebildet auf $(x, y, z/(k-1) + k(k - 1), -z)^T$, wobei bei der Umwandlung in nicht-homogene Koordinaten die ersten drei Komponenten durch $-z$ geteilt werden
 - ein Punkt auf der Far-Clipping-Plane ($z = -1$) wird dadurch final auf $(x,y,1)^T$ abgebildet, ein Punkt auf der Near-Clipping-Plane ($z = -k$) auf $(x / k, y / k, 0)^T$
 
+![[Screenshot from 2025-02-23 11-59-25.png|500]]
+
 ## Gesamttransformation
 $$D(\text{near}, \text{far}) \cdot S_{xyz}(1 / \text{far}) \cdot S_{xy}(\theta_H \cdot \text{aspect}^{-1}, \theta_H) \cdot R(\text{look}, \text{up})^T \cdot T(-\text{eye})$$
 
 - sowohl die Teil- als auch die Gesamttransformation lassen sich als $4 \times 4$-Matrix darstellen
 - homogene Koordinaten ermöglichen Darstellung perspektivischer Verkürzung
-- perspektivische Transformation ist nicht ==affin== (sie verzerrt das Frustum zu einem Quader)
+- perspektivische Transformation ist nicht [[04_geometric_transformations#Affiner Raum $A 3$|affin]] (==sie verzerrt das Frustum zu einem Quader==)
 
 ## Transformation des Frustums in den Einheitswürfel
 - $l, r, t, b, n, f$ für *left, right, top, bottom, near, far*

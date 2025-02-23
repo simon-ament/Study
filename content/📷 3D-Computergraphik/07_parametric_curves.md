@@ -151,6 +151,10 @@ Der gesuchte Punkt $Q_{0, \dots, n}(t)$ ist gegeben durch $P_0^n$
 - $\Rightarrow$ Effizienter, numerisch stabiler Algorithmus zur Berechnung von Kurvenpunkte
 - **Verwendung:** z.B. Definition von Schriftzeichen (*Glyphs*) für Zeichensätze (*Fonts*)
 
+![[Screenshot from 2025-02-21 21-27-46.png|500]]
+
+![[Screenshot from 2025-02-21 21-27-53.png|500]]
+
 ---
 # Kubische Hermitisches Splines
 - stückweise definierte, kubische polynomial definierte Kurve $C$, die durch eine Menge von $n$ Kontrollpunkten $p_0, p_1, \dots, p_{n-1}$ definiert ist
