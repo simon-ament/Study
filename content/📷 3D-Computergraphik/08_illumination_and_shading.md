@@ -46,7 +46,7 @@ Für Oberflächenpunkte wird approximativ berechnet, wieviel Energie von den Lic
 	- z.B. Phong Illumination, Gooch Illumination
 
 **Indirekte Beleuchtung:**
-- Es werden direkte und indirekte Transportwege berücksichtigt, z. B. Licht, das über mehrere Objekte hinweg auf ein Objekt gestrahlt wird
+- Es werden direkte und indirekte Transportwege berücksichtigt, z.B. Licht, das über mehrere Objekte hinweg auf ein Objekt gestrahlt wird
 - Komplexe Gleichungssysteme bzw. vielschichtige Lichtstrahlenverfolgung sind dazu notwendig
 - Entsprechende Ansätze werden **globale Beleuchtungsmodelle** genannt
 	- z.B. Ray-Tracing, Photon-Mapping
@@ -150,11 +150,11 @@ $$I = I_{a_\text{global}} k_a + k_\text{em} + I_ak_a + f_\text{att}(c) \cdot (I_
 
 **Phong-Beleuchtungsmodell für mehrere Lichtquellen:**
 
-$$I = I_{a_\text{global}} k_a + k_\text{em} + \sum_{i=1}^n \left( I_{a_i}k_a + f_\text{att}(c_i) \cdot (I_{d_i} k_d \langle N, L_i \rangle + I_{s_i} k_s \langle R_i, V \rangle ^\text{shininess}) \right)$$
+$$I = I_{a_\text{global}} k_a + k_\text{em} + \sum_{i=1}^n \left( I_{a_i}k_a + f_\text{att}(c_i) \cdot (I_{d_i} k_d \langle N, L_i \rangle + I_{s_i} k_s \langle R_i, V \rangle ^{\text{shininess}_i}) \right)$$
 
 **Verienfachte Parametrisierung in der Praxis:**
 
-$$I = I_\text{global} k_a + \sum_{i=1}^n \left( I_ik_a + f_\text{att}(c_i) \cdot (I_i k_d \langle N, L_i \rangle + I_i k_s \langle R_i, V \rangle ^\text{shininess}) \right)$$
+$$I = I_\text{global} k_a + \sum_{i=1}^n \left( I_ik_a + f_\text{att}(c_i) \cdot (I_i k_d \langle N, L_i \rangle + I_i k_s \langle R_i, V \rangle ^{\text{shininess}_i}) \right)$$
 
 - $k_\text{em} = 0$
 - $I_{a_\text{global}}, I_a, I_d, I_s$ vereinfacht zu $I_\text{global}, I$
@@ -166,8 +166,8 @@ $$I = I_\text{global} k_a + \sum_{i=1}^n \left( I_ik_a + f_\text{att}(c_i) \cdot
 - $V$: Blickrichtung der Kamera, *vektorwertig*
 - $N$: Oberfächennormale, *vektorwertig*
 - $k_a, k_d, k_s$: Materialkoeffizienten der Oberfläche, *vektorwertig*
-- $\text{shininess}$: Spekular-Exponent der Oberfläche, *reelwertig, Meterialkoeffizient*
-- $k_\text{em}$: Materialkoeffizient für emissive Oberflächen (Verwendung heute eher unüblich, kann als überlagerte Farbe für z. B. Selektion oder Hervorhebung verwendet werden)
+- $\text{shininess}$: Spekular-Exponent der Oberfläche, *reelwertig, Materialkoeffizient*
+- $k_\text{em}$: Materialkoeffizient für emissive Oberflächen (Verwendung heute eher unüblich, kann als überlagerte Farbe für z.B. Selektion oder Hervorhebung verwendet werden)
 - $c_1, c_2, c_3$ bzw. $c$: Attentuationsparameter, *reelwertig bzw. vektorwertig*
 - $n$: Anzahl zu berücksichtigender Lichtquellen
 
@@ -330,7 +330,7 @@ $$N = \frac{(v_1 - v_0) \times (v_5 - v_0)}{||(v_1 - v_0) \times (v_5 - v_0)||}$
 - Lösungsansatz 2: Gooch-Schattierung
 
 **Arbeitsweise:**
-- Phong-Beleuchtungsmodell wird auf Term zur diffusen Beleuchtungsberechnung beschränkt
+- **Phong**-Beleuchtungsmodell wird auf Term zur **diffusen Beleuchtungsberechnung** beschränkt
 
 $$I = I_d k_d \langle N, L \rangle$$
 

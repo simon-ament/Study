@@ -217,7 +217,7 @@ Eine direkte Kamerakontrolle durch den Nutzer mit allen Freiheitsgraden ist i. A
 
 ---
 # Z-Buffer
-**Sichtbarkeitsproblem:** Gegeben eine Menge von Szenenobjekten und eine Kameraspezifikation. Entscheide, welche Teile der 3D-Objekte projiziert in der Projektionsebene sichtbar sind.
+**Sichtbarkeitsproblem:** Gegeben eine Menge von Szenenobjekten und eine Kameraspezifikation. Entscheide, welche Teile der 3D-Objekte projiziert in der Projektionsebene sichtbar sind
 - *Annahme:* Szenenobjekte sind opak, matt und liegen im Vakuum (z.B. nicht im Nebel)
 
 ## Objektpräzise Sichtbarkeitsalgorithmen
@@ -255,8 +255,8 @@ for(pixel in raster)
 - hardware-unterstützt
 - 2D-Raster, dessen Werte Tiefenwerte enthalten
 - Tiefe ist der Abstand von der Near-Clipping-Plane zu einem sichtbaren Fragment in normalisierten Gerätekoordinaten
-- Z-Buffer ist Teil des Framebuffers, d.h. für jedes Pixel wird neben den Farbwerten auch der Tiefenwert abgelegt
-- Z-Buffer besitzen i. Allg. 16–32 Bits Genauigkeit, d. h. das Tiefenwerteinterval $[0, 1]$ wird durch den Integerbereich $[0, 2^N)$ dargestellt
+- Z-Buffer ist Teil des [[02_rastergraphics#Technische Konzepte|Framebuffers]], d.h. für jedes Pixel wird neben den Farbwerten auch der Tiefenwert abgelegt
+- Z-Buffer besitzen i. Allg. 16–32 Bits Genauigkeit, d.h. das Tiefenwerteinterval $[0, 1]$ wird durch den Integerbereich $[0, 2^N)$ dargestellt
 
 **Ablauf:**
 - Z-Buffer wird mit einem Hintegrundwert (z.B. $z = 1.0$) initialisiert
@@ -275,7 +275,7 @@ for(pixel in raster)
 **Problem der Tiefenwert-Verteilung:**
 - Near-Clipping-Plane-Distanz und Far-Clipping-Plane-Distanz müssen geeignet gewählt werden, soll die Tiefengenauigkeit optimal verteilt sein
 - Zu nahe Near-Clipping-Plane führt zu hoher Tiefengenauigkeit in unmittelbarer Nähe der Kamera; Genauigkeit wird aber i. Allg. auf mittlerer Distanz benötigt
-- Bei zu geringer Tiefengenauigkeit: Z-fighting (z-flickering), d. h. Bildartefakte bei nahestehenden Objekten
+- Bei zu geringer Tiefengenauigkeit: Z-fighting (z-flickering), d.h. Bildartefakte bei nahestehenden Objekten
 - $\Rightarrow$ **Exakte Wahl der Near-Clipping-Plane notwendig!**
 
 ## Depth-Peeling

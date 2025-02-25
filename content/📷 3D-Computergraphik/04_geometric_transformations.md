@@ -116,8 +116,8 @@ Punkte werden durch Vektoren beschrieben
 2. Ähnlichkeitsabbildung
 	- Invariante: Winkel
 	- Uniforme Skalierung, Drehstreckung
-3. **Affine Abbildung** $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv. invertierbar)
-	- nutzt meist [[#Homogene Koordinaten|Homogene Koordinaten]]:
+3. **Affine Abbildung** $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv, invertierbar)
+	- nutzt meist [[#Homogene Koordinaten|Homogene Koordinaten]]
 	- Invariante: parallele Geraden
 	- Nicht-uniforme Skalierung, Scherung
 4. Kollineare Abbildung
@@ -128,7 +128,7 @@ Punkte werden durch Vektoren beschrieben
 
 ## Lineare Abbildungen
 
-Eine Abbildung $f: V \to W$ zwischen zwei Vektorräumen des gleichen Körpers $\mathbb{R}$ heißt lineare (genauer K-linear), falls für beliebige Elemente $u, v \in V$ und $\lambda \in \mathbb{K}$ gilt:
+Eine Abbildung $f: V \to W$ zwischen zwei Vektorräumen des gleichen Körpers $\mathbb{K}$ heißt linear (genauer K-linear), falls für beliebige Elemente $u, v \in V$ und $\lambda \in \mathbb{K}$ gilt:
 - $f(u+v) = f(u) + f(v)$
 - $f(\lambda v) = \lambda f(v)$
 
@@ -330,6 +330,23 @@ $$r_2 = \frac{(P_3 - P_1) \times (P_2 - P_1)}{||(P_3 - P_1) \times (P_2 - P_1)||
 
 ![[Screenshot from 2025-02-19 14-39-19.png|500]]
 
+$$
+T(x_p, y_p, z_p) \cdot R =
+\begin{pmatrix}
+1 & 0 & 0 & x_p \\
+0 & 1 & 0 & y_p \\
+0 & 0 & 1 & z_p \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+r_{1x} & r_{1y} & r_{1z} & 0 \\
+r_{2x} & r_{2y} & r_{2z} & 0 \\
+r_{3x} & r_{3y} & r_{3z} & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}
+$$
+
 ## Transformation als Koordinatensystemänderung
 Alternative Sichtweise auf Transformationen: nicht Punkte werden überführt, sondern lediglich Änderung des Koordinatensystems
 - einzelne Objekte einer Szene erhalten ihr eigenes, lokales Koordinatensystem
@@ -352,9 +369,10 @@ Alternative Sichtweise auf Transformationen: nicht Punkte werden überführt, so
 
 ---
 # Eulersche Winkel
-Erlauben die Spezifikation einer Orientierung, d. h. einer Winkellage, eines Objekts im Raum.
+Erlauben die Spezifikation einer Orientierung, d.h. einer Winkellage, eines Objekts im Raum
 - Eigentliche Eulerwinkel: $\alpha, \beta$ und $\gamma$
 - Drehung $R$ kann in drei Drehungen um die jeweiligen Achsen aufgeteilt
+- Roll- (*roll*), Nick- (*pitch*) und Gierwinkel (*yaw*) 
 
 ## Smooth step function
 $$f(x) =
@@ -405,7 +423,7 @@ Außerdem gilt
 $$|q| = 1 \Leftrightarrow q^{-1} = \overline{q}$$
 
 ### Rotationen
-Sei $p$ ein Punkte (bzw. Vektor), der in Quaternionendarstellung gegeben ist und sei $q = (\sin(\phi) u_q, \cos(\phi))$ mit Vektor $u_q$ der Länge 1
+Sei $p$ ein Punkte (bzw. Vektor), der in Quaternionendarstellung gegeben ist, und sei $q = (\sin(\phi) u_q, \cos(\phi))$ mit Vektor $u_q$ der Länge $1$
 - dann repräsentiert das Quaternionenprodukt $qpq^{-1}$ die Rotation von $p$ um die Achse $u_q$ mit einem Rotationswinkel von $2 \phi$
 - die Verkettung von Rotationen ist definiert als $r(qp\overline{q})\overline{r} = (rp) p \overline{rq} = c p \overline{c}$ mit einer Einheitsquaterionen $c$, die die verkette Rotation darstellt
 

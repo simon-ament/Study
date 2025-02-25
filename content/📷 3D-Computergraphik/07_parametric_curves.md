@@ -139,7 +139,7 @@ $$Q_{0, \dots, n}(t) = (1 - t) \cdot Q_{0, \dots, n-1}(t) + t \cdot Q_{1, \dots,
 Dabei wird also die Stützpunkte-Menge also in zwei Mengen mit Größe $n-1$ geteilt. Dies kann rekursiv wiederholt werden
 
 ### Algorithmus
-Wir definieren $P_0^0 := P_0, \dots, P_n^0 :P_n$. Für $1 \leq j \leq n$ und $1 \leq i \leq n - j$ berechnen wir den Punkt $P_i^j$ durch
+Wir definieren $P_0^0 := P_0, \dots, P_n^0 :=P_n$. Für $1 \leq j \leq n$ und $1 \leq i \leq n - j$ berechnen wir den Punkt $P_i^j$ durch
 
 $$P_i^j = (1 - t) P_i^{j - 1} + tP_{i+1}^{j-1}$$
 

@@ -29,21 +29,21 @@ Reguläres Gitter aus $n \times m$ Pixeln
 ## Technische Konzepte
 **Repräsentationen:**
 - GPU: **Framebuffer** (z.B. Color Buffer, Depth Buffer) oder Textures
-- CPU: Datenarrays (z.B. RGBA-Array als `Uint8ClampedArray`) oder Bildobjekte (z.B. `Image` bzw `Canvas`, `Context` und `ImageData`)
+- CPU: Datenarrays (z.B. RGBA-Array als `Uint8ClampedArray`) oder Bildobjekte (z.B. `Image` bzw. `Canvas`, `Context` und `ImageData`)
 - File System: Kodierung einem einem Rastergraphikformat (s.o.)
 
 **Raster Layer:** Konzeptionelle Aufteilung eines Rasters in $L$ Layer (*planes* / Ebenen), in denen jeweils je Eintrag $K_L$ Bits zur Verfügung stehen
 - meist $L \in \{1, 2, 3, 4\}$ (z.B. 3 Layer für RGB)
 - pro Pixel damit $L \cdot K_L$ Bits (Bittiefe)
 - Mögliche Layer-Semantiken:
-	- Color (Farbwerte), Surface Normal (8 + 8 + 8 Bit mit $n = (x,y,z)$), Luminance (Helligkeit / Intensität), Alpha (Transparenz), ID (Objekterkennung), Depth (z-Werte, Kameradistanz), Stencil (Allgemeiner Pro-Pixel-Zähler, z.B. für Bildmaske)
+	- Color (Farbwerte), Surface Normal (8 + 8 + 8 Bit mit $n = (x,y,z)$), Luminance (Helligkeit / Intensität), Alpha (Transparenz), ID (Objekterkennung), Depth ([[05_geometric_projections#Z-Buffer|z-Werte]], Kameradistanz), Stencil (Allgemeiner Pro-Pixel-Zähler, z.B. für Bildmaske)
 
 ## Vektorgraphik
 **Objektbasierte Kodierung** von Bildinhalten
-- Geometrische Objekte (z. B. Polygone, Kurven, Texte) bezeichnet als *Primitive*
-- Graphische Attribute (z. B. Randfarbe, Füllfarbe, Linienstärke)
+- Geometrische Objekte (z.B. Polygone, Kurven, Texte) bezeichnet als *Primitive*
+- Graphische Attribute (z.B. Randfarbe, Füllfarbe, Linienstärke)
 - Hierarchischer Aufbau von Bildinhalten in Form von Szenengraphen
-- $\Rightarrow$ **Auflösungsunabhängigkeit**, d. h. geometrische Transformationen, Projektionsänderungen und Objekteditierung möglich ohne Informationsverlust (beliebig skalierbar)
+- $\Rightarrow$ **Auflösungsunabhängigkeit**, d.h. geometrische Transformationen, Projektionsänderungen und Objekteditierung möglich ohne Informationsverlust (beliebig skalierbar)
 - Die „Komplexität“ eines Bildes entspricht der **Komplexität der objektbasierten Spezifikation**
 - in der Computergraphik nicht relevant, da **Hardware nur Raster unterstützt**
 - Formate: **SVG, PDF, Adobe PostScript**, DXF, DWG
@@ -143,7 +143,7 @@ $$H = \begin{bmatrix}2 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1\end{bmatrix}$$
 
 ![[Screenshot from 2025-02-25 09-49-55.png|300]]
 
-**Sharpness-Filter:** Hebt Kantenübergänge hervor, d. h. „akzentuiert“ Kanten im Bildraum
+**Sharpness-Filter:** Hebt Kantenübergänge hervor, d.h. „akzentuiert“ Kanten im Bildraum
 
 $$H = \begin{bmatrix}-1 & -1 & -1 \\ -1 & 9 & -1 \\ -1 & -1 & -1\end{bmatrix}$$ 
 
@@ -159,7 +159,7 @@ $$S_x = \begin{bmatrix}-1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1\end{bmatrix}, S_y 
 - Tiefpassfilter lassen niedrige Frequenzen durch und blockieren hohe $\Rightarrow$ Weichzeichnung, globale Strukturen sichtbar
 - Hochpassfilter lassen hohe Frequenzen durch und blockieren niedrige $\Rightarrow$ betont Kanten und Texturen
 
-## Rangordnungfilter
+## Rangordnungsfilter
 analog zur Bildfaltung, allerdings mehr Freiheiten im Umgang mit der Nachbarschaft
 - z.B. wird Min / Max / Median einer Nachbarschaft ausgewählt
 	- **Erosion:** geringster Helligkeitswert (Schwarz) wird ausgewählt $\Rightarrow$ weiße Areale werden verkleinert, sehr kleine verschwinden ganz

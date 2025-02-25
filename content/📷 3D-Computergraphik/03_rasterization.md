@@ -44,16 +44,41 @@ $$d := F(x_p + 1, y_p + \frac{1}{2})$$
 $d_0 = \Delta y - \frac{\Delta x}{2}$, da allerdings nur das Vorzeichen relevant ist, betrachten wir nachfolgend $2d_0 = 2 \cdot \Delta y - \Delta x$ und entsprechend $2 \cdot F(x,y)$
 
 ## Ablauf
-**Initialwerte:** $d_0 = 2 \cdot \Delta y - \Delta x$ | $\Delta E = 2 \cdot \Delta y$ | $\Delta NE = 2 (\Delta y  \Delta x)$
+**Initialwerte:** $d_0 = 2 \cdot \Delta y - \Delta x$ | $\Delta E = 2 \cdot \Delta y$ | $\Delta NE = 2 \cdot (\Delta y - \Delta x)$
 
 1. **Falls *E* gewählt wird:** $d_{i+1} = d_i + 2 \cdot \Delta y$
 2. **Falls *NE* gewählt wird:** $d_{i+1} = d_i + 2 \cdot (\Delta y - \Delta x)$
 
 ![[Screenshot from 2025-02-20 16-00-02.png|500]]
 
+```ts
+const rasterizeLine = (x0: number, y0: number, x1: number, y1: number): void => {
+	const dx = x1 - x0;
+	const dy = y1 - y0;
+	
+	const dE = 2 * dy;
+	const dNE = 2 * dy - 2 * dx;
+	
+	writePixel(x0, y0);
+
+	let [x, y, d] = [x0, y0, 2 * dy - dx];
+	while (x < x1) {
+		if(d <= 0) {
+			d += dE;
+		} else {
+			d += dNE;
+			y ++;
+		}
+		
+		x ++;
+		writePixel(x, y);
+	}
+};
+```
+
 ---
 # Midpoint-Algorithmus für Primitive
-Das Primitiv $P$ sie vollständig durch eine implizite Funktion $F(x,y)$ definiert:
+Das Primitiv $P$ sei vollständig durch eine implizite Funktion $F(x,y)$ definiert:
 
 $$P=\{(x,y)|F(x,y) = 0\} \subset \mathbb{R}^2$$
 
@@ -107,7 +132,7 @@ Weiter sei die Rasterisierung von $P$ dadurch vereinfacht, dass Symmetrien (z. B
 
 $$\Delta_{02} = \frac{x_2 - x_0}{y_2 - y_0}, \Delta_{01} = \frac{x_1 - x_0}{y_1 - y_0}, \Delta_{12} = \frac{x_2 - x_1}{y_2 - y_1}$$
 
-**Für jede Häflte:** Anzahl der Scanlines berechnen: 
+**Für jede Hälfte:** Anzahl der Scanlines berechnen: 
 
 $$N_{top} = y_2 - y_1, N_{bottom} = y_1 - y_0$$
 

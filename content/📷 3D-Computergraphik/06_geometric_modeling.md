@@ -200,7 +200,7 @@ Repräsentation 2-mannigfaltiger Polygonnetze, **navigierbar**
 
 **Vorteile:**
 - Explizite Darstellung der Netztopologie
-- Effizienter (d. h. direkter) Zugriff auf Nachbarschaftsbeziehungen: Einfaches Auffinden aller adjazenter Eckpunkte, Kanten und Polygone zu einem gegebenen Eckpunkt, zu einer gegebenen Kante oder zu einem gegebenen Polygon
+- Effizienter (d.h. direkter) Zugriff auf Nachbarschaftsbeziehungen: Einfaches Auffinden aller adjazenter Eckpunkte, Kanten und Polygone zu einem gegebenen Eckpunkt, zu einer gegebenen Kante oder zu einem gegebenen Polygon
 
 **Nachteile:**
 - Erhöhter Speicherbedarf
