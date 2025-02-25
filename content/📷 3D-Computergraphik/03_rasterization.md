@@ -2,7 +2,7 @@
 title: Rasterisierung
 ---
 # Rasterisierung
-Rasterisierung und die damit verbundene Diskretisierung ist allgemein weder eindeutig noch perfekt möglich.
+Rasterisierung und die damit verbundene Diskretisierung ist allgemein weder eindeutig noch perfekt möglich
 - Häufig entstehen dabei **Aliasing-Artefakte** ("Treppenstufen"), die mit **Antialiasing-Methoden** abgeschwächt werden können
 
 ![[Screenshot from 2025-02-20 15-58-15.png|500]]
@@ -45,8 +45,9 @@ $d_0 = \Delta y - \frac{\Delta x}{2}$, da allerdings nur das Vorzeichen relevant
 
 ## Ablauf
 **Initialwerte:** $d_0 = 2 \cdot \Delta y - \Delta x$ | $\Delta E = 2 \cdot \Delta y$ | $\Delta NE = 2 (\Delta y  \Delta x)$
-**Falls *E* gewählt wird:** $d_{i+1} = d_i + 2 \cdot \Delta y$
-**Falls *NE* gewählt wird:** $d_{i+1} = d_i + 2 \cdot (\Delta y - \Delta x)$
+
+1. **Falls *E* gewählt wird:** $d_{i+1} = d_i + 2 \cdot \Delta y$
+2. **Falls *NE* gewählt wird:** $d_{i+1} = d_i + 2 \cdot (\Delta y - \Delta x)$
 
 ![[Screenshot from 2025-02-20 16-00-02.png|500]]
 
@@ -114,7 +115,9 @@ $$N_{top} = y_2 - y_1, N_{bottom} = y_1 - y_0$$
 
 ### Segment-Rasterisierung
 - Aus einem Segment entstehen Fragmente
-- Fragmente werden in der Rendering-Pipeline in der Rasterisierungsstufe ausgewertet, d. h. es werden Werte für Farbe, Beleuchtung, Texturen etc. ermittelt; am Ende werden i. d. R. ein Farbwert und ein Tiefenwert berechnet, die in den Framebuffer bzw. den Tiefenbuffer geschrieben werden
+- Fragmente werden in der Rendering-Pipeline in der **Rasterisierungsstufe** ausgewertet
+	- d.h. es werden Werte für **Farbe, Beleuchtung, Texturen** etc. ermittelt
+	- am Ende werden i.d.R. ein Farbwert und ein Tiefenwert berechnet, die in den Framebuffer bzw. den Tiefenbuffer geschrieben werden
 
 ![[Screenshot from 2025-02-20 16-34-11.png|500]]
 
@@ -153,7 +156,7 @@ $P(\alpha, \beta,\gamma) = \alpha v_0 + \beta v_1 + \gamma v_2$ mit $\alpha + \b
 - für Punkte innerhalb des Dreiecks $(v_0, v_1, v_2)$ gilt $\alpha, \beta, \gamma \geq 0$
 - zwei Koeffizienten bestimmten den dritten: $\alpha = 1 - \beta - \gamma$
 
-Bayzentrische Koordinaten sind proportional zu Größe der Dreiecke, in das ein Punkt im Inneren eines Dreiecks dieses zerlegt
+Bayzentrische Koordinaten sind proportional zu Größe der Dreiecke, in die ein Punkt im Inneren eines Dreiecks dieses zerlegt
 - Können ebenfalls verwendet werden, um Eckwerte zu interpolieren
 - **Anwendung:** erst Bounding Box berechnen, und dann für jedes Fragment innerhalb dieser die Baryzentrischen Koordinaten berechnen und das Vorzeichen prüfen ($\alpha < 0 \land \beta < 0 \land \gamma < 0$) $\Rightarrow$ **Dreiecksrasterisierung**
 

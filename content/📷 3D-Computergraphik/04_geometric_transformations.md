@@ -1,14 +1,13 @@
 ---
 title: Geometrische Transformationen
 ---
-# Vektorraum
-Ein Vektorraum über einem Körper $\mathbb{K}$ ist ein Tripel $(V, +, \cdot)$ bestehend aus einer Menge $V$, einer Additions-Operation $+: V \times V \rightarrow V$ und einer Operation zur skalaren Multiplikation $\cdot : \mathbb{K} \times V \to V$, so dass gilt
-- $(V, +)$ ist eine **abelsche Gruppe**
-- **Assoziativität der skalaren Multiplikation:** $\forall \lambda, \eta \in \mathbb{K}, v \in V: (\lambda \cdot \eta) \cdot v = \lambda \cdot (\eta \cdot v)$
-- **Neutrales Element:** $\forall v \in V: 1 \cdot v = v$
-- **Distributivgesetze:** $\forall \lambda, \eta \in \mathbb{K}, v, w \in V: (\lambda + \eta) \cdot v = \lambda \cdot v + \eta \cdot v$ und $\lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w$
+> [!info] Vektorraum
+> Ein Vektorraum über einem Körper $\mathbb{K}$ ist ein Tripel $(V, +, \cdot)$ bestehend aus einer Menge $V$, einer Additions-Operation $+: V \times V \rightarrow V$ und einer Operation zur skalaren Multiplikation $\cdot : \mathbb{K} \times V \to V$, so dass gilt
+> - $(V, +)$ ist eine **abelsche Gruppe**
+> - **Assoziativität der skalaren Multiplikation:** $\forall \lambda, \eta \in \mathbb{K}, v \in V: (\lambda \cdot \eta) \cdot v = \lambda \cdot (\eta \cdot v)$
+> - **Neutrales Element:** $\forall v \in V: 1 \cdot v = v$
+> - **Distributivgesetze:** $\forall \lambda, \eta \in \mathbb{K}, v, w \in V: (\lambda + \eta) \cdot v = \lambda \cdot v + \eta \cdot v$ und $\lambda \cdot (v + w) = \lambda \cdot v + \lambda \cdot w$
 
----
 # Skalarprodukt
 Sei $V$ ein $\mathbb{R}$-Vektorraum. Ein inneres Produkt (Skalarprodukt) ist eine Abbildung $\langle \cdot , \cdot \rangle: V \times V \to \mathbb{R}, (u,v) \mapsto \langle u,v \rangle$, so dass für beliebige Elemente $u, v, w, \in V$ und $\lambda \in \mathbb{R}$ gilt:
 - **Symmetrie:** $\langle u, v \rangle = \langle v, u \rangle$
@@ -85,18 +84,16 @@ $$\mathrm{dist}(p, E) = ||p - q || \cdot \cos(\theta) = ||p - q || \cdot \frac{\
 
 ![[Screenshot from 2025-02-19 10-59-02.png|500]]
 
-> [!caution] Ebenengleichungen verstehen, Üben mit Altklausur, Aufgabe 3 b)
-
 ---
 # Kreuzprodukt
 Das Kreuzprodukt ist definiert als:
 
-$$\times: \mathbb{R}^3 \times \mathbb{R}^3 \to \mathbb{R}^3, (u, v) \mapsto u \times v = \begin{pmatrix}u_1 \\ u_2 \\ u_3\end{pmatrix} \times \begin{pmatrix}u_v \\ u_v \\ v_3\end{pmatrix} = \begin{pmatrix}u_2v_3 - u_3v_2 \\ u_3v_1 - u_1v_3 \\ u_1v_2 - u_2v_1 \end{pmatrix}$$
+$$\times: \mathbb{R}^3 \times \mathbb{R}^3 \to \mathbb{R}^3, (u, v) \mapsto u \times v = \begin{pmatrix}u_1 \\ u_2 \\ u_3\end{pmatrix} \times \begin{pmatrix}v_1 \\ v_2 \\ v_3\end{pmatrix} = \begin{pmatrix}u_2v_3 - u_3v_2 \\ u_3v_1 - u_1v_3 \\ u_1v_2 - u_2v_1 \end{pmatrix}$$
 
 ![[Screenshot from 2025-02-19 11-04-05.png|500]]
 
 ## Anwendungen
-- Berechnung von Oberflächennormalen für planare Polygone
+- Berechnung von [[06_geometric_modeling#Normalenberechnung|Oberflächennormalen]] für planare Polygone
 - Berechnung des Flächeninhalts von Parallelogrammen
 - Berechnung des Flächeninhalts von Dreiecken (halbes Parallelogram)
 
@@ -146,7 +143,7 @@ $$H: \begin{pmatrix}x \\ y \\ z\end{pmatrix} \rightarrow \begin{pmatrix}x \\ y \
 
 $$H^{-1}: \begin{pmatrix}x \\ y \\ z \\ w\end{pmatrix} \rightarrow \begin{pmatrix}x / w \\ y / w \\ z / w\end{pmatrix}$$
 
-*Anmerkungen:* Punkte mit $w=0$ liegen im Unendlichen. Der Punkt $(0, 0, 0, 0)$ ist nicht definiert. Allerdings kann $w = 0$ genutzt werden, um Richtungen anstelle von Positionen anzugeben.
+*Anmerkungen:* Punkte mit $w=0$ liegen im Unendlichen. Der Punkt $(0, 0, 0, 0)$ ist nicht definiert. Allerdings kann $w = 0$ genutzt werden, um Richtungen anstelle von Positionen anzugeben
 
 # 3D-Basistransformationen
 
@@ -284,7 +281,7 @@ $$
 
 ---
 # Begriffe
-**Orthogonale Matrix:** Eine Matrix $A \in GL(n, \mathbb{R})$ heißt orthogonal, falls gilt $AA^T = E$ als $A^{-1} = A^T$.
+**Orthogonale Matrix:** Eine Matrix $A \in GL(n, \mathbb{R})$ heißt orthogonal, falls gilt $AA^T = E$ also $A^{-1} = A^T$.
 - Jede Rotationsmatrix ist orthogonal
 
 $$
@@ -299,9 +296,9 @@ A^T =
 = A^{-1}
 $$
 
-**Orthonormalbasis (ONB):** Eine Orthonormalbasis eines Vektorraums $V$ ist eine Basis, deren Vektoren alle die Länge 1 haben (normiert sind) und paarweise orthogonal sind, unterschiedliche Basisvektoren haben also das Skalarprodukt 0.
-- Für beliebige $x,y \in \mathbb{R}^n$ und orthogonale Matrix $A$ gilt $\langle Ax. Ay \rangle = \langle x,y \rangle$, das heißt orthogonale Transformationen erhalten Längen und Winkel (*Rigid-Body-Transformation*)
-- Eine orthogonale Matrix bildet eine ONB auf eine weitere ONB ab
+**Orthonormalbasis (ONB):** Eine Orthonormalbasis eines Vektorraums $V$ ist eine Basis, deren Vektoren alle die Länge 1 haben (normiert sind) und paarweise orthogonal sind, unterschiedliche Basisvektoren haben also das Skalarprodukt 0
+- Für beliebige $x,y \in \mathbb{R}^n$ und orthogonale Matrix $A$ gilt $\langle Ax, Ay \rangle = \langle x,y \rangle$, das heißt orthogonale Transformationen erhalten Längen und Winkel (*Rigid-Body-Transformation*)
+- Eine **orthogonale Matrix** bildet eine ONB auf eine weitere ONB ab
 - Eine Matrix, welche eine ONB auf eine weitere ONB abbildet, ist orthogonal
 
 ## Transformation gerichteter Liniensegemente
@@ -348,7 +345,7 @@ Alternative Sichtweise auf Transformationen: nicht Punkte werden überführt, so
 - Rechtshändiges: $z$-Achse schaut zum Betrachter
 - Linkshändiges: $z$-Achse schaut vom Betrachter weg
 - WebGL / OpenGL schreiben die Verwendung nicht vor, aber:
-	- Konvention in Mathematik, Physik, 3D-Modellierung und *view/eye*-Koordinaten ist rechtshändig
+	- Konvention in Mathematik, Physik, 3D-Modellierung und *view/eye*-Koordinaten ist **rechtshändig**
 	- *clip space* Koordinatensystem und *[[05_geometric_projections#Normalized Screen Coordinates / Normalized Device Coordinates (NDC)|normalized device coordinates]]* sind linkshändig
 
 ![[Screenshot from 2025-02-19 14-49-22.png|500]]
@@ -359,7 +356,7 @@ Erlauben die Spezifikation einer Orientierung, d. h. einer Winkellage, eines Obj
 - Eigentliche Eulerwinkel: $\alpha, \beta$ und $\gamma$
 - Drehung $R$ kann in drei Drehungen um die jeweiligen Achsen aufgeteilt
 
-# Smooth step function
+## Smooth step function
 $$f(x) =
 \begin{cases}
 0 &\text{falls } x < 0 \\
@@ -373,6 +370,7 @@ Eigenschaften:
 - $f'(0) = f'(1) = 0$
 - Gibt Familie an Polynomen mit solchen Eigenschaften (auch für höhere Ableitungen)
 
+---
 # Quaternion
 Jedes Quaternion bildet ein Quadrupel mit vier reellwertigen Koeffizienten
 - Verallgemeinerung der komplexen Zahlen (Quadrupel mit drei imaginären Komponenten)
@@ -394,7 +392,7 @@ $$q = (q_x, q_y, q_z, q_w) = iq_x + jq_y + kq_z + q_w$$
 - Identitätsquaternion: $I = (0, 1) = ((0, 0, 0), 1)$
 
 ## Einheitsquaternionen
-Quaternionen mit einem Betrag von 1 heißen **Einheitsquaternionen**
+Quaternionen mit einem Betrag von $1$ heißen **Einheitsquaternionen**
 - Sie sind abgeschlossen bezüglich der Addition und der Subtraktion
 - Können jede 3D-Rotation repräsentieren
 
@@ -410,8 +408,6 @@ $$|q| = 1 \Leftrightarrow q^{-1} = \overline{q}$$
 Sei $p$ ein Punkte (bzw. Vektor), der in Quaternionendarstellung gegeben ist und sei $q = (\sin(\phi) u_q, \cos(\phi))$ mit Vektor $u_q$ der Länge 1
 - dann repräsentiert das Quaternionenprodukt $qpq^{-1}$ die Rotation von $p$ um die Achse $u_q$ mit einem Rotationswinkel von $2 \phi$
 - die Verkettung von Rotationen ist definiert als $r(qp\overline{q})\overline{r} = (rp) p \overline{rq} = c p \overline{c}$ mit einer Einheitsquaterionen $c$, die die verkette Rotation darstellt
-
-> [!caution] Quaternion-Details nochmal anschauen
 
 ## Interpolation von Rotationen
 Um zwischen zwei Rotationen $q_1$ und $q_2$ zu interpolieren, die als Einheitsquaternionen gegeben sind, wird zwischen deren Quaternionendarstellung interpoliert:

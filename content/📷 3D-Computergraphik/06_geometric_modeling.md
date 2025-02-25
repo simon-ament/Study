@@ -15,16 +15,22 @@ title: Geometrische Modellierung
 - **Adaptive Triangulierung:** Je stärker die Oberfläche gewölbt, desto feiner die Dreiecke
 	- Ein Dreieck lässt sich mithilfe eines Punkt im Inneren (z.B. Mittelpunkt) in drei Dreiecke zerlegen
 
+![[Screenshot from 2025-02-25 11-49-10.png|300]]
+
 ### Solid Models
 - Grundlage der 3D-Modellierung in CAD un CAM
 - Repräsentation von 3D-Objekten unter Einhaltung geometrisch-topologischer Constraints (wohldefinierte, lückenlose Oberfläche)
 - Eindeutig definiertes endliches inneres Objektvolumen
 - Keine niederdimensionalen Bestandteile (z.B. einzelnes Polygon mit Nullvolumen)
 
+![[Screenshot from 2025-02-25 11-49-14.png|300]]
+
 ### Volume Models
 - Repräsentation von Volumendaten durch ein Voxelraster
 - Grundlage z.B. der medizinischen Visualiserung
 - Großer Speicherbedarf durch Speicherung einzelner Schichten
+
+![[Screenshot from 2025-02-25 11-49-20.png|300]]
 
 ### Image-Based 3D Reconstruction
 - Repräsentation durch Kombination von 2D-Aufnahmen
@@ -67,14 +73,14 @@ Sei $P$ eine geordnete Menge von $n$ Punkten $p_i$ aus dem $\mathbb{R}^d$.
 
 **Polygon:** für eine einfache, geschlossene polygonale Kette $w \subset \mathbb{R}^d$ nennt man das umschlossene Gebiet zusammen mit $w$ selbst *einfaches Polygon* $P$
 
-**Kanten:** die zu einem Polygon $P$ definieren Liniensegmente
+**Kanten:** die zu einem Polygon $P$ definierten Liniensegmente $[p_1p_2], [p_2p_3], \dots, [p_np_1]$
 
 **Ecken:** die das Polygon $P$ definierenden Punkte $p_i$
 
 **Diagonalen:** alle Strecken zwischen den Ecken $p_i$, die keine Kante bilden
 - $[p_i, p_j]$ mit $j \neq (i+1) \mod n$
 
-**Orientierung:** o.B.d.A kann das Innere eines Polygons dadurch definiert werden, dass es stets links von den geordneten Liniensegmenten liegt
+**Orientierung:** o.B.d.A. kann das Innere eines Polygons dadurch definiert werden, dass es stets links von den geordneten Liniensegmenten liegt
 
 **Innenwinkel:** Für zwei aufeinanderfolgende Liniensegmente $s_i = [p_i, p_{i+1}]$ und $s_{i+1} = [p_{i+1}, p_{i+2}]$ wird der Winkel $\alpha(s_i, s_{i+1}) \in [0, 2\pi]$ zwischen den beiden Segmenten definiert als Drehwinkel, mit dem $s_i$ in $s_{i+1}$ rotiert werden kann
 - Die Summe aller Innenwinkeln eines Polygons (mit $n$ Punkten) ist $(n - 2) \pi$
@@ -105,6 +111,8 @@ Sei $P$ eine geordnete Menge von $n$ Punkten $p_i$ aus dem $\mathbb{R}^d$.
 	- Innen bei Flag $=1$
 - **Nicht-Null-Regel:** jeder horizontale Strahl inkrementiert einen Zähler dort um 1, wo die Polygonkante von oben nach unten den Strahl schneidet
 	- Innen bei Zähler $\geq 1$
+
+![[Screenshot from 2025-02-25 11-52-59.png|500]]
 
 ### Boolsche Operationen
 - z.B. Vereinigung, Schnittmenge, Differenz
@@ -177,7 +185,7 @@ Darstellung eines Polygonnetzes $M$ durch eine Tabelle mit den insgesamt vorhand
 - Jede Kante hält Indizes auf den Anfangs- und Endeckpunkt sowie Indizes auf die Seiten, an der die Kante liegt
 - Zahl der zu einer Kante gehörenden Polygone kann auf 2 eingeschränkt sein (Oberflächen entsprechen einer 2-Mannigfaltigkeit) bzw. uneingeschränkt sein für beliebige Oberflächen
 - Nachbarschaftsrelationen und topologische Informationen effizient auslesbar
-- Größerer Speicherplatzbedarf wg. der Kantenliste
+- Größerer Speicherplatzbedarf wegen der Kantenliste
 - Keine Unterstützung durch 3D-Hardware
 
 ## Winged-Edge Polygon Meshes
@@ -186,7 +194,7 @@ Repräsentation 2-mannigfaltiger Polygonnetze, **navigierbar**
 	- $\Rightarrow$ rekursiv alle Kanten an einem Eckpunkt bestimmbar
 - **Eckpunkte:** Koordinaten und Per-Vertex-Attributdaten, Referenz auf beliebige Kante, die den Eckpunkt referenziert
 - **Seiten:** Indizes der Kanten, die das zugehörige Polygon definieren
-- *Aber:* Keine GPU-Unterstützung, sondern Umwandlung on GPU-optimierte Polygonnetze nötig
+- *Aber:* Keine GPU-Unterstützung, sondern Umwandlung in GPU-optimierte Polygonnetze nötig
 
 ![[Screenshot from 2025-02-20 18-50-47.png|500]]
 
@@ -254,8 +262,9 @@ Zerlegen einer gegebenen Oberfläche in ein Dreiecksnetz
 
 **Einfache Polygone:**
 - Jedes [[#Polygoncharakteristiken|einfache Polygon]] mit $n$ Ecken besitzt eine Triangulierung mit $n - 2$ Dreiecken und $n - 3$ Diagonalen
-	- jedes einfache Polygon besitzt *strikt konvexe Ecke* und damit auch eine Diagonale im Inneren
+	- jedes einfache Polygon besitzt *strikt konvexe Ecke* (Innenwinkel $< 180°$) und damit auch eine Diagonale im Inneren
 - ähnliche große und gleichmäßige Polygone insbesondere für Beleuchtung wünschenswert (Berechnung nur an den Eckpunkten)
+- $\Rightarrow$ Ear-Cutting
 
 ### Ear Cutting
 - Jedes einfache Polygon mit mindestens 4 Ecken hat mindestens zwei Ohren, d. h. Dreiecke, bei den zwei Kanten den Polygonkanten entsprechen
@@ -282,7 +291,7 @@ Zerlegen einer gegebenen Oberfläche in ein Dreiecksnetz
 
 ## Triangle Stripification
 Ziel: Möglichst kleine Anzahl von möglichst großen Streifen, die insgesamt die Oberfläche vollständig und redundanzfrei darstellen
-- Algorithmen Greedy oder auf Grundlage eines Oberflächengraphs und dessen Analyse
+- Algorithmen *greedy* oder auf Grundlage eines Oberflächengraphs und dessen Analyse
 
 ---
 # Höhenfelder

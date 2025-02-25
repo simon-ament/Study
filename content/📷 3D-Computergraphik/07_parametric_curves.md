@@ -166,6 +166,8 @@ Der gesuchte Punkt $Q_{0, \dots, n}(t)$ ist gegeben durch $P_0^n$
 
 $m$ sind Tangentenvektoren, anstatt Punkten $p$
 
+![[Screenshot from 2025-02-25 11-58-47.png|500]]
+
 ---
 # B-Spline
 - Splines repräsentieren kontinuierliche Kurven mit **beliebig vielen Kontrollpunkten**, die jeweils nur *lokalen Einfluss* auf den Kurvenverlauf haben
@@ -196,7 +198,7 @@ mit den B-Spline-Basisfunktionen $B$ (nicht Berstein-Polynome!)
 
 $$B_{i,j} = \frac{t - t_i}{t_{i+j - 1} - t_i} B_{i, j - 1}(t) + \frac{t_{i + j} - t}{t_{i + j} - t_{i + 1}} B_{i+1, j - 1}(t)$$
 
-$$B_{i, 1}(t) = \begin{cases}0 & t_i \leq t < t_{i + 1} \\ 0 & \text{sonst}\end{cases}$$
+$$B_{i, 1}(t) = \begin{cases}1 & \text{falls } t_i \leq t < t_{i + 1} \\ 0 & \text{sonst}\end{cases}$$
 
 ![[Screenshot from 2025-02-19 20-05-52.png|500]]
 
@@ -288,9 +290,11 @@ $$n(u,v) = \mathrm{normalize}\left( \frac{\delta p(u,v)}{\delta u} \times \frac{
 - $G^0$ und $C^0$-Kontinuität: Durch 4 gemeinsame Kontrollpunkte entlang der gemeinsamen Flächenkante
 - $G^1$-Kontinuität: 2 Kontrollpunktmengen zur Seite der gemeinsamen Flächenkante
 
+![[Screenshot from 2025-02-25 12-00-43.png|500]]
+
 ## Triangulierung von Bézier-Flächen
 - Für das Rendering werden Bézier-Flächen durch Dreiecksnetze approximiert
-- Triangulierung sollte adaptive erfolgen, um optimale Netzauflösung bezüglich Canvas zu gewährlesiten
+- Triangulierung sollte adaptive erfolgen, um optimale Netzauflösung bezüglich Canvas zu gewährleisten
 - Tesselation sollte von der GPU (vollständig) übernommen werden, um Rendering-Effizienz zu maximieren
 - An gemeinsamen Patch-Rändern muss über entsprechende Auflösung das Mesh „vernäht“ werden (z.B. bei nicht-uniformer Tesselation)
 

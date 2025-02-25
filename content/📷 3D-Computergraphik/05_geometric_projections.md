@@ -15,7 +15,7 @@ title: Geometrische Projektionen
 ![[Screenshot from 2025-02-18 23-43-27.png|500]]
 
 ## View-Transformation
-- Kamerastandpunkt (*look-from* bzw. *eye)
+- Kamerastandpunkt (*look-from* bzw. *eye*)
 - Kamerablickrichtung (*look-to* bzw. *center*)
 - Aufwärtsrichtung (*up*)
 - Transformation des **3D-Welt-Koordinatensystems** $(x, y, z)$ in das **3D-Kamera-Koordinatensystem** $(u, v, n)$
@@ -50,8 +50,8 @@ $$u = \frac{U \times n}{||U \times n||}$$
 $$v = n \times u$$
 
 Sonderfälle:
-- $||F|| = 0$: Falls $||F|| < \epsilon$, berechne z.B. $C$ neu durch $C \leftarrow C + F$
-- $U || F$: Falls $||U \times F|| < \epsilon$, betrachte z.B. die früheren $F$ bzw. $U$
+- $||F|| = 0$: Falls $||F|| < \varepsilon$, berechne z.B. $C$ neu durch $C \leftarrow C + F$
+- $U || F$: Falls $||U \times F|| < \varepsilon$, betrachte z.B. die früheren $F$ bzw. $U$
 
 ## Projection-Transformation
 - Projektion auf planare Sicht- oder Bildebene
@@ -115,7 +115,8 @@ $$D(\text{near}, \text{far}) =
 $$
 
 Ein Punkt $(x, y, z, 1)^T$ wird dadurch abgebildet auf $(x, y, z/(k-1) + k(k - 1), -z)^T$, wobei bei der Umwandlung in nicht-homogene Koordinaten die ersten drei Komponenten durch $-z$ geteilt werden
-- ein Punkt auf der Far-Clipping-Plane ($z = -1$) wird dadurch final auf $(x,y,1)^T$ abgebildet, ein Punkt auf der Near-Clipping-Plane ($z = -k$) auf $(x / k, y / k, 0)^T$
+- ein Punkt auf der Far-Clipping-Plane ($z = -1$) wird dadurch final auf $(x,y,1)^T$ abgebildet
+- ein Punkt auf der Near-Clipping-Plane ($z = -k$) auf $(x / k, y / k, 0)^T$
 
 ![[Screenshot from 2025-02-23 11-59-25.png|500]]
 
@@ -190,12 +191,12 @@ $$
 - Gleicher Maßstab für alle Objekte im Bild
 
 **Nachteile:**
-- keine (photo-)realistische Darstellung für 3D-Objekte und ihre Umgebung
-- im Allgemeinen sind mehrere Ansichten notwendig, um einen Raumeindruck zu gewinnen
+- **keine (photo-)realistische Darstellung** für 3D-Objekte und ihre Umgebung
+- im Allgemeinen sind **mehrere Ansichten** notwendig, um einen **Raumeindruck** zu gewinnen
 
 **Transformation:**
 - Ausgangspunkt bildet die Spezifikation eines rechtwinkligen Sichtvoluments mit Hilfe einer 3D-Bounding-Box: $(l,r,b,t,n,f)$
-	- es handelt sich um eine Axis-Aligned Bounding Box (AABB)
+	- es handelt sich um eine **Axis-Aligned Bounding Box** (AABB)
 	- Sichtrichtung entlang der negativen $z$-Achse
 - Mittels Translation und Skalierung wird die AABB in das kanonische Sichtvolumen mit einer Ausdehnung von $(-1, -1, -1)$ bis $(1, 1, 1)$ abgebildet
 	- Durch die Transformation werden *normalized device coordinates, NDC* im Bereich $[1, -1]$ bestimmt
@@ -254,7 +255,7 @@ for(pixel in raster)
 - hardware-unterstützt
 - 2D-Raster, dessen Werte Tiefenwerte enthalten
 - Tiefe ist der Abstand von der Near-Clipping-Plane zu einem sichtbaren Fragment in normalisierten Gerätekoordinaten
-- Z-Buffer ist Teil des Framebuffers, d. h. für jedes Pixel wird neben den Farbwerten auch der Tiefenwert abgelegt
+- Z-Buffer ist Teil des Framebuffers, d.h. für jedes Pixel wird neben den Farbwerten auch der Tiefenwert abgelegt
 - Z-Buffer besitzen i. Allg. 16–32 Bits Genauigkeit, d. h. das Tiefenwerteinterval $[0, 1]$ wird durch den Integerbereich $[0, 2^N)$ dargestellt
 
 **Ablauf:**
@@ -265,7 +266,7 @@ for(pixel in raster)
 	- **Falls der Z-Wert kleiner ist als der aktuelle Tiefenwert** an der korrespondierenden Fragmentposition im Z-Buffer:
 		- Schreibe den Z-Wert in den Z-Buffer (Aktualisierung)
 		- Übertrage Fragmentfarbe in den Color-Buffer
-	- **Andernfalls** Ignoriere Fragment und lasse Wert im Z-Buffer unverändert (Fragment liegt hinter einem weiter vorne liegenden, bereits gezeichneten Fragment)
+	- **Andernfalls** ignoriere Fragment und lasse Wert im Z-Buffer unverändert (Fragment liegt hinter einem weiter vorne liegenden, bereits gezeichneten Fragment)
 
 ![[Screenshot from 2025-02-20 11-13-58.png]]
 

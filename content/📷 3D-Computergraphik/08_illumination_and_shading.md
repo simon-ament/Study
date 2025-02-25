@@ -52,7 +52,7 @@ Für Oberflächenpunkte wird approximativ berechnet, wieviel Energie von den Lic
 	- z.B. Ray-Tracing, Photon-Mapping
 
 ## Phong-Arbeitsweise
-- Additive Berechnung der Intensität über drei Terme: *ambient, diffus, spelular*
+- Additive Berechnung der Intensität über drei Terme: *ambient, diffuse, spelular*
 - Approximative Berechnung – experimentelle Bestätigung des Ansatzes
 
 **Input:**
@@ -94,7 +94,7 @@ Modelliert das Spiegellicht auf Oberflächen
 - Berechnung: Gewichtung proportional zum Winkel $\alpha$ zwischen Reflexionsrichtung $R$ und Betrachterrichtung $V$
 	- Maximale spekulare Reflexion für $\alpha = 0$
 	- Maß für das Abfallen der spekularen Reflexion ist Exponent: $\cos^n \alpha$
-	- $l_s$: spekulare Intensität der Lichtquelle
+	- $I_s$: spekulare Intensität der Lichtquelle
 	- $k_s$ spekularer Reflexionskoeffizient, objektabhängig (*shininess*)
 		- beeinflusst Größe bzw. Konzentration des Lichtspots, aber nicht dessen Glanz (Farbe)
 	- $\cos^n \alpha$: Skalarprodukt von $V$ und $R$ (beide normalisiert)
@@ -122,7 +122,7 @@ $$f_\text{att} = \min\left( \frac{1}{c_1 + c_2 d + c_3 d^2}, 1 \right)$$
 	- $k_\text{em}$: Emissionskoeffizient (meist $k_\text{em} = 0$)
 	- nicht automatisch eigene Lichtquelle $\Rightarrow$ kein Einfluss auf Beleuchtungsberechnung anderer Flächen
 	- Teil des ursprünglichen Fixed-Pipeline-Phong-Modells, in Shadern vollkommen flexibel modellierbar
-- **Ambientbeitrag von Lichtquellen:** pro Lichtquelle kann im Allgemeinen angenommen werden, dass die Intensität des ambienten Lichts zunimmt
+- **Ambientbeitrag von Lichtquellen:** pro *zusätzlicher* Lichtquelle kann im Allgemeinen angenommen werden, dass die Intensität des ambienten Lichts zunimmt
 	- $I_a$: zusätzlicher ambienter Intensitätsanteil je Lichtquelle
 	- globale definierte ambiente Intensität $I_{a_\text{global}}$ bleibt bestehen 
 
@@ -167,7 +167,7 @@ $$I = I_\text{global} k_a + \sum_{i=1}^n \left( I_ik_a + f_\text{att}(c_i) \cdot
 - $N$: Oberfächennormale, *vektorwertig*
 - $k_a, k_d, k_s$: Materialkoeffizienten der Oberfläche, *vektorwertig*
 - $\text{shininess}$: Spekular-Exponent der Oberfläche, *reelwertig, Meterialkoeffizient*
-- $k_\text{em}$: Materialkoeffizient für Emmissive Oberflächen (Verwendung heute eher unüblich, kann als überlagerte Farbe für z. B. Selektion oder Hervorhebung verwendet werden)
+- $k_\text{em}$: Materialkoeffizient für emissive Oberflächen (Verwendung heute eher unüblich, kann als überlagerte Farbe für z. B. Selektion oder Hervorhebung verwendet werden)
 - $c_1, c_2, c_3$ bzw. $c$: Attentuationsparameter, *reelwertig bzw. vektorwertig*
 - $n$: Anzahl zu berücksichtigender Lichtquellen
 
@@ -176,7 +176,7 @@ $$I = I_\text{global} k_a + \sum_{i=1}^n \left( I_ik_a + f_\text{att}(c_i) \cdot
 ---
 # Lichtquellen-Modellierung
 Lichtquellen in Echtzeit-Renderingsystemen sind "idealisiert"
-- Emiittieren Licht in speziellen Wellenlängenbereichen (R, G, B)
+- Emittieren Licht in speziellen Wellenlängenbereichen (R, G, B)
 - Verfügen nicht über eine Oberfläche (bzw. Ausdehnung)
 - Verfügen nicht über physikalische Eigenschaften (z.B. Leuchtmittel)
 - sind konzeptionelle, nicht aber geometrische Elemente einer Szenenbeschreibung
@@ -198,7 +198,7 @@ Lichtquellen in Echtzeit-Renderingsystemen sind "idealisiert"
 **Punktlichtquelle:**
 - *Point Light*
 - Ausstrahlung gleichmäßig in alle Richtungen
-- Optional: Dämpfung zur Abschwächung der Wirkung
+- Optional: [[#Farbe und Stärke des reflektierten Lichts|Dämpfung]] zur Abschwächung der Wirkung
 
 ![[Screenshot from 2025-02-19 11-38-36.png|500]]
 

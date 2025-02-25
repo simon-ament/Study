@@ -14,7 +14,7 @@ Reguläres Gitter aus $n \times m$ Pixeln
 - Auflösung und Komplextität durch Rastergröße definiert
 	- Bits-per-Pixel (BPP), Dots-per-Inch (DPI)
 - Geometrie, Topologie, Semantik und Identität rasterisierter Objekte nicht unmittelbar rekonstruierbar
-- Down-Scaling = Raster verkleiner | Up-Scaling = Raster vergrößern
+- Down-Scaling = Raster verkleinerm | Up-Scaling = Raster vergrößern
 - Formate: **JPEG, BMP, PNG, GIF** und viele mehr
 - *Aspect Ratio* ist Verhältnis von Breite zu Höhe (z.B. 16:9)
 - Pixel (*picture elements*): einzeln adressierbar, nicht weiter teilbare Einheiten eines Rasters, eine oder mehrere Komponenten (z.B. RGB)
@@ -22,13 +22,13 @@ Reguläres Gitter aus $n \times m$ Pixeln
 **Rasterisierung** bezeichnet den Prozess der **Diskretisierung** von grafisch-geometrischen Objekten in einem gegebenen Raster
 - zu einem abzubildenden Objekt werden die im Raster entsprechenden Pixel ermittelt und beschrieben
 - Realität $\rightarrow$ **Modellierung** $\rightarrow$ 3D-Modellraum $\rightarrow$ **Diskretisierung / Rasterisierung** $\rightarrow$ 2D-Bildraum
-- Räumliche (Rastergröße), farbliche (8 Bit je Pixel bei RGB u.ä.) sowie zeitliche Diskretisierung (Framerate)
+- Räumliche (Rastergröße), farbliche (8 Bit je Pixel bei RGB u.ä.) sowie zeitliche (Framerate) **Diskretisierung**
 
 ![[Screenshot from 2025-02-18 23-07-19.png|500]]
 
 ## Technische Konzepte
 **Repräsentationen:**
-- GPU: Framebuffer (z.B. Color Buffer, Depth Buffer) oder Textures
+- GPU: **Framebuffer** (z.B. Color Buffer, Depth Buffer) oder Textures
 - CPU: Datenarrays (z.B. RGBA-Array als `Uint8ClampedArray`) oder Bildobjekte (z.B. `Image` bzw `Canvas`, `Context` und `ImageData`)
 - File System: Kodierung einem einem Rastergraphikformat (s.o.)
 
@@ -36,25 +36,24 @@ Reguläres Gitter aus $n \times m$ Pixeln
 - meist $L \in \{1, 2, 3, 4\}$ (z.B. 3 Layer für RGB)
 - pro Pixel damit $L \cdot K_L$ Bits (Bittiefe)
 - Mögliche Layer-Semantiken:
-	- Color (Farbwerte), Surface Normal (8 + 8 + 8 Bit mit $n = (x,y,z)$), Luminance (Helligkeit / Intensität), Alpha (Transparenz), ID (Objekterkennung), Depth (z-Werte, Kameradistanz) Stencil (Allgemeiner Pro-Pixel-Zähler, z.B. für Bildmaske)
+	- Color (Farbwerte), Surface Normal (8 + 8 + 8 Bit mit $n = (x,y,z)$), Luminance (Helligkeit / Intensität), Alpha (Transparenz), ID (Objekterkennung), Depth (z-Werte, Kameradistanz), Stencil (Allgemeiner Pro-Pixel-Zähler, z.B. für Bildmaske)
 
 ## Vektorgraphik
 **Objektbasierte Kodierung** von Bildinhalten
-- Geometrische Objekte (z. B. Polygone, Kurven, Texte), bezeichnet als *Primitive*
-- Grafische Attribute (z. B. Randfarbe, Füllfarbe, Linienstärke)
+- Geometrische Objekte (z. B. Polygone, Kurven, Texte) bezeichnet als *Primitive*
+- Graphische Attribute (z. B. Randfarbe, Füllfarbe, Linienstärke)
 - Hierarchischer Aufbau von Bildinhalten in Form von Szenengraphen
-- $\Rightarrow$ Auflösungsunabhängigkeit, d. h. geometrische Transformationen, Projektionsänderungen und Objekteditierung möglich ohne Informationsverlust (beliebig skalierbar)
-- Die „Komplexität“ eines Bildes entspricht der Komplexität der objektbasierten Spezifikation
-- in der Computergraphik nicht relevant, da Hardware nur Raster unterstützt
-- Formate: SVG, PDF, Adobe PostScript, DXF, DWG
+- $\Rightarrow$ **Auflösungsunabhängigkeit**, d. h. geometrische Transformationen, Projektionsänderungen und Objekteditierung möglich ohne Informationsverlust (beliebig skalierbar)
+- Die „Komplexität“ eines Bildes entspricht der **Komplexität der objektbasierten Spezifikation**
+- in der Computergraphik nicht relevant, da **Hardware nur Raster unterstützt**
+- Formate: **SVG, PDF, Adobe PostScript**, DXF, DWG
 
 ---
 # Rastergraphik-Operationen
 ## Bildtransformation
 - Umwandlung der Farbwerte eines RGB-Rasters nach Graustufen
-	- jeweiliger Farbwert in Bitdarstellung durch 255 teilen
 	- $(r, g, b) \mapsto 0,299r + 0.587g + 0.144b$ (*magic numbers*) je nach Farbmodell
-	- multipliziert mit 255 wieder 8 Bit Wert
+	- ggf. vorher durch 255 teilen und am Schluss wieder mit 255 multiplizieren $\Rightarrow$ 8 Bit Wert
 
 ```
 for i {
@@ -71,7 +70,7 @@ for i {
 - Transparenz (einzelne Farbe herausfiltern)
 - Farbreduktion (z.B. 8-Bit $\rightarrow$ 4-Bit)
 
-**Bildfilterung:**
+**[[#Bildfilterung|Bildfilterung]]:**
 - Analog zu Transformation, allerdings wird neben dem Pixel auch seine Nachbarschaft betrachtet
 - Kante = große Differenz in der Helligkeit zwischen Pixel in einer Nachbarschaft
 
@@ -102,7 +101,7 @@ Approximation des gegebenen Bildes durch gegebene Menge an Primärfarben (z.B. S
 
 ![[Screenshot from 2025-02-20 15-44-13.png]]
 
-**Bayer-Matrizen:**
+**Bayer-Matrizen:** Vorfaktoren und Matrixgröße vervierfachen sich rekursiv
 
 $$M_2 = \frac14 \cdot \begin{bmatrix}0 & 2 \\ 3 & 1\end{bmatrix}$$
 
@@ -122,7 +121,7 @@ $$H_{id} = \begin{bmatrix}   0 & 0 & 0\\   0 & 1 & 0\\ 0 & 0 & 0   \end{bmatrix}
 
 **Mean-Filter:** Mittelt die Nachbarschaftspixel gleichmäßig
 - Tiefpassfilter bzw. „Rechteckfilter“, der hochfrequente Bildinhalte abschwächt
-- Einsatz zur Elimination von kleinen Bildstörungen (z. B. noise), Bildglättung (z. B. Kantenverwischung)
+- Einsatz zur Elimination von kleinen Bildstörungen (z.B. *noise*), Bildglättung (z. B. Kantenverwischung)
 - Homogene Bildbereiche bleiben unverändert
 
 $$H = \frac19 \begin{bmatrix}   1 & 1 & 1\\   1 & 1 & 1\\ 1 & 1 & 1   \end{bmatrix}$$
@@ -142,6 +141,8 @@ $$H = \frac14 \begin{bmatrix}1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 
 
 $$H = \begin{bmatrix}2 & 0 & 0 \\ 0 & -1 & 0 \\ 0 & 0 & -1\end{bmatrix}$$
 
+![[Screenshot from 2025-02-25 09-49-55.png|300]]
+
 **Sharpness-Filter:** Hebt Kantenübergänge hervor, d. h. „akzentuiert“ Kanten im Bildraum
 
 $$H = \begin{bmatrix}-1 & -1 & -1 \\ -1 & 9 & -1 \\ -1 & -1 & -1\end{bmatrix}$$ 
@@ -151,6 +152,8 @@ $$H = \begin{bmatrix}-1 & -1 & -1 \\ -1 & 9 & -1 \\ -1 & -1 & -1\end{bmatrix}$$
 - zum Beispiel zur Kantendetektion verwendet
 
 $$S_x = \begin{bmatrix}-1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1\end{bmatrix}, S_y = \begin{bmatrix}-1 & -2 & -1 \\ 0 & 0 & 0 \\ 1 & 2 & 1\end{bmatrix}$$
+
+![[Screenshot from 2025-02-25 09-51-00.png|500]]
 
 **Tiefpass- und Hochpassfilter:**
 - Tiefpassfilter lassen niedrige Frequenzen durch und blockieren hohe $\Rightarrow$ Weichzeichnung, globale Strukturen sichtbar
@@ -176,7 +179,7 @@ Transformation eines Bildes von einem Koordinatensystem in ein anderes, die durc
 - Anwendungen: Bildauflösung erhöhen / verkleinern, Bilder geometrisch transformieren
 
 **Verfahren:**
-- *Nearest-Neighbor:* suche das nächstliegende Pixel im Eingabebild, wobei im Allgemeinen Anti-Aliasing-Artefakte entstehen
+- *Nearest-Neighbor:* suche das nächstliegende Pixel im Eingabebild, wobei im Allgemeinen Aliasing-Artefakte ("Treppenstufen") entstehen
 - *Bilineare Interpolation:* ermittle die vier nächstgelegenen Eingabebildpixel, interpoliere linear zwischen ihnen, wodurch Blureffekte auftreten
 
 ---
@@ -220,4 +223,6 @@ $$x_{i,j} = x_{min} + \frac{i}{N-1} \cdot (x_{max} - x_{min})$$
 
 $$y_{i,j} = y_{min} + \frac{j}{M-1} \cdot (y_{max} - y_{min})$$
 
-Das Funktionsergebnis $F(x_{i,j}, y_{i,j})$ wird an der zugehörigen Rasterposition abgebildet (z.B. mit Farbskala)
+Das Funktionsergebnis $F(x_{i,j}, y_{i,j})$ wird an der zugehörigen **Rasterposition** abgebildet (z.B. mit **Farbskala**)
+
+![[Screenshot from 2025-02-25 09-53-05.png|500]]
