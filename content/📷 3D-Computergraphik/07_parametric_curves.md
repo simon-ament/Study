@@ -225,7 +225,8 @@ $$B_{i, 1}(t) = \begin{cases}0 & t_i \leq t < t_{i + 1} \\ 0 & \text{sonst}\end{
 - **Uniforme** B-Splines: Knotenwerte sind äquidistant | $t_{i+1} - t_{i} = \delta$ konstant für innere Knoten des Knotenvektors
 - **Nichtuniforme** B-Splines: Knotenwerte sind nicht äquidistant
 - **Nichtrationale** B-Splines: $x(t), y(t)$ und $z(t)$ sind Polynome in $t$
-- ==**Rationale** B-Splines:== $x(t) = X(t)/W(t), y(t) = Y(t) /W(t)$ und $z(t) = Z(t) / W(t)$ sind Polynombrüche in $t$ mit $W(t)$ als Polynome gleichen Grades wie $x(t), y(t)$ und $z(t)$
+- **Rationale** B-Splines: $x(t) = X(t)/W(t), y(t) = Y(t) /W(t)$ und $z(t) = Z(t) / W(t)$ sind Polynombrüche in $t$ mit $W(t)$ als Polynome gleichen Grades wie $x(t), y(t)$ und $z(t)$
+	- Erweiterung der B-Splines mit Gewichtung der Kontrollpunkte
 - **NURBS:** Nicht-uniforme (NU), rationale (R) B-Splines (BS)
 
 > [!caution] Definitionen Bezier vs. Spline (auch rekursiv) können
@@ -297,12 +298,12 @@ $$n(u,v) = \mathrm{normalize}\left( \frac{\delta p(u,v)}{\delta u} \times \frac{
 
 ---
 # B-Spline-Flächen
-- Entkopplung von Grad und Anzahl der Punkte (==???==)
+- Entkopplung von Grad und Anzahl der Punkte
 - Eine **B-Spline-Fläche** ist eine zwei-dimensional un $u$ und $v$ parametrisierte Fläche $S = \{p(u,v) | u,v \in [0, 1]\}$
 - $S$ wird durch ein Kontrollpunkt-Gitter spezifiziert, dass $(n_u + 1) \times (n_v + 1)$ viele Punkte $P_{i,j} \in \mathbb{R}^3$ enthält
 - Die Punkte $P_{i, j}$ werden durch die polynomialen Funktionen $N_{i, k_u}$ bzw. $N_{j, k_v}$ gewichtet, deren Polynomgrad $k_u$ in Dimension $u$ bzw. $k_v$ in Dimension $v$ sei
 	- meist $k_u = k_v$
-	- die minimale Anzahl der Punkte in der $u$- bzw. $v$-Dimension wird durch den ==Polynomgrad $n_u$ bzw. $n_v$ definiert (nicht $k_u$ und $k_v$???)==
+	- die minimale Anzahl der Punkte in der $u$- bzw. $v$-Dimension wird durch den Polynomgrad $n_u$ bzw. $n_v$ definiert (analog zu reinen [[#B-Spline|B-Splines]])
 - Die Knotenvektoren, die in der Definition der $N$-Funktionen verankert sind, sind bezüglich $u$ bzw. $v$ definiert als $U = \{u_0, u_1, \dots, u_{n_u + k_u + 1}\}$ bzw. $V = \{v_0, v_1, \dots, v_{n_v + k_v + 1}\}$
 
 Die **B-Spline-Flächen-Funktion** $p$ ist definiert wie folgt:

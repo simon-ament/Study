@@ -7,6 +7,10 @@ Rasterisierung und die damit verbundene Diskretisierung ist allgemein weder eind
 
 ![[Screenshot from 2025-02-20 15-58-15.png|500]]
 
+## OpenGL-Pipeline
+
+![[Pasted image 20250224164152.png]]
+
 ---
 # Midpoint-Algortihmus
 Pixel als auf der Linie gegeben ansehen

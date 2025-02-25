@@ -14,8 +14,7 @@ title: Geometrische Projektionen
 # Virtuelle Kamera
 ![[Screenshot from 2025-02-18 23-43-27.png|500]]
 
-## View- / "LookAt"-Transformation
-- ==dasselbe?==
+## View-Transformation
 - Kamerastandpunkt (*look-from* bzw. *eye)
 - Kamerablickrichtung (*look-to* bzw. *center*)
 - Aufwärtsrichtung (*up*)
@@ -25,7 +24,7 @@ title: Geometrische Projektionen
 
 $$T_\text{lookAt}(\text{eye}, \text{center}, \text{up}) = R(u,v,n)^{-1} T(-\text{eye})$$
 1. Translation von $\text{eye}$ in den Ursprung
-2. Rotation in das $(u,v,n)$ Koordinatensystem über [[04_geometric_transformations#Begriffe|Orthonormalbasis]]: 
+2. Rotation in das $(u,v,n)$ Koordinatensystem über [[04_geometric_transformations#Begriffe|Orthonormalbasis]] (**LookAt-Transformation**): 
 
 $$
 R(u,v,n)^{-1} = 
@@ -101,7 +100,7 @@ $$
 
 ### 3. Perspektivische Transformation
 - Punktkoordinaten müssen entsprechend ihrere Tiefe perspektivisch verkürzt werden
-- Mittels homogenen Koordinaten: resultierende ==2D-Punkte== haben eine $w$-Komponente, die bei der Umwandlung in nicht-homogene Koordinaten eine perspektivische Verkürzung bewirken
+- Mittels homogenen Koordinaten: resultierende 2D-Punkte haben eine $w$-Komponente, die bei der Umwandlung in nicht-homogene Koordinaten eine perspektivische Verkürzung bewirken
 - Sichtbarkeitsermittlung: meist mittels $z$-Buffer mit Wertebereich $[0, 1]$ (DirectX) oder $[-1, 1]$ (OpenGL) $\Rightarrow$ Tiefenbereich $[-1, 0]$ muss entsprechend abgebildet werden
 
 Sei $k = \frac{\text{near}}{\text{far}}$
@@ -125,7 +124,7 @@ $$D(\text{near}, \text{far}) \cdot S_{xyz}(1 / \text{far}) \cdot S_{xy}(\theta_H
 
 - sowohl die Teil- als auch die Gesamttransformation lassen sich als $4 \times 4$-Matrix darstellen
 - homogene Koordinaten ermöglichen Darstellung perspektivischer Verkürzung
-- perspektivische Transformation ist nicht [[04_geometric_transformations#Affiner Raum $A 3$|affin]] (==sie verzerrt das Frustum zu einem Quader==)
+- perspektivische Transformation ist nicht [[04_geometric_transformations#Affiner Raum $A 3$|affin]] (sie verzerrt das Frustum zu einem Quader)
 
 ## Transformation des Frustums in den Einheitswürfel
 - $l, r, t, b, n, f$ für *left, right, top, bottom, near, far*
@@ -150,21 +149,11 @@ $$
 - Normalisiert für den Wertebereich $[-1, 1]^3$
 
 **Screen Coordinates:**
-- Abbildung der NDC auf das Fenster- bzw. Bildkoordinatensystem mit Hilfe der Viewport Transformation
+- Abbildung der NDC auf das Fenster- bzw. Bildkoordinatensystem mit Hilfe der **Viewport Transformation**
 - NDC werden transliert und skaliert, sodass die in den festgelegten Fensterausschnitt passen
 - OpenGL legt den Fensterausschnitt mit `glViewport(x, y, width, height)` fest
-- OpenGL legt den zu rendernden Tiefenbereich mit `glDepthRange(z_min, z_max)` fest, wobei des Tiefeninterval auf des Interval $[0,1]$ abgebildet wird (mit $2^N$ Bit Genauigkeit des ==Depth Buffers==)
+- OpenGL legt den zu rendernden Tiefenbereich mit `glDepthRange(z_min, z_max)` fest, wobei des Tiefeninterval auf des Interval $[0,1]$ abgebildet wird (mit $2^N$ Bit Genauigkeit des [[#Z-Buffer|Depth Buffers]])
 - Die Fensterkoordinaten sind die Grundlage für die anschließende [[03_rasterization|Rasterisierung]]
-
----
-# Kameramodelle
-- First-Person View: aus Sicht eines Objektes
-- Third-Person View: direkt hinter einem Objekt
-- High-Angle View: über einem Objekt, großer Winkel nach unten
-- Wide-View: große Entfernung zur Szene, vollständige Sicht, wenige Details
-- Bird's Eye View: schwebt über Szene
-
-Eine direkte Kamerakontrolle durch den Nutzer mit allen Freiheitsgraden ist i. Allg. nicht effektiv für die Interaktion.
 
 ---
 # Transformationspipeline
@@ -176,7 +165,7 @@ Eine direkte Kamerakontrolle durch den Nutzer mit allen Freiheitsgraden ist i. A
 - Projektion (Vertex Shader)
 **Clip Coordinates**
 **NDC Coordinates**
-- Viewport, Depth Range (Fragment Shader ==??==)
+- Viewport, [[#Z-Buffer|Depth Range (Fragment Shader)]]
 **Window Coordinates**
 - Rasterisierung
 
@@ -214,6 +203,16 @@ Eine direkte Kamerakontrolle durch den Nutzer mit allen Freiheitsgraden ist i. A
 ![[Screenshot from 2025-02-19 15-39-35.png|500]]
 
 ![[Screenshot from 2025-02-19 15-39-45.png|500]]
+
+---
+# Kameramodelle
+- First-Person View: aus Sicht eines Objektes
+- Third-Person View: direkt hinter einem Objekt
+- High-Angle View: über einem Objekt, großer Winkel nach unten
+- Wide-View: große Entfernung zur Szene, vollständige Sicht, wenige Details
+- Bird's Eye View: schwebt über Szene
+
+Eine direkte Kamerakontrolle durch den Nutzer mit allen Freiheitsgraden ist i. Allg. nicht effektiv für die Interaktion.
 
 ---
 # Z-Buffer

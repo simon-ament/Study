@@ -22,8 +22,6 @@ Das Euklidische Standardskalarprodukt im $\mathbb{R}^n$ ist definiert als $\lang
 Zum Beispiel: $u = \begin{pmatrix} 1 \\ 2 \\ -7 \end{pmatrix}$ und $v = \begin{pmatrix}4 \\ 2 \\ 3\end{pmatrix}$, $\langle u,v \rangle = 1 \cdot 4 + 2 \cdot 2 + (-7) \cdot 3 = 13$
 
 ## Anwendungen
-- **Orthogonale Projektion eines Punktes** auf eine Ebene (==???==)
-
 ### Längenmessung
 Die Länge eines Vektors entspricht dessen Betrag:
 
@@ -67,6 +65,11 @@ $$w = \lambda \cdot v = \frac{\langle u ,v \rangle}{\langle v, v \rangle}v$$
 
 ![[Screenshot from 2025-02-19 10-39-47.png|500]]
 
+> [!info] Orthogonale Projektion eines Punktes auf eine Ebene
+> Ebene gegeben durch Punkt $P_0$ und Normalenvektor $\vec{n}$, Punkt $P$ soll auf die Ebene projiziert werden
+> 1. Projektion des Vektors $\vec{P_0P} = \vec{P} - \vec{P_0}$ auf den Normalenvektor $\vec{n}$ berechnen
+> 2. Projektion von $P$ auf die Ebene ist $P$ minus die zuvor berechnete Projektion
+
 ### Abstandsmessung Punkt-Ebene
 Wir betrachten einen Punkt $q$ in einer Ebene $E$. Es bezeichne $N = \begin{pmatrix}A \\ B \\ C \end{pmatrix}$ die Normale der Ebene. Die Ebene $E$ ist folglich mit $D = -\langle q, N \rangle$ gegeben durch die Menge:
 
@@ -82,7 +85,7 @@ $$\mathrm{dist}(p, E) = ||p - q || \cdot \cos(\theta) = ||p - q || \cdot \frac{\
 
 ![[Screenshot from 2025-02-19 10-59-02.png|500]]
 
-> [!caution] Ebenengleichungen verstehen
+> [!caution] Ebenengleichungen verstehen, Üben mit Altklausur, Aufgabe 3 b)
 
 ---
 # Kreuzprodukt
@@ -107,22 +110,23 @@ Punkte werden durch Vektoren beschrieben
 - Affine Basis: $\{o, e_1, e_2, e_3\}$
 	- Ursprung $o \in A^3$ und Basis des Vektorraums
 	- Ortsvektor eines Punktes $p$: $(p-o) \in V^3$
-- ==Affine Kombination zweier Punkte==
+- Affine Kombination zweier Punkte: $P = \lambda P_1 + (1 - \lambda) P_2$
 
-**Affine Abbildung** $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv. invertierbar)
-- Isometrische Abbildung
+**Klassifizierung von Abbildungen:**
+1. Isometrische Abbildung
 	- Invariante: Abstände
 	- Reflexionen, starre Körper (Rotation und Translation)
-- Ähnlichkeitsabbildung
+2. Ähnlichkeitsabbildung
 	- Invariante: Winkel
 	- Uniforme Skalierung, Drehstreckung
-- Affine Abbildung:
+3. **Affine Abbildung** $T: A^3 \rightarrow A^3$ (kontinuierlich, bijektiv. invertierbar)
+	- nutzt meist [[#Homogene Koordinaten|Homogene Koordinaten]]:
 	- Invariante: parallele Geraden
 	- Nicht-uniforme Skalierung, Scherung
-- Kollineare Abbildung
+4. Kollineare Abbildung
 	- Invariante: Geraden
 	- Perspektive
-- Nicht-lineare Abbildung
+5. Nicht-lineare Abbildung
 	- Biegung, Verzerrung, etc.
 
 ## Lineare Abbildungen
@@ -142,7 +146,7 @@ $$H: \begin{pmatrix}x \\ y \\ z\end{pmatrix} \rightarrow \begin{pmatrix}x \\ y \
 
 $$H^{-1}: \begin{pmatrix}x \\ y \\ z \\ w\end{pmatrix} \rightarrow \begin{pmatrix}x / w \\ y / w \\ z / w\end{pmatrix}$$
 
-*Anmerkungen:* Punkte mit $w=0$ liegen im Unendlichen. Der Punkt $(0, 0, 0, 0)$ ist nicht definiert.
+*Anmerkungen:* Punkte mit $w=0$ liegen im Unendlichen. Der Punkt $(0, 0, 0, 0)$ ist nicht definiert. Allerdings kann $w = 0$ genutzt werden, um Richtungen anstelle von Positionen anzugeben.
 
 # 3D-Basistransformationen
 
@@ -254,6 +258,8 @@ $$M_z =
 0 & 0 & 0 & 1
 \end{pmatrix}
 $$
+
+> [!caution] Auch als Skalierung darstellbar
 
 ## Scherung
 - Allgemeine Scherungstransformation: $H_{xy}, H_{xz}, H_{yx}, H_{yz}, H_{zx}, H_{zy}$
@@ -401,9 +407,11 @@ Außerdem gilt
 $$|q| = 1 \Leftrightarrow q^{-1} = \overline{q}$$
 
 ### Rotationen
-Sei $p$ ein Punkte (bzw. Vektor), der in ==Quaternionendarstellung== gegeben ist und sei $q = (\sin(\phi) u_q, \cos(\phi))$
-- dann repräsentiert das Quaternionenprodukt $qpq^{-1}$ die Rotation von $p$ um die ==Achse $u_q$== mit einem Rotationswinkel von $2 \phi$
+Sei $p$ ein Punkte (bzw. Vektor), der in Quaternionendarstellung gegeben ist und sei $q = (\sin(\phi) u_q, \cos(\phi))$ mit Vektor $u_q$ der Länge 1
+- dann repräsentiert das Quaternionenprodukt $qpq^{-1}$ die Rotation von $p$ um die Achse $u_q$ mit einem Rotationswinkel von $2 \phi$
 - die Verkettung von Rotationen ist definiert als $r(qp\overline{q})\overline{r} = (rp) p \overline{rq} = c p \overline{c}$ mit einer Einheitsquaterionen $c$, die die verkette Rotation darstellt
+
+> [!caution] Quaternion-Details nochmal anschauen
 
 ## Interpolation von Rotationen
 Um zwischen zwei Rotationen $q_1$ und $q_2$ zu interpolieren, die als Einheitsquaternionen gegeben sind, wird zwischen deren Quaternionendarstellung interpoliert:

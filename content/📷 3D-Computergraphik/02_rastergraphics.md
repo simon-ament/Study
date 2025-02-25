@@ -179,11 +179,6 @@ Transformation eines Bildes von einem Koordinatensystem in ein anderes, die durc
 - *Nearest-Neighbor:* suche das nächstliegende Pixel im Eingabebild, wobei im Allgemeinen Anti-Aliasing-Artefakte entstehen
 - *Bilineare Interpolation:* ermittle die vier nächstgelegenen Eingabebildpixel, interpoliere linear zwischen ihnen, wodurch Blureffekte auftreten
 
-## HQnx-Resampling (High Quality Scaling)
-- Fallunterscheidung über mögliche Farbabweichungen in $3 \times 3$-Nachbarschaft des Pixels mittels *Thresholding*
-
-![[hqnx.png|500]]
-
 ---
 # Farbmodelle
 Menschliche Lichtrezeptoren: Stäbchen (verantwortlich für Nachtsehen) und Zapfen (drei Arten, verantwortlich für des Farbsehen, unterschiedliche Empfindlichkeit)
@@ -195,8 +190,8 @@ Ein Farbraum ist ein mathematisches Modell und Schema zur Darstellung einer Meng
 	- RGB = Red-Green-Blue Color Space (*additiv*)
 	- HSV = Hue-Saturation-Value Color Space (*nicht HSL*)
 	- HSV und RGB sind äquivalent und gleichmächtig, allerdings ist die Transformation nicht vollständig bijektiv (Graustufen und Schwarz in HSV uneindeutig)
-	- YIQ: enthält Schwarz-Weiß-Kanal (Y, entstanden durch Wechsel auf Farbfernsehen)
-	- CMYK: *subtraktives* Farbmodell (im Gegensatz zum *additiven* RGB), in der Praxis von Ausgabemedium (Papierart u.ä.) relevant sowie dunkle Farben nur mit Key-Kanal darstellbar
+	- YIQ: enthält Schwarz-Weiß-Kanal (Y, entstanden durch Wechsel auf Farbfernsehen) und Chroma-Koeffizienten I (*in-phase*, Cyan $\leftrightarrow$ Orange) sowie Q (*quadrature*, Magenta $\leftrightarrow$ Grün)
+	- CMYK (Cyan-Magenta-Yellow-Key): *subtraktives* Farbmodell (im Gegensatz zum *additiven* RGB), in der Praxis von Ausgabemedium (Papierart u.ä.) relevant sowie dunkle Farben nur mit Key-Kanal darstellbar
 - **Gamut:** “a certain complete subset of colors”, z.B. Farbbereich, der von einem Gerät tatsächlich erfasst bzw. dargestellt werden kann
 
 ![[Screenshot from 2025-02-20 15-55-25.png|500]]
@@ -211,6 +206,9 @@ Ein Farbraum ist ein mathematisches Modell und Schema zur Darstellung einer Meng
 - RGB-Werte von Kameras sind linear
 - RGB-Werte von Ausgabegeräten sind nicht-linear
 - Gamma-Korrektur bezeichnet nichtlineare Voranpassung der RGB-Werte, mit dem Ziel der linearen Darstellung der RGB-Werte im Ausgabegerät
+- Implementierung z.B. mit Look-Up-Tables
+
+![[Screenshot from 2025-02-24 22-11-20.png|500]]
 
 ---
 # Funktionsplots

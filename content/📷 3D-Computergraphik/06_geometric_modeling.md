@@ -108,7 +108,7 @@ Sei $P$ eine geordnete Menge von $n$ Punkten $p_i$ aus dem $\mathbb{R}^d$.
 
 ### Boolsche Operationen
 - z.B. Vereinigung, Schnittmenge, Differenz
-- auf konvexen / monotonen Polygonen z.B. mit ==Sweep-Line-Algorithmen== in linearer Zeit ausführbar
+- auf konvexen / monotonen Polygonen z.B. mit [[03_rasterization#Algorithmus|Sweep-Line-Algorithmen]] in linearer Zeit ausführbar
 - **nicht abgeschlossen**. d.h. die Ergebnisse sind nicht notwendigerweise Polygone
 
 ![[Screenshot from 2025-02-18 23-50-01.png]]
@@ -119,7 +119,7 @@ Ein Körper, der durch ebene Polygone begrenzt wird
 	- *Tetraeder, Hexaeder, Oktaeder, Ikosaeder, Dodekaeder* (auch Platonische Körper)
 - **Eulerscher Polyedersatz:** $V - E + F = 2$
 - **Erweiterter Eulerscher Polyedersatz:** $V - E + F - H = 2 (C - G)$
-	- Anzahlen: Ecken $V$ (*vertices*), Kanten $E$ (*edges*), Flächen $F$ (*facettes*), ==Löcher== $H$ (*holes*), Einzelteile $C$ (*components*), ==Löcher durch den Körper== $G$ (*Genus)
+	- Anzahlen: Ecken $V$ (*vertices*), Kanten $E$ (*edges*), Flächen $F$ (*facettes*), Löcher (in Flächen) $H$ (*holes*), Einzelteile $C$ (*components*), Löcher durch den Körper $G$ (*Genus)
 
 ![[Screenshot from 2025-02-20 18-41-49.png|500]]
 

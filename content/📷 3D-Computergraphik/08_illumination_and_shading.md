@@ -135,7 +135,10 @@ $$f_\text{att} = \min\left( \frac{1}{c_1 + c_2 d + c_3 d^2}, 1 \right)$$
 - Modelliert direkte Interaktion zwischen Lichtquellen und Objekten
 - Ignoriert Verdeckung, Schattenwurf, Selbstschattierung und indirekte Lichtreflexion
 - Empirisches Modell für Highlights um den Reflexionsvektor $R$
-	- Vereinfachung der Berechnung von $R$ durch Half-Way-Vektoren (==???==)
+	- Vereinfachung der Berechnung von $R$ durch Half-Way-Vektoren
+
+![[Screenshot from 2025-02-24 17-30-23.png|500]]
+
 - An Oberflächeneigenschaften wird nur die geometrische Normale benötigt
 - Effizient berechenbar, integrierbar in Realtime-Rendering-Pipeline
 - Grundmodell und Varianten programmierbar durch Shader
