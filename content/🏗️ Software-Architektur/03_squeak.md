@@ -5,9 +5,6 @@ title: Squeak
 Squeak is based on principles of **Live and Exploratory Programming**
 - direct code changes $\Rightarrow$ instant visual / auditory effects
 
-> [!info] Cheat-Sheet
-> https://moodle.hpi.de/pluginfile.php/52730/mod_resource/content/2/squeakCheatSheet_4_0.pdf
-
 ## Object Model
 - Everything is an object
 	- classes are objects too

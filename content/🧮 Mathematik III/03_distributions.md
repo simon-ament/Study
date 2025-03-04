@@ -166,9 +166,6 @@ Für zwei Parameter $\mu \in \mathbb{R}$ und $\sigma^2 \in \mathbb{R}_+$ bezeich
 
 $$\mathcal{N}(A; \mu, \sigma^2) = \frac{1}{\sqrt{2 \cdot \pi \cdot \sigma^2}} \cdot \int_A \exp(- \frac12 \frac{(x - \mu)^2}{\sigma^2}) dx$$
 
-<script type="module" src="/svelte/threlte-normal-distribution.js"></script>
-<threlte-normal-distribution></threlte-normal-distribution>
-
 ## Lineartransformation normalverteilter Zufallsvariablen
 Seien $a, b \in \mathbb{R}$ und $X \sim \mathcal{N}(\mu, \sigma^2)$ eine reelle Zufallsvariable. Dann gilt
 
@@ -226,5 +223,3 @@ $$X_1 + X_2 \sim \chi^2(n_1 + n_2)$$
 Sei $Z \sim \mathcal{N}(0,1)$ und $Y \sim \chi^2(n)$. Dann folgt die reelle Zufallsvariable $X = Z / \sqrt{\frac{Y}{n}}$ einer $t$-Verteilung mit $n$ Freiheitsgraden. Für eine $t$-Verteilung mit $n$ Freiheitsgraden gilt für alle $A \in \mathcal{B}(\mathbb{R})$ dass
 
 $$t(A;n) = \int_A \frac{\Gamma(\frac{n+1}{2})}{\sqrt{n \cdot \pi} \cdot \Gamma(\frac{n}{2})} \cdot (1 + \frac{x^2}{n})^{-\frac{n+1}{2}} dx$$
-
----

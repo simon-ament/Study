@@ -1,7 +1,7 @@
 ---
-title: IT Systems Engineering – Semester III
+title: IT Systems Engineering - Lernzettel
 ---
-# 👩‍🏫 Vorlesungen
+# ❄️ WiSe 2024/25
 1. [[🏗️ Software-Architektur/]]
 2. [[💽 Betriebssysteme/]]
 3. [[📷 3D-Computergraphik/]]
@@ -9,29 +9,15 @@ title: IT Systems Engineering – Semester III
 5. [[🧮 Mathematik III/]]
 
 ---
-# 📋 Checkliste
+# ☀️ SoSe 2024
+1. [[⌨️ Building Interactive Systems/]]
+2. [[⚖️ Rechtliche Grundlagen II/]]
+3. [[👨‍💻 Programmiertechnik II/]]
+4. [[💵 Wirtschaftliche Grundlagen II/]]
+5. [[💾 Datenbanksysteme/]]
+6. [[🧮 Mathematik II/]]
 
-## Betriebssysteme
-- [x] Buch lesen
-- [ ] Groben Lernzettel erstellen (Hausaufgaben-Blätter)
-- [ ] Lernzettel kürzen + vervollständigen
+---
+# ❄️ WiSe 2023/24
 
-## 3D-Computergraphik
-- [x] Notizen übertragen
-- [ ] Notizen vervollständigen
-- [ ] Notizen kürzen
-
-## Software-Architektur
-- [ ] Zusammenfassung erstellen (Squeak, Idiome, Patterns)
-
-## Mathe
-- [ ] Notizen vervollständigen
-- [ ] Notizen kürzen
-- [ ] (Animationen hinzufügen)
-	- [x] Wrapper für function-plot erstellen
-
-## Theoretische Informatik
-- [ ] Spickzettel (DIN-A4 doppelseitig) erstellen
-
-## Optional
-- [ ] Threlte + function-plot: Lazy Loading + Dark Mode
+> [!caution] Leider nicht digital

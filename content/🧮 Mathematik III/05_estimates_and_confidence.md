@@ -130,7 +130,7 @@ $$P_\theta(\{x \in \Omega | t(\theta) \notin C_\alpha(x)\}) \leq \alpha$$
 - $t$ ist bei ein-parametrigen Modellen oft die Identität und bei mehrparametrigen Modellen eine Projektion
 
 ## Konstruktion von Konfidenzintervallen
-![[Unit10a - Konfidenzintervalle.pdf#page=9]]
+> [!danger] Nachtragen (Unit 10a Slide 9)
 
 # Konfidenzintervalle unter Normalverteilungsannehme
 ## Zweiseitiges Konfidenzintervall für den Erwartungswert
@@ -152,12 +152,12 @@ $$(\frac1n \sum_{i=1}^n X_i - z_{1-\alpha} \cdot \frac\sigma{\sqrt{n}}, +\infty)
 ## Konfidenzintervalle für den Erwartungswert ohne Varianz
 Seien $X_1, \dots, X_n$ unabhängige normalverteilte Zufallsvariablen mit unbekanntem Erwartungswert $\mu$ und **unbekannter** Varianz $\sigma^2$. Sei $\tau_{\alpha,n}$ das $\alpha$-Quantil der $t$-Verteilung mit $n$ Freiheitsgraden. Dann sind die folgenden Konfidenzintervalle für $\mu$ zum Konfidenzniveau $1 - \alpha$ gegeben durch
 
-![[Unit10a - Konfidenzintervalle.pdf#page=17]]
+> [!danger] Nachtragen (Unit 10a Slide 17)
 
 ## Konfidenzintervalle für die Varianz
 Seien $X_1, \dots, X_n$ unabhängige normalverteilte Zufallsvariablen mit unbekanntem Erwartungswert $\mu$ und **unbekannter** Varianz $\sigma^2$. Sei $c_{\alpha,n}$ das $\alpha$-Quantil der $\chi^2$-Verteilung mit $n$ Freiheitsgraden. Sei $S^2_n = \widehat{V}[X_1, \dots, X_n]$. Dann sind die folgenden Konfidenzintervalle für $\mu$ zum Konfidenzniveau $1 - \alpha$ gegeben durch
 
-![[Unit10a - Konfidenzintervalle.pdf#page=20]]
+> [!danger] Nachtragen (Unit 10a Slide 20)
 
 ---
 # Konfidenzintervalle

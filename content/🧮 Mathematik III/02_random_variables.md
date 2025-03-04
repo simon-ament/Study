@@ -50,7 +50,7 @@ $$P(A | B) = \frac{P(A) \cdot P(B | A)}{P(B)}$$
 
 ---
 # Stochastische Unabhängigkeit
-Zwei Ereignisse $A, B \in \mathcal{F}$ in einem [[01_probability_spaces#Wahrscheinlichkeitsraum]] heißen stochastisch unabhängig, wenn $P(A | B) = P(A)$
+Zwei Ereignisse $A, B \in \mathcal{F}$ in einem [[01_probability_spaces#Wahrscheinlichkeitsraum|Wahrscheinlichkeitsraum]] heißen stochastisch unabhängig, wenn $P(A | B) = P(A)$
 - dann gilt auch $P(B | A) = P(B)$ | *folgt aus der Definition der bedingten Wahrscheinlichkeit*
 - außerdem gilt dann $P(A \cap B) = P(A) \cdot P(B)$ | *folgt analog oder über den Satz von Bayes*
 

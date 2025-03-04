@@ -8,6 +8,4 @@ title: 🧮 Mathematik III
 4. [[04_convergence|Konvergenzen]]
 5. [[05_estimates_and_confidence|Parameterschätzung und Konfidenzintervalle]]
 
-# Plot-Test
-<script type="module" src="/svelte/function-plot-quadratic.js"></script>
-<function-plot-quadratic></function-plot-quadratic>
+> [!caution] Leider sehr unvollständig

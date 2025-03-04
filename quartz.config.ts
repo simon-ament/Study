@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🎓 WiSe 24 / 25",
+    pageTitle: "🎓 Study",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -35,10 +35,10 @@ const config: QuartzConfig = {
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#003C43",
-          tertiary: "#77B0AA",
-          highlight: "rgba(150, 150, 150, 0.15)",
-          textHighlight: "#fff23688",
+          secondary: "#495666",
+          tertiary: "#849bb8",
+          highlight: "#eaf1f5",
+          textHighlight: "#f3f8fa88",
         },
         darkMode: {
           light: "#161618",
@@ -46,10 +46,10 @@ const config: QuartzConfig = {
           gray: "#646464",
           darkgray: "#d4d4d4",
           dark: "#ebebec",
-          secondary: "#9acdd3",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          secondary: "#91abc3",
+          tertiary: "#677d9b",
+          highlight: "rgba(234, 241, 245, 0.15)",
+          textHighlight: "#f3f8fa88",
         },
       },
     },

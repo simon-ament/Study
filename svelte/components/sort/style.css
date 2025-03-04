@@ -1,0 +1,64 @@
+.sort-canvas {
+    width: 100%;
+}
+
+.sort-code {
+    font-family: var(--codeFont);
+    font-size: .9em;
+    padding: .5rem 1rem;
+    margin: 0;
+}
+
+.sort-code span {
+    color: #005CC5;
+}
+
+.sort-code span.comment {
+    color: #6A737D;
+}
+
+.sort-div {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 1px var(--lightgray) solid;
+}
+
+.sort-div.top {
+    margin-top: 2.25rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.sort-div.bottom {
+    border-radius: 0 0 5px 5px;
+    margin-top: -1px;
+}
+
+.speed-buttons {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.speed-buttons button {
+    background-color: var(--light);
+    border: 1px solid var(--lightgray);
+    padding: 0.3rem 0.5rem;
+}
+
+.speed-buttons button:hover {
+    background-color: var(--lightgray);
+}
+
+.speed-buttons button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.speed-buttons button:not(:first-child) {
+    border-left: none;
+}
+
+.speed-buttons button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+
