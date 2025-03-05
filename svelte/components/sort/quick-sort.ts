@@ -1,23 +1,23 @@
-class QuickSort extends Sort {
-    q_stack = [];
-    /*
-        lo = null;
-        hi = null;
-        j = null;
-        return_line = null;
-    */
+import { Sort, Line, Point, Rect } from './sort';
 
-    p_stack = [];
-    /*
-        hi = null;
-        lo = null;
-        i = null;
-        j = null;
-        return_line = null;
-    */
+export class QuickSort extends Sort {
+    q_stack: {
+        lo: number,
+        hi: number,
+        j: number | null,
+        return_line: number
+    }[] = [];
 
-    constructor (size, codeId, canvasId) {
-        super(size, codeId, canvasId);
+    p_stack: {
+        lo: number,
+        hi: number,
+        i: number | null,
+        j: number | null,
+        return_line: number
+    }[] = [];
+
+    constructor (size: number, code: HTMLParagraphElement, canvas: HTMLCanvasElement, canvas2: HTMLCanvasElement | undefined, lines: HTMLSpanElement[], padding: number) {
+        super(size, code, canvas, canvas2, lines, padding);
 
         this.lineFuncs = [
             () => {
@@ -34,8 +34,8 @@ class QuickSort extends Sort {
                 return true;
             },
             () => {
-                if (this.q_stack.at(-1).lo >= this.q_stack.at(-1).hi) {
-                    this.lineNum = this.q_stack.at(-1).return_line;
+                if (this.q_stack.at(-1)!.lo >= this.q_stack.at(-1)!.hi) {
+                    this.lineNum = this.q_stack.at(-1)!.return_line;
                     this.q_stack.pop();
                 }
                 return true;
@@ -43,8 +43,8 @@ class QuickSort extends Sort {
             () => {
                 this.lineNum = 8;
                 this.p_stack.push({
-                    lo: this.q_stack.at(-1).lo,
-                    hi: this.q_stack.at(-1).hi,
+                    lo: this.q_stack.at(-1)!.lo,
+                    hi: this.q_stack.at(-1)!.hi,
                     i: null,
                     j: null,
                     return_line: 3
@@ -54,8 +54,8 @@ class QuickSort extends Sort {
             () => {
                 this.lineNum = 0;
                 this.q_stack.push({
-                    lo: this.q_stack.at(-1).lo,
-                    hi: this.q_stack.at(-1).j - 1,
+                    lo: this.q_stack.at(-1)!.lo,
+                    hi: this.q_stack.at(-1)!.j! - 1,
                     j: null,
                     return_line: 4
                 })
@@ -64,15 +64,15 @@ class QuickSort extends Sort {
             () => {
                 this.lineNum = 0;
                 this.q_stack.push({
-                    lo: this.q_stack.at(-1).j + 1,
-                    hi: this.q_stack.at(-1).hi,
+                    lo: this.q_stack.at(-1)!.j! + 1,
+                    hi: this.q_stack.at(-1)!.hi,
                     j: null,
                     return_line: 5
                 })
                 return true;
             },
             () => {
-                this.lineNum = this.q_stack.at(-1).return_line;
+                this.lineNum = this.q_stack.at(-1)!.return_line;
                 this.q_stack.pop();
                 return true;
             },
@@ -86,37 +86,37 @@ class QuickSort extends Sort {
                 return true;
             },
             () => {
-                this.p_stack.at(-1).i = this.p_stack.at(-1).lo;
-                this.p_stack.at(-1).j = this.p_stack.at(-1).hi + 1;
+                this.p_stack.at(-1)!.i = this.p_stack.at(-1)!.lo;
+                this.p_stack.at(-1)!.j = this.p_stack.at(-1)!.hi + 1;
                 return true;
             },
             () => {
                 return true;
             },
             () => {
-                while (this.array[++this.p_stack.at(-1).i] < this.array[this.p_stack.at(-1).lo]) {
-                    if (this.p_stack.at(-1).i == this.p_stack.at(-1).hi) {
+                while (this.array[++this.p_stack.at(-1)!.i!] < this.array[this.p_stack.at(-1)!.lo]) {
+                    if (this.p_stack.at(-1)!.i == this.p_stack.at(-1)!.hi) {
                         break;
                     }
                 }
                 return true;
             },
             () => {
-                while (this.array[this.p_stack.at(-1).lo] < this.array[--this.p_stack.at(-1).j]) {
-                    if (this.p_stack.at(-1).j == this.p_stack.at(-1).lo) {
+                while (this.array[this.p_stack.at(-1)!.lo] < this.array[--this.p_stack.at(-1)!.j!]) {
+                    if (this.p_stack.at(-1)!.j == this.p_stack.at(-1)!.lo) {
                         break;
                     }
                 }
                 return true;
             },
             () => {
-                if (this.p_stack.at(-1).i >= this.p_stack.at(-1).j) {
+                if (this.p_stack.at(-1)!.i! >= this.p_stack.at(-1)!.j!) {
                     this.lineNum = 16;
                 }
                 return true;
             },
             () => {
-                this.switch(this.p_stack.at(-1).i, this.p_stack.at(-1).j);
+                this.switch(this.p_stack.at(-1)!.i!, this.p_stack.at(-1)!.j!);
                 return true;
             },
             () => {
@@ -124,12 +124,12 @@ class QuickSort extends Sort {
                 return false;
             },
             () => {
-                this.switch(this.p_stack.at(-1).lo, this.p_stack.at(-1).j);
+                this.switch(this.p_stack.at(-1)!.lo, this.p_stack.at(-1)!.j!);
                 return true;
             },
             () => {
-                this.q_stack.at(-1).j = this.p_stack.at(-1).j;
-                this.lineNum = this.p_stack.at(-1).return_line;
+                this.q_stack.at(-1)!.j = this.p_stack.at(-1)!.j;
+                this.lineNum = this.p_stack.at(-1)!.return_line;
                 this.p_stack.pop();
                 return true;
             },
@@ -143,25 +143,25 @@ class QuickSort extends Sort {
         const objects = [];
 
         const line = new Line(
-            new Point(canvasPadding, this.canvas.height - canvasPadding),
-            new Point(this.canvas.width - canvasPadding, this.canvas.height - canvasPadding)
+            new Point(this.padding, this.canvas.height - this.padding),
+            new Point(this.canvas.width - this.padding, this.canvas.height - this.padding)
         )
         line.color = "#003C43";
         objects.push(line);
 
         for (let [idx, elem] of this.array.entries()) {
-            const rectWidth = (this.canvas.width - 2 * canvasPadding) / (this.size * 2 + 1);
-            const rectHeight = elem / this.size * (this.canvas.height - 2 * canvasPadding)
-            const xOffset = (2 * idx + 1) * rectWidth + canvasPadding;
+            const rectWidth = (this.canvas.width - 2 * this.padding) / (this.size * 2 + 1);
+            const rectHeight = elem / this.size * (this.canvas.height - 2 * this.padding)
+            const xOffset = (2 * idx + 1) * rectWidth + this.padding;
             const rect = new Rect(
-                new Point(xOffset, this.canvas.height - canvasPadding - rectHeight),
+                new Point(xOffset, this.canvas.height - this.padding - rectHeight),
                 rectWidth,
                 rectHeight
             )
 
             if (idx == this.p_stack.at(-1)?.i || idx == this.p_stack.at(-1)?.j) {
                 rect.color = '#77B0AA';
-            } else if (idx >= this.q_stack.at(-1)?.lo && idx <= this.q_stack.at(-1)?.hi) {
+            } else if (this.q_stack.at(-1) !== undefined && idx >= this.q_stack.at(-1)!.lo && idx <= this.q_stack.at(-1)!.hi) {
                 rect.color = '#FFD662';
             } else {
                 rect.color = '#003C43';
@@ -171,31 +171,6 @@ class QuickSort extends Sort {
         }
 
         return objects;
-    }
-
-    sortStep () {
-        if (this.skipped_frames < 50 / this.ips) {
-            this.skipped_frames++;
-            return;
-        } else {
-            this.skipped_frames = 0;
-        }
-
-        let lineBeforeStop = this.lineNum;
-        stop = false;
-        while (!stop) {
-            lineBeforeStop = this.lineNum;
-            stop = this.lineFuncs[this.lineNum]();
-            this.draw();
-            this.printValues();
-
-            this.lineNum++;
-        }
-
-        for (let line of this.lines) {
-            line.removeAttribute('data-highlighted-line');
-        }
-        this.lines[lineBeforeStop].setAttribute('data-highlighted-line', '');
     }
 
     printValues () {

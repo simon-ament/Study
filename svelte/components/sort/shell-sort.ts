@@ -1,11 +1,13 @@
-class ShellSort extends Sort {
-    n = null;
-    h = null;
-    i = null;
-    j = null;
+import { Sort, Line, Point, Rect } from './sort';
 
-    constructor (size, codeId, canvasId) {
-        super(size, codeId, canvasId);
+export class ShellSort extends Sort {
+    n: number | null = null;
+    h: number | null = null;
+    i: number | null = null;
+    j: number | null = null;
+
+    constructor (size: number, code: HTMLParagraphElement, canvas: HTMLCanvasElement, canvas2: HTMLCanvasElement | undefined, lines: HTMLSpanElement[], padding: number) {
+        super(size, code, canvas, canvas2, lines, padding);
 
         this.lineFuncs = [
             () => {
@@ -21,13 +23,13 @@ class ShellSort extends Sort {
                 return true;
             },
             () => {
-                if (!(this.h < this.n / 3)) {
+                if (!(this.h! < this.n! / 3)) {
                     this.lineNum = 5;
                 }
                 return true;
             },
             () => {
-                this.h = 3 * this.h + 1;
+                this.h = 3 * this.h! + 1;
                 return true;
             },
             () => {
@@ -38,7 +40,7 @@ class ShellSort extends Sort {
                 return false;
             },
             () => {
-                if (!(this.h >= 1)) {
+                if (!(this.h! >= 1)) {
                     this.lineNum = 14;
                 }
                 return true;
@@ -47,7 +49,7 @@ class ShellSort extends Sort {
                 if (this.i === null) {
                     this.i = this.h;
                 }
-                if (!(this.i < this.n)) {
+                if (!(this.i! < this.n!)) {
                     this.i = null;
                     this.lineNum = 12;
                 }
@@ -57,28 +59,28 @@ class ShellSort extends Sort {
                 if (this.j === null) {
                     this.j = this.i;
                 }
-                if (!(this.j >= this.h && this.array[this.j] < this.array[this.j - this.h])) {
+                if (!(this.j! >= this.h! && this.array[this.j!] < this.array[this.j! - this.h!])) {
                     this.j = null;
                     this.lineNum = 11;
                 }
                 return true;
             },
             () => {
-                this.switch(this.j, this.j - this.h);
+                this.switch(this.j!, this.j! - this.h!);
                 return true;
             },
             () => {
-                this.j -= this.h;
+                this.j! -= this.h!;
                 this.lineNum = 8;
                 return false;
             },
             () => {
-                this.i++;
+                this.i!++;
                 this.lineNum = 7;
                 return false;
             },
             () => {
-                this.h = Math.floor(this.h / 3);
+                this.h = Math.floor(this.h! / 3);
                 return true;
             },
             () => {
@@ -101,25 +103,25 @@ class ShellSort extends Sort {
         const objects = [];
 
         const line = new Line(
-            new Point(canvasPadding, this.canvas.height - canvasPadding),
-            new Point(this.canvas.width - canvasPadding, this.canvas.height - canvasPadding)
+            new Point(this.padding, this.canvas.height - this.padding),
+            new Point(this.canvas.width - this.padding, this.canvas.height - this.padding)
         )
         line.color = "#003C43";
         objects.push(line);
 
         for (let [idx, elem] of this.array.entries()) {
-            const rectWidth = (this.canvas.width - 2 * canvasPadding) / (this.size * 2 + 1);
-            const rectHeight = elem / this.size * (this.canvas.height - 2 * canvasPadding)
-            const xOffset = (2 * idx + 1) * rectWidth + canvasPadding;
+            const rectWidth = (this.canvas.width - 2 * this.padding) / (this.size * 2 + 1);
+            const rectHeight = elem / this.size * (this.canvas.height - 2 * this.padding)
+            const xOffset = (2 * idx + 1) * rectWidth + this.padding;
             const rect = new Rect(
-                new Point(xOffset, this.canvas.height - canvasPadding - rectHeight),
+                new Point(xOffset, this.canvas.height - this.padding - rectHeight),
                 rectWidth,
                 rectHeight
             )
 
             if (idx == this.j) {
                 rect.color = '#77B0AA';
-            } else if ((idx - this.i) % this.h === 0) {
+            } else if ((idx - this.i!) % this.h! === 0) {
                 rect.color = '#FFD662';
             } else {
                 rect.color = '#003C43';
@@ -129,31 +131,6 @@ class ShellSort extends Sort {
         }
 
         return objects;
-    }
-
-    sortStep () {
-        if (this.skipped_frames < 50 / this.ips) {
-            this.skipped_frames++;
-            return;
-        } else {
-            this.skipped_frames = 0;
-        }
-
-        let lineBeforeStop = this.lineNum;
-        stop = false;
-        while (!stop) {
-            lineBeforeStop = this.lineNum;
-            stop = this.lineFuncs[this.lineNum]();
-            this.draw();
-            this.printValues();
-
-            this.lineNum++;
-        }
-
-        for (let line of this.lines) {
-            line.removeAttribute('data-highlighted-line');
-        }
-        this.lines[lineBeforeStop].setAttribute('data-highlighted-line', '');
     }
 
     printValues () {

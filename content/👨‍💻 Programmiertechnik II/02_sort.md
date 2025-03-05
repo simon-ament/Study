@@ -1,7 +1,7 @@
 ---
 title: Sortieren
 ---
-<link rel="stylesheet" href="/static/sort/style.css"></link>
+<script type="module" src="/svelte/sort-animation.js"></script>
 
 Einträge in einer Liste über einen Schlüssel in eine Ordnung bringen, dazu wird [[02_functions_relations#Ordnungsrelation|totale Ordnung]] benötigt
 
@@ -21,13 +21,7 @@ Für jeden Index $i$ aufsteigend von $0$ bis $n-1$:
 1. Finde den Index $\min \in \{i+1, \dots, n\}$, so dass $a_{\min}\leq a_j$ für alle $j \in \{i + 1, \dots, n\}$
 2. Tausche $a_i$ und $a_{\min}$, wodurch $a_i$ danach das $i$-kleinste Element enthält
 
-<div class="sort-div top">
-    <canvas id="selection-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="selection-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="selection-sort">
 
 ```cpp
 template <typename Value>
@@ -45,6 +39,8 @@ void selection_sort(Value* a, const int n) {
 }
 ```
 
+</sort-animation>
+
 > [!important] Laufzeit
 > Unabhängig von der Eingabe $\frac{n^2 - n}{2} \sim \frac{n^2}{2}$ Vergleiche und $n$ Vertauschungen \
 > **Worst-Case:** $n^2$ \
@@ -59,13 +55,7 @@ Für jeden Index $i$ aufsteigend von $0$ bis $n-1$:
 1. Starte bei $j = i$
 2. Tausche $a_j$ und $a_{j - 1}$ so lange wie $a_j < a_{j-1}$ und zähle $j$ um eins runter
 
-<div class="sort-div top">
-    <canvas id="insertion-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="insertion-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="insertion-sort">
 
 ```cpp
 template <typename Value>
@@ -78,6 +68,8 @@ void insertion_sort(Value* a, const int n) {
 	return;
 }
 ```
+
+</sort-animation>
 
 > [!important] Laufzeit
 > In einem zufällig sortierten Array: $\sim \frac{n^2}{4}$ Vergleiche und $\sim \frac{n^2}{4}$ Vertauschungen (denn im Schritt $i$ im Erwartungswert $\frac{i}{2}$ Vertauschungen notwendig) \
@@ -92,13 +84,7 @@ Sehr ähnlich zu Insertion Sort: Nach dem $i$-ten Schritt sind immer alle $a_0, 
 - Insertion Sort: Im $i$-ten Schritt wird $a_i$ an die richtige Stelle in $a_0, \dots, a_i$ getauscht
 - Bubble Sort: Im $i$-ten Schritt wird das kleinste Element von $a_i, \dots, a_{n-1}$ zu $a_i$ getauscht (dazu "runterbubblen")
 
-<div class="sort-div top">
-    <canvas id="bubble-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="bubble-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="bubble-sort">
 
 ```cpp
 template <typename Value>
@@ -117,6 +103,8 @@ void bubble_sort(Value* a, const int n) {
 }
 ```
 
+</sort-animation>
+
 > [!important] Laufzeit
 > Analog zu Insertion Sort \
 > **Best-Case:** $n$ (bei aufsteigender Sortierung und zusätzlicher *Erkennung von sortierten Arrays*) \
@@ -132,13 +120,7 @@ Ein Array ist $h$-sortiert, wenn $\{a_i, a_{i+h}, \dots, a_{i+k \cdot h}\}$ für
 ## h-Werte
 Generierung nach der $3x+1$-Regel: 1, 4, 13, 40, 121, 364, ...
 
-<div class="sort-div top">
-    <canvas id="shell-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="shell-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="shell-sort">
 
 ```cpp
 template <typename Value>
@@ -159,6 +141,8 @@ void shell_sort(Value* a, const int n) {
 	return;
 }
 ```
+
+</sort-animation>
 
 > [!important]
 > **Best-Case:** $n \cdot \log_2(n)$ \
@@ -181,14 +165,7 @@ void shell_sort(Value* a, const int n) {
 - Beweis entsprechend über Induktion
 - Weniger Vergleiche nicht möglich (Beweis über minimale Tiefe eines Entscheidungsbaumes) $\Rightarrow$ Merge-Sort ist optimal in der Anzahl der Vergleiche (**aber** nicht im Speicherplatz)
 
-<div class="sort-div top">
-    <canvas id="merge-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-	<canvas id="merge-sort-canvas-2" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="merge-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="merge-sort">
 
 ```cpp
 template <typename Value>
@@ -219,6 +196,8 @@ void merge(Value* a, Value* aux, const int lo, const int mid, const int hi) {
 	return;
 }
 ```
+
+</sort-animation>
 
 > [!important] Laufzeit
 > **Best-Case:** $\frac{1}{2} \cdot n \cdot \log_2(n)$ \
@@ -258,13 +237,7 @@ void merge(Value* a, Value* aux, const int lo, const int mid, const int hi) {
 - Verringere `j` so lange wie `a[j] > a[lo]`
 - Tausche `a[i]` und `a[j]`
 
-<div class="sort-div top">
-    <canvas id="quick-sort-canvas" class="sort-canvas" width="1000" height="500"></canvas>
-</div>
-
-<div class="sort-div bottom">
-    <p id="quick-sort-code" class="sort-code"></p>
-</div>
+<sort-animation algorithm="quick-sort">
 
 ```cpp
 template <typename Value>
@@ -288,6 +261,8 @@ int partition(Value* a, const int lo, const int hi) {
 	return j;
 }
 ```
+
+</sort-animation>
 
 > [!important] Laufzeit
 > **Best-Case:** $n \cdot \log_2(n)$ \

@@ -1,31 +1,31 @@
-class MergeSort extends Sort {
-    ms_stack = [];
-    /*
-        lo = null;
-        hi = null;
-        mid = null;
-        return_line = null;
-    */
+import { Sort, DrawableObject, Line, Point, Rect } from './sort';
 
-    m_stack = [];
-    /*
-        hi = null;
-        mid = null;
-        lo = null;
-        k = null;
-        i = null;
-        j = null;
-        return_line = null;
-    */
+export class MergeSort extends Sort {
+    ms_stack: {
+        lo: number,
+        hi: number,
+        mid: number | null,
+        return_line: number
+    }[] = [];
 
-    aux = [];
-    canvas2 = null;
-    ctx2 = null;
+    m_stack: {
+        lo: number,
+        hi: number,
+        mid: number | null,
+        k: number | null,
+        i: number | null,
+        j: number | null,
+        return_line: number
+    }[] = [];
 
-    constructor (size, codeId, canvasId, canvasId2) {
-        super(size, codeId, canvasId);
-        this.canvas2 = document.getElementById(canvasId2);
-        this.ctx2 = this.canvas2.getContext('2d');
+    aux: number[] = [];
+    canvas2: HTMLCanvasElement;
+    ctx2: CanvasRenderingContext2D;
+
+    constructor (size: number, code: HTMLParagraphElement, canvas: HTMLCanvasElement, canvas2: HTMLCanvasElement | undefined, lines: HTMLSpanElement[], padding: number) {
+        super(size, code, canvas, canvas2, lines, padding);
+        this.canvas2 = canvas2!;
+        this.ctx2 = this.canvas2.getContext('2d')!;
 
         this.lineFuncs = [
             () => {
@@ -43,8 +43,8 @@ class MergeSort extends Sort {
                 return true;
             },
             () => {
-                if (this.ms_stack.at(-1).lo >= this.ms_stack.at(-1).hi) {
-                    this.lineNum = this.ms_stack.at(-1).return_line;
+                if (this.ms_stack.at(-1)!.lo >= this.ms_stack.at(-1)!.hi) {
+                    this.lineNum = this.ms_stack.at(-1)!.return_line;
                     this.ms_stack.pop();
                 }
                 return true;
@@ -53,7 +53,7 @@ class MergeSort extends Sort {
                 return false;
             },
             () => {
-                this.ms_stack.at(-1).mid = this.ms_stack.at(-1).lo + Math.floor((this.ms_stack.at(-1).hi - this.ms_stack.at(-1).lo) / 2);
+                this.ms_stack.at(-1)!.mid = this.ms_stack.at(-1)!.lo + Math.floor((this.ms_stack.at(-1)!.hi - this.ms_stack.at(-1)!.lo) / 2);
                 return true;
             },
             () => {
@@ -62,8 +62,8 @@ class MergeSort extends Sort {
             () => {
                 this.lineNum = 0;
                 this.ms_stack.push({
-                    lo: this.ms_stack.at(-1).lo,
-                    hi: this.ms_stack.at(-1).mid,
+                    lo: this.ms_stack.at(-1)!.lo,
+                    hi: this.ms_stack.at(-1)!.mid!,
                     mid: null,
                     return_line: 6
                 })
@@ -72,8 +72,8 @@ class MergeSort extends Sort {
             () => {
                 this.lineNum = 0;
                 this.ms_stack.push({
-                    lo: this.ms_stack.at(-1).mid + 1,
-                    hi: this.ms_stack.at(-1).hi,
+                    lo: this.ms_stack.at(-1)!.mid! + 1,
+                    hi: this.ms_stack.at(-1)!.hi,
                     mid: null,
                     return_line: 7
                 })
@@ -82,9 +82,9 @@ class MergeSort extends Sort {
             () => {
                 this.lineNum = 11;
                 this.m_stack.push({
-                    lo: this.ms_stack.at(-1).lo,
-                    mid: this.ms_stack.at(-1).mid,
-                    hi: this.ms_stack.at(-1).hi,
+                    lo: this.ms_stack.at(-1)!.lo,
+                    mid: this.ms_stack.at(-1)!.mid,
+                    hi: this.ms_stack.at(-1)!.hi,
                     k: null,
                     i: null,
                     j: null,
@@ -93,7 +93,7 @@ class MergeSort extends Sort {
                 return true;
             },
             () => {
-                this.lineNum = this.ms_stack.at(-1).return_line;
+                this.lineNum = this.ms_stack.at(-1)!.return_line;
                 this.ms_stack.pop();
                 return true;
             },
@@ -110,82 +110,82 @@ class MergeSort extends Sort {
                 return false;
             },
             () => {
-                if (this.m_stack.at(-1).k === null) {
-                    this.m_stack.at(-1).k = this.m_stack.at(-1).lo;
+                if (this.m_stack.at(-1)!.k === null) {
+                    this.m_stack.at(-1)!.k = this.m_stack.at(-1)!.lo;
                 }
-                if (!(this.m_stack.at(-1).k <= this.m_stack.at(-1).hi)) {
+                if (!(this.m_stack.at(-1)!.k! <= this.m_stack.at(-1)!.hi)) {
                     this.lineNum = 16;
-                    this.m_stack.at(-1).k = null;
+                    this.m_stack.at(-1)!.k = null;
                 }
                 return true;
             },
             () => {
-                this.aux[this.m_stack.at(-1).k] = this.array[this.m_stack.at(-1).k];
+                this.aux[this.m_stack.at(-1)!.k!] = this.array[this.m_stack.at(-1)!.k!];
                 return true;
             },
             () => {
                 this.lineNum = 13;
-                this.m_stack.at(-1).k++;
+                this.m_stack.at(-1)!.k!++;
                 return false;
             },
             () => {
                 return false;
             },
             () => {
-                this.m_stack.at(-1).i = this.m_stack.at(-1).lo;
-                this.m_stack.at(-1).j = this.m_stack.at(-1).mid + 1;
+                this.m_stack.at(-1)!.i = this.m_stack.at(-1)!.lo;
+                this.m_stack.at(-1)!.j = this.m_stack.at(-1)!.mid! + 1;
                 return true;
             },
             () => {
-                if (this.m_stack.at(-1).k === null) {
-                    this.m_stack.at(-1).k = this.m_stack.at(-1).lo;
+                if (this.m_stack.at(-1)!.k === null) {
+                    this.m_stack.at(-1)!.k = this.m_stack.at(-1)!.lo;
                 }
-                if (!(this.m_stack.at(-1).k <= this.m_stack.at(-1).hi)) {
+                if (!(this.m_stack.at(-1)!.k! <= this.m_stack.at(-1)!.hi)) {
                     this.lineNum = 24;
-                    this.m_stack.at(-1).k = null;
+                    this.m_stack.at(-1)!.k = null;
                 }
                 return true;
             },
             () => {
-                if (this.m_stack.at(-1).i > this.m_stack.at(-1).mid) {
-                    this.array[this.m_stack.at(-1).k] = this.aux[this.m_stack.at(-1).j];
-                    this.m_stack.at(-1).j++;
+                if (this.m_stack.at(-1)!.i! > this.m_stack.at(-1)!.mid!) {
+                    this.array[this.m_stack.at(-1)!.k!] = this.aux[this.m_stack.at(-1)!.j!];
+                    this.m_stack.at(-1)!.j!++;
                     this.lineNum = 23;
                     return true;
                 }
                 return false;
             },
             () => {
-                if (this.m_stack.at(-1).j > this.m_stack.at(-1).hi) {
-                    this.array[this.m_stack.at(-1).k] = this.aux[this.m_stack.at(-1).i];
-                    this.m_stack.at(-1).i++;
+                if (this.m_stack.at(-1)!.j! > this.m_stack.at(-1)!.hi) {
+                    this.array[this.m_stack.at(-1)!.k!] = this.aux[this.m_stack.at(-1)!.i!];
+                    this.m_stack.at(-1)!.i!++;
                     this.lineNum = 23;
                     return true;
                 }
                 return false;
             },
             () => {
-                if (this.aux[this.m_stack.at(-1).j] < this.aux[this.m_stack.at(-1).i]) {
-                    this.array[this.m_stack.at(-1).k] = this.aux[this.m_stack.at(-1).j];
-                    this.m_stack.at(-1).j++;
+                if (this.aux[this.m_stack.at(-1)!.j!] < this.aux[this.m_stack.at(-1)!.i!]) {
+                    this.array[this.m_stack.at(-1)!.k!] = this.aux[this.m_stack.at(-1)!.j!];
+                    this.m_stack.at(-1)!.j!++;
                     this.lineNum = 23;
                     return true;
                 }
                 return false;
             },
             () => {
-                this.array[this.m_stack.at(-1).k] = this.aux[this.m_stack.at(-1).i];
-                this.m_stack.at(-1).i++;
+                this.array[this.m_stack.at(-1)!.k!] = this.aux[this.m_stack.at(-1)!.i!];
+                this.m_stack.at(-1)!.i!++;
                 this.lineNum = 23;
                 return true;
             },
             () => {
                 this.lineNum = 18;
-                this.m_stack.at(-1).k++;
+                this.m_stack.at(-1)!.k!++;
                 return false;
             },
             () => {
-                this.lineNum = this.m_stack.at(-1).return_line;
+                this.lineNum = this.m_stack.at(-1)!.return_line;
                 this.m_stack.pop();
                 return true;
             },
@@ -199,23 +199,23 @@ class MergeSort extends Sort {
         const objects = [];
 
         const line = new Line(
-            new Point(canvasPadding, this.canvas.height - canvasPadding),
-            new Point(this.canvas.width - canvasPadding, this.canvas.height - canvasPadding)
+            new Point(this.padding, this.canvas.height - this.padding),
+            new Point(this.canvas.width - this.padding, this.canvas.height - this.padding)
         )
         line.color = "#003C43";
         objects.push(line);
 
         for (let [idx, elem] of this.array.entries()) {
-            const rectWidth = (this.canvas.width - 2 * canvasPadding) / (this.size * 2 + 1);
-            const rectHeight = elem / this.size * (this.canvas.height - 2 * canvasPadding)
-            const xOffset = (2 * idx + 1) * rectWidth + canvasPadding;
+            const rectWidth = (this.canvas.width - 2 * this.padding) / (this.size * 2 + 1);
+            const rectHeight = elem / this.size * (this.canvas.height - 2 * this.padding)
+            const xOffset = (2 * idx + 1) * rectWidth + this.padding;
             const rect = new Rect(
-                new Point(xOffset, this.canvas.height - canvasPadding - rectHeight),
+                new Point(xOffset, this.canvas.height - this.padding - rectHeight),
                 rectWidth,
                 rectHeight
             )
 
-            if (idx >= this.ms_stack.at(-1)?.lo && idx <= this.ms_stack.at(-1)?.hi) {
+            if (this.ms_stack.at(-1) !== undefined && idx >= this.ms_stack.at(-1)!.lo! && idx <= this.ms_stack.at(-1)!.hi!) {
                 rect.color = '#FFD662';
             } else {
                 rect.color = '#003C43';
@@ -231,18 +231,18 @@ class MergeSort extends Sort {
         const objects = [];
 
         const line = new Line(
-            new Point(canvasPadding, this.canvas2.height - canvasPadding),
-            new Point(this.canvas2.width - canvasPadding, this.canvas2.height - canvasPadding)
+            new Point(this.padding, this.canvas2.height - this.padding),
+            new Point(this.canvas2.width - this.padding, this.canvas2.height - this.padding)
         )
         line.color = "#003C43";
         objects.push(line);
 
         for (let [idx, elem] of this.aux.entries()) {
-            const rectWidth = (this.canvas2.width - 2 * canvasPadding) / (this.size * 2 + 1);
-            const rectHeight = elem / this.size * (this.canvas2.height - 2 * canvasPadding)
-            const xOffset = (2 * idx + 1) * rectWidth + canvasPadding;
+            const rectWidth = (this.canvas2.width - 2 * this.padding) / (this.size * 2 + 1);
+            const rectHeight = elem / this.size * (this.canvas2.height - 2 * this.padding)
+            const xOffset = (2 * idx + 1) * rectWidth + this.padding;
             const rect = new Rect(
-                new Point(xOffset, this.canvas2.height - canvasPadding - rectHeight),
+                new Point(xOffset, this.canvas2.height - this.padding - rectHeight),
                 rectWidth,
                 rectHeight
             )
@@ -271,31 +271,6 @@ class MergeSort extends Sort {
         for (let object of objects) {
             object.draw(this.ctx2);
         }
-    }
-
-    sortStep () {
-        if (this.skipped_frames < 50 / this.ips) {
-            this.skipped_frames++;
-            return;
-        } else {
-            this.skipped_frames = 0;
-        }
-
-        let lineBeforeStop = this.lineNum;
-        stop = false;
-        while (!stop) {
-            lineBeforeStop = this.lineNum;
-            stop = this.lineFuncs[this.lineNum]();
-            this.draw();
-            this.printValues();
-
-            this.lineNum++;
-        }
-
-        for (let line of this.lines) {
-            line.removeAttribute('data-highlighted-line');
-        }
-        this.lines[lineBeforeStop].setAttribute('data-highlighted-line', '');
     }
 
     printValues () {
