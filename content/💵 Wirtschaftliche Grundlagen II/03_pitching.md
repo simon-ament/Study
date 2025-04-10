@@ -89,7 +89,3 @@ Struktur folgt dem Ziel, die Zuhörer zu überzeugen. Enthalten sein sollte:
 
 - Pitching Videos durchgehen + Beispiele wie Simon Sinek
 	- Achtung: Unterschiede in den Folien-Sätzen, einer ausführlicher
-
-**Aufzeichung:**
-- Link: https://nextcloud.hpi.de/s/sD8eGrGBrSRMLps
-- Passwort: wg2-aufzeichnungen-ss24

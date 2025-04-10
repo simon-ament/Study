@@ -270,8 +270,3 @@ Kann auch mit **Disciplined Entrepreneurship Framework** verbunden werden
 > - What is the typical way of a startup to break down the target market?
 > - Calculating TAM, SAM, SOM for a given example
 > - What can go wrong when defining markets and market segments?
-
-
-**Aufzeichnung:**
-- Link: https://nextcloud.hpi.de/s/sD8eGrGBrSRMLps
-- Password: wg2-aufzeichnungen-ss24
