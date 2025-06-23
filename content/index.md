@@ -1,6 +1,10 @@
 ---
 title: IT Systems Engineering - Lernzettel
 ---
+# ☀️ SoSe 2025
+1. [[🗽 Politikwissenschaften/]]
+
+---
 # ❄️ WiSe 2024/25
 1. [[🏗️ Software-Architektur/]]
 2. [[💽 Betriebssysteme/]]

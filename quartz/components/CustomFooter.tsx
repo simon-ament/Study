@@ -165,7 +165,7 @@ export default ((userOpts?: Partial<Options>) => {
 
         {!prevFile?.file && !nextFile?.file && (
           <p>
-            Keine benachbarten Seiten
+            Lernzettel von <a href="https://simonament.de" target="_blank">Simon Ament</a>
           </p>
         )}
       </footer>

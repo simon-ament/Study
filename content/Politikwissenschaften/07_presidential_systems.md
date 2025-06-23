@@ -1,0 +1,130 @@
+# Präsidentielle Systeme
+1. Gewaltenteilung: Staatspräsident wird durch Volkswahlen (fast immer direkt) gewählt und kann nicht vom Parlament abberufen werden
+	- In der Regel auch keine Parlamentsauflösung (oder nur unter besonderen Bedingungen)
+2. Exekutiver Personalismus: Wähler-Mandat für die Regierung auf eine Person konzentriert
+
+![[Screenshot from 2025-06-22 11-07-06.png|500]]
+
+## Konsequenzen / Gemeinsamkeiten
+1. Fraktions- und Koalitionsdisziplin tendenziell geringer (Vertrauensfrage fehlt)
+2. Gefahr von Blockaden ist tendenziell größer (keine Auflösung durch Misstrauensvotum oder Neuwahlen)
+3. Politische Parteien sind tendenziell weniger programmatisch (eigene Programme der Präsidentschaftskandidaten, keine Bindung durch Parteiprogramme)
+
+## Vorteile des Präsidentialismus
+1. Gewaltenteilung soll vor Machtkonzentration schützen
+2. Präsidentschaftswahl lässt Wähler eindeutige Wahl für die Regierung treffen
+3. möglicherweise klarere Verantwortlichkeiten (*umstritten*)
+4. im Parlament kann mit wechselnden Mehrheiten regiert werden | nicht jede Sachfrage wird zu einer Vertrauensfrage über die Regierung
+
+---
+# Gefahren des Präsidentialismus
+**Linz (The Perils of Presedentialism):** Präsidentialismus sei mitverantwortlich dafür, dass Demokratien, insbesondere in Lateinamerika, häufig gescheitert sind
+- Parlamentarische Systeme seien grundsätzlich besser
+- Semi-präsidentielle Systeme seien ebenfalls problematisch
+
+## Vier Argumente von Linz
+Probleme der Gewaltenteilung:
+1. **Duale Legitimität:** zwei demokratisch legitimierte Organe $\Rightarrow$ ständig latenter Konflikt zwischen Präsident & Legislative
+2. **Rigidität:** Blockaden lassen sich schwer auflösen (feste Amtszeiten für Präsidenten und meist auch Parlament | kein Misstrauensvotum / Parlamentsauflösung)
+
+Probleme des Personalismus:
+3. **Kompromissloser Regierungsstil:** Präsident vertritt alleine die gesamte Nation, kann sich als Volkstribun fühlen und Abgeordnete als Vertreter von "Partialinteressen" abwerten
+4. **Stärkung von Außenseitern (und Neulingen):** Kandidaten ohne "Prüfung" durch Parteien (*Parteikarriere*) können eher Präsident werden
+
+## Was sagt die Forschung?
+**Gewaltenteilung:**
+*Linz teilweise bestätigt*
+- Probleme existieren, aber nicht so gravierend wie bei Linz
+- Koalitionen möglich, meist aber erst im Parlament
+- Gewaltenteilung kann Demokratie schützen, Gefahr bei Konzentration aller Gewalten auf den Präsident und "seine" Partei
+
+**Personalismus:**
+*Linz weitgehend bestätigt*
+- "Außenseiter" ohne Unterstützung durch oder "Neulinge" innerhalb etablierter Parteien werden in präsidentiellen Systemen eher zu Regierungschefs
+	- sie geraten eher mit dem Parlament in Konflikt und werden eher für die Demokratie zur Gefahr
+
+---
+# Wie scheitern Demokratien
+90% durch: (Rest Bürgerkriege und -aufstände)
+1. Militärputsch
+2. Amtsinhaber-Übernahme (*incumbent takeover / executive takeover*): Autoritäre "Übernahme" der Verfassung durch demokratisch gewählte Amtsinhaber
+	- Haben im Zeitverlauf zugenommen (heute dominante)
+
+## Führt Präsidentialismus zum Militärputsch?
+- Linz und andere hatten einen Zusammenhang gesehen
+	- *z.B. Chile: Präsidentschaft des Sozialisten Salvador Allende führte zu Putsch und Militärdiktatur Augusto Pinochets*
+- möglicher Ablauf nach Linz (stark vereinfacht): Präsident steht oppositioneller Mehrheit im Parlament gegenüber, keine verfassungsmäßige Möglichkeit die Blockade aufzulösen $\Rightarrow$ Milität interveniert
+
+**Scheinkausalität (Cheibub):** statistische Korrelation ohne Ursache-Wirkungs-Zusammenhang
+- präsidentielle Demokratien leben kürzer
+- aber: präsidentielle Demokratien häufiger aus Militärdiktaturen hervorgegangen
+- berücksichtigt man dieses **"Militarismus-Erbe"**, gibt es keinen Effekt des Präsidentialismus auf die Lebenserwartung einer Demokratie
+
+## Präsidentialismus & Amtsinhaber-Übernahmen
+*Spätere Studien haben systematisch zwischen den beiden Arten des Demokratiescheiterns unterschieden*
+- Cheibubs Ergebnisse bezüglich der Militärputsche werden gestützt (also Linz widerlegt)
+- aber: präsidentielle Systeme scheinen Amtsinhaber-Übernehmen tatsächlich wahrscheinlicher zu machen
+
+---
+# Wie können präsidentielle Systeme verbessert werden
+*Grundlegende Ersetzung des präsidentiellen Systems schwierig und risikoreich $\Rightarrow$ Verbesserung möglich?*
+- z.B. absolute Mehrheitswahl (mit Stichwahl) des Präsidenten erscheint besser als relative Mehrheitswahl
+
+## 1. Formale Macht von Präsidenten
+- verfassungsmäßige Macht von Präsidenten variiert stark (z.B Vetos, Agenda-Setzung, Dekrete mit Gesetzeskraft | Lateinamerika, nicht USA)
+- Konkurrierende Sichtweisen
+	- formal starke Präsidenten gefährlich: können am Parlament vorbei regieren
+	- formal starke Präsidenten können ihre Macht einsetzen, um Mehrheiten überhaupt erst zu organisieren (ähnlich wie im Parlamentarismus über Kopplung Vertrauensfrage + Sachfrage)
+
+## 2. Amtsenthebung von Präsidenten
+*Nur im Fall von Rechtsverstößen (Amtsmissbrauch, Straftaten) oder auch in politischen Krisen?*
+- teilweise auch bei "Inkompetenz" bereits möglich (*Ghana, Uganda, Tansania, Honduras*)
+- wird mit hohen Verfahrenshürden (z.B. 2/3-Mehrheit) von Juristen und Politikwissenschaftlern befürwortet
+- Folgen der Amtsenthebung:
+	1. Vizepräsident übernimmt (*Brasilien, USA*)
+	2. Neuwahlen der Präsidentschaft (*Südkorea*)
+- Bei einer starken "politischen" Amtsenthebung eher Neuwahl-Modell (Wähler sorgen für neue politische Situation)
+- Soll auch das Parlament neu gewählt werden?
+	- Könnte Anreize der Abgeordneten für Abwahl reduzieren
+	- Könnte zu Missbrauch der Amtsenthebung verhindern
+
+## 3. Amtszeitbegrenzungen
+- viele präsidentielle Systeme begrenzen die Wiederwahlmöglichkeit (*term limits*)
+	- soll Machtansammlung verhindern
+	- Amtsinhaber haben häufig einen Vorteil bei der Wiederwahl
+- Modelle:
+	1. Gar keine Wiederwahl (*Mexiko, Kolumbien*)
+	2. Nur einmalige Wiederwahl und / oder Wiederwahl nur nach einer Pause (*Chile, Uruguay, USA*)
+	3. Unbegrenzte Wiederwahl (*Bolivien, Honduras*), teilweise durch Verfassungsgerichtsbarkeit gegen Parlament / Wähler durchgesetzt
+- Politisch und wissenschaftlich sehr umstritten (Schutz der Demokratie vs. Einschränkung demokratischer Rechte und Mechanismen der politischen Verantwortlichkeit)
+- Zielkonflikte entstehen aus den Problemen des Personalismus: im parlamentarischen System gibt es wegen des Misstrauensvotums keine Notwendigkeit für Amtszeitbegrenzungen (Wiederwahl / Abstrafung dadurch offen)
+
+---
+# Semi-Präsidentielle Systeme
+*nach Duverger*
+- Es gibt einen direkt gewählten Präsidenten mit festgelegter Amtszeit und
+- einen Premierminister und ein Kabinett, die vom Parlament abgewählt werden können
+- Präsident braucht Mindestmaß verfassungsmäßiger Befugnisse (*bei Elgie gestrichen, umstritten*)
+
+![[Screenshot from 2025-06-22 11-07-20.png|500]]
+
+## Zwei Varianten
+*Zentrale Frage: Hat auch der Präsident die formale Macht, den Premier und das Kabinett abzusetzen?*
+
+![[Screenshot from 2025-06-22 11-07-23.png|500]]
+
+- Wichtige These in der Literatur (statistisch belegt, aber umstritten): präsidentiell-parlamentarisches System ins gefährlicher für die Demokratie (mehr Möglichkeiten für Konflikte)
+- Problem: Reale Macht des Präsident kann von Verfassung abweichen
+	- weil auch Mehrheiten und Konventionen wichtig sind
+	- **Frankreich:** wenn Präsident auch eine Mehrheit im Parlament hat, ist er eher eigentlicher Regierungschef und Premierminister eher "Kabinettschef"
+	- **Österreich:** in der Praxis wie ein parlamentarisches System, da Präsident seine Macht zurückhaltend nutzt
+
+## Gefahren des Personalismus
+*Gefahren sind auch im semi-präsidentiellen System (beide Varianten) vorhanden*
+
+**Beispiel Tunesien:**
+- einzige Demokratie des arabischen Frühlings (ab 2011), premier-präsidentiell
+- 2019: Wahl von Kais Saied als Unabhängiger (erste Runde: 18,4%, Stichwahl: 72,7%)
+- Große Unzufriedenheit, Blockaden zwischen Präsident und fragmentiertem Parlament
+- ab Juli 2021 Amtsinhaber-Übernahme und Etablierung präsidentieller Autokratie
+- Demokratische Legitimation durch Direktwahl hat dafür Rolle gespielt, z.B. Folgebereitschaft des Militärs
