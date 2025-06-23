@@ -1,3 +1,6 @@
+---
+title: Parlamentarische Systeme
+---
 # Parlamentarisches System
 ![[Screenshot from 2025-06-22 11-04-23.png|300]]
 

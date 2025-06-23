@@ -1,13 +1,16 @@
+---
+title: Modelle
+---
 Rest der Vorlesung: Varianten der Demokratie
 - Arbeitshypothese: "Institutions matter!"
-- Es gibt bessere und schlechtere Wege, repräsentative Demokratien auszugestalten (z.B. mit Blick auf Widerstandsfühigkeit gegn autoritäre Bestrebungen)
+- Es gibt bessere und schlechtere Wege, repräsentative Demokratien auszugestalten (z.B. mit Blick auf Widerstandsfähigkeit gegen autoritäre Bestrebungen)
 
 ---
 # Modelle
 *Politikwissenschaft nutzt häufig einfachte mathematische (geometrische) Modelle*
 - vereinfachte Repräsentation der Realität
 - nicht "realistisch", aber häufig nützlich
-- häufig Modelle auf Basis einer **Rationalitätsannehma** ("Rational Choice")
+- häufig Modelle auf Basis einer **Rationalitätsannahme** ("Rational Choice")
 
 ## "Rational Choice"-Annahmen
 1. **Vollständigkeit:** Alle Alternativen müssen miteinander vergleichbar sein

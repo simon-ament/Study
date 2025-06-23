@@ -1,3 +1,6 @@
+---
+title: Präsidentielle Systeme
+---
 # Präsidentielle Systeme
 1. Gewaltenteilung: Staatspräsident wird durch Volkswahlen (fast immer direkt) gewählt und kann nicht vom Parlament abberufen werden
 	- In der Regel auch keine Parlamentsauflösung (oder nur unter besonderen Bedingungen)

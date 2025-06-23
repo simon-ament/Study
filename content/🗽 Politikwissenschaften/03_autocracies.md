@@ -1,3 +1,6 @@
+---
+title: Autokratien
+---
 # Autokratie
 **Autokratie = Nicht-Demokratie:** Regime, in denen entweder gar keine kompetitiven Wahlen gibt oder diese nicht hinreichend frei & fair sind
 - auch "autoritäres Regime" oder "Diktatur"

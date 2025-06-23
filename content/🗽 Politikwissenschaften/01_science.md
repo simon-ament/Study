@@ -1,3 +1,6 @@
+---
+title: Wissenschaft
+---
 # Was ist Wissenschaft?
 - Wissenschaft als Regelsystem
 	- Reaktion auf menschliche Psychologie

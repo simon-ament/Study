@@ -1,3 +1,6 @@
+---
+title: Wahl- und Parteisysteme
+---
 # Wie werden Präsidenten gewählt?
 *Präsidenten werden heute fast immer direkt gewählt*
 - Ausnahme: Wahlkollegium in den USA

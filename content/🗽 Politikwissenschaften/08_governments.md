@@ -1,3 +1,6 @@
+---
+title: Regierungen
+---
 # Koalitionen
 *Koalition ist ein Bündnis oder Zusammenschluss von Individuen, Organisationen, Staaten oder Parteien zur Durchsetzung gemeinsamer Ziele*
 - hier Fokus auf Parteien

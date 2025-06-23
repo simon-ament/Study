@@ -1,3 +1,6 @@
+---
+title: Demokratien
+---
 # Demokratie-Konzeptionen
 ## Elektorale Demokratie
 Konzeptioneller Kern: freie und faire Wahlen
