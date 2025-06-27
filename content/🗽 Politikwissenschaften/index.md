@@ -10,4 +10,6 @@ title: 🗽 Politikwissenschaften
 6. [[06_parlamentary_systems|Parlamentarische Systeme]]
 7. [[07_presidential_systems|Präsidentielle Systeme]]
 8. [[08_governments|Regierungen]]
+9. [[09_consesus_democracies|Konsensdemokratien]]
+10. [[10_polarization|Polarisierung]]
 
