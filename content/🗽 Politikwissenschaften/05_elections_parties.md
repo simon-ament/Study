@@ -19,6 +19,8 @@ title: Wahl- und Parteisysteme
 **Nachteile:** "Falsche" Sieger möglich
 - insbesondere werden keine Condorcet-Verlierer (die gegen jeden anderen Kandidaten in paarweiser Abstimmung verlieren) vermieden
 
+> [!question] Was ist die Definition eines Condorcet-Verlierers?
+
 ## 2. Absolute Mehrheitswahl mit Stichwahl
 *Chile, Frankreich, Uruguay*
 
@@ -50,6 +52,8 @@ title: Wahl- und Parteisysteme
 
 ![[Screenshot from 2025-06-22 11-01-04.png|500]]
 
+> [!question] Nennen Sie die vier Typen der Mehrheitswahl von Präsidenten.
+
 ## Bestes System?
 - Angesichts der Macht vieler Präsidenten ist das Wahlsystem sehr wichtig
 - Kein Konsens (wegen Zielkonflikten), aber vieles spricht für absolute Mehrheitswahl (über Stichwahl / Alternativstimmen)
@@ -78,11 +82,17 @@ Komponenten:
 2. **Wahlkreisgröße größtmöglich:** idealerweise ganzes Land ein Wahlkreis (Größe $=$ Anzahl der Mandate)
 3. **Gesetzliche Prozenthürde:** idealerweise keine $\Rightarrow$ effektive Hürde bei 1 / Anzahl der Sitze
 
+> [!question] Nennen Sie zwei Charakteristika der „reinen“ Verhältniswahl.
+
 Proportionalität verringern:
 1. Kleine Wahlkreise (z.B. Spanien) $\Rightarrow$ implizite Prozenthürde
 2. Grabenwahlsystem (z.B. Japan): teilweise Mehrheitswahl in Einerwahlkreisen und teilweise Verhältniswahl (*segmentierte Systeme*, anders als in Deutschland strikt getrennt)
 3. Gesetzliche Sperrklausel (z.B. Deutschland)
 4. Mehrheitsboni (z.B. Griechenland): Partei oder Vorwahlkoalition mit den meisten Stimmen bekommt eine bestimmte Menge von Zusatzstimmen $\Rightarrow$ möglicherweise Parlamentsmehrheit
+
+> [!question] Vervollständigen Sie die folgenden Sätze für Verhältniswahlsysteme:
+> - Je geringer die Wahlkreisgröße, desto $\dots$ ist die Proportionalität.
+> - Um die Disproportionalität zu erhöhen, muss die Sperrklausel $\dots$ werden.
 
 ## Relative Mehrheitswahl
 *Vereinigtes Königreich*
@@ -96,6 +106,10 @@ Komponenten:
 1. Mechanischer Effekt: kleine Parteien mit verstreuter Unterstützung werden benachteiligt
 2. Psychologischer Effekt: mechanischer Effekt wird vorhergesehen $\Rightarrow$ Wählen stimmen nicht für kleine Parteien, diese entstehen also auch gar nicht erst
 
+> [!question] Welche Aussage bezeichnet die Politikwissenschaft als „Duvergers Gesetz“?
+
+> [!question] Welche beiden „Effekte“ unterstellt Duvergers Gesetz?
+
 **Probleme:**
 1. Formale Ungleichheit: Stimmengleichheit kann verletzt werden
 	- Mehrheitswahlsysteme müssten auch dafür sorgen, dass die Zahl der Wahlberechtigten in den Wahlkreisen mit gleicher Mandatszahl gleich ist
@@ -108,6 +122,10 @@ Komponenten:
 	- Wahlkreise können von regierender Mehrheit so manipuliert werden, dass die Oppositionsparteien systematisch benachteiligt werden
 	- In den meisten fortgeschrittenen Demokratien weitgehend gelöst (z.B. durch unabhängige Kommissionen, nicht aber in den USA)
 	- **Allgemeiner Punkt:** Durch die Mehrheitswahl in Einerwahlkreisen wird politische Geographie wichtig $\Rightarrow$ mehr Spielraum für Verzerrungen und Manipulation
+
+> [!question] Bei der Mehrheitswahl in Einerwahlkreisen spielen Fragen der „politischen Geographie“ eine größere Rolle. Nennen Sie ein Problem politischer Fairness, das durch Einerwahlkreise entstehen kann.
+
+> [!question] Nennen Sie die beiden Grundtypen von Wahlsystemen für Parlamente und geben Sie jeweils ein Länderbeispiel.
 
 ---
 # Die Rolle von Konfliktlinien
@@ -132,7 +150,9 @@ Industrielle Revolution:
 
 *Unterschiedliche Bedeutung in den unterschiedlichen Ländern*
 
-Neue Cleavages:
+> [!question] Nennen Sie die vier traditionellen Cleavages nach Lipset und Rokkan.
+
+**Neue Cleavages:**
 - Postmaterialismus: Kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns
 	- $\Rightarrow$ Umwelt, Frieden, sexuelle Befreiung, etc. $\to$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
 - Transnationalismus: Konflikt um Globalisierung, Einwanderung, EU (Gewinner und Verlierer von Globalisierung und "Wissensökonomie")
@@ -144,6 +164,8 @@ Neue Cleavages:
 
 ![[Screenshot from 2025-06-22 11-01-36.png|500]]
 
+> [!question] Wofür steht die Abkürzung GAL-TAN?
+
 ---
 # Maßzahlen für Wahl- und Parteiensysteme
 ## Effektive Anzahl von Parteien
@@ -151,6 +173,10 @@ Neue Cleavages:
 - absolute Anzahl ist problematisch: 1% würde genauso zählen wie 60%
 - Effektive Anzahl **elektoraler** Parteien (nach Stimmen) oder **legislativer / parlamentarischer** Parteien (nach Sitzen)
 $$N = \frac{1}{\sum s_i^2}$$
+
+> [!question] Je ungleicher die Sitzanteile der Parteien im Parlament, desto $\dots$ die effektive Anzahl der Parlamentsparteien. Tragen sie „größer“ oder „kleiner“ ein.
+
+> [!question] Kann die effektive Anzahl der elektoralen Parteien größer sein als die Anzahl der legislativen Parteien?
 
 ## Gallagher-Index (Least Squares-Index)
 - Index für die Disproportionalität eines Wahlsystem
@@ -162,6 +188,8 @@ $$G = \sqrt{\frac12 \sum(v_i - s_i)^2}$$
 - Misst nicht alleine die formalen Regeln, sonder auch mechanischen Effekt
 - Psychologischer Effekt wird nicht eingefangen
 - $\Rightarrow$ Auch relative Mehrheitswahlsysteme können unter bestimmten Umständen eine niedrige Disproportionalität aufweisen (z.B. Bahamas vs. USA)
+
+> [!question] Welchen Wertebereich hat der Disproportionalitätsindikator von Michael Gallagher? Welcher Wert steht für perfekte Proportionalität?
 
 ## Wahl- und Parteiensysteme
 - Hohe tatsächliche Disproportionalität geht auch mit wenigen Parteien im Parlament einher (z.B. Bahamas)

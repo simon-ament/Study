@@ -17,6 +17,8 @@ title: Wissenschaft
 
 > Es geht in der Wissenschaft darum, konkurrierende Kausalhypothesen oder Theorien, die unterschiedliche Vorhersagen treffen, gegeneinander zu testen
 
+> [!question] Geben Sie Elliott Sobers kurze Definition von Wissenschaft wieder.
+
 ### Kausalhypothese
 Zu testende Vermutung über Ursache-Wirkungs-Beziehung
 
@@ -33,6 +35,10 @@ Wir können Kausalität **niemals** beobachten
 - wir können empirische Daten nutzen, um auf Kausalität zu schließen
 - Kausale Schlüsse (Inferenz) sind sehr anspruchsvoll
 - Korrelation $\neq$ Kausalität (z.B. Richtung unklar oder dritter Faktor im Spiel | "Scheinkorrelation")
+
+> [!question] Was ist eine Kausalhypothese?
+
+> [!question] Geben Sie ein Beispiel für eine Kausalhypothese.
 
 ### Theorien
 1. eine Theorie ist ein **System** zusammenhängender Hypothesen
@@ -61,6 +67,10 @@ Wenn die Vorhersagen / Implikationen einer Theorie falsch sind, dann **muss** di
 	- verschiedene Theorien können dieselben Vorhersagen treffen
 	- $\Rightarrow$ man kann eine einzelne Theorie durch Daten niemals "bestätigen"(*confirm*), sondern nur durch gescheiterte Falsifikation "stützen" oder "untermauern" (*corroborate*)
 
+> [!question] Ist eine falsifizierte Theorie falsch?
+
+> [!question] Warum kann eine Theorie durch Daten nicht bestätigt werden?
+
 ## Vergleichendes Testen
 Wenn wir konkurrierende Theorien oder Hypothesen direkt in den Test einbeziehen, können wir im besten Fall sagen, dass eine Theorie durch die Daten **besser bestätigt / gestützt** wird als eine bestimmte andere Theorie
 
@@ -87,6 +97,8 @@ Wir sollten versuchen
 	- kritische Tests im Vergleich mit alternativen Theorien
 5. **Bewertung**
 
+> [!question] Nennen Sie die 5 Schritte der wissenschaftlichen Methode (Clark et al.).
+
 ## Beispiel
 1. **Rätsel:** Reiche Länder sind eher Demokratien. Warum?
 2. **Theorie** (Adam Przeworski): Reiche riskieren ihren Lebensstandard nicht und akzeptieren die Demokratie deshalb weiterhin, auch wenn die Wahlen verlieren (Arme haben weniger zu verlieren)
@@ -106,10 +118,12 @@ Wir sollten versuchen
 
 ![[Screenshot from 2025-06-22 10-51-01.png|500]]
 
+> [!question] Geben Sie je ein Beispiel für eine normative, eine beschreibende und eine erklärende Aussage!
+
 ## Politische Systeme
 - **Demokratien** und Typen davon
 	- Regierungssysteme
 	- Wahl- und Parteiensysteme
-	- Demokratietyoen (Lijphart)
+	- Demokratietypen (Lijphart)
 	- Vetospieler (Tsebelis)
 - **Autokratien** und Typen davon

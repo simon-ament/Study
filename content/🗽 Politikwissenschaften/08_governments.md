@@ -21,6 +21,8 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 - Inhalte (*policy*): Inhalte durchsetzen
 - Wählerstimmen (*votes*): bei nächster Wahl
 
+> [!question] Welche drei Ziele oder Motive von Parteien werden in der Koalitionstheorie unterschieden?
+
 **Frühere Theorien:**
 1. Reines Office-seeking (William Riker): möglichst viele Ämter sammeln $\Rightarrow$ minimale Gewinnkoalition
 2. Reines Policy-seeking (Robert Axelrod): geringe inhaltliche Distanz $\Rightarrow$ minimale verbundene Gewinnkoalition (erklärt ggf. auch übergroße Koalitionen)
@@ -30,6 +32,8 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 *Minimale Gewinnkoalitionen scheinen eine gute Vorhersage zu sein, aber Minderheitsregierungen und übergroße Koalitionen kommen tatsächlich häufig vor*
 
 ![[Screenshot from 2025-06-22 11-11-06.png|500]]
+
+> [!question] Welcher Koalitionstyp lässt sich vorhersagen, wenn Parteien nur an Ämtern interessiert sind? Erläutern Sie kurz den Grund für diese Vorhersage kurz.
 
 ---
 # Minderheitsregierungen
@@ -41,6 +45,11 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 	- flexible Suche nach Gesetzgebungsmehrheiten im Parlament (wechselnde Mehrheiten)
 	- *Nordrhein-Westfalen 2010 - 2012*
 
+> [!question] Minderheitsregierungen:
+> - Welche zwei Typen lassen sich unterscheiden.
+> - Erläutern Sie den Unterschied zwischen ihnen kurz?
+> - Bei welchem Typ würden Sie eher das Vorkommen von Gesetzgebungsblockaden vermuten (deadlock)? Begründen Sie ihre Antwort kurz.
+
 ## Policy-Ziele und Wählerstimmen
 *Sicht der Opposition | Theorie von Kaare Strom*
 
@@ -48,6 +57,8 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 - Verbleib in der Opposition kann helfen, die Wählerstimmen-Ziele zu verfolgen
 	- Regierungsparteien verlieren häufig Stimmen, Juniorpartner tendenziell stärker (Wähler strafen für zu große Kompromissbereitschaft ab)
 	- Opposition muss unpopuläre Politik nicht mittragen, kann sich auf Einfluss bei wenigen für die Partei wichtigen Themen konzentrieren
+
+> [!question] Warum kann es für eine Partei rational sein, mit einer Minderheitsregierung aus der Opposition heraus zu verhandeln anstatt in die Regierung einzutreten?
 
 ## Medianpartei und gespaltene Opposition
 *Sicht der Minderheitsregierung*
@@ -104,6 +115,10 @@ Wenn eine Koalitionsbildung scheitert, kann der Präsident versuchen alleine zu 
 	- Präsidenten müssen keine Angst vor instabilen Regierungen haben müssen
 3. Weitere Unterschiede bei der Verteilung von Ministerien
 
+> [!question] Nennen Sie einen Unterschied zwischen präsidentiellen und parlamentarischen Regierungssystemen, der für die Bildung von Regierungskoalitionen von Bedeutung ist.
+
+> [!question] Nennen Sie zwei Beispiele dafür, wie sich die Muster der Koalitionsbildung in präsidentiellen und parlamentarischen Regierungssystemen unterscheiden.
+
 ---
 # Verteilung von Ministerien
 ## Gamsons Gesetz
@@ -127,6 +142,11 @@ Wenn eine Koalitionsbildung scheitert, kann der Präsident versuchen alleine zu 
 - aber näher an parlamentarischen
 - Grund: auch hier Beschränkung des Misstrauensvotums
 
+> [!question] Was bezeichnet man in der Koalitionsforschung als Gamsons Gesetz?
+
+> [!question] Wenn von Gamsons Gesetz abgewichen wird, findet das tendenziell zu wessen Gunsten statt?
+> - Nennen Sie eine mögliche Erklärung für diese Abweichung.
+
 ## Parteilose Experten
 - Präsidenten haben größere Freiheit, solche Experten zu ernennen, da sie die Interessen der Parlamentsfraktionen weniger berücksichtigen müssen
 - 2,5% in parlamentarischen Systemen | 7% in semi-präsidentiellen | 21% in präsidentiellen
@@ -137,3 +157,12 @@ Wenn eine Koalitionsbildung scheitert, kann der Präsident versuchen alleine zu 
 - militärische Verteidigungsminster beeinflussen auch die Substanz der Verteidigungspolitik
 - andere Studien: präsidentielle Demokratien geraten doppelt so häufig in militarisierte Konflikte miteinander wie andere Demokratien
 	- in Bezug auf Konflikte unter der Schwelle von Kriegen lassen sich präsidentielle Systeme gar nicht von Autokratien unterscheiden
+
+> [!question] Wenn ein Präsident in einem präsidentiellen System mit Dekreten am Parlament vorbei regieren kann, wird der Anteil unabhängiger, nicht parteigebundener Minister im Kabinett eher groß oder klein sein? Begründen Sie Ihre Antwort kurz.
+
+> [!question] Zu welchem Regierungssystem passen die folgenden Eigenschaften von Regierungen eher? Präsidentiell oder Parlamentarisch?
+> - Es werden häufiger Koalitionsregierungen gebildet.
+> - Es werden häufiger Minderheitsregierungen gebildet.
+> - Gamsons Gesetz gilt in stärkerem Maße.
+> - Es werden häufiger nicht-parteiliche Experten zu Ministern gemacht.
+> - Die Verteidigungsminister kommen häufiger aus dem Militär.

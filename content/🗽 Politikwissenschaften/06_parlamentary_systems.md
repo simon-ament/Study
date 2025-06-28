@@ -28,6 +28,8 @@ title: Parlamentarische Systeme
 - Entscheidungsregel: absolute statt einfache Mehrheit $\Rightarrow$ Enthaltungen und Abwesenheiten zählen zugunsten der Regierung
 - Konstruktives Misstrauensvotum: Kabinett kann nur bei Einigung auf neues Kabinett abgelöst werden (Innovation des deutschen Grundgesetzes, heute weit verbreitet)
 
+> [!question] Definieren Sie kurz die Institution des „konstruktiven Misstrauensvotums“. Geben Sie ein Länderbeispiel.
+
 ### 2. Die Vertrauensfrage
 - Wird von der Regierung selbst gestellt (Misstrauensvotum geht vom Parlament aus)
 - Kann als Machtmittel benutzt werden (Kopplung an Sachfrage $\Rightarrow$ "Bin ich bereit, für diese Frage die Regierung scheitern zu lassen?")
@@ -36,14 +38,20 @@ title: Parlamentarische Systeme
 **Bedeutung:**
 - Wichtige Form von Agenda-Setzer-Macht
 	- Entscheidungssituation der Abgeordneten wird verändert
-	- drastisches und potentiell risikoreiches Instrument mit "Abschrekungswirkung" (bereits ohne Einsatz)
+	- drastisches und potentiell risikoreiches Instrument mit "Abschreckungswirkung" (bereits ohne Einsatz)
 - Implizit ist im parlamentarischen System (fast) jede wichtige Sachfrage mit der Vertrauensfrage gekoppelt
 	- "disziplinierte" Fraktionen und Koalitionen in parlamentarischen Systemen
+
+> [!question] Nennen sie eine Institution, die hilft zu erklären, warum Parlamentsfraktionen in parlamentarischen Systemen häufig sehr hohe Einigkeit und Disziplin im Abstimmungsverhalten aufweisen.
 
 ### 3. Die Parlamentsauflösung
 - Drohung mit Vertrauensfrage ist bei Kopplung an Auflösung des Parlaments besonders wirksam (Mandate in Gefahr)
 - starke Länderunterschiede: teils gar keine Auflösung möglich (z.B. Norwegen), teils sogar durch den Regierungschef alleine (z.B. Dänemark)
-- Möglichkeit der Auflösung ist im Zeitlauf häufig eingeschränkt worden (sonst zu großer Vorteil für Regierung)
+- Möglichkeit der Auflösung ist im Zeitverlauf häufig eingeschränkt worden (sonst zu großer Vorteil für Regierung)
+
+> [!question] Kann in jedem parlamentarischen System das Parlament aufgelöst werden?
+
+> [!question] Nennen Sie ein parlamentarisches System, in dem allein der Premierminister jederzeit das Parlament auflösen kann.
 
 ### 4. Die Investiturabstimmung
 - Wahl der Regierung oder des Regierungschefs ins Amt
@@ -58,6 +66,8 @@ title: Parlamentarische Systeme
 **Negativer Parlamentarismus:** *Dänemark, Schweden*
 - Regierung kann ohne Vertrauensbeweis einer Parlamentsmehrheit ins Amt kommen, aber kann jederzeit abgewählt werden
 
+> [!question] Welche Form des Parlamentarismus erlaubt eher die Bildung von Minderheitsregierungen: „positiver“ oder „negativer“? Warum?
+
 ---
 # Zweite Kammern
 *Warum habe manche Länder nur eine Parlamentskammer und andere zwei? Welchen Unterschied macht das*
@@ -65,19 +75,28 @@ title: Parlamentarische Systeme
 
 ## Kriterien für "starke" Zweite Kammern
 *Australien, Argentinien, Schweiz, USA, Deutschland (obwohl Bundesrat nicht direkt gewählt)*
-1. "Robuste" Vetomacht: absolutes (statt nur aufschiebendes) Veto oder Veto, das besonders schwierig zu überstimmen ist (z.B. Japan: 2/3 Mehrheit der ersten Kammer)
-2. Demokratische Legitimation: ohne diese kann formale Macht nicht voll ausgeübt werden (z.B. Kananda: Ernennung der Senatoren) | größte Legitimation durch Direktwahl
-3. Andere Zusammensetzung als die erste Kammer: insbesondere anderes Wahlsystem und / oder Übergewichtung von (territorialen) Minderheiten in der 2. Kammer
+1. **"Robuste" Vetomacht:** absolutes (statt nur aufschiebendes) Veto oder Veto, das besonders schwierig zu überstimmen ist (z.B. Japan: 2/3 Mehrheit der ersten Kammer)
+2. **Demokratische Legitimation:** ohne diese kann formale Macht nicht voll ausgeübt werden (z.B. Kananda: Ernennung der Senatoren) | größte Legitimation durch Direktwahl
+3. **Andere Zusammensetzung als die erste Kammer:** insbesondere anderes Wahlsystem und / oder Übergewichtung von (territorialen) Minderheiten in der 2. Kammer
+
+> [!question] Welche drei Bedingungen müssen erfüllt sein, damit eine zweite Kammer oder ein Zweikammersystem (im Anschluss an Arend Lijphart) als „stark“ bezeichnet wird?
+
+> [!question] Nennen Sie ein Land mit einem starken Zweikammersystem.
 
 ## Modelle von 2. Kammern
 ### Territoriale Repräsentation
 *Repräsentation der Interessen von Einzelstaaten (in föderalen Systeme) oder Regionen*
-- Historische Herausbildung: 2. Kammern als Preis für den Zusammenschluss von Gliedstaaten zu einem Bundesstaat (z.B. USA, EU), damit die Einzelstaaten Macht abgeben
-- Heutige Funktionsweise: Aus historischer Logik folgt nicht, dass zweite Kammern die Interessen der Gliedstaaten gut repräsentieren, Sie können genauso durch Parteipolitik gezeichnet sein wir die erste Kammer
-	1. Direktwahl durch Wähler (z.B. USA, Australien, Schweiz): hohe Legitimation, aber "Senatoren" gruppieren sich in Parteien und handeln im Parteiinteresse
-	2. Indirekte Wahl durch gliedstaatliche / lokale Parlamente (z.B. Niederlande, Österreich): weniger Legitimation, Problem wie bei 1
-	3. Vertretung der gliedstaatlichen Regierungen (z.B. Deutschland, sehr selten): scheint bestes Modell zu sein, gliedstaatliche Interessen erst auf Ebene der Länderregierung definiert
-	4. Ernennung durch die (Zentral-)Regierung (Kanada): keine Legitimation und fehlender Bezug zum gliedstaatlichen Interesse
+- **Historische Herausbildung:** 2. Kammern als Preis für den Zusammenschluss von Gliedstaaten zu einem Bundesstaat (z.B. USA, EU), damit die Einzelstaaten Macht abgeben
+- **Heutige Funktionsweise:** Aus historischer Logik folgt nicht, dass zweite Kammern die Interessen der Gliedstaaten gut repräsentieren, Sie können genauso durch Parteipolitik gezeichnet sein wir die erste Kammer
+
+**Methoden zur Wahl:**
+1. Direktwahl durch Wähler (z.B. USA, Australien, Schweiz): hohe Legitimation, aber "Senatoren" gruppieren sich in Parteien und handeln im Parteiinteresse
+2. Indirekte Wahl durch gliedstaatliche / lokale Parlamente (z.B. Niederlande, Österreich): weniger Legitimation, Problem wie bei 1
+3. Vertretung der gliedstaatlichen Regierungen (z.B. Deutschland, sehr selten): scheint bestes Modell zu sein, u.a. weil das gliedstaatliche Interesse erst auf der Ebene der Länderregierungen klar definiert ist
+4. Ernennung durch die (Zentral-)Regierung (Kanada): keine Legitimation und fehlender Bezug zum gliedstaatlichen Interesse
+
+> [!question] Nennen Sie die vier grundlegenden Möglichkeiten, wie die Mitglieder zweiter Kammern ausgewählt werden können.
+> - Welche dieser vier Möglichkeiten scheint für das Gelingen territorialer Repräsentation am günstigsten zu sein?
 
 **Politische Gleichheit:** Da territoriale Repräsentation selten funktioniert, unterlaufen 2. Kammern häufig schlicht den Wert der politischen Gleichheit (*Malapportionment*)
 - territoriale Repräsentation als Rechtfertigung, die Stimmen nicht nach der Bevölkerungszahl zu gewichten (nicht Wähler, sondern Staaten gleich behandelt)
@@ -90,8 +109,12 @@ title: Parlamentarische Systeme
 
 ![[Screenshot from 2025-06-22 11-06-31.png|500]]
 
+> [!question] Wenn ein Bundesstaat in einer zweiten Kammer die Einzelstaaten repräsentiert, in welcher Kammer wird dann voraussichtlich das Ausmaß von „Malapportionment“ größer sein? Begründen Sie ihre Antwort kurz.
+
 ### Semi-parlamentarische 2. Kammern
 ![[Screenshot from 2025-06-22 11-06-36.png|500]]
+
+> [!question] Zeichnen Sie das Schema für ein semi-parlamentarisches System. Nennen Sie ein Länderbeispiel.
 
 *Australien und meiste australische Gliedstaaten, Japan*
 - Im parlamentarischen Systemen sind 2. Kammern nicht durch Direktwahl demokratische legitimiert $\Rightarrow$ kein Recht auf Misstrauensvotum

@@ -15,16 +15,22 @@ Robert Dahl: Sechs Kriterien oder minimale Garantieren für eine "Polyarchie"
 5. Organisationsfreiheit
 6. Inklusive (Wahl-)Bürgerschaft
 
+> [!question] Nennen Sie drei der von Robert Dahl (1971) genannten minimalen Garantieren oder Kriterien für eine Polarchy oder elektorale Demokratie!
+
 Sechs Kriterien korrespondieren mit zwei grundlegenden analytischen Dimensionen:
 - Wettbewerb (*contestation*)
 - Inklusivität / Partizipation (*inclusion*)
 	- Inklusion = Anteil der Wahlberechtigten an der erwachsenen Bevölkerung
+
+> [!question] Welche beiden analytischen Dimensionen werden in Robert Dahls (1971) Demokratiekonzeption unterschieden?
 
 ![[Screenshot from 2025-06-22 10-52-54.png|500]]
 ## Liberale Demokratie
 Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 - **Liberale Demokratie** fügt weitere Kriterien hinzu
 - Elektorale & liberale Demokratie können sich also unterschieden, aber die Werte für liberale Demokratie bauen auf denen für elektorale Demokratie auf
+
+> [!question] Kann es eine liberale Demokratie ohne eine elektorale Demokratie geben?
 
 ![[Screenshot from 2025-06-22 10-53-28.png|500]]
 
@@ -44,7 +50,6 @@ Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 - elektorale Demokratie sei also eine schwächere Stufe der Demokratie
 - "illiberale Demokratie" sei ein Widerspruch in sich
 
-
 ---
 # Demokratie-Messungen
 - dichotome (ja / nein) vs. kontinuierliche Messung
@@ -57,12 +62,16 @@ Dichotome Messung von elektoraler Demokratie
 2. Das Parlament (oder die Regierung, falls sie direkt gewählt ist), wird in freien und fairen Wahlen ausgewählt.
 3. Die Mehrheit der erwachsenen Männer besitzt das Wahlrecht.
 
+> [!question] Nennen Sie eine Demokratie-Messung, die Demokratie als dichotome Variable versteht!
+
 ## V-Dem
 Kontinuierliche Messung von elektoraler Demokratie und vielem mehr
 - sehr großes internationales Projekt, das auch sehr viele Daten bereitstellt
 - viele Variablen, die zu einem Index zusammenfließen (orientiert an Dahl)
 - *Electoral Democracy Index* zwischen $0$ und $1$
 - viele Variablen basieren auf (gemittelten) Experteneinschätzungen
+
+> [!question] Nennen Sie eine Demokratie-Messung, die Demokratie als kontinuierliche Variable versteht!
 
 ---
 # Modernisierungstheorie
@@ -76,7 +85,9 @@ Kontinuierliche Messung von elektoraler Demokratie und vielem mehr
 
 Zentrale Idee der Modernisierungstheorie:
 - Wirtschaftliche Entwicklung transformiert die Struktur einer Gesellschaft, so dass es die "Nachfrage" nach und evtl. auch das "Angebot" von Demokratie stärkt
-- Empirischer Ausgangsbefund: Deutliche Korrelation zwischen Reichtum (Pro-Kopf-Einkommen) und Demkratie
+- Empirischer Ausgangsbefund: Deutliche **Korrelation** zwischen **Reichtum (Pro-Kopf-Einkommen)** und **Demokratie**
+
+> [!question] Welche beiden Variablen setzt die Modernisierungstheorie miteinander in Beziehung?
 
 ![[Screenshot from 2025-06-22 10-54-16.png|500]]
 
@@ -86,6 +97,8 @@ Zentrale Idee der Modernisierungstheorie:
 - Entwicklung $\to$ organisierte Arbeiterschaft $\to$ Demokratisierung
 - Entwicklung $\to$ (emanzipatorischer) Wertewandel $\to$ Demokratisierung
 
+> [!question] Nennen Sie stichwortartig einen kausalen Mechanismus, der laut der klassischen Modernisierungstheorie zwischen diesen beiden Variablen vermitteln kann?
+
 ## Alternative MT
 Klassische MT nimmt an, dass Reichtum nicht nur bereits bestehende Demokratien schützt, sondern auch deren Entstehung fördert
 - Sicht ist umstritten (siehe z.B. Singapur und China)
@@ -93,9 +106,11 @@ Klassische MT nimmt an, dass Reichtum nicht nur bereits bestehende Demokratien s
 **Survival Story:** Nur wenn eine Demokratie bereits entstanden ist, wird sie durch Reichtum stabilisiert
 - Entstehung von Demokratien kann als Zufallsprozess verstanden werden, der von der Theorie nicht erklärt werden kann
 
+> [!question] In der Vorlesung wurde zwischen der klassischen Modernisierungstheorie und einer alternativen Theorie unterschieden. Wie unterscheiden sich die jeweiligen Hypothesen?
+
 ![[Screenshot from 2025-06-22 10-54-53.png|500]]
 
-Clark/Golder/Golder sehen klassische Theorie als besser bestätigt
+*Clark/Golder/Golder sehen klassische Theorie als besser bestätigt*
 
 ## Kausale Mechanismen II
 Die Wahl zwischen Demokratie und Diktatur ist eine Wahl zwischen einem System
@@ -117,6 +132,8 @@ Zusammenhang zwischen Reichtum & Demokratie gilt auch nicht, wenn Reichtum auf *
 - Nach 1973 ist die Korrelation zwischen Reichtum und Demokratie schwächer geworden, weil Aufstieg reicher öl-exportierender Staaten stattgefunden hat
 
 ![[Screenshot from 2025-06-22 10-55-05.png|500]]
+
+> [!question] Nennen Sie einen Fall, der recht eindeutig der Modernisierungstheorie widerspricht!
 
 ## Neue Welt?
 - Lange Zeit galt, dass nach 1950 keine Demokratie scheiterte, deren Pro-Kopf-Einkommen größer war als das von Argentinien in 1985

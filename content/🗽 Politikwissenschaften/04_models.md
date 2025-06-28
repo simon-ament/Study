@@ -16,7 +16,9 @@ Rest der Vorlesung: Varianten der Demokratie
 1. **Vollständigkeit:** Alle Alternativen müssen miteinander vergleichbar sein
 2. **Transitivität:** Es gibt keine "kreisförmigen" Rangordnungen
 
-Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Aich Uneigennützigkeit (Altruismus) kann mehr oder weniger rational verfolgt werden.
+Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Auch Uneigennützigkeit (Altruismus) kann mehr oder weniger rational verfolgt werden.
+
+> [!question] Nennen Sie zwei grundlegende Annahmen, die von „Rational Choice“-Modellen getroffen werden.
 
 ## Präferenzen und Nutzen
 - **Präferenzordnung:** Sammlung / Menge der vollständigen und transitiven Präferenzen eines Akteurs
@@ -36,22 +38,30 @@ Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Aich Uneig
 Bei Anwendung der Mehrheitregel im eindimensionalen Politikraum gewinnt der "mittlere" Wähler oder Medianwähler
 - der Medianwähler ist aufgrund seiner räumlichen Position besonders machtvoll
 
+> [!question] Geben Sie in Ihren eigenen Worten das Hauptergebnis des Medianwähler-Theorems wieder.
+
 ![[Screenshot from 2025-06-22 10-58-57.png|500]]
 
 ![[Screenshot from 2025-06-22 10-59-01.png|500]]
 
-**Black Medianewähler-Theorem:** Wenn die Mitglieder einer Gruppe eingipflige Präferenzen besitzen, dann hat der Idealpunkt des Medianwählers eine leere Gewinnmenge
+**Black's Medianewähler-Theorem:** Wenn die Mitglieder einer Gruppe eingipflige Präferenzen besitzen, dann hat der Idealpunkt des Medianwählers eine leere Gewinnmenge
 - gilt für Mehrheitsregel im eindimensionalen Politikraum
-- weitere Annahmen: ungerade Anzahl an Wählern, keine Enthaltung, "erhliches" Wählen
+- weitere Annahmen: ungerade Anzahl an Wählern, keine Enthaltung, "ehrliches" Wählen
 
 Die Menge von Punkten, die zu einem Gleichgewicht führen, wird **Kern** genannt
 - bei Geltung der Mehrheitsregel besteht der Kern allein aus dem Idealpunkt des Median-Wählers
 
+> [!question] Was muss über den politischen Raum angenommen werden, damit das Medianwähler-Theorem gültig ist?
+
+> [!question] Nennen Sie eine Annahme über die Präferenzen (Nutzenfunktionen) der Abstimmenden, die gelten muss, damit das Medianwähler-Theorem gültig ist.
+
 ## Eigenschaften der Mehrheitsregel
-1.  Zentripetale Tendenz, d.h. Tendenz zur Mitte
+1. Zentripetale Tendenz, d.h. Tendenz zur Mitte
 2. Keine konservative Tendenz (keine Bevorzugung des Status Quo / der Vergangenheit)
 
 Bedingungen dafür: Eine Konfliktdimension + Alle Wähler / Entscheidungsträger können Änderungsvorschläge machen
+
+> [!question] Nennen Sie eine Eigenschaft der Mehrheitsregel, die sich aus dem Medianwähler-Theorem ableiten lässt.
 
 ---
 # Beschränkung der Macht des Medians
@@ -59,6 +69,8 @@ Bedingungen dafür: Eine Konfliktdimension + Alle Wähler / Entscheidungsträger
 2. Notwendigkeit größerer Mehrheiten (Supermajorität)
 
 Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
+
+> [!question] Durch welche Verfahrensregeln lässt die „Macht des Medians“ einschränken?
 
 ## Macht des Agenda-Setzers
 - Agenda-Setzer kann festlegen, welche Vorschläge gegeneinander abgestimmt werden (Tagesordnung)
@@ -134,6 +146,8 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 
 ![[Screenshot from 2025-06-22 11-12-39.png|500]]
 
+> [!question] Welche Annahme muss die Vetospielertheorie treffen, damit es in einem zweidimensionalen Raum zu kreisförmigen Indifferenzkurven kommt?
+
 ## Mehrere Dimensionen & Einstimmigkeit
 - **Eindimensional:** Mehrheitsregel erzeugt Tendenz zur Mitte (Median)
 - **Mehrdimensional:** Mehrheitsregel erzeugt nur sehr eingeschränkte Tendenz zur Mitte $\Rightarrow$ Mehrheitsregel kann in der Realität zu "instabilen" Ergebnissen führen
@@ -168,6 +182,12 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 ![[Screenshot from 2025-06-22 11-16-36.png|500]]
 
+> [!question] Wie ist ein Vetospieler definiert?
+
+> [!question] Welche Typen von Vetospielern unterscheidet Tsebelis?
+
+> [!question] Welchen Vorteil hat es, eine Vetospielerkonstellationen auf der Ebene parteilicher Vetospieler zu beschreiben?
+
 ## Beispiel: Zweite Kammer
 *Was passiert, wenn wir zu Beispiel 1 eine zweite Kammer mit absoluter Vetomacht hinzufügen?*
 
@@ -186,6 +206,10 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 ![[Screenshot from 2025-06-22 11-16-55.png|500]]
 
+> [!question] Wie definiert die Vetospielertheorie Policy-Stabilität?
+
+> [!question] Vervollständigen Sie den folgenden Satz: Je größer $\dots$ , desto größer die Policy-Stabilität
+
 **Indikatoren im räumlichen Modell:**
 - Größe der Gewinnmenge des Status Quo
 	- je größer die Gewinnmenge, desto weniger Policy-Stabilität
@@ -197,6 +221,14 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 ![[Screenshot from 2025-06-22 11-17-16.png|500]]
 
+> [!question] Wie ist der Einstimmigkeitskern definiert?
+
+> [!question] Einstimmigkeitskern versus Gewinnmenge (winset):
+> - Welches dieser Konzepte ist allgemeiner anwendbar und warum?
+> - Welches erlaubt präzisere Aussagen?
+
+> [!question] Wenn der Status Quo von einer Gruppe von Vetospielern weit entfernt liegt, ist die Gewinnmenge dann eher groß oder eher klein?
+
 ## Einfluss von Vetospielern
 
 1. Anzahl von Vetospielern: Je mehr Vetospieler, desto größer ist tendenziell die Policy-Stabilität
@@ -206,15 +238,19 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 ![[Screenshot from 2025-06-22 11-17-30.png|500]]
 
+> [!question] Was besagt die Absorptionsregel?
+
 ---
 # Kokurrierende Theorien
 
 1. **Vetospielertheorie:** Alle Regierungsparteien haben dieselbe Vetomacht. Machtunterschiede zwischen ihnen resultieren (allein) aus Agenda-Setzer-Macht
 2. **Medianwählertheorem:** Die Median-Partei setzt sich inhaltlich durch, unabhängig davon wer (sonst noch) an der Regierung beteiligt ist
-3. **Theorie des gewichteten Kompromisses:** Regierungsparteien setzten sich mit ihren Positionen proportional zu ihrem Sitzanteil durch (ähnlich wie bei der Verteilung von Ministerien | ==Gamsons Gesetz==)
+3. **Theorie des gewichteten Kompromisses:** Regierungsparteien setzten sich mit ihren Positionen proportional zu ihrem Sitzanteil durch (ähnlich wie bei der Verteilung von Ministerien | [[08_governments#Gamsons Gesetz|Gamsons Gesetz]])
 4. **Theorie der Ministerialregierung:** Minister setzen in ihren Portfolios die Positionen ihrer Parteien durch und nicht den Koalitionsvertrag. Dies wird bei der Verteilung der Portfolios bereits berücksichtigt
 
 ![[Screenshot from 2025-06-22 11-17-41.png|500]]
+
+> [!question] Nennen Sie zwei Theorien darüber, wie Koalitionsparteien in parlamentarischen Regierungssystemen zu einer inhaltlichen Einigung kommen?
 
 ## Empirische Studien
 *Diskussion über die (relative) empirische Evidenz für diese Theorien keineswegs abgeschlossen*

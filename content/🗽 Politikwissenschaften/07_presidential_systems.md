@@ -8,16 +8,23 @@ title: Präsidentielle Systeme
 
 ![[Screenshot from 2025-06-22 11-07-06.png|500]]
 
+> [!question] In der Vorlesung wurde zwei grundlegende Charakteristika präsidentieller Systeme unterschieden. Welche sind das?
+
 ## Konsequenzen / Gemeinsamkeiten
 1. Fraktions- und Koalitionsdisziplin tendenziell geringer (Vertrauensfrage fehlt)
 2. Gefahr von Blockaden ist tendenziell größer (keine Auflösung durch Misstrauensvotum oder Neuwahlen)
 3. Politische Parteien sind tendenziell weniger programmatisch (eigene Programme der Präsidentschaftskandidaten, keine Bindung durch Parteiprogramme)
+
+> [!question] Ist die Fraktionsdisziplin in parlamentarischen Systemen eher höher oder eher niedriger als in präsidentiellen?
+> - Nennen sie einen Institution, die zur Erklärung dieses Unterschieds beiträgt.
 
 ## Vorteile des Präsidentialismus
 1. Gewaltenteilung soll vor Machtkonzentration schützen
 2. Präsidentschaftswahl lässt Wähler eindeutige Wahl für die Regierung treffen
 3. möglicherweise klarere Verantwortlichkeiten (*umstritten*)
 4. im Parlament kann mit wechselnden Mehrheiten regiert werden | nicht jede Sachfrage wird zu einer Vertrauensfrage über die Regierung
+
+> [!question] Nennen Sie stichwortartig einen Vorteil präsidentieller Systeme, der in der politikwissenschaftlichen Diskussion hervorgehoben wurde.
 
 ---
 # Gefahren des Präsidentialismus
@@ -34,6 +41,8 @@ Probleme des Personalismus:
 3. **Kompromissloser Regierungsstil:** Präsident vertritt alleine die gesamte Nation, kann sich als Volkstribun fühlen und Abgeordnete als Vertreter von "Partialinteressen" abwerten
 4. **Stärkung von Außenseitern (und Neulingen):** Kandidaten ohne "Prüfung" durch Parteien (*Parteikarriere*) können eher Präsident werden
 
+> [!question] Nennen Sie zwei Gründe, die Juan Linz für seine These anführt, dass präsidentielle Systeme zur Instabilität der Demokratie führen.
+
 ## Was sagt die Forschung?
 **Gewaltenteilung:**
 *Linz teilweise bestätigt*
@@ -49,19 +58,24 @@ Probleme des Personalismus:
 ---
 # Wie scheitern Demokratien
 90% durch: (Rest Bürgerkriege und -aufstände)
-1. Militärputsch
-2. Amtsinhaber-Übernahme (*incumbent takeover / executive takeover*): Autoritäre "Übernahme" der Verfassung durch demokratisch gewählte Amtsinhaber
+1. **Militärputsch**
+2. **Amtsinhaber-Übernahme** (*incumbent takeover / executive takeover*): Autoritäre "Übernahme" der Verfassung durch demokratisch gewählte Amtsinhaber
 	- Haben im Zeitverlauf zugenommen (heute dominante)
 
 ## Führt Präsidentialismus zum Militärputsch?
 - Linz und andere hatten einen Zusammenhang gesehen
 	- *z.B. Chile: Präsidentschaft des Sozialisten Salvador Allende führte zu Putsch und Militärdiktatur Augusto Pinochets*
-- möglicher Ablauf nach Linz (stark vereinfacht): Präsident steht oppositioneller Mehrheit im Parlament gegenüber, keine verfassungsmäßige Möglichkeit die Blockade aufzulösen $\Rightarrow$ Milität interveniert
+- möglicher Ablauf nach Linz (stark vereinfacht): Präsident steht oppositioneller Mehrheit im Parlament gegenüber, keine verfassungsmäßige Möglichkeit die Blockade aufzulösen $\Rightarrow$ Militär interveniert
 
 **Scheinkausalität (Cheibub):** statistische Korrelation ohne Ursache-Wirkungs-Zusammenhang
 - präsidentielle Demokratien leben kürzer
 - aber: präsidentielle Demokratien häufiger aus Militärdiktaturen hervorgegangen
 - berücksichtigt man dieses **"Militarismus-Erbe"**, gibt es keinen Effekt des Präsidentialismus auf die Lebenserwartung einer Demokratie
+
+> [!question] José Cheibub bestreitet, dass der Präsidentialismus für die Instabilität der Demokratie in Lateinamerika verantwortlich war.
+> - Welcher Faktor war seiner Meinung nach entscheidend?
+> - Auf welche Form des Demokratiescheiterns bezieht sich dieses Argument?
+> - Welche andere wichtige Art des Demokratiescheiterns gibt es?
 
 ## Präsidentialismus & Amtsinhaber-Übernahmen
 *Spätere Studien haben systematisch zwischen den beiden Arten des Demokratiescheiterns unterschieden*
@@ -122,6 +136,15 @@ Probleme des Personalismus:
 	- **Frankreich:** wenn Präsident auch eine Mehrheit im Parlament hat, ist er eher eigentlicher Regierungschef und Premierminister eher "Kabinettschef"
 	- **Österreich:** in der Praxis wie ein parlamentarisches System, da Präsident seine Macht zurückhaltend nutzt
 
+> [!question] Welche Variante des Semi-Präsidentialismus wird von der Politikwissenschaft eher als Gefahr für die Demokratie angesehen?
+
+> [!question] Zeichnen Sie das Schema
+> 1.  für das präsidentielle Regierungssystem,
+> 2. das premier-präsidentielle Regierungssystem,
+> 3. für das präsidentiell-parlamentarische Regierungssystem.
+> 
+> Geben Sie für jeden Typ ein Länderbeispiel.
+
 ## Gefahren des Personalismus
 *Gefahren sind auch im semi-präsidentiellen System (beide Varianten) vorhanden*
 
@@ -131,3 +154,10 @@ Probleme des Personalismus:
 - Große Unzufriedenheit, Blockaden zwischen Präsident und fragmentiertem Parlament
 - ab Juli 2021 Amtsinhaber-Übernahme und Etablierung präsidentieller Autokratie
 - Demokratische Legitimation durch Direktwahl hat dafür Rolle gespielt, z.B. Folgebereitschaft des Militärs
+
+> [!question] Zu welchem Regierungssystem passen die folgenden Eigenschaften eher? Präsidentiell oder Parlamentarisch?
+> - Starke und programmatische Parteien
+> - Amtszeitbegrenzungen für Regierungschef
+> - Hohe Anfälligkeit für Reformblockaden
+> - Parlament kann aufgelöst werden
+> - Außenseiter des politischen Systems können Regierungschef werden

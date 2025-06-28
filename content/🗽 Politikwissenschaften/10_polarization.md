@@ -9,6 +9,8 @@ title: Polarisierung
 	- Polarisierung macht Vorrang ersterer wahrscheinlicher
 	- Wird deshalb von den Entdemokratisierern vorangetrieben
 
+> [!question] Welcher gesellschaftliche Faktor begünstigt „democratic backsliding“?
+
 ## Studie von Milan Svolik
 - zufällig ausgewählte Wähler (u.a. aus den USA, Türkei, Venezuela) erhalten Wahl zwischen zwei fiktiven Kandidat:innen
 - Kandidaten haben persönliche Charakteristika und politische Inhalte
@@ -29,6 +31,8 @@ title: Polarisierung
 	- z.B. USA: 33% der Demokraten / 49% der Republikaner lehnen für ihre Kinder Ehepartner der anderen Partei ab (Anfang der 1960er Jahre: 4% bzw. 5%)
 	- Wie ist Demokratie möglich, wenn sich Bürger auf Basis starker Gruppenidentitäten feindselig gegenüber stehen $\to$ Literatur zu "gespaltenen" Gesellschaften
 
+> [!question] Es werden zwei Arten politischer Polarisierung unterschieden. Nennen sie diese!
+
 ## "Gespaltene" Gesellschaften
 - Häufig Fokus auf ethnisch gespaltene Gruppen: gemeinsame Herkunft aufgrund von Sprache, Religion, äußerliche Merkmale, Geschichte, etc.
 - Vielfalt ist nicht dasselbe wie Spaltung: Spaltung entsteht, wenn Gruppenzugehörigkeiten politisch sehr bedeutsam (politisiert) sind
@@ -47,6 +51,11 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 **Problem:** Funktioniert aber nicht, wenn soziale Konflitklinien "parallel" verlaufen und sich gegenseitig verstärken / oder wenn Gruppen sozial voneinander abgeschottet sind
 - "gespaltene" / "segmentierte" / "divserse" Gesellschaften (*divided societies*)
 - Gruppen können zu antagonistischen "Lagern" werden $\Rightarrow$ Gefahr der politischen Gewalt und letztlich des Bürgerkriegs
+
+> [!question] Die Konfliktlinien zwischen unterschiedlichen gesellschaftlichen Gruppen können parallel oder quer zueinander verlaufen.
+> - Welcher Verlauf trägt nach einer verbreiteten Auffassung zur Stabilisierung der Demokratie bei?
+> - Erfolgt diese Stabilisierung dann auf der Ebene der Wähler oder der politischen Eliten?
+> - Welcher Wirkungsmechanismus wird dabei angenommen?
 
 ## Beispiel Niederlande
 *Laut Lijphart u.a. Konkordanzdemokratie von 1917 bis in die 1960er Jahre*
@@ -67,6 +76,10 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 4. Segmentelle Autonomie (*segmental autonomy*), z.B. bei Schulen
 5. **Hintergrundbedingung:** "Segmentierte" Gesellschaft
 
+> [!question] Zum Konzept der Konkordanzdemokratie:
+> - Nennen Sie deren vier notwendigen Bedingungen sowie die Hintergrundbedingung laut Lijphart.
+> - Geben Sie ein Beispiel für ein Land, das zumindest zeitweise als Konkordanzdemokratie klassifiziert wurde.
+
 ## Konkordanz in Nordirland
 *Einflussreichster Fall in der neueren Konkordanz-Literatur*
 
@@ -84,18 +97,26 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 	- Bestimmte Entscheidungen müssen mit *cross-community support* getroffen werden $\to$ Vetorecht für die jeweiligen Communities
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/699204337?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Consociationalism explained"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+> [!question] Zum Beispielfall Nordirland:
+> - Nach welchem Modell der Befriedung gespaltener Gesellschaften wurde der gewaltsame Konflikt in Nordirland beigelegt?
+> - Welches Wahlrecht (Grundtyp) wird in der Regionalversammlung Nordirlands angewendet?
+> - In welche drei Gruppen müssen sich Abgeordnete in Nordirland selbst einsortieren?
+
 ## Kritik
 - **Elitendominanz**, dadurch Einschränkung der Demokratie
 - Vernachlässigung / Heruntergewichtung anderer Interessen (z.B. gleichgeschlechtliche Ehe 2015 in Nordirland durch ethnisches Veto der Unionisten gekippt)
 - Führt das Modell nicht zur **Verstärkung und zum "Einfrieren" von Gruppenidentitäten**?
 	- gibt jeder Gruppe als Gruppe politische Macht und fördert so ggf. deren Fortbestehen
 
+> [!question] Nennen Sie einen Kritikpunkt am Modell der Konkordanzdemokratie.
+
 ---
 # Zentripetalismus
 **Ziel:** Depolitisierung von Gruppenidentitäten (Abschwächung ihrer politischen Bedeutung)
 
 - Fokus auf Institutionen, die zur Suche nach Wählerstimmen jenseits der eigenen (ethnischen) Gruppe führen (*vote pooling*)
-	- vor allem durch das Wahlsystem, z.B. ==Alternativstimmensystem==
+	- vor allem durch das Wahlsystem, z.B. [[05_elections_parties#4. Alternativstimmensystem|Alternativstimmensystem]]
 	- $\Rightarrow$ Parteien / Kandidaten müssen Angebote an andere Gruppen machen
 - $\Rightarrow$ nicht-ethnische oder multi-ethnische Parteien (die nicht nur ihr eigenes Gesellschaftssegment repräsentieren)
 
@@ -108,6 +129,14 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 - Pro: Katalanische Wähler in Spanien stimmen nicht nur für die separatistischen Regionalparteien, sondern z.B. auch für die Sozialdemokraten
 - Contra: In Belgien gibt es jede Partei doppelt: flämisch und wallonisch
 
+> [!question] Nennen Sie einen Kritikpunkt am Modell des Zentripetalismus.
+
 ## Stand der Diskussion
 - Streit zwischen den beiden Strategien geht weiter | Studienlage nicht eindeutig
 - Zunehmend Diskussion über Möglichkeiten und Grenzen der **Kombination** beider Modelle
+
+> [!question] Die Stabilisierung der Demokratie in (ethnisch) gespaltenen Gesellschaften wird in der Politikwissenschaft als Problem angesehen.
+> - Nennen Sie zwei prominente Strategien oder Modelle zur Lösung dieses Problems.
+> - Erläutern Sie kurz, wie sich die Stoßrichtung dieser Strategien in Bezug auf den Umgang mit unterschiedlichen (ethnischen) Gruppen unterscheidet.
+> - Welches Wahlsystem lässt sich jeweils den beiden Strategien zuordnen?
+> - Welcher Parteientyp lässt sich den beiden Strategien jeweils zuordnen?

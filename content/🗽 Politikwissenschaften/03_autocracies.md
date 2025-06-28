@@ -5,12 +5,16 @@ title: Autokratien
 **Autokratie = Nicht-Demokratie:** Regime, in denen entweder gar keine kompetitiven Wahlen gibt oder diese nicht hinreichend frei & fair sind
 - auch "autoritäres Regime" oder "Diktatur"
 
+> [!question] Geben Sie eine Definition von Autokratie!
+
 Es gibt **Wellen der Demokratisierung und Autokratisierung**
 - Demokratisierungwellen ca. 1828 - 1926 | 1945 - 1962 | 1974 - 1995
 - nach der dritten Welle über 50% der Staaten Demokratien
 - Aktuell sind wir in einer Autokratisierungwelle
 
 ![[Screenshot from 2025-06-22 10-55-31.png|500]]
+
+> [!question] In welchem Jahrzehnt began die 3. Welle der Demokratisierung?
 
 ## Autokratie als Skala
 - "Autokratie" als Kontinuum (z.B. V-Dem invertiert)
@@ -21,7 +25,9 @@ Es gibt **Wellen der Demokratisierung und Autokratisierung**
 - üben stärkere (volle) Kontrolle über ihre Bürger aus (starke Repression)
 - Ideologie & Propaganda, um loyale "Bürger" & Legitimität zu erzeugen
 - Massenhafte Mobilisierung der "Bürger", um die Ziele des Staates zu erreichen
-- heute Nordkorea, historisch Nationalsozialismus, Stalinismus, Kambodscha unter Pol Pot
+- *heute Nordkorea, historisch Nationalsozialismus, Stalinismus, Kambodscha unter Pol Pot*
+
+> [!question] Nennen Sie ein Beispiel für ein totalitäres Regime!
 
 ## Drei Säulen autoritärer Stabilität (neuere Typologien)
 Häufig Unterteilung in drei Säulen
@@ -29,6 +35,8 @@ Häufig Unterteilung in drei Säulen
 	- bringt auch Probleme mit sich, z.B: fehlende Information über Beziehung der Bürger zum Regime, große Macht des Sicherheitsapparats, ökonomische Kosten
 2. **Legitimität:** z.B. durch Propaganda, Disinformation oder durch gute ökonomische Performanz (z.B. Singapur)
 3. **Kooptation:** Bindung von strategisch relevanten Gruppen an das Regime, z.B. die Opposition durch Jobs, Zahlungen und andere Begünstigungen
+
+> [!question] Nennen Sie die drei Säulen autoritärer Stabilität!
 
 ---
 # Typologie von Barbara Geddes
@@ -72,6 +80,11 @@ Häufig Unterteilung in drei Säulen
 	- religiöse Legitimität
 - Heute fast alle Fälle im mittleren Osten und in Nordafrika
 
+> [!question] Barbara Geddes unterscheidet vier Typen der Autokratie:
+> 1. Nennen Sie diese und geben sie jeweils ein Länderbeispiel!
+> 2. Welcher Typ ist am stabilsten?
+> 3. Welcher Typ is am instabilsten? Und warum?
+
 ---
 # Wahlen in Autokratien
 Eine andere Unterscheidung von Autokratien stellt auf die Rolle von Wahlen und Mehrparteienwettbewerb ab
@@ -95,8 +108,10 @@ auch kompetitiver Autoritarismus (Levitsky und Way)
 - Es kann aber unter Umständen zu einem Machtwechsel kommen
 	- Beispiel Mexiko 2000: nach Jahrzehnten Herrschaft der PRI durch Wahlen beendet
 
+> [!question] Wie häufig kommt es in elektoralen Autokratien zu einem Machtwechsel?
 ### "Demokratische" Institutionen
 *Wie kann man Wahlen autokratisch nutzen?*
+
 - Insbesondere **Legitimität und Kooptation**
 - Dominanz signalisieren
 - Regeln für Wettbewerb um Posten $\to$ Verhinderung destabilisierender Rivalitäten
@@ -108,6 +123,8 @@ auch kompetitiver Autoritarismus (Levitsky und Way)
 - Parlamente erzeugen Anreize für die Opposition, sich zu beteiligen
 
 Diese Institutionen verlängern laut manchen Studien die Lebensdauer autoritärer Regime
+
+> [!question] Nennen Sie zwei Gründe, warum die Abhaltung von Wahlen für autokratische Herrscher von Nutzen sein kann!
 
 ### Neue Form des Autoritarismus?
 *Levitsky / Way unterscheiden zwei Phasen*
@@ -136,6 +153,9 @@ Modernisierungstheorie als Hintergrund:
 
 ![[Screenshot from 2025-06-22 10-56-19.png|500]]
 
+> [!question] Die Regimes of the World (ROW)-Klassifikation unterscheidet vier Typen politischer Herrschaft:
+> - Nennen sie diese und geben sie je ein Länderbeispiel!
+
 ---
 # Regierungssysteme in Demokratien
 - Parlament und Regierung werden durch **Wahlen** autorisiert
@@ -145,3 +165,12 @@ Modernisierungstheorie als Hintergrund:
 - sechs grundlegende Regierungssysteme, davon drei häufig (hier vier abgebildet)
 
 ![[Screenshot from 2025-06-22 10-56-35.png|500]]
+
+![[Screenshot from 2025-06-22 10-56-38.png|500]]
+
+> [!question] Zeichnen Sie das Schema eines
+> 1. präsidentiellen Systems
+> 2. parlamentarischen Systems
+> 3. versammlungsuabhängigen Systems
+> 
+> Geben Sie je ein Länderbeispiel!

@@ -17,6 +17,8 @@ Funktioniert empirisch auf einer Skala nicht gut (zu große Abweichungen innerha
 
 ![[Screenshot from 2025-06-27 09-04-08.png|500]]
 
+> [!question] Nennen Sie zwei der institutionellen Vetopunkte/-spieler, die Arend Lijphart in seiner Demokratietypologie berücksichtigt.
+
 ## Typ 1: Pluralitäre Demokratie
 *UK, Bahamas (Westminster-Demokratie)*
 
@@ -30,6 +32,8 @@ Bei Lijphart: "Mehrheitsdemokratie"
 - Problem: Mehrheitswahl $\to$ relative Wählermehrheit (*plurality*, z.B. 35%) kann absolute Parlamentsmehrheit erreichen
 - Jack Nagel und andere: "Pluralitäre Demokratie"
 
+> [!question] Länder wie Bahamas oder Barbados werden von manchen Autoren (z.B. Jack Nagel) als „pluralitäre“ Demokratien bezeichnet. Was ist der Grund dafür?
+
 ## Typ 2: Echte Mehrheitsdemokratie
 *Dänemark, Israel*
 
@@ -42,6 +46,10 @@ Bei Lijphart: "Mehrheitsdemokratie"
 Bei Lijphart: "Konsensdemokratie"
 - Problem: führt nicht unbedingt zu konsensuellem Verhalten (z.B. Israel)
 - Jack Nagel und andere: "Mehrheitsdemokratie", da Parlamentsmehrheiten auch Wählermehrheiten repräsentieren
+
+> [!question] Nennen Sie ein Land, das von Lijphart zumindest entlang einer der beiden Dimensionen als Konsensdemokratie klassifiziert wird, aber keine „konsensuale“ politische Kultur besitzt.
+
+> [!question] Länder wie Dänemark oder Israel werden von manchen Autoren (z.B. Jack Nagel) als „echte“ Mehrheitsdemokratien bezeichnet. Was ist der Grund dafür?
 
 ## Typ 3: Konsensdemokratie (Supermajoritär)
 *Deutschland*
@@ -67,6 +75,8 @@ Wenige gute Beispiele, am ehesten Deutschland (Föderalismus, Bundesrat, Bundesv
 Länder dieses "Typs" sind sehr unterschiedlich
 - z.B. Australien (Verhältniswahl 2. Kammer) versus USA (Mehrheitswahl 2. Kammer)
 
+> [!question] Geben Sie jeweils ein Länderbeispiel für eine Konsens- und eine Mehrheitsdemokratie im Sinne von Arend Lijphart (1984, 2012).
+
 ## Anderer Blick
 ![[Screenshot from 2025-06-27 09-04-14.png|500]]
 
@@ -77,6 +87,16 @@ Länder dieses "Typs" sind sehr unterschiedlich
 - Letztlich vor allem Plädoyer für Verhältniswahl und Mehrparteiensysteme
 	- aber keine Unterscheidungen innerhalb dieser Gruppe (bezüglich Vetopunkte)
 
+> [!question] Was führt nach Arend Lijphart (1999, 2012) eher zu guten Politikergebnissen in einer Demokratie (z.B. geringer Korruption):
+> - viele parteiliche Vetospieler oder
+> - viele institutionelle Vetospieler?
+
+> [!question] In welchem Typ der Demokratie nach Lijphart sind Verantwortlichkeiten für die Regierungspolitik klarer verteilt: Konsens- oder Mehrheitsdemokratie?
+
+> [!question] Geben Sie zwei Beispiele für institutionelle Reformen, die Deutschland wahrscheinlich „konsensdemokratischer“ im Sinne von Arend Lijphart machen würden – je ein Beispiel für Lijpharts zwei Dimensionen.
+
+> [!question] Geben Sie zwei Beispiele für institutionelle Reformen, die Deutschland wahrscheinlich „mehrheitsdemokratischer“ im Sinne von Arend Lijphart machen würden – je ein Beispiel für Lijpharts zwei Dimensionen.
+
 ---
 # Das Rätsel der Schweiz
 *Bei Lijphart bestes Beispiel für Konsensdemokratie*
@@ -85,6 +105,8 @@ Länder dieses "Typs" sind sehr unterschiedlich
 - **Zauberformel:** 2 Ministerien für Sozialdemokraten, Liberale, Rechtspopulisten und 1 Ministerium für die konservative Mitte $\Rightarrow$ Regierung steht vor der Wahl fest
 - **Lijphart:** "übergroße Koalition" als Ausdruck des "konsensdemokratischen" Charakters der Schweiz
 	- aber: das **vernachlässigt Regierungssystem**
+
+> [!question] In der Schweiz steht durch eine lange etablierte Konvention im Prinzip schon vor der Wahl fest, welche Partei wie viele Ministerien erhält. Wie heißt diese Konvention?
 
 ## Rats- oder Direktorialsystem
 ![[Screenshot from 2025-06-27 09-05-35.png|500]]
@@ -96,12 +118,22 @@ Länder dieses "Typs" sind sehr unterschiedlich
 
 ![[Screenshot from 2025-06-27 09-05-42.png|500]]
 
+> [!question] Zeichnen Sie das Schema für das Regierungssystem der Schweiz (versammlungsunabhängiges System oder Direktorialsystem)
+
+> [!question] Sind die Regierungsparteien in der Schweiz parteiliche Vetospieler im Sinne der Theorie von Tsebelis?
+
+> [!question] Manche Autoren bezeichnen die Schweiz als „echte Mehrheitsdemokratie“. Stützt sich diese Aussage eher auf die Regierungskoalitionen oder die Gesetzgebungskoalitionen?
+
+> [!question] In welcher Demokratie hat die Medianpartei im Parlament mehr Macht: in Deutschland oder in der Schweiz? Begründen Sie kurz.
+
 ## Warum nicht kopiert?
 *Modell hat auch seinen Preis*
 
 - Wähler haben fast keinen Einfluss auf Regierungszusammensetzung $\to$ können keine Richtungsentscheidungen (rechts / links) treffen
 - folglich auch geringe Wahlbeteiligung ($40$ bis $50$ Prozent)
 - außerdem nur in Verbindung mit der **Direktdemokratie** stabil
+
+> [!question] Nennen Sie einen Vorteil und einen Nachteil des schweizerischen Demokratiemodells.
 
 ## Direkte Demokratie in der Schweiz
 *"von unten" ausgelöste Verfahren*
@@ -115,6 +147,10 @@ Länder dieses "Typs" sind sehr unterschiedlich
 	- 50.000 Unterschriften innerhalb von 100 Tagen
 	- einfache Mehrheit der Abstimmenden
 
+> [!question] Nennen Sie die beiden von unten ausgelösten direktdemokratischen Verfahren der Schweiz.
+
+> [!question] Was kann in der Schweiz durch eine Volksinitiative verändert werden?
+
 Regierungssystem und "halbdirekte" Demokratie bedingen sich
 - direktdemokratische Verfahren kompensieren, dass die Bürger bei der Regierung keine Richtungsentscheidung treffen können
 - Modell kann mit permanenter Drohung eines Volksvetos umgehen
@@ -125,3 +161,5 @@ $\Rightarrow$ Einzelne Verfahren lassen sich nicht ohne weiteres in andere Länd
 - können sich gegenseitig bedingen und stabilisieren
 - umstritten, wie gut die starken direktdemokratischen Verfahren mit dem parlamentarischen Regierungssystem vereinbar sind
 	- z.B. BSW forderte "Bürgerveto" nach Schweizer Modell für Thüringen $\to$ könnte zu starken Blockaden führen (Mobilisierung der Wähler gegen Regierungspolitik)
+
+> [!question] Das BSW fordert für Thüringen ein Bürgerveto. Welches direktdemokratische Verfahren der Schweiz dient für diese Forderung als Vorbild?
