@@ -18,13 +18,14 @@ Konzeptioneller Kern: freie und faire Wahlen
 > [!question] Nennen Sie drei der von Robert Dahl (1971) genannten minimalen Garantieren oder Kriterien für eine Polarchy oder elektorale Demokratie!
 
 Sechs Kriterien korrespondieren mit zwei grundlegenden **analytischen Dimensionen:**
-- Wettbewerb (*contestation*)
-- Inklusivität / Partizipation (*inclusion*)
+- **Wettbewerb** (*contestation*)
+- **Inklusivität / Partizipation** (*inclusion*)
 	- Inklusion = Anteil der Wahlberechtigten an der erwachsenen Bevölkerung
+
+![[Screenshot from 2025-06-22 10-52-54.png|500]]
 
 > [!question] Welche beiden analytischen Dimensionen werden in Robert Dahls (1971) Demokratiekonzeption unterschieden?
 
-![[Screenshot from 2025-06-22 10-52-54.png|500]]
 ## Liberale Demokratie
 Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 - **Liberale Demokratie** fügt weitere Kriterien hinzu

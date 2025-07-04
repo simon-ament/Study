@@ -58,7 +58,7 @@ Probleme des Personalismus:
 	- sie geraten eher mit dem Parlament in Konflikt und werden eher für die Demokratie zur Gefahr
 
 ---
-# Wie scheitern Demokratien
+# Wie scheitern Demokratien?
 90% durch: (Rest Bürgerkriege und -aufstände)
 1. **Militärputsch**
 2. **Amtsinhaber-Übernahme** (*incumbent takeover / executive takeover*): Autoritäre "Übernahme" der Verfassung durch demokratisch gewählte Amtsinhaber
@@ -85,7 +85,7 @@ Probleme des Personalismus:
 - **Aber:** präsidentielle Systeme scheinen Amtsinhaber-Übernahmen tatsächlich wahrscheinlicher zu machen
 
 ---
-# Wie können präsidentielle Systeme verbessert werden
+# Wie können präsidentielle Systeme verbessert werden?
 *Grundlegende Ersetzung des präsidentiellen Systems schwierig und risikoreich $\Rightarrow$ Verbesserung möglich?*
 - z.B. absolute Mehrheitswahl (mit Stichwahl) des Präsidenten erscheint besser als relative Mehrheitswahl
 

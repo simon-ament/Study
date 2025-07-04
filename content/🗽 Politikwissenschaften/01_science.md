@@ -87,7 +87,7 @@ Wir sollten versuchen
 2. Mit **anderen Daten** zu **testen** als denjenigen, die man für die Entwicklung der Theorie gebraucht hat
 
 ---
-# 5 Schritte der Wissenschaftlichen Methode
+# 5 Schritte der wissenschaftlichen Methode
 1. Fragestellung oder **Rätsel** (Beobachtung)
 2. **Theorie**
 3. Neue **Implikationen** (Hypothesen) logisch ableiten
