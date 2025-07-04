@@ -2,7 +2,7 @@
 title: Autokratien
 ---
 # Autokratie
-**Autokratie = Nicht-Demokratie:** Regime, in denen entweder gar keine kompetitiven Wahlen gibt oder diese nicht hinreichend frei & fair sind
+**Autokratie = Nicht-Demokratie:** Regime, in denen es entweder gar keine kompetitiven Wahlen gibt oder diese nicht hinreichend frei & fair sind
 - auch "autoritäres Regime" oder "Diktatur"
 
 > [!question] Geben Sie eine Definition von Autokratie!
@@ -10,16 +10,16 @@ title: Autokratien
 Es gibt **Wellen der Demokratisierung und Autokratisierung**
 - Demokratisierungwellen ca. 1828 - 1926 | 1945 - 1962 | 1974 - 1995
 - nach der dritten Welle über 50% der Staaten Demokratien
-- Aktuell sind wir in einer Autokratisierungwelle
+- aktuell sind wir in einer Autokratisierungwelle
 
 ![[Screenshot from 2025-06-22 10-55-31.png|500]]
 
-> [!question] In welchem Jahrzehnt began die 3. Welle der Demokratisierung?
+> [!question] In welchem Jahrzehnt begann die 3. Welle der Demokratisierung?
 
 ## Autokratie als Skala
 - "Autokratie" als Kontinuum (z.B. V-Dem invertiert)
-- Skalen zeigen, dass viele Regime weder ganz demokratisch noch ganz undemokratisch
-- Nachteile: Fokus auf freie und faire Wahlen, aber **Funktionsweisen** von Autokratien werde **nicht eingefangen**
+- Skalen zeigen, dass viele Regime weder ganz demokratisch noch ganz undemokratisch sind
+- Nachteile: Fokus auf freie und faire Wahlen, aber **Funktionsweisen** von Autokratien werden **nicht eingefangen**
 
 ## Totalitäre Regime (ältere Unterscheidung)
 - üben stärkere (volle) Kontrolle über ihre Bürger aus (starke Repression)
@@ -33,7 +33,7 @@ Es gibt **Wellen der Demokratisierung und Autokratisierung**
 Häufig Unterteilung in drei Säulen
 1. **Repression:** z.B. gewaltsame Unterdrückung der Opposition
 	- bringt auch Probleme mit sich, z.B: fehlende Information über Beziehung der Bürger zum Regime, große Macht des Sicherheitsapparats, ökonomische Kosten
-2. **Legitimität:** z.B. durch Propaganda, Disinformation oder durch gute ökonomische Performanz (z.B. Singapur)
+2. **Legitimität:** z.B. durch Propaganda, Desinformation oder durch gute ökonomische Performanz (z.B. Singapur)
 3. **Kooptation:** Bindung von strategisch relevanten Gruppen an das Regime, z.B. die Opposition durch Jobs, Zahlungen und andere Begünstigungen
 
 > [!question] Nennen Sie die drei Säulen autoritärer Stabilität!
@@ -47,8 +47,8 @@ Häufig Unterteilung in drei Säulen
 ## 1. Personalistische Regime
 *Russland, Belarus, Kamerun*
 - Diktatoren regieren mit wenigen Beschränkungen
-	- Üblicherweise keine Ideologie, sondern Persönlichkeitskult
-	- Gezielte Schwächung und Entproffesionalisierung des Militärs
+	- üblicherweise keine Ideologie, sondern Persönlichkeitskult
+	- gezielte Schwächung und Entprofessionalisierung des Militärs
 - Erzeugen Stabilität durch ein System von Loyalität und Unsicherheit
 	- Eliten sind vom Diktator abhängig
 - Es gibt generell einen Trend zur "Personalisierung" von Autokratien
@@ -56,20 +56,20 @@ Häufig Unterteilung in drei Säulen
 ## 2. Ein-Parteien-Regime
 *Laos, Vietnam, China (zunehmend personalistisch)*
 - Partei ist autonom, gut organisiert & beschränkt Macht des Parteiführers
-	- Andere Parteien entweder nicht erlaubt (z.B. China, Vietnam) oder können kaum zu einem Machtwechsel führen (z.B. Mexiko vor 2000)
+	- andere Parteien entweder nicht erlaubt (z.B. China, Vietnam) oder können kaum zu einem Machtwechsel führen (z.B. Mexiko vor 2000)
 - Sehr gut institutionalisiert & können Demokratien ähnlich erscheinen
-	- Mehr Akteure reden mit, Diskussion und Konsultation spielen eine Rolle
-- Tendenziell am stabilsten
+	- mehr Akteure reden mit, Diskussion und Konsultation spielen eine Rolle
+- Tendenziell **am stabilsten**
 	- wenige Coups sowie höhere Wachstumsraten und abgewogenere Außenpolitik als andere autoritäre Regime
 
 ## 3. Militärregime
 *Argentinien (1976 - 83), Thailand*
 - Das Militär hat die Macht übernommen
-	- Geht nicht darum, dass Militärführer Wahlen gewinnen oder Staatschef Uniform trägt
+	- geht nicht darum, dass Militärführer Wahlen gewinnen oder Staatschef Uniform trägt
 - Es gibt oft Parteien, die aber dem Militär untergeordnet sind
-	- Es kann auch einen zivilen Regierungschef geben
-- Die meisten Militärregime dauern nicht lange
-	- Es kann zu Spaltungen innerhalb des Militärs kommen, wenn das Militär die Politik übernimmt | es gibt deshalb einen Anreiz, sich wieder zurückzuziehen, um Einheit und Legitimität zu bewahren
+	- es kann auch einen zivilen Regierungschef geben
+- Die meisten Militärregime **dauern nicht lange**
+	- es kann zu Spaltungen innerhalb des Militärs kommen, wenn das Militär die Politik übernimmt $\to$ es gibt deshalb einen Anreiz, sich wieder zurückzuziehen, um Einheit und Legitimität zu bewahren
 
 ## 4. (Absolute) Monarchien
 *Jordanien, Saudi-Arabien*
@@ -109,6 +109,7 @@ auch kompetitiver Autoritarismus (Levitsky und Way)
 	- Beispiel Mexiko 2000: nach Jahrzehnten Herrschaft der PRI durch Wahlen beendet
 
 > [!question] Wie häufig kommt es in elektoralen Autokratien zu einem Machtwechsel?
+
 ### "Demokratische" Institutionen
 *Wie kann man Wahlen autokratisch nutzen?*
 
@@ -130,47 +131,28 @@ Diese Institutionen verlängern laut manchen Studien die Lebensdauer autoritäre
 *Levitsky / Way unterscheiden zwei Phasen*
 
 1. Kompetitiver Autoritarismus ursprünglich Post-Kalter-Krieg-Phänomen
-	- Liberaler Westen hatte Hegemonie: auch arme und schwache Staaten haben Wahlwettbewerb zugelassen, nicht zuletzt aufgrund von externem Druck
+	- **Liberaler Westen hatte Hegemonie:** auch arme und schwache Staaten haben Wahlwettbewerb zugelassen, nicht zuletzt aufgrund von externem Druck
 	- Einige haben sich weiter demokratisiert, andere autokratisiert
 	- *Benin, Mali, Russland, Belarus, Ukraine, Albanien, Rumänien*
 2. Heute: Hegemonie des Westens nicht mehr gegeben
 	- Auch reichere Staaten mit demokratischer Tradition haben dieses Modell übernommen
 	- *Ungarn, Türkei, Venezuela, potentiell USA*
-	- Neuer Typus der Autokratie: elaborierte Manipulationsstrategien und größere Mobilisierung und Polarisierung nötig (Populismus, Ethnonationalismus)
+	- **Neuer Typus der Autokratie:** elaborierte Manipulationsstrategien und größere Mobilisierung und Polarisierung nötig (Populismus, Ethnonationalismus)
 
 ## Spin-Dictators (Guriev / Treisman)
-1. Fear Dictators (klassische Autokratie) vs.
-2. Spin Dictators
+1. **Fear Dictators** (klassische Autokratie) vs.
+2. **Spin Dictators**
 	- setzt stärker auf Medienmanipulation & Desinformation
 	- Demokratie soll vorgetäuscht werden (war / ist nicht in allen kompetitiven Autokratien so, essenziell für Spin Dictators)
 	- *Ungarn, Singapur*
 
 Modernisierungstheorie als Hintergrund:
-- Modernisierung (Hochschulbildung, Wissensökonomie, internationaler Handel) macht massenhafte Repression schwieriger
-- Wille nach Demokratie wird mit Desinformation u.ä. umgangen
-	- Hoffnung: Wenn Modernisierung / Globalisierung weiter geht, geht es eventuell weiter in Richtung Demokratie
+- **Modernisierung** (Hochschulbildung, Wissensökonomie, internationaler Handel) macht massenhafte Repression schwieriger
+- **Wille nach Demokratie** wird mit Desinformation u.ä. **umgangen**
+	- **Hoffnung:** Wenn Modernisierung / Globalisierung weiter geht, geht es eventuell weiter in Richtung Demokratie
 	- Einige Länder sind zur Repression zurückgekehrt (z.B. Russland, Türkei), was aber ökonomische Kosten hat
 
 ![[Screenshot from 2025-06-22 10-56-19.png|500]]
 
 > [!question] Die Regimes of the World (ROW)-Klassifikation unterscheidet vier Typen politischer Herrschaft:
 > - Nennen sie diese und geben sie je ein Länderbeispiel!
-
----
-# Regierungssysteme in Demokratien
-- Parlament und Regierung werden durch **Wahlen** autorisiert
-	- Parlament immer direkt von den Wählern, Regierung variiert
-	- Unterscheidung von **Wahlen** und **Abwahlen**
-- *Wird die Regierung direkt von den Wählern oder indirekt über das Parlament autorisiert? Und wie genau?* $\Rightarrow$ **Regierungssystem**
-- sechs grundlegende Regierungssysteme, davon drei häufig (hier vier abgebildet)
-
-![[Screenshot from 2025-06-22 10-56-35.png|500]]
-
-![[Screenshot from 2025-06-22 10-56-38.png|500]]
-
-> [!question] Zeichnen Sie das Schema eines
-> 1. präsidentiellen Systems
-> 2. parlamentarischen Systems
-> 3. versammlungsuabhängigen Systems
-> 
-> Geben Sie je ein Länderbeispiel!

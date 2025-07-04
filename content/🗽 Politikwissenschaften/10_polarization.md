@@ -7,35 +7,35 @@ title: Polarisierung
 **Rätsel:** Warum werden die entsprechenden Regierungen wiedergewählt, obwohl weiterhin große Mehrheiten (in Umfragen) die Demokratie unterstützen?
 - **Gesellschaftliche Polarisierung:** Bürger müssen zwischen "parteilichen" Interessen und demokratischen Prinzipien abwägen
 	- Polarisierung macht Vorrang ersterer wahrscheinlicher
-	- Wird deshalb von den Entdemokratisierern vorangetrieben
+	- wird deshalb von den Entdemokratisierern vorangetrieben
 
 > [!question] Welcher gesellschaftliche Faktor begünstigt „democratic backsliding“?
 
 ## Studie von Milan Svolik
-- zufällig ausgewählte Wähler (u.a. aus den USA, Türkei, Venezuela) erhalten Wahl zwischen zwei fiktiven Kandidat:innen
+- Zufällig ausgewählte Wähler (u.a. aus den USA, Türkei, Venezuela) erhalten Wahl zwischen zwei fiktiven Kandidat:innen
 - Kandidaten haben persönliche Charakteristika und politische Inhalte
-- zufällig werden den Kandidaten demokratiefeindliche Pläne zugeschrieben
+- Zufällig werden den Kandidaten demokratiefeindliche Pläne zugeschrieben
 
 ![[Screenshot from 2025-06-27 09-06-36.png|500]]
 
 **Ergebnisse:**
-- die meisten Wähler sind zuerst "partisans", erst danach Demokraten
+- Die meisten Wähler sind zuerst "partisans", erst danach Demokraten
 - Demokratiefeinde werden abgestraft, aber inhaltliche Polarisierung reduziert diese Abstrafung
 	- Wähler mit zentristischen Positionen strafen antidemokratische Positionen stärker ab
 - $\Rightarrow$ methodisch: Umfragen, die nach Unterstützung der Demokratie fragen, sind wenig aussagekräftig (soziale Erwünschtheit)
 	- realer Wert der Demokratie zeigt sich in der Abwägung mit parteilichen Zielen
 
 ## Polarisierung
-1. **ideologisch / themenbezogen:** großer Abstand der Idealpunkte
-2. **affektiv (emotional) / gruppenbezogen:** Gefühl der Abneigung und des Misstrauens gegenüber Gruppen entwickeln, die politisch anders denken als sie
+1. **Ideologisch / themenbezogen:** großer Abstand der Idealpunkte
+2. **Affektiv (emotional) / gruppenbezogen:** Gefühle der Abneigung und des Misstrauens gegenüber Gruppen, die politisch anders denken
 	- z.B. USA: 33% der Demokraten / 49% der Republikaner lehnen für ihre Kinder Ehepartner der anderen Partei ab (Anfang der 1960er Jahre: 4% bzw. 5%)
-	- Wie ist Demokratie möglich, wenn sich Bürger auf Basis starker Gruppenidentitäten feindselig gegenüber stehen $\to$ Literatur zu "gespaltenen" Gesellschaften
+	- Wie ist Demokratie möglich, wenn sich Bürger auf Basis starker Gruppenidentitäten feindselig gegenüber stehen? $\to$ Literatur zu "gespaltenen" Gesellschaften
 
 > [!question] Es werden zwei Arten politischer Polarisierung unterschieden. Nennen sie diese!
 
 ## "Gespaltene" Gesellschaften
-- Häufig Fokus auf ethnisch gespaltene Gruppen: gemeinsame Herkunft aufgrund von Sprache, Religion, äußerliche Merkmale, Geschichte, etc.
-- Vielfalt ist nicht dasselbe wie Spaltung: Spaltung entsteht, wenn Gruppenzugehörigkeiten politisch sehr bedeutsam (politisiert) sind
+- Häufig Fokus auf ethnisch gespaltene Gruppen: **gemeinsame Herkunft** aufgrund von Sprache, Religion, äußerliche Merkmale, Geschichte, etc.
+- **Vielfalt ist nicht dasselbe wie Spaltung:** Spaltung entsteht, wenn Gruppenzugehörigkeiten politisch sehr bedeutsam (politisiert) sind
 	- z.B. Australien und Kanada gelten als ethnisch vielfältig, aber nicht gespalten
 
 Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
@@ -45,7 +45,7 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 ---
 # Konkordanzdemokratie
 **Annahme:** Gesellschaftliche Konfliktlinien und Gruppenidentitäten werden harmloser für die Demokratie, wenn sie sich überkreuzen (*cross-cutting cleavages*, z.B. religiöser Gewerkschafter)
-- Dies führe tendenziell zu **moderaten Ansichten** und somit zur Schwächung politischer Konflikte
+- dies führe tendenziell zu **moderaten Ansichten** und somit zur Schwächung politischer Konflikte
 - Stabilisierung auf der Ebene der politischen Massen
 
 **Problem:** Funktioniert aber nicht, wenn soziale Konflitklinien "parallel" verlaufen und sich gegenseitig verstärken / oder wenn Gruppen sozial voneinander abgeschottet sind
@@ -70,10 +70,10 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 - *ähnlich zur Befriedung zwischenstaatlicher Konflikte*
 
 **4 notwendige Bedingungen / Elemente (Lijphart):**
-1. (Über-)große Koalition (*grand coalition*), alle wichtigen Gruppen werden einbezogen
-2. Proportionalität in Wahlsystem, Ämter. und Ressourcenverteilung (*proportionality*)
-3. Gegenseitiges Veto (*mutual veto*) bei wichtigen Fragen
-4. Segmentelle Autonomie (*segmental autonomy*), z.B. bei Schulen
+1. (Über-)**große Koalition** (*grand coalition*), alle wichtigen Gruppen werden einbezogen
+2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
+3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
+4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
 5. **Hintergrundbedingung:** "Segmentierte" Gesellschaft
 
 > [!question] Zum Konzept der Konkordanzdemokratie:
@@ -84,17 +84,17 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 *Einflussreichster Fall in der neueren Konkordanz-Literatur*
 
 - Seit 1969 gewalttätiger Konflikt zwischen den irischen Republikanern und der britischen Armee und britischen Loyalisten (Unionisten), die im Königreich bleiben wollen
-	- Über 3000 Tote und 50.000 Verletzte
-	- Irische Nationalisten sehen Katholiken in Nordirland strukturell benachteiligt und diskriminiert (segregierte Arbeitsmärkte, Nachbarschaften, etc.)
-- Beginn der Konkordant mit **Belfast ("Good Friday") Agreement 1998**
+	- über 3000 Tote und 50.000 Verletzte
+	- irische Nationalisten sehen Katholiken in Nordirland strukturell benachteiligt und diskriminiert (segregierte Arbeitsmärkte, Nachbarschaften, etc.)
+- Beginn der Konkordanz mit **Belfast ("Good Friday") Agreement 1998**
 	- danach mehrmals modifiziert und zeitweise ausgesetzt
 	- Regionalparlament mit Verhältniswahl
 	- Exekutive als Zwangskoalition:
-		- Abgeordnete müssen sich einsortieren: "nationalist", "unionist", "other"
-		- Muss nationalistische und unionistische Minister erhalten
-		- Größte Partei bekommt Premierminister, größte Partei der anderen Community bekommt Stellvertreter: gleiche Macht, gemeinsame Entscheidung, bei Rücktritt eines fällt die ganze Regierung
-		- Weitere Ministerien werden (grob) proportional verteilt
-	- Bestimmte Entscheidungen müssen mit *cross-community support* getroffen werden $\to$ Vetorecht für die jeweiligen Communities
+		- Abgeordnete müssen sich einsortieren: "nationalist" / "unionist" / "other"
+		- muss nationalistische und unionistische Minister enthalten
+		- größte Partei bekommt Premierminister, größte Partei der anderen Community bekommt Stellvertreter: gleiche Macht, gemeinsame Entscheidung, bei Rücktritt eines fällt die ganze Regierung
+		- weitere Ministerien werden (grob) proportional verteilt
+	- bestimmte Entscheidungen müssen mit *cross-community support* getroffen werden $\to$ Vetorecht für die jeweiligen Communities
 
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/699204337?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Consociationalism explained"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
@@ -121,7 +121,7 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 - $\Rightarrow$ nicht-ethnische oder multi-ethnische Parteien (die nicht nur ihr eigenes Gesellschaftssegment repräsentieren)
 
 ## Kritik
-- Selbst wenn man die Ziele der Depolitisierung teilt, sei die Verhältniswahl besser als das Alternativstimmensystem
+- Selbst wenn man die Ziele der Depolitisierung teilt, sei die **Verhältniswahl besser** als das Alternativstimmensystem
 	- Verhältniswahl ermöglicht zwar Bildung ethnischer Parteien
 	- Verhältniswahl ermöglicht aber auch Bildung nicht-ethnischer und multi-ethnischer Parteien (Alternativen)
 

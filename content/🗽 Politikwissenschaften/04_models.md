@@ -1,13 +1,8 @@
 ---
 title: Modelle
 ---
-Rest der Vorlesung: Varianten der Demokratie
-- Arbeitshypothese: "Institutions matter!"
-- Es gibt bessere und schlechtere Wege, repräsentative Demokratien auszugestalten (z.B. mit Blick auf Widerstandsfähigkeit gegen autoritäre Bestrebungen)
-
----
 # Modelle
-*Politikwissenschaft nutzt häufig einfachte mathematische (geometrische) Modelle*
+*Politikwissenschaft nutzt häufig einfache mathematische (geometrische) Modelle*
 - vereinfachte Repräsentation der Realität
 - nicht "realistisch", aber häufig nützlich
 - häufig Modelle auf Basis einer **Rationalitätsannahme** ("Rational Choice")
@@ -24,8 +19,8 @@ Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Auch Uneig
 - **Präferenzordnung:** Sammlung / Menge der vollständigen und transitiven Präferenzen eines Akteurs
 - **Nutzenfunktion:** Präferenzordnung kann durch Zahlen zusammengefasst werden (Akteur wählt Alternative mit größtem Nutzen für ihn)
 
-**Räumliche Präferenzen:** Wir denken intuitiv "räumlich" über Politk
-- Entscheidend ist Anzahl der Konfliktdimensionen
+**Räumliche Präferenzen:** Wir denken intuitiv "räumlich" über Politk:
+- entscheidend ist Anzahl der Konfliktdimensionen
 - zunächst nehmen wir nur eine Konfliktdimension an
 
 **Nutzen als Funktion der Distanz:** Nutzenfunktion ist eingipflig und symmetrisch
@@ -59,7 +54,7 @@ Die Menge von Punkten, die zu einem Gleichgewicht führen, wird **Kern** genannt
 1. Zentripetale Tendenz, d.h. Tendenz zur Mitte
 2. Keine konservative Tendenz (keine Bevorzugung des Status Quo / der Vergangenheit)
 
-Bedingungen dafür: Eine Konfliktdimension + Alle Wähler / Entscheidungsträger können Änderungsvorschläge machen
+Bedingungen dafür: eine Konfliktdimension + alle Wähler / Entscheidungsträger können Änderungsvorschläge machen
 
 > [!question] Nennen Sie eine Eigenschaft der Mehrheitsregel, die sich aus dem Medianwähler-Theorem ableiten lässt.
 
@@ -91,7 +86,7 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 *z.B. Erfordernis von 2/3-Mehrheit*
 - Weg in die Mitte ist nun versperrt $\to$ keine zentripetale Tendenz
 - Ergebnis hängt von Status Quo ab $\to$ konservative Tendenz
-- Es werden **Vetospieler** erzeugt, ohne die der SQ nicht verändert werden kann
+- Es werden [[#Vetospieler|Vetospieler]] erzeugt, ohne die der SQ nicht verändert werden kann
 
 **Einstimmigkeitsregel / Konsens:**
 - Wenn SQ zwischen den Akteuren: gar keine Veränderung möglich ("Einstimmigkeitskern" über alle Positionen)
@@ -103,8 +98,8 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 - Die Mehrheitsregel bevorzugt den Median
 	- Bevorzugung hat inhaltliche Gründe, sie ist kein rechtliches Privileg
 	- Mehrheitsregel behandelt formal alle gleich
-- Media-Position deshalb häufig normativer Standard
-	- z.B. Studien zur Qualität einer Demokratie (*Wie nahe liegt Regierungspolitik an Median?*)
+- Median-Position deshalb häufig normativer Standard
+	- z.B. Studien zur Qualität einer Demokratie (*Wie nahe liegt Regierungspolitik am Median?*)
 
 ---
 # Kontext: Regierungssysteme
@@ -131,7 +126,7 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 ![[Screenshot from 2025-06-22 11-00-24.png|500]]
 
 - Es gibt weder Misstrauensvotum noch Regierung mit Vetorecht
-	- $\Rightarrow$ Es kann stets mit wechselnden Mehrheiten regiert werden
+	- $\Rightarrow$ es kann stets mit wechselnden Mehrheiten regiert werden
 	- (praktisch) keine Vetospieler
 - Mehrheitsregel gilt auch dann, wenn viele Parteien in die Regierung aufgenommen werden
 	- Regierungsparteien können ausgeschlossen werden / bei einzelnen Gesetzesvorhaben in die Opposition gehen
@@ -151,7 +146,7 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 ## Mehrere Dimensionen & Einstimmigkeit
 - **Eindimensional:** Mehrheitsregel erzeugt Tendenz zur Mitte (Median)
 - **Mehrdimensional:** Mehrheitsregel erzeugt nur sehr eingeschränkte Tendenz zur Mitte $\Rightarrow$ Mehrheitsregel kann in der Realität zu "instabilen" Ergebnissen führen
-- Demokratien erzeugen auf unterschiedliche Arten Vetospieler, zwischen denen Eintsimmigkeit notwendig ist, um den Status Quo zu verändern $\Rightarrow$ erhöht die Stabilität politischer Ergebnisse
+- Demokratien erzeugen auf unterschiedliche Arten Vetospieler, zwischen denen Eintsimmigkeit notwendig ist, um den Status Quo zu verändern $\Rightarrow$ erhöht die [[#Policy-Stabilität|Stabilität politischer Ergebnisse]]
 	- Vetospielertheorie konzentriert sich auf diese Vetospieler
 
 ![[Screenshot from 2025-06-22 11-13-28.png|500]]
@@ -161,7 +156,7 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 ---
 # Vetospielertheorie
 1. Die Theorie versucht, Politik "ganzheitlicher" zu analysieren
-	- Nicht Fokus auf einzelne Aspekte (Parteiensysteme, Regierungen, Koalitionen, Kammern, etc.), sondern auf **Vetospieler:** Akteure, die einer Veränderung des Status Quo zustimmen müssen
+	- nicht Fokus auf einzelne Aspekte (Parteiensysteme, Regierungen, Koalitionen, Kammern, etc.), sondern auf **Vetospieler**
 2. Die Theorie beruht auf dem räumlichen Politikmodell, nun Betrachtung von mehreren (zwei) Konfliktdimensionen
 
 ![[Screenshot from 2025-06-22 11-15-48.png|500]]
@@ -170,8 +165,8 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 **Typen:**
-- Individuelle Vetospieler (z.B. Präsidenten) vs. kollektive Vetospieler (z.B. Parteien)
-- Institutionelle Vetospieler (durch die Verfassung etabliert | z.B. zweite Kammern, Präsidenten) vs. parteiliche Vetospieler (durch den politischen Prozess etabliert | z.B. Koalitionsparteien)
+- **Individuelle** Vetospieler (z.B. Präsidenten) vs. **kollektive** Vetospieler (z.B. Parteien)
+- **Institutionelle** Vetospieler (durch die Verfassung etabliert | z.B. zweite Kammern, Präsidenten) vs. **parteiliche** Vetospieler (durch den politischen Prozess etabliert | z.B. Koalitionsparteien)
 
 **Vetospielertheorie:**
 - Versucht die Vetospieler systematisch zu erfassen
@@ -192,34 +187,34 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 *Was passiert, wenn wir zu Beispiel 1 eine zweite Kammer mit absoluter Vetomacht hinzufügen?*
 
 1. Die beiden Parteien haben Mehrheit in der 2. Kammer: keine Änderung (Absorption)
-2. Gesetzgebungskoalition mit weiterer Partei: Anzahl der parteilichen Vetospieler erhöht sich um 1
-3. Abweichende Mehrheiten in der 2. Kammer, es lassen sich keine parteilichen Vetospieler ausmachen (z.B. wehen wechselnden Mehrheiten, fehlender Fraktionsdisziplin, etc.): Anzahl der institutionellen Vetospieler erhöht sich um 1
+2. Gesetzgebungskoalition mit weiterer Partei: Anzahl der parteilichen Vetospieler erhöht sich um $1$
+3. Abweichende Mehrheiten in der 2. Kammer, es lassen sich keine parteilichen Vetospieler ausmachen (z.B. wegen wechselnder Mehrheiten, fehlender Fraktionsdisziplin, etc.): Anzahl der institutionellen Vetospieler erhöht sich um $1$
 
 ---
 # Policy-Stabilität
 - Es geht in politischen Systemen darum, die bestehende Politik (Status Quo) zu verändern: **Policy-Wandel**
-- Vetospieler beeinflussen diesen Prozess (erleichter / erschwert): **Policy-Stabilität**
+- Vetospieler beeinflussen diesen Prozess (erleichtern / erschweren)
 	- **Policy-Stabilität:** Die Schwierigkeit in einem System, den Status Quo zu verändern
 - Somit beeinflussen Vetospieler indirekt viele Charakteristika von politischen Systemen
-	- **Policy-Stabilität** (Deadlock) führt im Paralemtarismus zu instabilen Regierungen oder Kabinetten
-	- **Policy-Stabilität** führt im Präsidentialismus zur Regime- oder Demokratieinstabilität
+	- **Policy-Stabilität** (Deadlock) führt im **Parlamentarismus** zu instabilen Regierungen oder Kabinetten
+	- **Policy-Stabilität** führt im **Präsidentialismus** zur Regime- oder Demokratieinstabilität
 
 ![[Screenshot from 2025-06-22 11-16-55.png|500]]
 
 > [!question] Wie definiert die Vetospielertheorie Policy-Stabilität?
 
-> [!question] Vervollständigen Sie den folgenden Satz: Je größer $\dots$ , desto größer die Policy-Stabilität
-
 **Indikatoren im räumlichen Modell:**
-- Größe der Gewinnmenge des Status Quo
+- **Größe der Gewinnmenge** des Status Quo
 	- je größer die Gewinnmenge, desto weniger Policy-Stabilität
-- Größe des Einstimmigkeitskerns (Pareto-Menge)
+- **Größe des Einstimmigkeitskerns** (Pareto-Menge)
 	- je größer der Einstimmigkeitskern, desto mehr Policy-Stabilität (mehr unveränderliche Punkte / Policies)
 	- Menge der Punkte mit leerer Gewinnmenge
-	- Wird bestimmt durch die direkte Verbindungslinien zwischen den Idealpunkten der Vetospieler
+	- wird bestimmt durch die direkte Verbindungslinien zwischen den Idealpunkten der Vetospieler
 	- Status Quo innerhalb des Einstimmigkeitskern $\to$ leere Gewinnmenge
 
 ![[Screenshot from 2025-06-22 11-17-16.png|500]]
+
+> [!question] Vervollständigen Sie den folgenden Satz: Je größer $\dots$ , desto größer die Policy-Stabilität
 
 > [!question] Wie ist der Einstimmigkeitskern definiert?
 
@@ -231,10 +226,10 @@ Vetospieler sind Akteure, die einer Änderung des Status Quo zustimmen müssen
 
 ## Einfluss von Vetospielern
 
-1. Anzahl von Vetospielern: Je mehr Vetospieler, desto größer ist tendenziell die Policy-Stabilität
+1. **Anzahl** von Vetospielern: Je mehr Vetospieler, desto größer ist tendenziell die Policy-Stabilität
 	- **Absorptionsregel:** Wenn der Idealpunkt eines Akteurs mit Vetomacht im Einstimmigkeitskern der bestehenden Vetospieler liegt, hat dieser Akteur **keinen** Einfluss auf die Policy-Stabilität (Tsebelis: z.B. Verfassungsgerichte aufgrund ihrer Auswahl)
-2. Kongruenz von Vetospielern: Je größer die Distanz zwischen Vetospielern (entlang einer Linie), desto größer die Policy-Stabilität
-3. Kohäsion von Vetospielern (Verteilung der Idealpunkte innerhalb von kollektiven Vetospielern): sehr komplex
+2. **Kongruenz** von Vetospielern: Je größer die Distanz zwischen Vetospielern (entlang einer Linie), desto größer die Policy-Stabilität
+3. **Kohäsion** von Vetospielern (Verteilung der Idealpunkte innerhalb von kollektiven Vetospielern): sehr komplex
 
 ![[Screenshot from 2025-06-22 11-17-30.png|500]]
 

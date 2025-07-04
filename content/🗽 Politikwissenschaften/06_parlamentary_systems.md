@@ -4,7 +4,7 @@ title: Parlamentarische Systeme
 # Parlamentarisches System
 ![[Screenshot from 2025-06-22 11-04-23.png|300]]
 
-- Regierung geht aus dem Parlament hervor und kann durch ein Misstrauensvotum abberufen werden
+- Regierung geht aus dem Parlament hervor und kann durch ein **Misstrauensvotum** abberufen werden
 - Wenn Parlamente 2. Kammern haben, fehlt diesen in der Regel die Macht des Misstrauensvotums
 
 ## Zentrale Verfahren
@@ -21,7 +21,7 @@ title: Parlamentarische Systeme
 **Nachteile:**
 - Regierungen ggf. schwer zu bilden, instabil & ineffektiv
 - Änderung von Koalitionen und Mehrheitsverhältnisse können zum Scheitern der Regierung führen
-- Regierungsbildung wird durch viele (effektive) Parteien und Konfliktdimensionen ("komplexes" Parlament) erschwert werden
+- Regierungsbildung kann durch viele (effektive) Parteien und Konfliktdimensionen ("komplexes" Parlament) erschwert werden
 - Ausbalancierung des Wahlsystems ist besonders schwierig
 
 **Historische Trends:** viele parlamentarische Regierungssysteme haben Misstrauensvotum "restriktiver" gestaltet
@@ -40,13 +40,13 @@ title: Parlamentarische Systeme
 	- Entscheidungssituation der Abgeordneten wird verändert
 	- drastisches und potentiell risikoreiches Instrument mit "Abschreckungswirkung" (bereits ohne Einsatz)
 - Implizit ist im parlamentarischen System (fast) jede wichtige Sachfrage mit der Vertrauensfrage gekoppelt
-	- "disziplinierte" Fraktionen und Koalitionen in parlamentarischen Systemen
+	- $\Rightarrow$ "disziplinierte" Fraktionen und Koalitionen in parlamentarischen Systemen
 
 > [!question] Nennen sie eine Institution, die hilft zu erklären, warum Parlamentsfraktionen in parlamentarischen Systemen häufig sehr hohe Einigkeit und Disziplin im Abstimmungsverhalten aufweisen.
 
 ### 3. Die Parlamentsauflösung
 - Drohung mit Vertrauensfrage ist bei Kopplung an Auflösung des Parlaments besonders wirksam (Mandate in Gefahr)
-- starke Länderunterschiede: teils gar keine Auflösung möglich (z.B. Norwegen), teils sogar durch den Regierungschef alleine (z.B. Dänemark)
+- starke Länderunterschiede: teils gar keine Auflösung möglich (*Norwegen*), teils sogar durch den Regierungschef alleine (*Dänemark*)
 - Möglichkeit der Auflösung ist im Zeitverlauf häufig eingeschränkt worden (sonst zu großer Vorteil für Regierung)
 
 > [!question] Kann in jedem parlamentarischen System das Parlament aufgelöst werden?
@@ -55,13 +55,13 @@ title: Parlamentarische Systeme
 
 ### 4. Die Investiturabstimmung
 - Wahl der Regierung oder des Regierungschefs ins Amt
-- nicht in allen parlamentarischen Systemen notwendig
+- Nicht in allen parlamentarischen Systemen notwendig
 
 **Positiver Parlamentarismus:** *Deutschland*
 - Regierung benötigt Zustimmung einer Parlamentsmehrheit, um ins Amt zu kommen
 - kann die Bildung von Minderheitsregierungen erschweren 
 - Oppositionsparteien, die bereit sind die Regierung zu tolerieren, können sich dann nicht enthalten, sondern müssen zustimmen $\Rightarrow$ Verantwortung, ggf. Abstrafung durch Wähler
-	- insbesondere bei absoluter Mehrheitserfordernis für Investiturabstimmung
+	- insbesondere bei absolutem Mehrheitserfordernis für Investiturabstimmung
 
 **Negativer Parlamentarismus:** *Dänemark, Schweden*
 - Regierung kann ohne Vertrauensbeweis einer Parlamentsmehrheit ins Amt kommen, aber kann jederzeit abgewählt werden
@@ -70,7 +70,7 @@ title: Parlamentarische Systeme
 
 ---
 # Zweite Kammern
-*Warum habe manche Länder nur eine Parlamentskammer und andere zwei? Welchen Unterschied macht das*
+*Warum haben manche Länder nur eine Parlamentskammer und andere zwei? Welchen Unterschied macht das?*
 - Wichtige Einsicht: Je nach Ausgestaltung können zweite Kammern die Verwirklichung demokratischer Werte fördern oder ihnen im Wege stehen
 
 ## Kriterien für "starke" Zweite Kammern
@@ -87,24 +87,24 @@ title: Parlamentarische Systeme
 ### Territoriale Repräsentation
 *Repräsentation der Interessen von Einzelstaaten (in föderalen Systeme) oder Regionen*
 - **Historische Herausbildung:** 2. Kammern als Preis für den Zusammenschluss von Gliedstaaten zu einem Bundesstaat (z.B. USA, EU), damit die Einzelstaaten Macht abgeben
-- **Heutige Funktionsweise:** Aus historischer Logik folgt nicht, dass zweite Kammern die Interessen der Gliedstaaten gut repräsentieren, Sie können genauso durch Parteipolitik gezeichnet sein wir die erste Kammer
+- **Heutige Funktionsweise:** Aus historischer Logik folgt nicht, dass zweite Kammern die Interessen der Gliedstaaten gut repräsentieren. Sie können genauso durch Parteipolitik gezeichnet sein wie die erste Kammer
 
 **Methoden zur Wahl:**
-1. Direktwahl durch Wähler (z.B. USA, Australien, Schweiz): hohe Legitimation, aber "Senatoren" gruppieren sich in Parteien und handeln im Parteiinteresse
-2. Indirekte Wahl durch gliedstaatliche / lokale Parlamente (z.B. Niederlande, Österreich): weniger Legitimation, Problem wie bei 1
-3. Vertretung der gliedstaatlichen Regierungen (z.B. Deutschland, sehr selten): scheint bestes Modell zu sein, u.a. weil das gliedstaatliche Interesse erst auf der Ebene der Länderregierungen klar definiert ist
-4. Ernennung durch die (Zentral-)Regierung (Kanada): keine Legitimation und fehlender Bezug zum gliedstaatlichen Interesse
+1. **Direktwahl** durch Wähler (*USA, Australien, Schweiz*): hohe Legitimation, aber "Senatoren" gruppieren sich in Parteien und handeln im Parteiinteresse
+2. **Indirekte Wahl** durch gliedstaatliche / lokale Parlamente (*Niederlande, Österreich*): weniger Legitimation, Problem wie bei 1.
+3. **Vertretung der gliedstaatlichen Regierungen** (*Deutschland*, sehr selten): scheint bestes Modell zu sein, u.a. weil das gliedstaatliche Interesse erst auf der Ebene der Länderregierungen klar definiert ist
+4. **Ernennung** durch die (Zentral-)Regierung (*Kanada*): keine Legitimation und fehlender Bezug zum gliedstaatlichen Interesse
 
 > [!question] Nennen Sie die vier grundlegenden Möglichkeiten, wie die Mitglieder zweiter Kammern ausgewählt werden können.
 > - Welche dieser vier Möglichkeiten scheint für das Gelingen territorialer Repräsentation am günstigsten zu sein?
 
 **Politische Gleichheit:** Da territoriale Repräsentation selten funktioniert, unterlaufen 2. Kammern häufig schlicht den Wert der politischen Gleichheit (*Malapportionment*)
-- territoriale Repräsentation als Rechtfertigung, die Stimmen nicht nach der Bevölkerungszahl zu gewichten (nicht Wähler, sondern Staaten gleich behandelt)
+- Territoriale Repräsentation als Rechtfertigung, die Stimmen nicht nach der Bevölkerungszahl zu gewichten (nicht Wähler, sondern Staaten gleich behandelt)
 - Extremform: "Senatorenprinzip" (Australien, USA) mit derselben Anzahl an Senatoren je Gliedstaat
-- In Deutschland abgeschwächt (zwischen 3 und 6 Stimmen je nach Größe)
+- In Deutschland abgeschwächt (zwischen $3$ und $6$ Stimmen je nach Größe)
 - Aufgrund politischer Geographien können 2. Kammern die politische Repräsentation stark verzerren
-- **Beispiel US-Senat** Demokraten & Republikaner hatten 2022 je 50 Sitze, aber erstere repräsentierten 43 Millionen mehr Menschen
-	- Bevölkerung verschiebt sich weiter in große Staaten $\Rightarrow$ 2040 ca. 30 Prozent der Bevölkerung kontrollieren 70% der Senatssitze (Demokraten werden schwerer eine Senatsmehrheit gewinnen)
+- **Beispiel US-Senat:** Demokraten & Republikaner hatten 2022 je 50 Sitze, aber erstere repräsentierten 43 Millionen mehr Menschen
+	- Bevölkerung verschiebt sich weiter in große Staaten $\Rightarrow$ 2040 ca. 30% der Bevölkerung kontrolliert 70% der Senatssitze (Demokraten werden schwerer eine Senatsmehrheit gewinnen)
 	- Benachteiligung bevölkerungsreicher Staaten übersetzt sich in Benachteiligung von Minderheiten (die stärker im urbanen Raum leben)
 
 ![[Screenshot from 2025-06-22 11-06-31.png|500]]
@@ -114,17 +114,17 @@ title: Parlamentarische Systeme
 ### Semi-parlamentarische 2. Kammern
 ![[Screenshot from 2025-06-22 11-06-36.png|500]]
 
+*Australien und meiste australische Gliedstaaten, Japan*
+- Im parlamentarischen Systemen sind **2. Kammern** nicht durch Direktwahl demokratische legitimiert $\Rightarrow$ kein Recht auf Misstrauensvotum
+- Bei Direktwahl haben sie manchmal auch das Recht auf Misstrauensvotum (z.B. Italien, Rumänien)
+- Bei **Direktwahl ohne Misstrauensvotum** entsteht (nach Ansicht einiger Autoren) ein eigenständiges Regierungssystem: **Semi-Parlamentarismus**
+
 > [!question] Zeichnen Sie das Schema für ein semi-parlamentarisches System. Nennen Sie ein Länderbeispiel.
 
-*Australien und meiste australische Gliedstaaten, Japan*
-- Im parlamentarischen Systemen sind 2. Kammern nicht durch Direktwahl demokratische legitimiert $\Rightarrow$ kein Recht auf Misstrauensvotum
-- Bei Direktwahl haben sie manchmal auch das Recht auf Misstrauensvotum (z.B. Italien, Rumänien)
-- Bei Direktwahl ohne Misstrauensvotum entsteht (nach Ansicht einiger Autoren) ein eigenständiges Regierungssystem: **Semi-Parlamentarismus**
-
 *Semi-Parlamentarismus ist mögliche Antwort auf die Probleme des parlamentarischen Systems*
-- 1. Kammer durch Mehrheitswahl $\to$ klare Wähleraufträge & Verantwortlichkeiten, stabile Regierungen
+- 1\. Kammer durch Mehrheitswahl $\to$ klare Wähleraufträge & Verantwortlichkeiten, stabile Regierungen
 	- Verhältnis zur Regierung wie im Parlamentarismus
-- 2. Kammer durch Verhältniswahl $\to$ faire Repräsentation 
+- 2\. Kammer durch Verhältniswahl $\to$ faire Repräsentation 
 	- Verhältnis zur Regierung wie im Präsidentialismus
 
 ![[Screenshot from 2025-06-22 11-06-42.png|500]]

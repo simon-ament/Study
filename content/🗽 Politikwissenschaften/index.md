@@ -12,4 +12,4 @@ title: 🗽 Politikwissenschaften
 8. [[08_governments|Regierungen]]
 9. [[09_consesus_democracies|Konsensdemokratien]]
 10. [[10_polarization|Polarisierung]]
-
+11. [[11_lists|Listen (auswendig lernen)]]

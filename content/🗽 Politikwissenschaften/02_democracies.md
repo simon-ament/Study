@@ -7,7 +7,7 @@ Konzeptioneller Kern: freie und faire Wahlen
 
 > Die Demokratie ist ein System, in dem amtierende Regierungen Wahlen verlieren und daraufhin abtreten. (Adam Przeworksi)
 
-Robert Dahl: Sechs Kriterien oder minimale Garantieren für eine "Polyarchie"
+**Robert Dahl:** Sechs Kriterien oder **minimale Garantieren** für eine "Polyarchie"
 1. Gewählte Repräsentanten
 2. Freie, faire und regelmäßige Wahlen
 3. Meinungsfreiheit
@@ -17,7 +17,7 @@ Robert Dahl: Sechs Kriterien oder minimale Garantieren für eine "Polyarchie"
 
 > [!question] Nennen Sie drei der von Robert Dahl (1971) genannten minimalen Garantieren oder Kriterien für eine Polarchy oder elektorale Demokratie!
 
-Sechs Kriterien korrespondieren mit zwei grundlegenden analytischen Dimensionen:
+Sechs Kriterien korrespondieren mit zwei grundlegenden **analytischen Dimensionen:**
 - Wettbewerb (*contestation*)
 - Inklusivität / Partizipation (*inclusion*)
 	- Inklusion = Anteil der Wahlberechtigten an der erwachsenen Bevölkerung
@@ -28,22 +28,23 @@ Sechs Kriterien korrespondieren mit zwei grundlegenden analytischen Dimensionen:
 ## Liberale Demokratie
 Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 - **Liberale Demokratie** fügt weitere Kriterien hinzu
-- Elektorale & liberale Demokratie können sich also unterschieden, aber die Werte für liberale Demokratie bauen auf denen für elektorale Demokratie auf
+- Elektorale & liberale Demokratie können sich also unterschieden, aber die Werte für liberale Demokratien bauen auf denen für elektorale Demokratien auf
 
-> [!question] Kann es eine liberale Demokratie ohne eine elektorale Demokratie geben?
-
-![[Screenshot from 2025-06-22 10-53-28.png|500]]
-
+**Zusätzliche Kriterien:**
 1. Rechtsstaatlichkeit (*rule of law*)
 	- wird in Teilen auch schon bei einer elektoralen Demokratie vorausgesetzt
 2. Garantie weiterer Freiheitsrechte (z.B. Religionsfreiheit)
-3. Wechselseitige Gewaltenkontrolle (vor alle Kontrolle der Exekutive)
+3. Wechselseitige Gewaltenkontrolle (insbesondere Kontrolle der Exekutive)
 	- z.B. durch unabhängige und auch befolgte Gerichtsurteile
+
+![[Screenshot from 2025-06-22 10-53-28.png|500]]
+
+> [!question] Kann es eine liberale Demokratie ohne eine elektorale Demokratie geben?
 
 **Kritiker des Konzepts:**
 - freie und faire Wahlen seien der Kern der Demokratie
 - "illiberale" Demokratie sei eine logische Möglichkeit
-- zu weitgehende "liberale" Beschränkungen der Mehrheit, z.B. durch Verfassungsgerichte, seien selbst eine Einschränkung der Demokratie
+- zu weitgehende "liberale" Beschränkungen der Mehrheit (z.B. durch Verfassungsgerichte) seien selbst eine Einschränkung der Demokratie
 
 **Verteidiger des Konzepts:**
 - sie sei die einzig "echte" oder "höchste" Form der Demokratie
@@ -52,15 +53,14 @@ Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 
 ---
 # Demokratie-Messungen
-- dichotome (ja / nein) vs. kontinuierliche Messung
+*dichotome (ja / nein) vs. kontinuierliche Messung*
 
 ## Boix, Miller, Rosato
-Dichotome Messung von elektoraler Demokratie
-- 3 Kriterien, orientiert an Dahl
+Dichotome Messung von elektoraler Demokratie (3 Kriterien, orientiert an Dahl)
 
-1. Die Regierung wird direkt oder indirekt durch Volkswahlen ausgewählt und sie ist den Wählern oder dem Parlament gegenüber direkt verantwortlich.
-2. Das Parlament (oder die Regierung, falls sie direkt gewählt ist), wird in freien und fairen Wahlen ausgewählt.
-3. Die Mehrheit der erwachsenen Männer besitzt das Wahlrecht.
+1. Die **Regierung** wird direkt oder indirekt durch Volkswahlen ausgewählt und sie ist den Wählern oder dem Parlament gegenüber direkt verantwortlich
+2. Das **Parlament** (oder die Regierung, falls sie direkt gewählt ist), wird in freien und fairen Wahlen ausgewählt
+3. Die Mehrheit der erwachsenen Männer besitzt das **Wahlrecht**
 
 > [!question] Nennen Sie eine Demokratie-Messung, die Demokratie als dichotome Variable versteht!
 
@@ -100,25 +100,24 @@ Zentrale Idee der Modernisierungstheorie:
 > [!question] Nennen Sie stichwortartig einen kausalen Mechanismus, der laut der klassischen Modernisierungstheorie zwischen diesen beiden Variablen vermitteln kann?
 
 ## Alternative MT
-Klassische MT nimmt an, dass Reichtum nicht nur bereits bestehende Demokratien schützt, sondern auch deren Entstehung fördert
-- Sicht ist umstritten (siehe z.B. Singapur und China)
+Klassische MT nimmt an, dass Reichtum nicht nur bereits bestehende Demokratien schützt, sondern auch deren Entstehung fördert $\to$ Sicht ist umstritten (siehe z.B. Singapur und China)
 
 **Survival Story:** Nur wenn eine Demokratie bereits entstanden ist, wird sie durch Reichtum stabilisiert
 - Entstehung von Demokratien kann als Zufallsprozess verstanden werden, der von der Theorie nicht erklärt werden kann
-
-> [!question] In der Vorlesung wurde zwischen der klassischen Modernisierungstheorie und einer alternativen Theorie unterschieden. Wie unterscheiden sich die jeweiligen Hypothesen?
 
 ![[Screenshot from 2025-06-22 10-54-53.png|500]]
 
 *Clark/Golder/Golder sehen klassische Theorie als besser bestätigt*
 
+> [!question] In der Vorlesung wurde zwischen der klassischen Modernisierungstheorie und einer alternativen Theorie unterschieden. Wie unterscheiden sich die jeweiligen Hypothesen?
+
 ## Kausale Mechanismen II
 Die Wahl zwischen Demokratie und Diktatur ist eine Wahl zwischen einem System
-- das minimale Lebens- und Konsumstandards garantiert (Demokratie)
-- in dem alles gewonnen oder verloren werden kann (Diktatur)
+- das minimale Lebens- und Konsumstandards garantiert (**Demokratie**)
+- in dem alles gewonnen oder verloren werden kann (**Diktatur**)
 
 Je größer der Reichtum, desto weniger möchte man das Risiko eingehen
-- Beispiel: umstrittene Wahlen in Costa Rice 1948 (Bürgerkrieg) & USA 2000 (kein Bürgerkrieg)
+- Beispiel: umstrittene Wahlen in Costa Rice 1948 ($\Rightarrow$ Bürgerkrieg) & USA 2000 ($\Rightarrow$ kein Bürgerkrieg)
 
 ## Vermittelnde Position
 Ökonomische Entwicklung erhöht Wahrscheinlichkeit für Demokratie, aber nur unter bestimmten Bedingungen
@@ -141,3 +140,22 @@ Zusammenhang zwischen Reichtum & Demokratie gilt auch nicht, wenn Reichtum auf *
 	- Türkei und Ungarn laut V-Dem keine (elektoralen) Demokratien mehr
 
 > When I apply this statistical model to the US, with its income and its past 23 partisan alternations in the office of the president, I find that the probability that democracy would die in the US is 1 in 1.8 million country-years, zero. (Adam Przeworski)
+
+---
+# Regierungssysteme in Demokratien
+- Parlament und Regierung werden durch **Wahlen** autorisiert
+	- Parlament immer direkt von den Wählern, Regierung variiert
+	- Unterscheidung von **Wahlen** und **Abwahlen**
+- *Wird die Regierung direkt von den Wählern oder indirekt über das Parlament autorisiert? Und wie genau?* $\Rightarrow$ **Regierungssystem**
+- sechs grundlegende Regierungssysteme, davon drei häufig (hier vier abgebildet)
+
+![[Screenshot from 2025-06-22 10-56-35.png|500]]
+
+![[Screenshot from 2025-06-22 10-56-38.png|500]]
+
+> [!question] Zeichnen Sie das Schema eines
+> 1. präsidentiellen Systems
+> 2. parlamentarischen Systems
+> 3. versammlungsuabhängigen Systems
+> 
+> Geben Sie je ein Länderbeispiel!
