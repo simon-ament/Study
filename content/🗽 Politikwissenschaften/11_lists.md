@@ -158,7 +158,7 @@ Neue Konfliktlinien haben auch geographische Dimension (erste vor allem in Groß
 > [!question] Welche Form des Parlamentarismus erlaubt eher die Bildung von Minderheitsregierungen: „positiver“ oder „negativer“? Warum?
 
 ---
-# Kriterien für "starke" Zweite Kammern
+# Kriterien für "starke" zweite Kammern
 *Australien, Argentinien, Schweiz, USA, Deutschland (obwohl Bundesrat nicht direkt gewählt)*
 1. **"Robuste" Vetomacht:** absolutes (statt nur aufschiebendes) Veto oder Veto, das besonders schwierig zu überstimmen ist (z.B. Japan: 2/3 Mehrheit der ersten Kammer)
 2. **Demokratische Legitimation:** ohne diese kann formale Macht nicht voll ausgeübt werden (z.B. Kananda: Ernennung der Senatoren) | größte Legitimation durch Direktwahl
@@ -168,7 +168,7 @@ Neue Konfliktlinien haben auch geographische Dimension (erste vor allem in Groß
 
 **Methoden zur Wahl:**
 1. **Direktwahl** durch Wähler (*USA, Australien, Schweiz*): hohe Legitimation, aber "Senatoren" gruppieren sich in Parteien und handeln im Parteiinteresse
-2. **Indirekte Wahl** durch gliedstaatliche / lokale Parlamente (*Niederlande, Österreich*): weniger Legitimation, Problem wie bei 1
+2. **Indirekte Wahl** durch gliedstaatliche / lokale Parlamente (*Niederlande, Österreich*): weniger Legitimation, Problem wie bei 1.
 3. **Vertretung der gliedstaatlichen Regierungen** (*Deutschland*, sehr selten): scheint bestes Modell zu sein, u.a. weil das gliedstaatliche Interesse erst auf der Ebene der Länderregierungen klar definiert ist
 4. **Ernennung** durch die (Zentral-)Regierung (*Kanada*): keine Legitimation und fehlender Bezug zum gliedstaatlichen Interesse
 
@@ -247,7 +247,7 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
 3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
 4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
-5. **Hintergrundbedingung:** "Segmentierte" Gesellschaft
+5. **Hintergrundbedingung:** "segmentierte" Gesellschaft
 
 > [!question] Zum Konzept der Konkordanzdemokratie:
 > - Nennen Sie deren vier notwendigen Bedingungen sowie die Hintergrundbedingung laut Lijphart.

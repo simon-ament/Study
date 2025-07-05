@@ -74,7 +74,7 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
 3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
 4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
-5. **Hintergrundbedingung:** "Segmentierte" Gesellschaft
+5. **Hintergrundbedingung:** "segmentierte" Gesellschaft
 
 > [!question] Zum Konzept der Konkordanzdemokratie:
 > - Nennen Sie deren vier notwendigen Bedingungen sowie die Hintergrundbedingung laut Lijphart.

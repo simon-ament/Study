@@ -73,7 +73,7 @@ title: Parlamentarische Systeme
 *Warum haben manche Länder nur eine Parlamentskammer und andere zwei? Welchen Unterschied macht das?*
 - Wichtige Einsicht: Je nach Ausgestaltung können zweite Kammern die Verwirklichung demokratischer Werte fördern oder ihnen im Wege stehen
 
-## Kriterien für "starke" Zweite Kammern
+## Kriterien für "starke" zweite Kammern
 *Australien, Argentinien, Schweiz, USA, Deutschland (obwohl Bundesrat nicht direkt gewählt)*
 1. **"Robuste" Vetomacht:** absolutes (statt nur aufschiebendes) Veto oder Veto, das besonders schwierig zu überstimmen ist (z.B. Japan: 2/3 Mehrheit der ersten Kammer)
 2. **Demokratische Legitimation:** ohne diese kann formale Macht nicht voll ausgeübt werden (z.B. Kananda: Ernennung der Senatoren) | größte Legitimation durch Direktwahl
