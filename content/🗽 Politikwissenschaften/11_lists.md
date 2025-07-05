@@ -44,15 +44,15 @@ Korrespondieren mit zwei grundlegenden analytischen Dimensionen:
 
 ---
 # Autokratie-Typologie von Barbara Geddes
-1. Personalistische Regime: *Russland, Belarus, Kamerun*
+1. **Personalistische Regime:** *Russland, Belarus, Kamerun*
 	- Es gibt generell einen Trend zur "Personalisierung" von Autokratien
-2. Ein-Parteien-Regime: *Laos, Vietnam, China (zunehmend personalistisch)*
+2. **Ein-Parteien-Regime:** *Laos, Vietnam, China (zunehmend personalistisch)*
 	- Tendenziell **am stabilsten**
 	- wenige Coups sowie höhere Wachstumsraten und abgewogenere Außenpolitik als andere autoritäre Regime (mehr Akteure reden mit, Diskussion und Konsultation spielen eine Rolle)
-3. Militärregime: *Argentinien (1976 - 83), Thailand*
+3. **Militärregime:** *Argentinien (1976 - 83), Thailand*
 	- Die meisten Militärregime **dauern nicht lange**
 	- Es kann zu Spaltungen innerhalb des Militärs kommen, wenn das Militär die Politik übernimmt | es gibt deshalb einen Anreiz, sich wieder zurückzuziehen, um Einheit und Legitimität zu bewahren
-4. (Absolute) Monarchien: *Jordanien, Saudi-Arabien*
+4. **(Absolute) Monarchien:** *Jordanien, Saudi-Arabien*
 	- Tendenziell **sehr stabil**
 	- bei großen Familien sprechen viele Leute mit  & beschränken Macht des Monarchen
 	- religiöse Legitimität
@@ -222,11 +222,11 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 
 ---
 # Direkte Demokratie in der Schweiz
-1. Volksinitiative (seit 1891)
+1. **Volksinitiative** (seit 1891)
 	- Änderung der Bundesverfassung
 	- 100.000 Unterschriften innerhalb von 18 Monaten
 	- Parlament kann Gegenvorschlag ausarbeiten, Annahme benötigt Mehrheit der Abstimmenden und Mehrheit der Kantone
-2. Fakultatives Referendum (seit 1874)
+2. **Fakultatives Referendum** (seit 1874)
 	- Veto gegen ein vom Parlament beschlossenes Gesetz
 	- 50.000 Unterschriften innerhalb von 100 Tagen
 	- einfache Mehrheit der Abstimmenden
@@ -243,10 +243,10 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 ---
 # Konkordanzdemokratie
 **4 notwendige Bedingungen / Elemente (Lijphart):**
-1. (Über-)große Koalition (*grand coalition*), alle wichtigen Gruppen werden einbezogen
-2. Proportionalität in Wahlsystem, Ämter. und Ressourcenverteilung (*proportionality*)
-3. Gegenseitiges Veto (*mutual veto*) bei wichtigen Fragen
-4. Segmentelle Autonomie (*segmental autonomy*), z.B. bei Schulen
+1. (Über-)**große Koalition** (*grand coalition*), alle wichtigen Gruppen werden einbezogen
+2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
+3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
+4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
 5. **Hintergrundbedingung:** "Segmentierte" Gesellschaft
 
 > [!question] Zum Konzept der Konkordanzdemokratie:
