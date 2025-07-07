@@ -7,7 +7,7 @@ title: Listen (auswendig lernen)
 3. Neue **Implikationen** (Hypothesen) logisch ableiten
 	- möglichst viele | nicht das Ausgangsrätsel betreffend
 4. **Hypothesentest**
-	- Neue Daten sammeln / Beobachtungen machen
+	- neue Daten sammeln / Beobachtungen machen
 	- kritische Tests im Vergleich mit alternativen Theorien
 5. **Bewertung**
 
@@ -37,7 +37,7 @@ Korrespondieren mit zwei grundlegenden analytischen Dimensionen:
 # Drei Säulen autoritärer Stabilität
 1. **Repression:** z.B. gewaltsame Unterdrückung der Opposition
 	- bringt auch Probleme mit sich, z.B: fehlende Information über Beziehung der Bürger zum Regime, große Macht des Sicherheitsapparats, ökonomische Kosten
-2. **Legitimität:** z.B. durch Propaganda, Disinformation oder durch gute ökonomische Performanz (z.B. Singapur)
+2. **Legitimität:** z.B. durch Propaganda, Desinformation oder durch gute ökonomische Performanz (z.B. Singapur)
 3. **Kooptation:** Bindung von strategisch relevanten Gruppen an das Regime, z.B. die Opposition durch Jobs, Zahlungen und andere Begünstigungen
 
 > [!question] Nennen Sie die drei Säulen autoritärer Stabilität!
@@ -48,19 +48,19 @@ Korrespondieren mit zwei grundlegenden analytischen Dimensionen:
 	- Es gibt generell einen Trend zur "Personalisierung" von Autokratien
 2. **Ein-Parteien-Regime:** *Laos, Vietnam, China (zunehmend personalistisch)*
 	- Tendenziell **am stabilsten**
-	- wenige Coups sowie höhere Wachstumsraten und abgewogenere Außenpolitik als andere autoritäre Regime (mehr Akteure reden mit, Diskussion und Konsultation spielen eine Rolle)
+	- Wenige Coups sowie höhere Wachstumsraten und abgewogenere Außenpolitik als andere autoritäre Regime (mehr Akteure reden mit, Diskussion und Konsultation spielen eine Rolle)
 3. **Militärregime:** *Argentinien (1976 - 83), Thailand*
 	- Die meisten Militärregime **dauern nicht lange**
 	- Es kann zu Spaltungen innerhalb des Militärs kommen, wenn das Militär die Politik übernimmt | es gibt deshalb einen Anreiz, sich wieder zurückzuziehen, um Einheit und Legitimität zu bewahren
 4. **(Absolute) Monarchien:** *Jordanien, Saudi-Arabien*
 	- Tendenziell **sehr stabil**
-	- bei großen Familien sprechen viele Leute mit  & beschränken Macht des Monarchen
-	- religiöse Legitimität
+	- Bei großen Familien sprechen viele Leute mit  & beschränken Macht des Monarchen
+	- Religiöse Legitimität
 
 > [!question] Barbara Geddes unterscheidet vier Typen der Autokratie:
 > 1. Nennen Sie diese und geben sie jeweils ein Länderbeispiel!
 > 2. Welcher Typ ist am stabilsten?
-> 3. Welcher Typ is am instabilsten? Und warum?
+> 3. Welcher Typ ist am instabilsten? Und warum?
 
 ---
 # Regimes of the World (ROW)
@@ -101,7 +101,7 @@ Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Auch Uneig
 Komponenten / Charakteristika:
 1. **Proporz:** Parlamentssitze werden im Wahlkreis nach Proporz verteilt (Verrechnungsverfahren wie z.B. D'Hondt)
 2. **Wahlkreisgröße größtmöglich:** idealerweise ganzes Land ein Wahlkreis (Größe $=$ Anzahl der Mandate)
-3. **Gesetzliche Prozenthürde:** idealerweise keine $\Rightarrow$ effektive Hürde bei 1 / Anzahl der Sitze
+3. **Gesetzliche Prozenthürde:** idealerweise keine $\Rightarrow$ effektive Hürde bei $1$ / Anzahl der Sitze
 
 > [!question] Nennen Sie zwei Charakteristika der „reinen“ Verhältniswahl.
 
@@ -123,7 +123,7 @@ Nationale Revolutionen des 18. und 19. Jahrhunderts:
 1. **Zentrum versus Peripherie:** Konflikt um staatliche Zentralisierung und kulturelle (sprachliche, religiöse) Standarsisierung
 	- $\Rightarrow$ regionalistische, ethnische oder linguistische Parteien (z.B. Scottish National Party)
 2. **Kirche versus Staat:** Konflikt zwischen liberalem und säkularem Staat und klerikalen Privilegien; um den Einfluss von Kirche in Politik und Erziehung
-	- $\Rightarrow$ Konservative und religiöse (vor alle katholische) Parteien, christdemokratische Parteien
+	- $\Rightarrow$ konservative und religiöse (vor allem katholische) Parteien, christdemokratische Parteien
 
 Industrielle Revolution:
 
@@ -137,8 +137,8 @@ Industrielle Revolution:
 > [!question] Nennen Sie die vier traditionellen Cleavages nach Lipset und Rokkan.
 
 **Neue Cleavages:**
-- **Postmaterialismus:** Kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns
-	- $\Rightarrow$ Umwelt, Frieden, sexuelle Befreiung, etc. $\to$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
+- **Postmaterialismus:** kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns (Umwelt, Frieden, sexuelle Befreiung, etc.)
+	- $\Rightarrow$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
 - **Transnationalismus:** Konflikt um Globalisierung, Einwanderung, EU (Gewinner und Verlierer von Globalisierung und "Wissensökonomie")
 
 Neue Konfliktlinien haben auch geographische Dimension (erste vor allem in Großstädten, letzte vor allem in außerstädtischen und ländlichen Regionen)
@@ -244,7 +244,7 @@ Typische Annahmen über Präferenzen der Parteien (Rational Choice | *trias*):
 # Konkordanzdemokratie
 **4 notwendige Bedingungen / Elemente (Lijphart):**
 1. (Über-)**große Koalition** (*grand coalition*), alle wichtigen Gruppen werden einbezogen
-2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
+2. **Proportionalität** in Wahlsystem, Ämter- und Ressourcenverteilung (*proportionality*)
 3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
 4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
 5. **Hintergrundbedingung:** "segmentierte" Gesellschaft

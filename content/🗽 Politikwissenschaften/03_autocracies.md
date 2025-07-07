@@ -83,7 +83,7 @@ Häufig Unterteilung in drei Säulen
 > [!question] Barbara Geddes unterscheidet vier Typen der Autokratie:
 > 1. Nennen Sie diese und geben sie jeweils ein Länderbeispiel!
 > 2. Welcher Typ ist am stabilsten?
-> 3. Welcher Typ is am instabilsten? Und warum?
+> 3. Welcher Typ ist am instabilsten? Und warum?
 
 ---
 # Wahlen in Autokratien
