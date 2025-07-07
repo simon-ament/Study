@@ -100,8 +100,8 @@ Eine Minderheitsregierung kann leichter regieren, wenn $\dots$
 *Es gibt wichtige institutionelle Unterschiede*
 
 **"Formateur":** Akteur, der mit Regierungsbildung beauftragt wird
-- stets der Präsident
-- im parlamentarischen System durch Wahlergebnis bestimmt (meist Partei mit meisten Stimmen)
+- Stets der Präsident
+- Im parlamentarischen System durch Wahlergebnis bestimmt (meist Partei mit meisten Stimmen)
 - Wenn eine Koalitionsbildung scheitert, kann der Präsident versuchen, alleine zu regieren
 	- kann ohne Mehrheitsunterstützung im Amt bleiben
 	- geringere Verhandlungsmacht der Parteien bei der Regierungsbildung (außer evtl. Partei des Präsidenten)

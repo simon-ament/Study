@@ -90,7 +90,7 @@ Probleme des Personalismus:
 - z.B. absolute Mehrheitswahl (mit Stichwahl) des Präsidenten erscheint besser als relative Mehrheitswahl
 
 ## 1. Formale Macht von Präsidenten
-- Verfassungsmäßige Macht von Präsidenten variiert stark (z.B Vetos, Agenda-Setzung, Dekrete mit Gesetzeskraft | Lateinamerika, nicht USA)
+- Verfassungsmäßige Macht von Präsidenten variiert stark (z.B. Vetos, Agenda-Setzung, Dekrete mit Gesetzeskraft | Lateinamerika, nicht USA)
 - Konkurrierende Sichtweisen:
 	- formal starke Präsidenten gefährlich: können am Parlament vorbei regieren
 	- formal starke Präsidenten können ihre Macht einsetzen, um Mehrheiten überhaupt erst zu organisieren (ähnlich wie im Parlamentarismus über Kopplung Vertrauensfrage + Sachfrage)

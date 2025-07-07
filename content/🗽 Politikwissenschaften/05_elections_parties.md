@@ -137,10 +137,10 @@ Anzahl der Parteien hängt auch von der Gesellschaftsstruktur ab:
 
 Nationale Revolutionen des 18. und 19. Jahrhunderts:
 
-1. **Zentrum versus Peripherie:** Konflikt um staatliche Zentralisierung und kulturelle (sprachliche, religiöse) Standarsisierung
+1. **Zentrum versus Peripherie:** Konflikt um staatliche Zentralisierung und kulturelle (sprachliche, religiöse) Standardisierung
 	- $\Rightarrow$ regionalistische, ethnische oder linguistische Parteien (z.B. Scottish National Party)
 2. **Kirche versus Staat:** Konflikt zwischen liberalem und säkularem Staat und klerikalen Privilegien, um den Einfluss von Kirche in Politik und Erziehung
-	- $\Rightarrow$ konservative und religiöse (vor alle katholische) Parteien, christdemokratische Parteien
+	- $\Rightarrow$ konservative und religiöse (vor allem katholische) Parteien, christdemokratische Parteien
 
 Industrielle Revolution:
 
@@ -154,12 +154,12 @@ Industrielle Revolution:
 > [!question] Nennen Sie die vier traditionellen Cleavages nach Lipset und Rokkan.
 
 **Neue Cleavages:**
-- **Postmaterialismus:** kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns
-	- $\Rightarrow$ Umwelt, Frieden, sexuelle Befreiung, etc. $\to$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
+- **Postmaterialismus:** kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns (Umwelt, Frieden, sexuelle Befreiung, etc.)
+	- $\Rightarrow$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
 - **Transnationalismus:** Konflikt um Globalisierung, Einwanderung, EU (Gewinner und Verlierer von Globalisierung und "Wissensökonomie")
-- Neue Konfliktlinien haben auch geographische Dimension (erste vor allem in Großstädten, letzte vor allem in außerstädtischen und ländlichen Regionen)
+- Neue Konfliktlinien haben auch geographische Dimension (erstere vor allem in Großstädten, letztere vor allem in außerstädtischen und ländlichen Regionen)
 
-**Neue Achse des Politischen Wettbewerbs:**
+**Neue Achse des politischen Wettbewerbs:**
 - traditioneller ökonomischen Rechts-Links-Konflikt (Sozialismus vs. Kapitalismus)
 - **GAL-TAN:** Green-Alternative-Liberal vs. Traditional-Authoritarian-Nationalist (libertär vs. autoritär)
 

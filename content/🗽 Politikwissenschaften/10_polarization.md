@@ -34,7 +34,7 @@ title: Polarisierung
 > [!question] Es werden zwei Arten politischer Polarisierung unterschieden. Nennen sie diese!
 
 ## "Gespaltene" Gesellschaften
-- Häufig Fokus auf ethnisch gespaltene Gruppen: **gemeinsame Herkunft** aufgrund von Sprache, Religion, äußerliche Merkmale, Geschichte, etc.
+- Häufig Fokus auf ethnisch gespaltene Gruppen: **gemeinsame Herkunft** aufgrund von Sprache, Religion, äußerlichen Merkmalen, Geschichte, etc.
 - **Vielfalt ist nicht dasselbe wie Spaltung:** Spaltung entsteht, wenn Gruppenzugehörigkeiten politisch sehr bedeutsam (politisiert) sind
 	- z.B. Australien und Kanada gelten als ethnisch vielfältig, aber nicht gespalten
 
@@ -71,7 +71,7 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 
 **4 notwendige Bedingungen / Elemente (Lijphart):**
 1. (Über-)**große Koalition** (*grand coalition*), alle wichtigen Gruppen werden einbezogen
-2. **Proportionalität** in Wahlsystem, Ämter und Ressourcenverteilung (*proportionality*)
+2. **Proportionalität** in Wahlsystem, Ämter- und Ressourcenverteilung (*proportionality*)
 3. **Gegenseitiges Veto** (*mutual veto*) bei wichtigen Fragen
 4. **Segmentelle Autonomie** (*segmental autonomy*), z.B. bei Schulen
 5. **Hintergrundbedingung:** "segmentierte" Gesellschaft
@@ -83,8 +83,8 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 ## Konkordanz in Nordirland
 *Einflussreichster Fall in der neueren Konkordanz-Literatur*
 
-- Seit 1969 gewalttätiger Konflikt zwischen den irischen Republikanern und der britischen Armee und britischen Loyalisten (Unionisten), die im Königreich bleiben wollen
-	- über 3000 Tote und 50.000 Verletzte
+- Seit 1969 gewalttätiger Konflikt zwischen den irischen Republikanern und der britischen Armee sowie britischen Loyalisten (Unionisten), die im Königreich bleiben wollen
+	- über 3.000 Tote und 50.000 Verletzte
 	- irische Nationalisten sehen Katholiken in Nordirland strukturell benachteiligt und diskriminiert (segregierte Arbeitsmärkte, Nachbarschaften, etc.)
 - Beginn der Konkordanz mit **Belfast ("Good Friday") Agreement 1998**
 	- danach mehrmals modifiziert und zeitweise ausgesetzt
