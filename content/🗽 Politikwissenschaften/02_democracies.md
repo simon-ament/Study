@@ -32,10 +32,10 @@ Vielen ist das elektorale Demokratiekonzept zu "minimalistisch"
 - Elektorale & liberale Demokratie können sich also unterschieden, aber die Werte für liberale Demokratien bauen auf denen für elektorale Demokratien auf
 
 **Zusätzliche Kriterien:**
-1. Rechtsstaatlichkeit (*rule of law*)
+1. **Rechtsstaatlichkeit** (*rule of law*)
 	- wird in Teilen auch schon bei einer elektoralen Demokratie vorausgesetzt
-2. Garantie weiterer Freiheitsrechte (z.B. Religionsfreiheit)
-3. Wechselseitige Gewaltenkontrolle (insbesondere Kontrolle der Exekutive)
+2. **Garantie weiterer Freiheitsrechte** (z.B. Religionsfreiheit)
+3. **Wechselseitige Gewaltenkontrolle** (insbesondere Kontrolle der Exekutive)
 	- z.B. durch unabhängige und auch befolgte Gerichtsurteile
 
 ![[Screenshot from 2025-06-22 10-53-28.png|500]]

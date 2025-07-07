@@ -24,7 +24,7 @@ Es gibt **Wellen der Demokratisierung und Autokratisierung**
 ## Totalitäre Regime (ältere Unterscheidung)
 - üben stärkere (volle) Kontrolle über ihre Bürger aus (starke Repression)
 - Ideologie & Propaganda, um loyale "Bürger" & Legitimität zu erzeugen
-- Massenhafte Mobilisierung der "Bürger", um die Ziele des Staates zu erreichen
+- massenhafte Mobilisierung der "Bürger", um die Ziele des Staates zu erreichen
 - *heute Nordkorea, historisch Nationalsozialismus, Stalinismus, Kambodscha unter Pol Pot*
 
 > [!question] Nennen Sie ein Beispiel für ein totalitäres Regime!
@@ -143,7 +143,7 @@ Diese Institutionen verlängern laut manchen Studien die Lebensdauer autoritäre
 1. **Fear Dictators** (klassische Autokratie) vs.
 2. **Spin Dictators**
 	- setzt stärker auf Medienmanipulation & Desinformation
-	- Demokratie soll vorgetäuscht werden (war / ist nicht in allen kompetitiven Autokratien so, essenziell für Spin Dictators)
+	- Demokratie soll vorgetäuscht werden (war / ist nicht in allen kompetitiven Autokratien so | essenziell für Spin Dictators)
 	- *Ungarn, Singapur*
 
 Modernisierungstheorie als Hintergrund:

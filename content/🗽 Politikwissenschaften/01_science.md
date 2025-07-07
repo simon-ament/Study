@@ -7,7 +7,7 @@ title: Wissenschaft
 	- Unser Denken ist **nicht** vollständig rational und auf Wahrheitsfindung ausgelegt
 	- Es hat zahlreiche Voreingenommenheiten (*bias*)
 	- z.B. die Neigung, an eigenen "Theorien" und Glaubenssätzen über die Welt festzuhalten (*confirmation bias*)
-- Wissenschaft = Hinterfragen von Theorien und Glaubenssätzen mit systematischen Methoden und empirischen Belegen
+- Wissenschaft $=$ Hinterfragen von Theorien und Glaubenssätzen mit systematischen Methoden und empirischen Belegen
 	- Testen unserer Theorien
 	- Hoffnung: Wir können gemeinsam rationaler sein als einzeln
 
@@ -65,7 +65,7 @@ Wenn die Vorhersagen / Implikationen einer Theorie falsch sind, dann **muss** di
 - zumindest eine ihrer Annahmen stimmt nicht
 - gilt **nicht** analog für Bestätigung von Theorien
 	- verschiedene Theorien können dieselben Vorhersagen treffen
-	- $\Rightarrow$ man kann eine einzelne Theorie durch Daten niemals "bestätigen"(*confirm*), sondern nur durch gescheiterte Falsifikation "stützen" oder "untermauern" (*corroborate*)
+	- $\Rightarrow$ man kann eine einzelne Theorie durch Daten niemals "bestätigen" (*confirm*), sondern nur durch gescheiterte Falsifikation "stützen" oder "untermauern" (*corroborate*)
 
 > [!question] Ist eine falsifizierte Theorie falsch?
 
@@ -93,7 +93,7 @@ Wir sollten versuchen
 3. Neue **Implikationen** (Hypothesen) logisch ableiten
 	- möglichst viele | nicht das Ausgangsrätsel betreffend
 4. **Hypothesentest**
-	- Neue Daten sammeln / Beobachtungen machen
+	- neue Daten sammeln / Beobachtungen machen
 	- kritische Tests im Vergleich mit alternativen Theorien
 5. **Bewertung**
 

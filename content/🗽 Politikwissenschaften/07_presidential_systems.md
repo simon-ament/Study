@@ -104,14 +104,14 @@ Probleme des Personalismus:
 	2. Neuwahlen der Präsidentschaft (*Südkorea*)
 - Bei einer starken "politischen" Amtsenthebung eher Neuwahl-Modell (Wähler sorgen für neue politische Situation)
 - Soll auch das Parlament neu gewählt werden?
-	- Könnte Anreize der Abgeordneten für Abwahl reduzieren
-	- Könnte zu Missbrauch der Amtsenthebung verhindern
+	- könnte Anreize der Abgeordneten für Abwahl reduzieren
+	- könnte Missbrauch der Amtsenthebung verhindern
 
 ## 3. Amtszeitbegrenzungen
 - Viele präsidentielle Systeme begrenzen die Wiederwahlmöglichkeit (*term limits*)
 	- soll Machtansammlung verhindern
 	- Amtsinhaber haben häufig einen Vorteil bei der Wiederwahl
-- Modelle:
+- **Modelle:**
 	1. Gar keine Wiederwahl (*Mexiko, Kolumbien*)
 	2. Nur einmalige Wiederwahl und / oder Wiederwahl nur nach einer Pause (*Chile, Uruguay, USA*)
 	3. Unbegrenzte Wiederwahl (*Bolivien, Honduras*), teilweise durch Verfassungsgerichtsbarkeit gegen Parlament / Wähler durchgesetzt
@@ -151,11 +151,11 @@ Probleme des Personalismus:
 *Gefahren sind auch im semi-präsidentiellen System (beide Varianten) vorhanden*
 
 **Beispiel Tunesien:**
-- einzige Demokratie des arabischen Frühlings (ab 2011), premier-präsidentiell
+- einzige Demokratie des arabischen Frühlings (ab 2011), **premier-präsidentiell**
 - 2019: Wahl von Kais Saied als Unabhängiger (erste Runde: 18,4%, Stichwahl: 72,7%)
-- Große Unzufriedenheit, Blockaden zwischen Präsident und fragmentiertem Parlament
+- große Unzufriedenheit, Blockaden zwischen Präsident und fragmentiertem Parlament
 - ab Juli 2021 Amtsinhaber-Übernahme und Etablierung präsidentieller Autokratie
-- Demokratische Legitimation durch Direktwahl hat dafür Rolle gespielt, z.B. Folgebereitschaft des Militärs
+- demokratische Legitimation durch Direktwahl hat dafür Rolle gespielt, z.B. Folgebereitschaft des Militärs
 
 > [!question] Zu welchem Regierungssystem passen die folgenden Eigenschaften eher? Präsidentiell oder Parlamentarisch?
 > - Starke und programmatische Parteien

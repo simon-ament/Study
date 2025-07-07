@@ -26,8 +26,8 @@ title: Polarisierung
 	- realer Wert der Demokratie zeigt sich in der Abwägung mit parteilichen Zielen
 
 ## Polarisierung
-1. **Ideologisch / themenbezogen:** großer Abstand der Idealpunkte
-2. **Affektiv (emotional) / gruppenbezogen:** Gefühle der Abneigung und des Misstrauens gegenüber Gruppen, die politisch anders denken
+1. **ideologisch / themenbezogen:** großer Abstand der Idealpunkte
+2. **affektiv (emotional) / gruppenbezogen:** Gefühle der Abneigung und des Misstrauens gegenüber Gruppen, die politisch anders denken
 	- z.B. USA: 33% der Demokraten / 49% der Republikaner lehnen für ihre Kinder Ehepartner der anderen Partei ab (Anfang der 1960er Jahre: 4% bzw. 5%)
 	- Wie ist Demokratie möglich, wenn sich Bürger auf Basis starker Gruppenidentitäten feindselig gegenüber stehen? $\to$ Literatur zu "gespaltenen" Gesellschaften
 
@@ -127,7 +127,7 @@ Zwei einflussreiche Modelle für Demokratien und "gespaltenen" Gesellschaften:
 
 **Beispiele:**
 - Pro: Katalanische Wähler in Spanien stimmen nicht nur für die separatistischen Regionalparteien, sondern z.B. auch für die Sozialdemokraten
-- Contra: In Belgien gibt es jede Partei doppelt: flämisch und wallonisch
+- Contra: In Belgien gibt es jede Partei doppelt (flämisch und wallonisch)
 
 > [!question] Nennen Sie einen Kritikpunkt am Modell des Zentripetalismus.
 

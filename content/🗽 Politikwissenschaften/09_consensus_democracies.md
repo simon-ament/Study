@@ -83,7 +83,7 @@ Länder dieses "Typs" sind sehr unterschiedlich
 ## "Performanz" von Demokratien (Lijphart)
 - **Hauptbefund:** "Konsensdemokratien" hätten häufig bessere Ergebnisse geliefert und (fast) nie schlechtere
 	- z.B. in Bezug auf Wahlbeteiligung, niedrige Korruption, Wirtschaftswachstum
-	- bezieht sich dabei nur auf Parteidimension (effektive Anzahl von Parteien)
+	- bezieht sich dabei nur auf **Parteidimension** (effektive Anzahl von Parteien)
 - Letztlich vor allem Plädoyer für Verhältniswahl und Mehrparteiensysteme
 	- aber keine Unterscheidungen innerhalb dieser Gruppe (bezüglich Vetopunkte)
 
@@ -152,14 +152,14 @@ Länder dieses "Typs" sind sehr unterschiedlich
 > [!question] Was kann in der Schweiz durch eine Volksinitiative verändert werden?
 
 Regierungssystem und "halbdirekte" Demokratie bedingen sich:
-- direktdemokratische Verfahren kompensieren, dass die Bürger bei der Regierung keine Richtungsentscheidung treffen können
-- Modell kann mit permanenter Drohung eines Volksvetos umgehen
+- direktdemokratische Verfahren **kompensieren**, dass die Bürger bei der Regierung **keine Richtungsentscheidung** treffen können
+- Modell kann mit **permanenter Drohung eines Volksvetos** umgehen
 	- Einbindung der größten Parteien antizipiert Vetos und fördert Kompromisse (Parteien steuern Kampagnen bei Vetos)
 	- gleichzeitig aber kein Vetorecht $\Rightarrow$ median-orientiertes System
 
 $\Rightarrow$ Einzelne Verfahren lassen sich nicht ohne weiteres in andere Länder einpflanzen:
-- können sich gegenseitig bedingen und stabilisieren
+- können sich **gegenseitig bedingen und stabilisieren**
 - umstritten, wie gut die starken direktdemokratischen Verfahren mit dem parlamentarischen Regierungssystem vereinbar sind
-	- z.B. BSW forderte "Bürgerveto" nach Schweizer Modell für Thüringen $\to$ könnte zu starken Blockaden führen (Mobilisierung der Wähler gegen Regierungspolitik)
+	- z.B. **BSW forderte "Bürgerveto"** nach Schweizer Modell für **Thüringen** $\to$ könnte zu starken Blockaden führen (Mobilisierung der Wähler gegen Regierungspolitik)
 
 > [!question] Das BSW fordert für Thüringen ein Bürgerveto. Welches direktdemokratische Verfahren der Schweiz dient für diese Forderung als Vorbild?

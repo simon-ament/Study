@@ -26,7 +26,7 @@ title: Parlamentarische Systeme
 
 **Historische Trends:** viele parlamentarische Regierungssysteme haben Misstrauensvotum "restriktiver" gestaltet
 - Entscheidungsregel: absolute statt einfache Mehrheit $\Rightarrow$ Enthaltungen und Abwesenheiten zählen zugunsten der Regierung
-- Konstruktives Misstrauensvotum: Kabinett kann nur bei Einigung auf neues Kabinett abgelöst werden (Innovation des deutschen Grundgesetzes, heute weit verbreitet)
+- **Konstruktives Misstrauensvotum:** Kabinett kann nur bei Einigung auf neues Kabinett abgelöst werden (Innovation des deutschen Grundgesetzes, heute weit verbreitet)
 
 > [!question] Definieren Sie kurz die Institution des „konstruktiven Misstrauensvotums“. Geben Sie ein Länderbeispiel.
 
@@ -59,7 +59,7 @@ title: Parlamentarische Systeme
 
 **Positiver Parlamentarismus:** *Deutschland*
 - Regierung benötigt Zustimmung einer Parlamentsmehrheit, um ins Amt zu kommen
-- kann die Bildung von Minderheitsregierungen erschweren 
+- Kann die Bildung von Minderheitsregierungen erschweren 
 - Oppositionsparteien, die bereit sind die Regierung zu tolerieren, können sich dann nicht enthalten, sondern müssen zustimmen $\Rightarrow$ Verantwortung, ggf. Abstrafung durch Wähler
 	- insbesondere bei absolutem Mehrheitserfordernis für Investiturabstimmung
 

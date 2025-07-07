@@ -154,7 +154,7 @@ Industrielle Revolution:
 > [!question] Nennen Sie die vier traditionellen Cleavages nach Lipset und Rokkan.
 
 **Neue Cleavages:**
-- **Postmaterialismus:** Kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns
+- **Postmaterialismus:** kultureller / generationeller Konflikt um Werte und Prioritäten staatlichen Handelns
 	- $\Rightarrow$ Umwelt, Frieden, sexuelle Befreiung, etc. $\to$ grüne und links-libertäre Parteien, Rechtspopulismus als Gegenrevolution der Älteren und geringer Gebildeten
 - **Transnationalismus:** Konflikt um Globalisierung, Einwanderung, EU (Gewinner und Verlierer von Globalisierung und "Wissensökonomie")
 - Neue Konfliktlinien haben auch geographische Dimension (erste vor allem in Großstädten, letzte vor allem in außerstädtischen und ländlichen Regionen)

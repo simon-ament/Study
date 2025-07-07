@@ -40,7 +40,7 @@ Bei Anwendung der Mehrheitregel im eindimensionalen Politikraum gewinnt der "mit
 ![[Screenshot from 2025-06-22 10-59-01.png|500]]
 
 **Black's Medianewähler-Theorem:** Wenn die Mitglieder einer Gruppe eingipflige Präferenzen besitzen, dann hat der Idealpunkt des Medianwählers eine leere Gewinnmenge
-- gilt für Mehrheitsregel im eindimensionalen Politikraum
+- gilt für Mehrheitsregel im **eindimensionalen** Politikraum
 - weitere Annahmen: ungerade Anzahl an Wählern, keine Enthaltung, "ehrliches" Wählen
 
 Die Menge von Punkten, die zu einem Gleichgewicht führen, wird **Kern** genannt
@@ -51,8 +51,8 @@ Die Menge von Punkten, die zu einem Gleichgewicht führen, wird **Kern** genannt
 > [!question] Nennen Sie eine Annahme über die Präferenzen (Nutzenfunktionen) der Abstimmenden, die gelten muss, damit das Medianwähler-Theorem gültig ist.
 
 ## Eigenschaften der Mehrheitsregel
-1. Zentripetale Tendenz, d.h. Tendenz zur Mitte
-2. Keine konservative Tendenz (keine Bevorzugung des Status Quo / der Vergangenheit)
+1. **Zentripetale Tendenz**, d.h. Tendenz zur Mitte
+2. **Keine konservative Tendenz** (keine Bevorzugung des Status Quo / der Vergangenheit)
 
 Bedingungen dafür: eine Konfliktdimension + alle Wähler / Entscheidungsträger können Änderungsvorschläge machen
 
@@ -146,7 +146,7 @@ Beide Varianten führen dazu, dass die Position des Status Quo eine Rolle spielt
 ## Mehrere Dimensionen & Einstimmigkeit
 - **Eindimensional:** Mehrheitsregel erzeugt Tendenz zur Mitte (Median)
 - **Mehrdimensional:** Mehrheitsregel erzeugt nur sehr eingeschränkte Tendenz zur Mitte $\Rightarrow$ Mehrheitsregel kann in der Realität zu "instabilen" Ergebnissen führen
-- Demokratien erzeugen auf unterschiedliche Arten Vetospieler, zwischen denen Eintsimmigkeit notwendig ist, um den Status Quo zu verändern $\Rightarrow$ erhöht die [[#Policy-Stabilität|Stabilität politischer Ergebnisse]]
+- Demokratien erzeugen auf unterschiedliche Arten Vetospieler, zwischen denen Einstimmigkeit notwendig ist, um den Status Quo zu verändern $\Rightarrow$ erhöht die [[#Policy-Stabilität|Stabilität politischer Ergebnisse]]
 	- Vetospielertheorie konzentriert sich auf diese Vetospieler
 
 ![[Screenshot from 2025-06-22 11-13-28.png|500]]

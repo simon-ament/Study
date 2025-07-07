@@ -11,7 +11,7 @@ title: Regierungen
 |                 | Minderheit                       | Minimale Mehrheit (keine Partei entbehrlich) | übergroße Mehrheit (mind. eine "überflüssige" Partei) |
 | --------------- | -------------------------------- | -------------------------------------------- | ----------------------------------------------------- |
 | **Eine Partei** | Einparteien-Minderheitsregierung | Einparteien-Mehrheitsregierung               |                                                       |
-| **Koalition**   | Minderheitskoalition             | Minimale Gewinn-Koalition                    | übergroße Koalition                                   |
+| **Koalition**   | Minderheitskoalition             | Minimale Gewinn-Koalition                    | Übergroße Koalition                                   |
 
 ## Theorien zur Regierungs- und Koalitionsbildung
 *Welcher Typ bildet sich? | Welche Parteien kommen rein?*
@@ -111,7 +111,7 @@ Eine Minderheitsregierung kann leichter regieren, wenn $\dots$
 	- wenn sie können, regieren Präsidenten häufiger allein
 	- Präsidenten mit starker Vetomacht regieren eher allein (Parlament kann nichts "gegen" sie durchsetzen)
 2. Minderheitsregierungen in präsidentiellen Systemen häufiger
-	- Präsidenten müssen keine Angst vor instabilen Regierungen haben müssen
+	- Präsidenten müssen keine Angst vor instabilen Regierungen haben
 3. Weitere Unterschiede bei der Verteilung von Ministerien
 
 > [!question] Nennen Sie einen Unterschied zwischen präsidentiellen und parlamentarischen Regierungssystemen, der für die Bildung von Regierungskoalitionen von Bedeutung ist.
