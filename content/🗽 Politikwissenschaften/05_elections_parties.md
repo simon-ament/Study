@@ -12,10 +12,10 @@ title: Wahl- und Parteisysteme
 
 - Kandidat mit den meisten Stimme gewinnt (z.B. Philippinen 1992 nur 24% der Stimmen)
 
-**Vorteile:** Einfachheit, möglicherweise kleines Kandidatenfeld
+**Vorteile:** einfachheit, möglicherweise kleines Kandidatenfeld
 - vereinfacht ggf. spätere Zusammenarbeit mit dem Parlament
 
-**Nachteile:** "Falsche" Sieger möglich
+**Nachteile:** "falsche" Sieger möglich
 - insbesondere werden keine Condorcet-Verlierer (die gegen jeden anderen Kandidaten in paarweiser Abstimmung verlieren) vermieden
 
 > [!question] Was ist die Definition eines Condorcet-Verlierers?

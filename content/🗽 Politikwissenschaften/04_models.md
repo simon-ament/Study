@@ -30,7 +30,7 @@ Häufig wird auch Eigennutz angenommen, das ist aber nicht notwendig. Auch Uneig
 
 ---
 # Medianwähler-Theorem
-Bei Anwendung der Mehrheitregel im eindimensionalen Politikraum gewinnt der "mittlere" Wähler oder Medianwähler
+Bei Anwendung der Mehrheitsregel im eindimensionalen Politikraum gewinnt der "mittlere" Wähler oder Medianwähler
 - der Medianwähler ist aufgrund seiner räumlichen Position besonders machtvoll
 
 > [!question] Geben Sie in Ihren eigenen Worten das Hauptergebnis des Medianwähler-Theorems wieder.
