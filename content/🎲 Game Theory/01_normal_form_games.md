@@ -1,5 +1,5 @@
 ---
-tags:
+title: Normal Form Games
 ---
 # Normal Form Game
 A game in normal form $G = (N, S, (u_i)_{i \in \mathbb{N}})$ consists of
