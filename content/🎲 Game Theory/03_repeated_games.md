@@ -20,9 +20,7 @@ A strategy profile $\mathbf{\tau} = (\tau_1, \dots, \tau_n)$ is a Nash equilibri
 $$u_i(\mathbf{\tau}) \geq u_i(\tau', \mathbf{\tau}_{-i}) \text{ for all functions } \tau': \cup_{0 \leq t \leq T - 1} H^t \to S$$
 
 ## Subgame Perfect Nash Equilibrium
-A strategy profile $\mathbf{\tau} = (\tau_1, \dots, \tau_n)$ is a subgame perfect Nash equillibrium if for every player $i \in \mathbb{N}$ 
-
-==missing==
+![[Screenshot from 2025-07-14 10-15-46.png|700]]
 
 ## Adding Dominated Strategies
 

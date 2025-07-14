@@ -57,7 +57,7 @@ $$u_i(\mathbf{\tau}) \geq u_i(\tau', \mathbf{\tau}_{-i})$$
 **Observations:**
 - Backward induction computes a SPNE
 - Every extensive form game admits a SPNE
-- ==Is every SPNE a NE?==
+- Is every SPNE a NE? **✓**
 
 ---
 # Extensive Form Games as Normale Form Games
