@@ -60,8 +60,8 @@ $$u_i(\mathbf{\tau}) \geq u_i(\tau', \mathbf{\tau}_{-i})$$
 - Is every SPNE a NE? **✓**
 
 ---
-# Extensive Form Games as Normale Form Games
-Every extensive form game $G$ can be represented as a normal for game, where
+# Extensive Form Games as Normal Form Games
+Every extensive form game $G$ can be represented as a normal form game, where
 - the strategy space $S_i$ for player $i$ is the set of $i$'s pure strategies in $G$
 - $u_i(\tau_1, \dots, \tau_n)$ is the player $i$'s utility for the outcome in which player $i$ picks $\tau_i$ (for all $i \in \mathbb{N}$)
 
