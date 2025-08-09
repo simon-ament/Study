@@ -4,6 +4,7 @@ title: IT Systems Engineering - Lernzettel
 # ☀️ SoSe 2025
 1. [[🗽 Politikwissenschaften/]]
 2. [[🎲 Game Theory/]]
+3. [[🚑 Software-Technik/]]
 
 ---
 # ❄️ WiSe 2024/25
