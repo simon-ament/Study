@@ -131,6 +131,7 @@ How we should interact when we:
 ---
 # Requirements Elicitation / Interviewing
 **Five Orders of Ignorance:**
+
 0. **Lack of Ignorance:** I know the answer
 1. **Lack of Knowledge:** I know the question
 2. **Lack of Awareness:** I know the type of question
