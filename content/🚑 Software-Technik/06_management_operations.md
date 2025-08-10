@@ -234,7 +234,7 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 
 ## Prinzipien des DevOps
 **Prinzipien des Flow:** das Ausliefern von Arbeit von der Entwicklung über Operations hin zu unseren Kunden beschleunigen
-- z.B. produktivähnliche Umgebungen für Entwickler, schnelles und automatisiertes Testen, Continuous Integration, Continuous Delivery, einfache Rollbacks (Risiko reduzieren)
+- z.B. produktivähnliche Umgebungen für Entwickler, schnelles und automatisiertes Testen, [[05_programming_quality#Kontinuierliche Integration|Continuous Integration]], Continuous Delivery, einfache Rollbacks (Risiko reduzieren)
 
 **Prinzipien des Feedbacks:** durch schnelles und kontinuierliches Feedback bei allen Schritten unserer Wertkette schaffen oder hinterlassen wir dort Wissen, wo es gebraucht wird
 - z.B. Telemetrie- / Loggingdaten sammeln und analysieren, Arbeit in der Wertekette beobachten, A/B-Tests für Hypothesen, Peer Review / Pair Programming
@@ -242,6 +242,6 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 **Prinzipien des kontinuierlichen Lernens und Experimentierens:** eine Kultur des Vertrauens und ein wissenschaftlicher Ansatz, der das Eingehen von Risiken unterstützt und das firmenweite Lernen ermöglicht
 - z.B. Kultur des Lernen, Post-Mortem-Meetings (nach Unfällen) ohne Schuldzuweisungen, Zwischenfälle an Game Days üben, kalkulierte Risiken unterstützen, Wissen in Chatrooms und Bots sammeln, gemeinsames Repository für gesamte Firma, Zeit für Lernen und Verbesserungen reservieren (Rituale, Meetings, Workshops, Community-Strukturen)
 
-## Continuous Delivery, Continous Deplyoment
+## Continuous Delivery, Continuous Deplyoment
 - **Continuous Delivery:** kurzlebige Feature-Branches, die regelmäßig in einen **releasbaren** Trunk eingechekt werden
 - **Continuous Deployment:** mindestens einmal pro Tag oder automatisch nach jeder Änderung werden gute Builds **deployed**

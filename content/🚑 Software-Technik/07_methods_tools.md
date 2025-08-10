@@ -3,11 +3,32 @@ title: Methoden & Tools
 ---
 # Aufwandsschätzung
 ## Planning Poker
-Jedes Teammitglied erhält Karten mit Werten aus einer angepassten Fibonacci-Folge (z.B. $0, \frac12, 1, 2, 3, 5, 8, 13, 20, 40, 100$). Diese Werte stehen für den geschätzten Aufwand (z.B. in Stunden). Zusätzlich kann es besondere Karten wie "?" oder "$\infty$" geben. 
+*consensus-building technique to estimate the items in the product backlog*
 
-Zu Bestimmung des Aufwandes decken alle Mitglieder gleichzeitig die Karte mit Ihrer Schätzung zu einer User auf. Bei abweichenden Einschätzungen können die Personen mit den höchsten und niedrigsten Schätzungen jeweils ihre Position kurz erläutern (max. $30$ Sekunden), bevor erneut geschätzt und aufgedeckt wird. Dieser Prozess wiederholt sich bis ein Konsens erreicht wurde.
+![[Screenshot from 2025-08-08 10-41-20.png|500]]
 
-Bei Bedarf übernimmt ein Teammitglied die Moderation, darf dafür aber nicht mit schätzen.
+1. To start a poker planning session, the product owner or customer reads a user story or describes a feature to the players
+	- z.B. "Customer enters search criteria for a hotel reservation"
+2. Players estimate by selecting numbered cards face-down to the table
+3. Cards are simultaneously displayed
+4. Discuss and explain the **high** and **low** estimates
+5. Repeat as needed until convergence (**same number**)
+
+**Vorteile:**
+- Schätzungen sind **relativ**, nicht absolut $\to$ einfacher zu aktualisieren, Aufwand in Stunden an historischen Daten abschätzbar
+- Alle Teammitglieder haben die **gleiche Stimm**e (Vielfalt)
+- Prozess hilft, **Lücken** in den User Stories und technischen Lösungen zu **identifizieren** $\to$ reduziert Risiko, falsche Anforderungen umzusetzen
+
+**Nachteile:**
+- **schwierig**, bei stark unterschiedlichen Komplexitäten $\to$ kleine und ähnliche Stories
+- **teuer**, wenn viele Runden bis zum Konsens benötigt werden
+
+> [!info]- Alternative Beschreibung
+> Jedes Teammitglied erhält Karten mit Werten aus einer angepassten Fibonacci-Folge (z.B. $0, \frac12, 1, 2, 3, 5, 8, 13, 20, 40, 100$). Diese Werte stehen für den geschätzten Aufwand (z.B. in Stunden). Zusätzlich kann es besondere Karten wie "?" oder "$\infty$" geben. 
+>
+>Zu Bestimmung des Aufwandes decken alle Mitglieder gleichzeitig die Karte mit Ihrer Schätzung zu einer User auf. Bei abweichenden Einschätzungen können die Personen mit den höchsten und niedrigsten Schätzungen jeweils ihre Position kurz erläutern (max. $30$ Sekunden), bevor erneut geschätzt und aufgedeckt wird. Dieser Prozess wiederholt sich bis ein Konsens erreicht wurde.
+>
+>Bei Bedarf übernimmt ein Teammitglied die Moderation, darf dafür aber nicht mit schätzen.
 
 > [!info] Informationen und Tools
 > https://en.wikipedia.org/wiki/Planning_poker

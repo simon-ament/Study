@@ -177,11 +177,12 @@ title: Programming & Quality
 	- **Erfahrung im Entwicklungsteam** ist dabei oft eine kritische Ressource
 - **Werkzeuge:** Konfigurations- und Versionsmanagement, Computer-aided Software Engineering Werkzeuge (CASE)
 
-## Analytische Qualitätssicherung
+---
+# Analytische Qualitätssicherung
 
 ![[Screenshot from 2025-08-08 18-13-21.png|500]]
 
-### Analysierende Verfahren
+## Analysierende Verfahren
 *Untersuchung ohne Ausführung*
 
 1. **Reviewtechniken:** Artefakt systematisch in einem Team ansehen und besprechen (persönliche Reviews, Walkthroughs, Inspektionen, etc.)
@@ -192,7 +193,7 @@ title: Programming & Quality
 	- Manuelle / automatische Analyse der Modelle
 	- **Verifikation** durch mathematische Analyse der Modelle | **Validation** durch Simulation der Modelle
 
-### Testende Verfahren
+## Testende Verfahren
 *Ausführung der Systemkomponenten / Software*
 
 - **Testen:** Ausführen eines Programms mit der Absicht, möglichst viele Fehler zu finden
@@ -201,7 +202,7 @@ title: Programming & Quality
 
 ![[Screenshot from 2025-08-08 18-24-46.png|500]]
 
-#### Blackbox-Tests
+### Blackbox-Tests
 *ohne die Implementierung zu kennen | Fälle aus der Spezifikation*
 
 **Funktionsortientierter Test:**
@@ -219,7 +220,7 @@ title: Programming & Quality
 - Tests zur Wiederverwendung (bei jeder Programmänderung)
 - durch Änderung entstandene Fehler sollen mit hoher Wahrscheinlichkeit aufgedeckt werden
 
-#### Glassbox / Whitebox-Tests
+### Glassbox / Whitebox-Tests
 *anhand der Implementierung*
 
 **Kontrollflusstesten:** Kontrollflussgraphen irgendwie überdecken
@@ -233,14 +234,15 @@ title: Programming & Quality
 
 ![[Screenshot from 2025-08-08 21-16-21.png|500]]
 
-## Testaktivitäten
+### Testaktivitäten
 1. **Modultest (unit test):** individuelle Komponenten werden unabhängig voneinander getestet
 	- **Modul:** kleinste unabhängig kompilierbare Einheit / was einzelne Person entwickelt
 	- **Fokus:** Datenstrukturen, Logik, Funktion, Interface
 2. **Integrationstest:** eine Gruppe abhängiger Komponenten wird zusammen getestet
 	- **Fokus:** Entwurf / Architektur, gemeinsame Funktionen, Interfaces / Interaktion
 
-## Kontinuierliche Integration
+---
+# Kontinuierliche Integration
 *Continuous Integration*
 
 - bei jeder Code-Änderung im Repository: neues System bauen und testen

@@ -89,7 +89,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 ## User Stories
 - passendes Format, um Geschäftswert von Backlog-Elementen auszudrücken
 - sowohl für Manager als auch Techniker leicht zu verstehen, einfach strukturiert, progressiv anpassbar / verfeinerbar
-- [[04_user_stories#INVEST Principles|Invest-Kriterien]]
+- [[04_agile_scrum#INVEST Principles|INVEST-Kriterien]]
 
 **Die drei Cs:**
 - **Card (Karte):** "Als `<Benutzerrolle>` möchte ich `<Ziel>`, so dass `<Nutzen>`"
@@ -136,7 +136,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 ![[Screenshot from 2025-08-07 20-22-33.png|500]]
 
 - Gemeinschaftsarbeit $\to$ fördert **Dialog** und **gemeinsames Verständnis**, verhindert Missverständnisse
-- Am Ende der Pflege ist eine User Story **Ready** (==Definition of Ready==) | Product Backlog kann als **Pipeline** von wenig verstandenen Anforderungen hin zu fertigen Stories verstanden werden
+- Am Ende der Pflege ist eine User Story **Ready** ([[04_agile_scrum#Definitions|Definition of Ready]]) | Product Backlog kann als **Pipeline** von wenig verstandenen Anforderungen hin zu fertigen Stories verstanden werden
 - **Release-Linie:** trennt *must have* und *nice to have* von *won't have*
 
 ![[Screenshot from 2025-08-07 20-23-59.png|500]]

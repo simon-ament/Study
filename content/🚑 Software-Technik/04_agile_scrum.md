@@ -40,51 +40,58 @@ title: Agile & Scrum
 - e.g. fully reviewed, tested without errors, documentation updated, implementation compliant with standards
 
 ## User Stories, Epic, Initiatives
-**[[04_user_stories|User Story]]:** short requirements or requests written from the perspective of an end user
+**User Story:** short requirements or requests written from the perspective of an end user
 
 **Epic:** large bodies of work that can be broken down into smaller items (called stories)
+- Systemfunktionen
 
 **Initiative:** collection of epics that drive toward a common goal
+- größere geschäftliche und gesellschaftliche Ziele
+
+**Theme:** strategische, übergeordnete Zielsetzung eines Unternehmens
+- z.B. "in 10 Jahren CO2-neutral werden"
+- zur Verwirklichung müssen mehrere Initiativen ins Leben gerufen werden
+
+*Theme > Initiative > Epic > User Story*
 
 ---
-# Reverse Engineering
-*Methodology to recover lost knowledge about a system*
+# User Stories
+1. Small piece of functionality
+2. Describe from the perspective of the user
+3. Deliver value to the user
 
-![[Screenshot from 2025-08-07 11-17-05.png|500]]
+> As a [type of user], I want [goal] so that [reason].
 
-**Tasks:**
-1. **Identification:** files, components, configurations, documents
-2. **Indexing:** catalog (label) identified items
-3. **Documentation:**
-	- Functional and technical components (and their interactions)
-	- Business rules and data (and their places of use)
-	- Technical mechanisms (periodic tasks, communications, persistence, etc.)
-	- Interfaces with external systems
+4. **User role:** this could be a specific type of user, like an "admin" or "customer," or a more general role, like "end user"
+5. **Goal:** this should be a single, clear objective
+6. **Reason:** explain why the user wants to achieve this goal | provides context and justification for the feature
+7. **Acceptance Criteria:** set the expectations that have to be met for the user story to be **closed** | often written as a checklist of specific requirements
 
-## 4 + 1 Views Model (Documentation)
-1. **Logical View:** the functional requirements decomposition into the structural elements or abstractions (Entity-Relationship diag., UML Class, Component, Package diag.)
-2. **Process View:** system states and transitions, hierarchies, non-functional requirements (UML state & activity diag.)
-3. **Development View:** project management, workflow, roles, responsibilities, standards, testing plans, roadmaps
-4. **Physical View:** deployment layout, infrastructure, topology, system capacity, configuration management
-5. **Use Cases:** *End-User Perspective* on a systematic & logical information structure (Stories, UML Sequence, Actor Diagrams, Prototypes, Wireframes)
+## Benefits
+1. **User centric:** keeps the focus on the user's needs
+2. **Collaboration:** Encourages teamwork and communication
+3. **Flexibility:** Easily adjustable as priorities change
+4. **Clarity:** Offers clear guidance on what needs to be built
 
-![[Screenshot from 2025-08-07 15-30-29.png|500]]
+## Common Mistakes
+1. **Vagueness:** "As a user, I want a better dashboard"
+2. **Too large:** "As an admin, I want to manage users, roles, and permissions"
+3. **Focusing on Solutions:** "As a user, I want a drop-down menu to select my country"
 
-## Restructuring – Refactoring
-- **Systematic** transformation of structures of the same abstraction level
-- **Semantic** preserving
+> [!example] Examples
+> 1. As an **online shopper**, I want to **receive price alerts** so that **I can buy my** **favorite products a lower prices**
+> 2. As a **frequent traveler**, I want to **receive flight status updates** so that **I can** **plan my airport arrival accordingly**
+> 3. As a **customer**, I want to **receive an email confirmation** so that **I know my order has been processed**
 
----
-# Code Review
-*Methodology to inspect the source code for compliance and possible bugs*
+![[Screenshot from 2025-08-06 21-08-24.png]]
 
-![[Screenshot from 2025-08-07 11-16-56.png|500]]
-
-- Improves **code quality**, promotes **code ownership** of the team and can help **onboard** new members
-- **Best practices:**
-	- create a **checklist** (e.g. readability, security, test coverage, architecture, reusability)
-	- code review **metrics** (e.g. inspection rate, defect rate, defect density)
-	- provide rich **feedback**: what, why, and how to change
+## INVEST Principles
+- **Independent:** They should stand alone and not depend on other stories
+- **Negotiable:** They should be flexible and open to discussion
+- **Valuable:** They should deliver value to the user
+- **Estimable:** They should be easy to estimate in terms of time and effort
+- **Small:** They should be small enough to complete within a single sprint
+- **Testable:** They should have clear acceptance criteria
 
 ---
 # Agile
@@ -158,28 +165,19 @@ Methoden $\to$ Tools*
 - **Scrum-Team:** sollte konkrete Aktionen zur Prozessverbesserung für den nächsten Sprint identifiziert haben
 
 ---
+# Code Review
+*Methodology to inspect the source code for compliance and possible bugs*
+
+![[Screenshot from 2025-08-07 11-16-56.png|500]]
+
+- Improves **code quality**, promotes **code ownership** of the team and can help **onboard** new members
+- **Best practices:**
+	- create a **checklist** (e.g. readability, security, test coverage, architecture, reusability)
+	- code review **metrics** (e.g. inspection rate, defect rate, defect density)
+	- provide rich **feedback**: what, why, and how to change
+
+---
 # Planung
-## Planning Poker
-*consensus-building technique to estimate the items in the product backlog*
-
-![[Screenshot from 2025-08-08 10-41-20.png|500]]
-
-1. To start a poker planning session, the product owner or customer reads a user story or describes a feature to the players
-	- z.B. "Customer enters search criteria for a hotel reservation"
-2. Players estimate by selecting numbered cards face-down to the table
-3. Cards are simultaneously displayed
-4. Discuss and explain the **high** and **low** estimates
-5. Repeat as needed until convergence (**same number**)
-
-**Vorteile:**
-- Schätzungen sind **relativ**, nicht absolut $\to$ einfacher zu aktualisieren, Aufwand in Stunden an historischen Daten abschätzbar
-- Alle Teammitglieder haben die **gleiche Stimm**e (Vielfalt)
-- Prozess hilft, **Lücken** in den User Stories und technischen Lösungen zu **identifizieren** $\to$ reduziert Risiko, falsche Anforderungen umzusetzen
-
-**Nachteile:**
-- **schwierig**, bei stark unterschiedlichen Komplexitäten $\to$ kleine und ähnliche Stories
-- **teuer**, wenn viele Runden bis zum Konsens benötigt werden
-
 ## Kanban Board
 - visualize work (minimize work invisibility)
 - limit work-in-progress
@@ -213,42 +211,3 @@ Methoden $\to$ Tools*
 - **Burnup Chart:** total work planned vs. work completed to date
 
 ![[Screenshot from 2025-08-08 15-26-22.png|500]]
-
----
-# User Stories
-1. Small piece of functionality
-2. Describe from the perspective of the user
-3. Deliver value to the user
-
-> As a [type of user], I want [goal] so that [reason].
-
-4. **User role:** this could be a specific type of user, like an "admin" or "customer," or a more general role, like "end user"
-5. **Goal:** this should be a single, clear objective
-6. **Reason:** explain why the user wants to achieve this goal | provides context and justification for the feature
-7. **Acceptance Criteria:** set the expectations that have to be met for the user story to be **closed** | often written as a checklist of specific requirements
-
-## Benefits
-1. **User centric:** keeps the focus on the user's needs
-2. **Collaboration:** Encourages teamwork and communication
-3. **Flexibility:** Easily adjustable as priorities change
-4. **Clarity:** Offers clear guidance on what needs to be built
-
-## Common Mistakes
-1. **Vagueness:** "As a user, I want a better dashboard"
-2. **Too large:** "As an admin, I want to manage users, roles, and permissions"
-3. **Focusing on Solutions:** "As a user, I want a drop-down menu to select my country"
-
-> [!example] Examples
-> 1. As an **online shopper**, I want to **receive price alerts** so that **I can buy my** **favorite products a lower prices**
-> 2. As a **frequent traveler**, I want to **receive flight status updates** so that **I can** **plan my airport arrival accordingly**
-> 3. As a **customer**, I want to **receive an email confirmation** so that **I know my order has been processed**
-
-![[Screenshot from 2025-08-06 21-08-24.png]]
-
-## INVEST Principles
-- **Independent:** They should stand alone and not depend on other stories
-- **Negotiable:** They should be flexible and open to discussion
-- **Valuable:** They should deliver value to the user
-- **Estimable:** They should be easy to estimate in terms of time and effort
-- **Small:** They should be small enough to complete within a single sprint
-- **Testable:** They should have clear acceptance criteria

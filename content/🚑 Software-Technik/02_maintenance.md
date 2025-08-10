@@ -6,11 +6,6 @@ title: Wartung
 
 ![[Screenshot from 2025-08-09 14-43-38.png|500]]
 
-**Maintenance:**
-1. The process of modifying a software system or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed
-2. The process of retaining a hardware system or component in, or restoring it to, a state in which it can perform its required functions (*preventive maintenance*)
-- Achtung: Wartung = Reparatur (Wiederherstellung) | maintenance = Erhalten
-
 ## Typischer Software Product Lifecycle
 ![[Screenshot from 2025-08-09 14-43-44.png|500]]
 
@@ -50,7 +45,34 @@ Speziell für eine Organisation entwickelte Softwaresysteme häufig:
 ![[Screenshot from 2025-08-09 14-48-22.png|500]]
 
 ---
-# Wartung
+# Reverse Engineering
+*Methodology to recover lost knowledge about a system*
+
+![[Screenshot from 2025-08-07 11-17-05.png|500]]
+
+**Tasks:**
+1. **Identification:** files, components, configurations, documents
+2. **Indexing:** catalog (label) identified items
+3. **Documentation:**
+	- Functional and technical components (and their interactions)
+	- Business rules and data (and their places of use)
+	- Technical mechanisms (periodic tasks, communications, persistence, etc.)
+	- Interfaces with external systems
+
+## 4 + 1 Views Model (Documentation)
+1. **Logical View:** the functional requirements decomposition into the structural elements or abstractions (Entity-Relationship diag., UML Class, Component, Package diag.)
+2. **Process View:** system states and transitions, hierarchies, non-functional requirements (UML state & activity diag.)
+3. **Development View:** project management, workflow, roles, responsibilities, standards, testing plans, roadmaps
+4. **Physical View:** deployment layout, infrastructure, topology, system capacity, configuration management
+5. **Use Cases:** *End-User Perspective* on a systematic & logical information structure (Stories, UML Sequence, Actor Diagrams, Prototypes, Wireframes)
+
+![[Screenshot from 2025-08-07 15-30-29.png|500]]
+
+---
+# Wartung / Maintenance
+1. The process of modifying a software system or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed
+2. The process of retaining a hardware system or component in, or restoring it to, a state in which it can perform its required functions (*preventive maintenance*)
+- Achtung: Wartung = Reparatur (Wiederherstellung) | maintenance = Erhalten
 
 |              | Korrektur                                                                                                                                                                                                                 | Verbesserung                                                                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -128,6 +150,9 @@ Wartungsprozess ist eine vereinfachte und angepasste Form des Entwicklungsprozes
 Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Software, um sie verständlicher zu machen und Modifikationen zu erleichtern, ohne dass sich das sichtbare Verhalten verändert
 - **Motivation:** disziplinierte Technik, um den vorhandenen Code zu verbessern ohne sein externes Verhalten zu beeinflussen
 - z.B. Funktion extrahieren (wie etwa `printDetails()`)
+
+- **Systematic** transformation of structures of the same abstraction level
+- **Semantic** preserving
 
 **Code-Smells:** Vorgehen, um herauszufinden, welche Refactorings evtl. angebracht sind
 1. Code-Smell bestimmen (z.B. redundanter Code)
