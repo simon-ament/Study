@@ -165,7 +165,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 **Modularity:** partition a system into varying degrees of interdependence
 - **Goal:** hide the complexity of each part behind an abstraction and interface
 
-**Information Hiding:** he principle of segregation of the design decisions in a computer program that are most likely to change
+**Information Hiding:** the principle of segregation of the design decisions in a computer program that are most likely to change
 - **Goal:** protect other parts of the program from extensive modification
 
 ## Twin Peaks
@@ -216,7 +216,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 
 ![[Screenshot from 2025-08-09 15-21-08.png|500]]
 
-1. Application front end (Lightweight, Uses services)
+1. Application front end (lightweight, uses services)
 2. Services (include contracts, interfaces and implementations consisting of business logic and data)
 3. Service repositories (connection option to existing services is provided | service contracts are provided as information)
 	- Options: at the time of development, or at runtime
@@ -292,6 +292,7 @@ ML algorithms **shouldn't** be use under any of the following conditions:
 - **however:** the problem might still be partially solvable with ML algorithms
 
 **Use Cases:**
+
 ![[Screenshot from 2025-08-09 15-22-26.png|500]]
 
 ![[Screenshot from 2025-08-09 15-22-28.png|500]]

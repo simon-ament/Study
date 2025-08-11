@@ -6,7 +6,7 @@ title: Agile & Scrum
 ![[Screenshot from 2025-08-07 10-34-23.png]]
 
 **Sprint:** container for all the **work** that is done by the team to **achieve a Sprint Goal**
-- now work outside the Sprint | no gaps between Sprints
+- no work outside the Sprint | no gaps between Sprints
 - starts with a **Sprint Planning** meeting
 - lasts no longer than a month
 - end with two reviews: **Sprint Review** (work completed) & **Sprint Retrospective** (meta)
@@ -62,10 +62,10 @@ title: Agile & Scrum
 
 > As a [type of user], I want [goal] so that [reason].
 
-4. **User role:** this could be a specific type of user, like an "admin" or "customer," or a more general role, like "end user"
-5. **Goal:** this should be a single, clear objective
-6. **Reason:** explain why the user wants to achieve this goal | provides context and justification for the feature
-7. **Acceptance Criteria:** set the expectations that have to be met for the user story to be **closed** | often written as a checklist of specific requirements
+1. **User role:** this could be a specific type of user, like an "admin" or "customer," or a more general role, like "end user"
+2. **Goal:** this should be a single, clear objective
+3. **Reason:** explain why the user wants to achieve this goal | provides context and justification for the feature
+4. **Acceptance Criteria:** set the expectations that have to be met for the user story to be **closed** | often written as a checklist of specific requirements
 
 ## Benefits
 1. **User centric:** keeps the focus on the user's needs
@@ -151,18 +151,18 @@ Methoden $\to$ Tools*
 	- **Fertig (Done | Artefakt):** Aus Sicht des Scrum-Teams ein potenziell auslieferungsfähiges Produktinkrement (Definition variabel)
 
 **Daily Scrum (Aktivität):**
-- tägliches zeitlich begrenztes Treffen (max. 15 Minuten)
+- Tägliches zeitlich begrenztes Treffen (max. 15 Minuten)
 - *Was wurde geschaffte? Woran wird nun gearbeitet? Welche Hindernisse gibt / gab es?*
 
 **Sprint Review (Aktivität):**
-- **Teilnehmer:** Scrum-Team, Stakeholder, Sponsoren, Kunden sowie aus anderen Teams
+- **Teilnehmer:** Scrum Team, Stakeholder, Sponsoren, Kunden sowie aus anderen Teams
 - **Fokus:** Überprüfen der gerade fertiggestellten Funktionen im Kontext, Beeinflussung der weiteren Entwicklung
-- **Scrum-Team:** entwickelt ein tieferes Verständnis für die Geschäfts- und Marketingseite ihres Produkts
+- **Scrum Team:** entwickelt ein tieferes Verständnis für die Geschäfts- und Marketingseite ihres Produkts
 
 **Sprint Retrospektive (Aktivität):**
-- **Teilnehmer:** Scum-Team, ScrumMaster und Product Owner
+- **Teilnehmer:** Scum Team, Scrum Master und Product Owner
 - **Fokus:** stetige Verbesserung des Prozesses
-- **Scrum-Team:** sollte konkrete Aktionen zur Prozessverbesserung für den nächsten Sprint identifiziert haben
+- **Scrum Team:** sollte konkrete Aktionen zur Prozessverbesserung für den nächsten Sprint identifiziert haben
 
 ---
 # Code Review
@@ -194,8 +194,8 @@ Methoden $\to$ Tools*
 2. help identify waste $\Rightarrow$ promotes simplicity
 3. are quicker to release $\Rightarrow$ faster feedback loop
 
-- User Story: provides business value
-- Task: doesn't provide business value
+- **User Story:** provides business value
+- **Task:** doesn't provide business value
 
 ## Velocity, Burndown & Burnup
 - **Velocity:** how many story points the team delivered in a sprint

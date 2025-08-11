@@ -63,14 +63,14 @@ title: Programming & Quality
 - Acceptance tests are run often
 
 **Coding Rules:**
-1. The customer is always available
-2. Code must be written to agreed standards
-3. Code the unit test first
-4. All production code is pair programmed
-5. Only one pair integrates code at a time
-6. Integrate often
-7. Set up a dedicated integration computer
-8. Promote collective ownership practice
+- The customer is always available
+-  Code must be written to agreed standards
+-  Code the unit test first
+-  All production code is pair programmed
+-  Only one pair integrates code at a time
+-  Integrate often
+-  Set up a dedicated integration computer
+-  Promote collective ownership practice
 
 ## Theory of Constraints
 ![[Screenshot from 2025-08-09 15-24-09.png|500]]
@@ -135,7 +135,7 @@ title: Programming & Quality
 3. **Defect Density:**
 	- **Post-release Defects:** Apache had a defect density of 2.64 defects per thousand lines of code added (KLOCA), higher than commercial projects (0.1–0.7 defects/KLOCA)
 	- **Pre-system Rest Defects:** pache had lower defect density compared to commercial projects, suggesting fewer defects were injected during development
-4. **Problem Resolution Time**
+4. **Problem Resolution Time:**
 	- 50% of problem reports were resolved within 1 day, 75% within 42 days, and 90% within 140 days
 	- Higher-priority problems (affecting core functionality) were resolved faster than lower-priority ones
 	- Resolution intervals improved over time, with faster resolution after January 1997

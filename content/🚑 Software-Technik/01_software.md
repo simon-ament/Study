@@ -22,7 +22,7 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 - **Code of Conduct:** a set of **rules** that members of an organization or people with a particular job or position must follow
 - **Contract:** a document that states and explains a formal **agreement** between two different people or groups, or the agreement itself
 
-## Essential and Accidential Properties
+## Essential and Accidental Properties
 1. **Invisibility** – the source code and the UI are very partial visualizations
 	- *Software lacks a physical, spatial, or geometric representation*
 	- **Particularly challenging:** Legacy systems | Blackbox frameworks | Code-generated components | Embedded systems | Unreachable code | Untested code | AI-based systems
@@ -41,7 +41,7 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 ---
 # Our Methods (Tools)
 ## What is engineering?
-1. Creating cost-effective solutions $\dots$
+1. Creating cost-effective solutions
 2. to practical problems
 3. by applying scientific knowledge
 4. to building things
@@ -49,9 +49,9 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 
 ![[Screenshot from 2025-08-09 14-23-54.png|500]]
 
-## Hype Cycles Gartner
-1. **Technology Trigger:** A potential technology breakthrough kicks things off. Early proof-of- concept stories and media interest trigger significant publicity
-2. **Peak of Inflated Expectations:** Early publicity produces a number of success stories— often accompanied by scores of failures
+## Gartner Hype Cycles
+1. **Technology Trigger:** A potential technology breakthrough kicks things off. Early proof-of-concept stories and media interest trigger significant publicity
+2. **Peak of Inflated Expectations:** Early publicity produces a number of success stories — often accompanied by scores of failures
 3. **Trough of Disillusionment:** Interest wanes as experiments and implementations fail to deliver 
 4. **Slope of Enlightenment:** More instances of how the technology can benefit the enterprise start to crystallize and become more widely understood
 5. **Plateau of Productivity:** Mainstream adoption starts to take off. Criteria for assessing provider viability are more clearly defined
@@ -88,10 +88,10 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 ### Active: before the event
 - Responsibility before something has happened referring to a duty or task to care for certain state-of-affairs or person
 
-1. Adequate perception of threatened violations of norms;
-2. Consideration of the consequences;
-3. Autonomy, i.e., the ability to make one’s own independent moral decisions;
-4. Displaying conduct that is based on a verifiable and consistent code; and
+1. Adequate perception of threatened violations of norms
+2. Consideration of the consequences
+3. Autonomy, i.e., the ability to make one’s own independent moral decisions
+4. Displaying conduct that is based on a verifiable and consistent code
 5. Taking role obligations seriously.
 
 ### Passive: after the event
@@ -103,7 +103,7 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 	- causal contribution
 	- foreseeability, and
 	- freedom of action
-- **Liability / Legal Responsibility:** Backward-looking responsibility according to the law
+3. **Liability / Legal Responsibility:** Backward-looking responsibility according to the law
 
 ## Liability (passive)
 

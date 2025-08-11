@@ -68,6 +68,8 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 
 ---
 # Risk Management
+*Unter einem Risiko ist ein eventuelles, hinsichtlich seiner Eintrittswahrscheinlichkeit und Auswirkung bewertetes, zukünftiges Ereignis zu verstehen*
+
 **Goal:** Increase the probability and/or impact of positive risks and decrease the probability and/or impact of negative risks, in order to optimize the chances of project success.
 
 ## Process
@@ -113,7 +115,7 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 - **Accept:** No change or response action is needed, either because the occurrence or impact are negligible
 
 **Positive Risks:**
-- Exploit: Eliminate the uncertainty to increase the chances that the opportunity happens, e.g., obtaining the best resources for the team/project
+- **Exploit:** Eliminate the uncertainty to increase the chances that the opportunity happens, e.g., obtaining the best resources for the team/project
 - **Share:** Create the conditions that a third-party also benefits of the opportunity, e.g., establish agreements for how the project outcomes will be shared
 - **Enhance:** Increase the probability and impact of a given risk, e.g., adapting the plan so an activity finishes earlier than initially planned
 - **Accept:** No change or response action is needed, just be willing to take advantage of an opportunity if it happens

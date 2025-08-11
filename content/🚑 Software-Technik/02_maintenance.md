@@ -28,7 +28,7 @@ Speziell für eine Organisation entwickelte Softwaresysteme häufig:
 - **Reengineering:** Gewährleistung der Erweiterbarkeit
 
 ### Weiterentwicklung
-*no retirement*
+$=$ no retirement
 
 **Wert für Nutzer:**
 - Neuentwicklung schafft Wert für die Nutzer überhaupt erst
@@ -72,7 +72,8 @@ Speziell für eine Organisation entwickelte Softwaresysteme häufig:
 # Wartung / Maintenance
 1. The process of modifying a software system or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed
 2. The process of retaining a hardware system or component in, or restoring it to, a state in which it can perform its required functions (*preventive maintenance*)
-- Achtung: Wartung = Reparatur (Wiederherstellung) | maintenance = Erhalten
+
+**Übersetzung unglücklich:** Wartung $=$ Reparatur (Wiederherstellung) | maintenance $=$ Erhalten
 
 |              | Korrektur                                                                                                                                                                                                                 | Verbesserung                                                                                                                                                       |
 | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -223,29 +224,29 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 ## Organisation
 - Die Zunahme technischer Schulden überwachen
 - Bewährte technische Praktiken anwenden
-- Eine starke Definition von Fertig benutzen
+- Eine starke [[04_agile_scrum#Definitions|Definition of Done]] benutzen
 - Die wirtschaftlichen Aspekte technischer Schulden richtig verstehen:
 	- Beschleunigung der Entwicklung vs. Verschiebung des Auslieferungstermins
 
 ## Schulden sichtbar machen
-- Technische Schulden auf geschäftlicher Ebene sichtbar machen
+Technische Schulden auf geschäftlicher Ebene sichtbar machen:
 
 ![[Screenshot from 2025-08-09 14-53-51.png|400]]
 
-- Technische Schulden auf der technischen Ebene sichtbar machen:
-	1. Fallbearbeitungs- bzw. Ticket-System
-	2. Product-Backlog-Elemente anlegen
-	3. spezielles Backlog für die technischen Schulden anlegen
+Technische Schulden auf der technischen Ebene sichtbar machen:
+1. Fallbearbeitungs- bzw. Ticket-System
+2. Product-Backlog-Elemente anlegen
+3. spezielles Backlog für die technischen Schulden anlegen
 
 ![[Screenshot from 2025-08-09 14-53-58.png|300]]
 
 ## Technische Schulden abbauen
-Hilfreiche Kategorien:
+**Hilfreiche Kategorien:**
 - Zufällig entdeckte technische Schulden
 - Bekannte technische Schulden
 - Gezielt gewählte technische Schulden
 
-Ablauf:
+**Ablauf:**
 - Nicht alle technischen Schulden sollten abgebaut werden
 - Wenden Sie die Pfadfinderregel an (Bauen Sie die Schulden ab, sobald sie Ihnen begegnen)
 - Bauen Sie technische Schulden schrittweise ab
