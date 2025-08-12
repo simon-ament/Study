@@ -9,19 +9,19 @@ title: Agile & Scrum
 - no work outside the Sprint | no gaps between Sprints
 - starts with a **Sprint Planning** meeting
 - lasts no longer than a month
-- end with two reviews: **Sprint Review** (work completed) & **Sprint Retrospective** (meta)
+- ends with two reviews: **Sprint Review** (work completed) & **Sprint Retrospective** (process)
 
 **Sprint Backlog:** all the **work to be done** by the team over one or more Sprint Goals
 
 **Sprint Planning:** select product backlog items to be part of Sprint Goal | **focus on value** that can be created by the Sprint
 - **Sprint Goal:** selection of items that were estimated and prioritized to be done
 
-**Sprint Review:** Working meeting where the Scrum Team presents their completed work to their stakeholders and asks for feedback and guidance
-- used to discuss **progress** towards Product Goal, **emerging changes** in the business and technical landscape as wall as future **collaboration strategies**
+**Sprint Review:** working meeting where the Scrum Team presents their completed work to their stakeholders and asks for feedback and guidance
+- used to discuss **progress** towards Product Goal, **emerging changes** in the business and technical landscape as well as future **collaboration strategies**
 
 **Retrospective:**
-- *What went well in the Sprint?*: collaboration, impediments and handling of them, Definition of Done still appropriate
-- *What can be improved?*: process & methods, tooling, communications, attitude (+ priority among those issues)
+- *What went well in the Sprint?* : collaboration, impediments and handling of them, [[#Definitions|Definition of Done]] still appropriate?
+- *What can be improved?* : process & methods, tooling, communications, attitude (+ priority among those issues)
 
 ![[Screenshot from 2025-08-07 15-21-43.png|500]]
 
@@ -42,7 +42,7 @@ title: Agile & Scrum
 ## User Stories, Epic, Initiatives
 **User Story:** short requirements or requests written from the perspective of an end user
 
-**Epic:** large bodies of work that can be broken down into smaller items (called stories)
+**Epic:** large body of work that can be broken down into smaller items (called stories)
 - Systemfunktionen
 
 **Initiative:** collection of epics that drive toward a common goal
@@ -64,19 +64,19 @@ title: Agile & Scrum
 
 1. **User role:** this could be a specific type of user, like an "admin" or "customer," or a more general role, like "end user"
 2. **Goal:** this should be a single, clear objective
-3. **Reason:** explain why the user wants to achieve this goal | provides context and justification for the feature
+3. **Reason:** explain why the user wants to achieve this goal | provide context and justification for the feature
 4. **Acceptance Criteria:** set the expectations that have to be met for the user story to be **closed** | often written as a checklist of specific requirements
 
 ## Benefits
-1. **User centric:** keeps the focus on the user's needs
-2. **Collaboration:** Encourages teamwork and communication
-3. **Flexibility:** Easily adjustable as priorities change
-4. **Clarity:** Offers clear guidance on what needs to be built
+- **User centric:** keeps the focus on the user's needs
+- **Collaboration:** Encourages teamwork and communication
+- **Flexibility:** Easily adjustable as priorities change
+- **Clarity:** Offers clear guidance on what needs to be built
 
 ## Common Mistakes
-1. **Vagueness:** "As a user, I want a better dashboard"
-2. **Too large:** "As an admin, I want to manage users, roles, and permissions"
-3. **Focusing on Solutions:** "As a user, I want a drop-down menu to select my country"
+- **Vagueness:** "As a user, I want a better dashboard"
+- **Too large:** "As an admin, I want to manage users, roles, and permissions"
+- **Focusing on Solutions:** "As a user, I want a drop-down menu to select my country"
 
 > [!example] Examples
 > 1. As an **online shopper**, I want to **receive price alerts** so that **I can buy my** **favorite products a lower prices**
@@ -136,7 +136,7 @@ Methoden $\to$ Tools*
 
 **Sprint-Planung (Aktivität):**
 - Planungstreffen mit Owner, Entwicklungsteam und Scrum Master
-- Owner und Entwicklungsteam einigen sich auf Sprint-Ziel
+- Owner und Entwicklungsteam einigen sich auf Sprint Goal
 - Entwicklungsteam ermittelt Elemente mit höherer Priorität, die realistisch im nächsten Sprint umgesetzt werden können
 - ca. 2 Stunden Planung pro Sprint-Woche
 
@@ -152,7 +152,7 @@ Methoden $\to$ Tools*
 
 **Daily Scrum (Aktivität):**
 - Tägliches zeitlich begrenztes Treffen (max. 15 Minuten)
-- *Was wurde geschaffte? Woran wird nun gearbeitet? Welche Hindernisse gibt / gab es?*
+- *Was wurde geschafft? Woran wird nun gearbeitet? Welche Hindernisse gibt / gab es?*
 
 **Sprint Review (Aktivität):**
 - **Teilnehmer:** Scrum Team, Stakeholder, Sponsoren, Kunden sowie aus anderen Teams
@@ -186,7 +186,7 @@ Methoden $\to$ Tools*
 ![[Screenshot from 2025-08-08 15-11-39.png|500]]
 
 - **Ready:** understood by team | has business value | dependencies identified | is small | clear acceptance criteria
-- **Done:** built without errors | acceptance criteria are met | demonstrated to stakeholders | approved by Product owner | documentation updated
+- **Done:** built without errors | acceptance criteria are met | demonstrated to stakeholders | approved by Product Owner | documentation updated
 
 ## Scrumban
 **Splitting User Stories:** Smaller User Stories

@@ -8,15 +8,15 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 
 ## Pros & Cons
 **Advantages:**
-1. Effective communication
-2. Easier prioritization of tasks
-3. More precise planning
-4. Better visualization
+- Effective communication
+- Easier prioritization of tasks
+- More precise planning
+- Better visualization
 
 **Disadvantages:**
-1. Multiple complexities
-2. Limited applicability
-3. Less understanding of resources
+- Multiple complexities
+- Limited applicability
+- Less understanding of resources
 
 ## Definitions
 - $Es$: earliest start time
@@ -48,7 +48,7 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 - **Analysis Paralysis**: Striving for perfection and completeness in the analysis phase often leads to project gridlock and excessive trashing of requirement methods
 - **Death by Planning:** Excessive planning for software projects leads to complex schedules that cause downstream problems
 - **Irrational Management:** Habitual indecisiveness and other bad management habits lead to de facto decisions and chronic development crises
-- **Fire Drill:** Airline pilots describe flying as *hours of boredom followed by 15 seconds of sheer terror*. Many software projects might resemble that, when suddenly urgent demands for new requirements imply large and refactoring
+- **Fire Drill:** Airline pilots describe flying as *hours of boredom followed by 15 seconds of sheer terror*. Many software projects might resemble that, when suddenly urgent demands for new requirements imply large refactoring
 
 ## Scrum
 
@@ -56,7 +56,7 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 
 ## Mythical Man-Month
 
-> Adding more people to a late project makes it later - Fred Brooks
+> Adding more people to a late project makes it later — Fred Brooks
 
 **Reasons:**
 1. training newcomers
@@ -70,7 +70,7 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 # Risk Management
 *Unter einem Risiko ist ein eventuelles, hinsichtlich seiner Eintrittswahrscheinlichkeit und Auswirkung bewertetes, zukünftiges Ereignis zu verstehen*
 
-**Goal:** Increase the probability and/or impact of positive risks and decrease the probability and/or impact of negative risks, in order to optimize the chances of project success.
+**Goal:** Increase the probability and/or impact of positive risks and decrease the probability and/or impact of negative risks, in order to optimize the chances of project success
 
 ## Process
 1. **Plan Risk Management:** definition of activities and tools
@@ -84,23 +84,23 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 ## Categories
 1. **Technical risk:** scope definition, requirements, estimates, assumptions, technical process, technology, technical interfaces, etc.
 2. **Management risks:** poor allocation of time and resources, funding, lack of prioritization of projects, inadequate quality of the project plan, poor use of project management disciplines (e.g. communication), etc.
-3. **Commercial risks:** contractual terms and conditions, internal procurement, suppliers, vendors, subcontracts, client/customer stability, partnership/join-ventures, etc.
-4. **External risks:** legislation, exchange rates, sites/facilities, environmental/weather, competition, regulatory, etc.
+3. **Commercial risks:** contractual terms and conditions, internal procurement, suppliers, vendors, subcontracts, client/customer stability, partnership / join-ventures, etc.
+4. **External risks:** legislation, exchange rates, sites / facilities, environmental / weather, competition, regulatory, etc.
 
 ## Qualification
 
 ![[Screenshot from 2025-08-06 10-50-28.png]]
 
-- organization’s **thresholds** for low, moderate, or high risks are used to categorize the risks
+Organization’s **thresholds** for low, moderate, or high risks are used to categorize the risks
 
 **Additional Parameter:**
-- **Urgency:** the period of time within which a response to risk is to be implemented
-- **Promixity:** the period of time before the risk might have an impact on one or more objectives
+- **Urgency:** the period of time within which a response to the risk is to be implemented
+- **Proximity:** the period of time before the risk might have an impact on one or more objectives
 - **Dormancy:** the period of time that may elapse after a risk has occurred before its impact is discovered
 - **Manageability:** the ease with which the risk owner can manage the occurrence or impact of risk
 - **Controllability:** the degree with which the risk owner is able to control the risk’s outcome
 - **Detectability:** the ease of which the results of the risk occurring (or about to occur) can be detected and recognized
-- **Connectivity:** the extent to which the risk to have a positive or negative effect on the organization’s strategic goals
+- **Connectivity:** the extent to which the risk might have a positive or negative effect on the organization’s strategic goals
 - **Propinquity:** the degree to which a risk is perceived to matter by one or more stakeholders
 
 Each of these parameters can be combined in charts to be analyzed in 2 or more dimensions:
@@ -115,7 +115,7 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 - **Accept:** No change or response action is needed, either because the occurrence or impact are negligible
 
 **Positive Risks:**
-- **Exploit:** Eliminate the uncertainty to increase the chances that the opportunity happens, e.g. obtaining the best resources for the team/project
+- **Exploit:** Eliminate the uncertainty to increase the chances that the opportunity happens, e.g. obtaining the best resources for the team / project
 - **Share:** Create the conditions that a third-party also benefits of the opportunity, e.g. establish agreements for how the project outcomes will be shared
 - **Enhance:** Increase the probability and impact of a given risk, e.g. adapting the plan so an activity finishes earlier than initially planned
 - **Accept:** No change or response action is needed, just be willing to take advantage of an opportunity if it happens
@@ -160,7 +160,7 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 
 **IT Service:** Ein Service, der auf dem Einsatz von Informationstechnologie basiert
 
-**IT Service Management (ITSM):** bezeichnet die Fähigkeiten und Prozesse zur Zuweisung und Steuerung der Aktivitäten und Ressourcen einer Organisation für die Planung, Entwurf, Transition, Lieferung und Verbesserung von IT-Services Werte zu liefern
+**IT Service Management (ITSM):** Bezeichnet die Fähigkeiten und Prozesse zur Zuweisung und Steuerung der Aktivitäten und Ressourcen einer Organisation für die Planung, Entwurf, Transition, Lieferung und Verbesserung von IT-Services
 
 ## Information Technology Infrastructure Library (ITIL)
 *Best-Practice-Leitfaden für das IT Service Management*
@@ -216,8 +216,8 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 - $\Rightarrow$ führt bei leistungsstarken Firmen zu höheren Metriken bei **Durchsatz**, **Zuverlässigkeit** und **Firmenperformance**
 
 ## Skalierbarkeit durch DevOps
-- **klassisch:** Hinzufügen von neuen Entwicklern zum Erreichen einer Deadline drückt die Gesamtproduktivität
-- **DevOps:** bei der richtigen Architektur, den richtigen technischen Praktiken und den richtigen kulturellen Normen können kleine Teams mit Entwicklern schnell, zuverlässig und unabhängig voneinander Änderungen für die Produktivumgebung entwickeln, integrieren, testen und deployen
+- **Klassisch:** Hinzufügen von neuen Entwicklern zum Erreichen einer Deadline drückt die Gesamtproduktivität
+- **DevOps:** Bei der richtigen Architektur, den richtigen technischen Praktiken und den richtigen kulturellen Normen können kleine Teams mit Entwicklern schnell, zuverlässig und unabhängig voneinander Änderungen für die Produktivumgebung entwickeln, integrieren, testen und deployen
 
 ![[Screenshot from 2025-08-09 11-34-21.png|400]]
 
@@ -239,11 +239,11 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 - z.B. produktivähnliche Umgebungen für Entwickler, schnelles und automatisiertes Testen, [[05_programming_quality#Kontinuierliche Integration|Continuous Integration]], Continuous Delivery, einfache Rollbacks (Risiko reduzieren)
 
 **Prinzipien des Feedbacks:** durch schnelles und kontinuierliches Feedback bei allen Schritten unserer Wertkette schaffen oder hinterlassen wir dort Wissen, wo es gebraucht wird
-- z.B. Telemetrie- / Loggingdaten sammeln und analysieren, Arbeit in der Wertekette beobachten, A/B-Tests für Hypothesen, Peer Review / Pair Programming
+- z.B. Telemetrie- / Loggingdaten sammeln und analysieren, Arbeit in der Wertkette beobachten, A/B-Tests für Hypothesen, Peer Review / Pair Programming
 
 **Prinzipien des kontinuierlichen Lernens und Experimentierens:** eine Kultur des Vertrauens und ein wissenschaftlicher Ansatz, der das Eingehen von Risiken unterstützt und das firmenweite Lernen ermöglicht
-- z.B. Kultur des Lernen, Post-Mortem-Meetings (nach Unfällen) ohne Schuldzuweisungen, Zwischenfälle an Game Days üben, kalkulierte Risiken unterstützen, Wissen in Chatrooms und Bots sammeln, gemeinsames Repository für gesamte Firma, Zeit für Lernen und Verbesserungen reservieren (Rituale, Meetings, Workshops, Community-Strukturen)
+- z.B. Kultur des Lernens, Post-Mortem-Meetings (nach Unfällen) ohne Schuldzuweisungen, Zwischenfälle an Game Days üben, kalkulierte Risiken unterstützen, Wissen in Chatrooms und Bots sammeln, gemeinsames Repository für gesamte Firma, Zeit für Lernen und Verbesserungen reservieren (Rituale, Meetings, Workshops, Community-Strukturen)
 
 ## Continuous Delivery, Continuous Deplyoment
-- **Continuous Delivery:** kurzlebige Feature-Branches, die regelmäßig in einen **releasbaren** Trunk eingechekt werden
+- **Continuous Delivery:** kurzlebige Feature-Branches, die regelmäßig in einen **releasebaren** Trunk eingecheckt werden
 - **Continuous Deployment:** mindestens einmal pro Tag oder automatisch nach jeder Änderung werden gute Builds **deployed**
