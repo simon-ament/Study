@@ -3,7 +3,7 @@ title: Software Development
 ---
 # Introduction and Outlook
 It took only a bit more of 10 years from the 2011 prediction of "software is eating the world", to the 2017 presage of "deep learning is eating software", and now this projection of 95% of user interactions mediated by some sort of AI.
-- *Caveat: the adoption is much lower where safety/mission critical systems are involved...*
+- *Caveat: the adoption is much lower where safety / mission critical systems are involved...*
 - **Products (*e.g. washing machine*):** mechanical without motor $\to$ with electrical motor $\to$ with electrical control $\to$ with more sensors and smart software control $\to$ **intelligent**
 - **Services (*e.g. finance*):** paper folders $\to$ automated financial transactions $\to$ online banking $\to$ online trading $\to$ **intelligent**
 
@@ -62,7 +62,7 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 # Our Profession (Expertise)
 ## What is an Expert?
 - Dominates 50.000 chunks of information
-- Chunks = knowledge sufficiently familiar that it can be remembered rather than derived
+- Chunks $=$ knowledge sufficiently familiar that it can be remembered rather than derived
 - Full-time professionals expect to accumulate 10 years or 10.000 hours of practice
 
 | Traditional Contract                                         | Reflective Contract                                                              |
@@ -81,53 +81,10 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 *Responsibilities can result from contracts, code of conducts, or moral norms and moral duties*
 - **Role responsibility:** The responsibility that is based on the role one has or plays in a certain situation
 - **Moral responsibility:** Responsibility that is based on moral obligations, moral norms or moral duties
-- **Professional responsibility:** The responsibility that is based on one’s role as professional in as far it stays within the limits of what is morally allowed
+- **Professional responsibility:** The responsibility that is based on one’s role as professional, as far as it stays within the limits of what is morally allowed
 - Different roles result in different responsibilities (engineer vs. employee)
 
-## Types of Responsibility
-### Active: before the event
-- Responsibility before something has happened referring to a duty or task to care for certain state-of-affairs or person
-
-1. Adequate perception of threatened violations of norms
-2. Consideration of the consequences
-3. Autonomy, i.e., the ability to make one’s own independent moral decisions
-4. Displaying conduct that is based on a verifiable and consistent code
-5. Taking role obligations seriously.
-
-### Passive: after the event
-- Backward-looking responsibility, relevant after something occurred
-
-1. **Accountability:** Backward-looking responsibility in the sense of being held to account for or justify one’s action towards others
-2. **Blameworthiness:** Backward-looking responsibility in the sense of being a proper target for blame for one’s action or its consequences. The following conditions need to apply:
-	- wrong-doing
-	- causal contribution
-	- foreseeability, and
-	- freedom of action
-3. **Liability / Legal Responsibility:** Backward-looking responsibility according to the law
-
-## Liability (passive)
-
-| Moral Responsibility                                              | Legal Liability                                      |
-| ----------------------------------------------------------------- | ---------------------------------------------------- |
-| Blameworthiness (wrong-doing, causality, foreseeability, freedom) | Based on conditions formulated in laws               |
-| Informally established                                            | Formally established in court                        |
-| Not necessarily connected to punishment or compensation           | Implies obligation to pay a fine or to repay damages |
-| Backward-looking and forward-looking                              | Only backward-looking                                |
-
-**Negligence vs. Strict Liability:**
-
-1. **Negligence:** Not living by certain duties. Negligence is often a main condition for legal liability.
-	- To show negligence for the law, usually proof must be given of a duty owed, a breach of that duty, an injury or damage, a causal connection between the breach and the injury or damage.
-2. **Duty of Care:** The legal obligation to adhere to a reasonable standard of care when performing any acts that could foreseeably harm others
-3. **Strict Liability:** A form of liability that does not require the defendant to be negligent
-
-**Product Liability:** Liability of manufactures for defects in a product, without the need to proof that those manufactures acted negligently (exception for development defects, e.g. EU directives)
-
-1. **Development Risk:** In the context of product liability: Risk that could not have been foreseen given the state of scientific and technical knowledge at the time the product was put into circulation
-2. **Corporate Liability:** Liability of a company (corporation) when it is treated as a legal person (may be limited)
-3. **Limited Liability:** The principle that the liability of shareholders for the cooperation's debts and obligations is limited to the value of their shares
-
-## Active
+## Active Responsibility: before the event
 *Responsibility before something has happened referring to a duty or task to care for certain state-of-affairs or person*
 
 **Features:**
@@ -141,3 +98,36 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 - **Professional Code:** Code of conduct that is formulated by a professional association (e.g. IEEE, ACM, $\dots$)
 - **Corporate Code:** Code of conduct that is formulated by a company (e.g. HPI)
 - **Global Code:** Code of conduct that is believed to apply worldwide (e.g. The Ten Principles of the UN Global Compact)
+
+## Passive Responsibility: after the event
+- Backward-looking responsibility, relevant after something occurred
+
+1. **Accountability:** Backward-looking responsibility in the sense of being held to account for or justify one’s action towards others
+2. **Blameworthiness:** Backward-looking responsibility in the sense of being a proper target for blame for one’s action or its consequences. The following conditions need to apply:
+	- wrong-doing
+	- causal contribution
+	- foreseeability, and
+	- freedom of action
+3. **Liability / Legal Responsibility:** Backward-looking responsibility according to the law
+
+### Liability
+
+| Moral Responsibility                                              | Legal Liability                                      |
+| ----------------------------------------------------------------- | ---------------------------------------------------- |
+| Blameworthiness (wrong-doing, causality, foreseeability, freedom) | Based on conditions formulated in laws               |
+| Informally established                                            | Formally established in court                        |
+| Not necessarily connected to punishment or compensation           | Implies obligation to pay a fine or to repay damages |
+| Backward-looking and forward-looking                              | Only backward-looking                                |
+
+**Negligence vs. Strict Liability:**
+
+1. **Negligence:** Not living by certain duties. Negligence is often a main condition for legal liability
+	- To show negligence for the law, usually proof must be given of a duty owed, a breach of that duty, an injury or damage, a causal connection between the breach and the injury or damage
+2. **Duty of Care:** The legal obligation to adhere to a reasonable standard of care when performing any acts that could foreseeably harm others
+3. **Strict Liability:** A form of liability that does not require the defendant to be negligent
+
+**Product Liability:** Liability of manufactures for defects in a product, without the need to proof that those manufactures acted negligently (exception for development defects, e.g. EU directives)
+
+1. **Development Risk:** In the context of product liability: Risk that could not have been foreseen given the state of scientific and technical knowledge at the time the product was put into circulation
+2. **Corporate Liability:** Liability of a company (corporation) when it is treated as a legal person (may be limited)
+3. **Limited Liability:** The principle that the liability of shareholders for the cooperation's debts and obligations is limited to the value of their shares
