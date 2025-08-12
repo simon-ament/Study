@@ -129,7 +129,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 
 - **Erzeugen:** beim Bekanntwerden relevanter Informationen kommt es zu neuen Elementen
 - **Verfeinern:** größere Elemente müssen in kleinere Elemente zerlegt werden
-- **Löschen:** Wir löschen Element im Backlog, wenn diese nicht mehr gebraucht werden
+- **Löschen:** wir löschen Element im Backlog, wenn diese nicht mehr gebraucht werden
 - **Schätzen:** Aufwandsschätzung als Basis für eine Priorisierung
 - **Priorisieren:** Kosten/Nutzen-Analyse, um die Reihenfolge im Backlog zu bestimmen
 
@@ -175,8 +175,8 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 
 **Advantages:**
 1. **Risk mitigation:** Requirements take the system context into account (*react to changes*)
-2. **Speed:** alternatives through prototyping (*I'll know it when I see it*)
-3. **Cost effective:** Reuse of Commercial off-the-shelf software | workload of requirements can be estimated using first rough architecture plan $\Rightarrow$ reduction of cost by deleting "unrealistic" requirements
+2. **Speed:** Alternatives through prototyping (*I'll know it when I see it*)
+3. **Cost effective:** Reuse of commercial off-the-shelf software | workload of requirements can be estimated using first rough architecture plan $\Rightarrow$ reduction of cost by deleting "unrealistic" requirements
 
 ## Agile Design — SOLID Principles
 1. **Single Responsibility Principle (SRP):** A class should have only one reason to change
@@ -269,12 +269,12 @@ A set of software-intensive systems that share a common, managed set of features
 	- **Variations:** composable via plugins
 
 **Advantages:**
-1. **Increased Productivity:** Core assets can be reused across multiple products, reducing development time and effort
-2. **Reduced Time-to-Market:** Reusing existing components accelerates the release of new products
-3. **Lower Development Costs:** Shared components and architectures lower overall cost per product
-4. **Improved Quality:** Core assets are developed and tested for reuse, increasing their reliability and consistency
-5. **Systematic Variability Management:** Supports controlled customization for different market segments or customer needs
-6. **Better Maintenance and Evolution:** Changes to shared assets benefit all products
+- **Increased Productivity:** Core assets can be reused across multiple products, reducing development time and effort
+- **Reduced Time-to-Market:** Reusing existing components accelerates the release of new products
+- **Lower Development Costs:** Shared components and architectures lower overall cost per product
+- **Improved Quality:** Core assets are developed and tested for reuse, increasing their reliability and consistency
+- **Systematic Variability Management:** Supports controlled customization for different market segments or customer needs
+- **Better Maintenance and Evolution:** Changes to shared assets benefit all products
 
 ## Designing Systems with Machine Learning
 *Machine learning is an approach to (1) learn (2) complex patterns from (3) existing data and use these patterns to make (4) predictions on (5) unseen data*

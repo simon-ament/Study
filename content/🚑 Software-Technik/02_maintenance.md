@@ -25,7 +25,7 @@ Speziell für eine Organisation entwickelte Softwaresysteme häufig:
 > Large software systems that we don't know how to cope with but that are vital to our organization
 
 - **Reverse Engineering:** Wiederbeschaffung der notwendigen Informationen für die Integration / Weiterentwicklung
-- **Reengineering:** Gewährleistung der Erweiterbarkeit
+- **Re-Engineering:** Gewährleistung der Erweiterbarkeit
 
 ### Weiterentwicklung
 $=$ no retirement
@@ -188,7 +188,7 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 > Grow, not build software $\dots$ The building metaphor has outlived its usefulness. — Fred Brooks
 
 - Ständige Anpassungen und Weiterentwicklung verhindern, dass
-	- Kontext-/Platformänderungen die Software weniger nützlich machen
+	- Kontext- / Platformänderungen die Software weniger nützlich machen
 	- die Einnahmen für die Software sich verringern
 - Ständige Reverse- und Re-Engineering-Aktivitäten verhindern eine Verschlechterung
 
@@ -257,7 +257,7 @@ Technische Schulden auf der **technischen Ebene** sichtbar machen:
 
 ---
 # Sanierung
-Von **Softwaresanierung** spricht man, wenn **mehr als die Hälfte des Codes** überarbeitet wird (sonst kleine Reengineering-Maßnahmen)
+Von **Softwaresanierung** spricht man, wenn **mehr als die Hälfte des Codes** überarbeitet wird (sonst kleine Re-Engineering-Maßnahmen)
 - **einmalige Umbauaktion**
 - Ziele: Komplexitätsreduktion + Qualitätsverbesserung
 - Grenzen zur Wartung und Migration unscharf

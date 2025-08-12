@@ -160,7 +160,7 @@ Methoden $\to$ Tools*
 - **Scrum Team:** entwickelt ein tieferes Verständnis für die Geschäfts- und Marketingseite ihres Produkts
 
 **Sprint Retrospektive (Aktivität):**
-- **Teilnehmer:** Scum Team, Scrum Master und Product Owner
+- **Teilnehmer:** Scrum Team, Scrum Master und Product Owner
 - **Fokus:** stetige Verbesserung des Prozesses
 - **Scrum Team:** sollte konkrete Aktionen zur Prozessverbesserung für den nächsten Sprint identifiziert haben
 

@@ -11,7 +11,7 @@ title: Programming & Quality
 2. **Simplicity:** do what is needed and asked for, but no more
 	- $\to$ Clear thinking
 3. **Feedback:** take every iteration commitment seriously by delivering working software. We demonstrate our software early and often then listen carefully and make any changes needed, including adapting the process
-	- $\to$ Well-Informed decisions
+	- $\to$ Well-informed decisions
 4. **Courage:** tell the truth about progress and estimates. We don't document excuses for failure because we plan to succeed. We don't fear anything because nobody ever works alone
 	- $\to$ Bias towards action, but wait until the problem is understood
 5. **Respect:** everyone gives and feels the respect they deserve. Management respects our right to accept responsibility and receive authority over our own work
@@ -175,7 +175,7 @@ title: Programming & Quality
 	- **funktionale Charakteristika** bestimmen wie wahrscheinlich Programmierfehler sind
 	- **Verfügbarkeit von Werkzeugen** beeinflusst Effektivität der einzelnen Aktivitäten
 	- **Erfahrung im Entwicklungsteam** ist dabei oft eine kritische Ressource
-- **Werkzeuge:** Konfigurations- und Versionsmanagement, Computer-aided Software Engineering Werkzeuge (CASE)
+- **Werkzeuge:** Konfigurations- und Versionsmanagement, Computer-Aided Software Engineering Werkzeuge (CASE)
 
 ---
 # Analytische Qualitätssicherung
@@ -212,7 +212,7 @@ title: Programming & Quality
 
 **Äquivalenzklassenbildung:**
 - Definitionsbereich der Variablen betrachten
-- Reduktion aller möglichen Tests in eine kleiner Gruppe mittels Partitionierung
+- Reduktion aller möglichen Tests in eine kleine Anzahl an Gruppen mittels Partitionierung
 - Auswahl von ein bis zwei Repräsentanten pro Gruppe
 	- insbesondere **Randwerte** einbeziehen
 

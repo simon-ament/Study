@@ -84,7 +84,7 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 ## Categories
 1. **Technical risk:** scope definition, requirements, estimates, assumptions, technical process, technology, technical interfaces, etc.
 2. **Management risks:** poor allocation of time and resources, funding, lack of prioritization of projects, inadequate quality of the project plan, poor use of project management disciplines (e.g. communication), etc.
-3. **Commercial risks:** contractual terms and conditions, internal procurement, suppliers, vendors, subcontracts, client/customer stability, partnership / join-ventures, etc.
+3. **Commercial risks:** contractual terms and conditions, internal procurement, suppliers, vendors, subcontracts, client / customer stability, partnership / join-ventures, etc.
 4. **External risks:** legislation, exchange rates, sites / facilities, environmental / weather, competition, regulatory, etc.
 
 ## Qualification
