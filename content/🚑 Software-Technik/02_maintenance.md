@@ -64,13 +64,13 @@ $=$ no retirement
 2. **Process View:** system states and transitions, hierarchies, non-functional requirements (UML state & activity diag.)
 3. **Development View:** project management, workflow, roles, responsibilities, standards, testing plans, roadmaps
 4. **Physical View:** deployment layout, infrastructure, topology, system capacity, configuration management
-5. **Use Cases:** *End-User Perspective* on a systematic & logical information structure (Stories, UML Sequence, Actor Diagrams, Prototypes, Wireframes)
+5. **Use Cases:** *end-user perspective* on a systematic & logical information structure (stories, UML sequence, actor diagrams, prototypes, wireframes)
 
 ![[Screenshot from 2025-08-07 15-30-29.png|500]]
 
 ---
 # Wartung / Maintenance
-1. The process of modifying a software system or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed
+1. The process of modifying a software system or component after delivery to correct faults, improve performance or other attributes, or adapt to a changed environment
 2. The process of retaining a hardware system or component in, or restoring it to, a state in which it can perform its required functions (*preventive maintenance*)
 
 **Übersetzung unglücklich:** Wartung $=$ Reparatur (Wiederherstellung) | maintenance $=$ Erhalten
@@ -81,7 +81,7 @@ $=$ no retirement
 | **Proaktiv** | **Präventive Wartung:** Beheben von latenten Softwarefehlern, bevor sie im Feld als effektive Fehler aufgetreten sind<br><br>*sehr gut planbar*                                                                           | **Perfektionierende Wartung:** Verbesserung der Software bzgl. Performanz oder anderer Attribute (meist nicht funktionale Anforderungen)<br><br>*sehr gut planbar* |
 
 - **Adaptive Wartung:** stellt einen ursprünglichen Zustand wieder her
-- **Erweiterung:** führt zu einem Mehrwert des Systems (zusätzliche Funktionalität)
+- **Erweiterung:** führt zu einem Mehrwert des Systems (zusätzliche Funktionalität gemessen an der Umwelt des Systems)
 
 ![[Screenshot from 2025-08-09 14-49-52.png|500]]
 
@@ -157,11 +157,12 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 
 **Code-Smells:** Vorgehen, um herauszufinden, welche Refactorings evtl. angebracht sind
 1. Code-Smell bestimmen (z.B. redundanter Code)
-2. Empfohlene Refactorings erwägen (z.B. Funktion extrahieren, Strategy-Entwurfsmuster, etc)
+2. Empfohlene Refactorings erwägen (z.B. Funktion extrahieren, Strategy-Entwurfsmuster, etc.)
 
 - Es sollte über **mögliche Konsequenzen** nachgedacht werden (keine Optimierung ohne Flaschenhälse zu identifizieren)
 - Trotzdem sollte **guter initialer Entwurf** durchgeführt werden
-- **Refactoring** beinhaltet Verbesserung der Programmstruktur (3), Modularisierung (4) und Teile des Daten-Reengineering (5)
+- **Refactoring** beinhaltet Verbesserung der Programmstruktur, Modularisierung und Teile des Daten-Reengineering
+	- Schritte 3 - 5 des Re-Engineering-Prozesses
 
 ## Wrapper
 - **Wrap** Legacy Software (oder Teile davon) für eine spätere Ersetzung
@@ -171,8 +172,8 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 ![[Screenshot from 2025-08-09 14-52-50.png|500]]
 
 **Technologie für Wrapper:**
-- Middleware (Web, Services, SOA Service Bus)
-- Wrapper-Umsetzung (Langugage interfaces, capture and parameterized replay für alte UIs / GUIs)
+- Middleware (Web-Services, SOA Service Bus)
+- Wrapper-Umsetzung (langugage interfaces, capture and parameterized replay für alte UIs / GUIs)
 
 ![[Screenshot from 2025-08-09 14-52-53.png|500]]
 
@@ -184,12 +185,12 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 
 ---
 # Technical Debt
-> Grow, not build software... The building metaphor has outlived its usefulness. - Fred Brooks
+> Grow, not build software $\dots$ The building metaphor has outlived its usefulness. — Fred Brooks
 
 - Ständige Anpassungen und Weiterentwicklung verhindern, dass
 	- Kontext-/Platformänderungen die Software weniger nützlich machen
 	- die Einnahmen für die Software sich verringern
-- Ständige Reverse und Reengineering Aktivitäten verhindern eine Verschlechterung
+- Ständige Reverse- und Re-Engineering-Aktivitäten verhindern eine Verschlechterung
 
 **Technische Schulden** umfassen sowohl
 - die Abstriche, die wir innerhalb des Entwicklungsprozesses bewusst herbeiführen und in Kauf nehmen
@@ -229,11 +230,11 @@ Eine Änderung (bzw. Sammlung von Änderungen) der internen Struktur von Softwar
 	- Beschleunigung der Entwicklung vs. Verschiebung des Auslieferungstermins
 
 ## Schulden sichtbar machen
-Technische Schulden auf geschäftlicher Ebene sichtbar machen:
+Technische Schulden auf **geschäftlicher Ebene** sichtbar machen:
 
 ![[Screenshot from 2025-08-09 14-53-51.png|400]]
 
-Technische Schulden auf der technischen Ebene sichtbar machen:
+Technische Schulden auf der **technischen Ebene** sichtbar machen:
 1. Fallbearbeitungs- bzw. Ticket-System
 2. Product-Backlog-Elemente anlegen
 3. spezielles Backlog für die technischen Schulden anlegen
@@ -248,16 +249,15 @@ Technische Schulden auf der technischen Ebene sichtbar machen:
 
 **Ablauf:**
 - Nicht alle technischen Schulden sollten abgebaut werden
-- Wenden Sie die Pfadfinderregel an (Bauen Sie die Schulden ab, sobald sie Ihnen begegnen)
+- Wenden Sie die **Pfadfinderregel** an: Bauen Sie die Schulden ab, sobald sie Ihnen begegnen
 - Bauen Sie technische Schulden schrittweise ab
-- Bauen Sie die technischen Schulden mit den höchsten Zinsen zuerst ab
-- Technische Schulden abbauen, während man für den Kunden werthaltige Arbeit erledigt:
-	- Es sollten diejenigen technischen Schulden getilgt werden, die zur Entwicklung der Funktionen im Product Backlog passen
+- Bauen Sie die technischen Schulden mit den **höchsten Zinsen zuerst** ab
+- Technische Schulden abbauen, während man für den Kunden **werthaltige** Arbeit erledigt:
+	- Es sollten diejenigen technischen Schulden getilgt werden, die **zur Entwicklung der Funktionen im Product Backlog passen**
 
 ---
 # Sanierung
-Von **Softwaresanierung** spricht man, wenn **mehr als die Hälfte des Codes** überarbeitet wird
-- sonst kleine Reengineering-Maßnahmen
+Von **Softwaresanierung** spricht man, wenn **mehr als die Hälfte des Codes** überarbeitet wird (sonst kleine Reengineering-Maßnahmen)
 - **einmalige Umbauaktion**
 - Ziele: Komplexitätsreduktion + Qualitätsverbesserung
 - Grenzen zur Wartung und Migration unscharf
@@ -276,10 +276,10 @@ Von **Softwaresanierung** spricht man, wenn **mehr als die Hälfte des Codes** �
 - Vereinheitlichung der Formatierung des Quellcodes
 
 **Schrittweises Vorgehen:**
-1. Ausgangslage analysieren, Sanierungsziele festlegen
-2. Sanierungsumfang und -aufwände festlegen
-3. Transformation spezifizieren (Transformationsschritte priorisieren und planen)
-4. Transformation durchführen
-	- Techniken wie z.B. Refactoring verwenden: formalisierbar und teilweise sogar automatisierbar
-	- Mittel zur Fortschrittsverfolgung (Metriken, Tests, etc.) verwenden
-5. Abnahme und Übergabe: Regressionstests und Vergleichsläufe mit altem System, Dokumentation und Pflegeprozess übergeben
+1. **Ausgangslage** analysieren, Sanierungsziele festlegen
+2. **Sanierungsumfang** und -aufwände festlegen
+3. **Transformation spezifizieren** (Transformationsschritte priorisieren und planen)
+4. **Transformation durchführen**
+	- **Techniken** wie z.B. Refactoring verwenden: formalisierbar und teilweise sogar automatisierbar
+	- Mittel zur **Fortschrittsverfolgung** (Metriken, Tests, etc.) verwenden
+5. **Abnahme und Übergabe:** Regressionstests und Vergleichsläufe mit altem System, Dokumentation und Pflegeprozess übergeben

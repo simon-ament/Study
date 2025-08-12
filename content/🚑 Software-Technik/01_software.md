@@ -14,7 +14,7 @@ It took only a bit more of 10 years from the 2011 prediction of "software is eat
 ---
 # Our Product (Software)
 ## Craftsmanship Manifesto
-> Architects, sculptors, painters, we all must return to craftsmanship! - Walter Gropius’s 1919 Bauhaus Manifesto
+> Architects, sculptors, painters, we all must return to craftsmanship! — Walter Gropius’s 1919 Bauhaus Manifesto
 
 - **Affordances:** in design, perceived affordance is important — that is, our implicit understanding of **how to interact with an object**
 - **Ergonomics:** the scientific study of people and their **working conditions**, especially done to improve **effectiveness**, **efficiency**, and **safety**

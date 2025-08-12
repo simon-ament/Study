@@ -88,7 +88,7 @@ title: Programming & Quality
 ![[Screenshot from 2025-08-09 15-24-48.png|500]]
 
 **Modes of Reuse:**
-1. **Design Reuse:** prescriptive models, e.g., software architecture
+1. **Design Reuse:** prescriptive models, e.g. software architecture
 2. **Code Reuse:** source code (whitebox), APIs (blackbox)
 3. **Process Reuse:** models of production and distribution and their artifacts
 

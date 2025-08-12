@@ -83,7 +83,7 @@ Critical path $=$ longest sequence of necessary activities $=$ diameter of the g
 
 ## Categories
 1. **Technical risk:** scope definition, requirements, estimates, assumptions, technical process, technology, technical interfaces, etc.
-2. **Management risks:** poor allocation of time and resources, funding, lack of prioritization of projects, inadequate quality of the project plan, poor use of project management disciplines (e.g., communication), etc.
+2. **Management risks:** poor allocation of time and resources, funding, lack of prioritization of projects, inadequate quality of the project plan, poor use of project management disciplines (e.g. communication), etc.
 3. **Commercial risks:** contractual terms and conditions, internal procurement, suppliers, vendors, subcontracts, client/customer stability, partnership/join-ventures, etc.
 4. **External risks:** legislation, exchange rates, sites/facilities, environmental/weather, competition, regulatory, etc.
 
@@ -115,9 +115,9 @@ Each of these parameters can be combined in charts to be analyzed in 2 or more d
 - **Accept:** No change or response action is needed, either because the occurrence or impact are negligible
 
 **Positive Risks:**
-- **Exploit:** Eliminate the uncertainty to increase the chances that the opportunity happens, e.g., obtaining the best resources for the team/project
-- **Share:** Create the conditions that a third-party also benefits of the opportunity, e.g., establish agreements for how the project outcomes will be shared
-- **Enhance:** Increase the probability and impact of a given risk, e.g., adapting the plan so an activity finishes earlier than initially planned
+- **Exploit:** Eliminate the uncertainty to increase the chances that the opportunity happens, e.g. obtaining the best resources for the team/project
+- **Share:** Create the conditions that a third-party also benefits of the opportunity, e.g. establish agreements for how the project outcomes will be shared
+- **Enhance:** Increase the probability and impact of a given risk, e.g. adapting the plan so an activity finishes earlier than initially planned
 - **Accept:** No change or response action is needed, just be willing to take advantage of an opportunity if it happens
 
 ---

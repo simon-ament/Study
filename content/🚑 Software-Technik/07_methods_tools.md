@@ -8,7 +8,7 @@ title: Methoden & Tools
 ![[Screenshot from 2025-08-08 10-41-20.png|500]]
 
 1. To start a poker planning session, the product owner or customer reads a user story or describes a feature to the players
-	- z.B. "Customer enters search criteria for a hotel reservation"
+	- e.g. "Customer enters search criteria for a hotel reservation"
 2. Players estimate by selecting numbered cards face-down to the table
 3. Cards are simultaneously displayed
 4. Discuss and explain the **high** and **low** estimates
@@ -16,11 +16,11 @@ title: Methoden & Tools
 
 **Vorteile:**
 - Schätzungen sind **relativ**, nicht absolut $\to$ einfacher zu aktualisieren, Aufwand in Stunden an historischen Daten abschätzbar
-- Alle Teammitglieder haben die **gleiche Stimm**e (Vielfalt)
+- Alle Teammitglieder haben die **gleiche Stimme** (Vielfalt)
 - Prozess hilft, **Lücken** in den User Stories und technischen Lösungen zu **identifizieren** $\to$ reduziert Risiko, falsche Anforderungen umzusetzen
 
 **Nachteile:**
-- **schwierig**, bei stark unterschiedlichen Komplexitäten $\to$ kleine und ähnliche Stories
+- **schwierig**, bei stark unterschiedlichen Komplexitäten $\to$ Stories klein und ähnlich wählen
 - **teuer**, wenn viele Runden bis zum Konsens benötigt werden
 
 > [!info]- Alternative Beschreibung
@@ -60,9 +60,9 @@ Anstatt User Stories mit Punkten zu bewerten oder in vordefinierte Kategorien ei
 ## Dot Voting
 Nutzen Sie ein physisches oder digitales Whiteboard, um alle aktuell im Backlog befindlichen User Stories aufzulisten. Eine Gruppierung thematisch ähnlicher Stories ist dabei erlaubt und kann hilfreich sein.
 
-Zur Priorisierung kann nun jedes Teammitglied eine festgelegte Anzahl an Punkten auf die User Stories Verteilen (z.B. Klebepunkte, Magnete, Stiche). Die User Stories mit den meisten Punkten werden priorisiert.
+Zur Priorisierung kann nun jedes Teammitglied eine festgelegte Anzahl an Punkten auf die User Stories verteilen (z.B. Klebepunkte, Magnete, Stiche). Die User Stories mit den meisten Punkten werden priorisiert.
 
-Diese Priorisierung sollte regelmäßig nachdem User Stories abgeschlossen wurden wiederholt werden.
+Diese Priorisierung sollte regelmäßig wiederholt werden nachdem User Stories abgeschlossen wurden.
 
 > [!info] Informationen
 > https://daily.dev/blog/dot-voting-in-agile-prioritization-technique
@@ -81,6 +81,8 @@ Bei der MoSCoW-Priorisierung ordnen Sie User Stories in vier Kategorien ein:
 Ordnen Sie die User Stories auf einem Graphen an, wobei auf der $x$-Achse der geschätzte Aufwand für Ihr Team und auf der $y$-Achse der Mehrwert für diejenigen, die Ihre Software nutzen, dargestellt wird.
 
 Nachdem die Stories platziert sind, priorisieren Sie diese basierend auf ihrer Position im Graphen. User Stories mit geringem Aufwand und hohem Mehrwert sollten höher priorisiert werden als solche mit hohem Aufwand und geringem Mehrwert.
+
+![[Pasted image 20250812113108.png|500]]
 
 > [!info] Informationen
 > https://www.productplan.com/glossary/value-vs-complexity/
@@ -118,13 +120,14 @@ Nachdem die Stories platziert sind, priorisieren Sie diese basierend auf ihrer P
 
 ---
 # Code of Conduct / Working Agreement
-How we should interact when we:
-1. communicate positive / negative, written / oral, private / public
+How we should interact when we
+
+1. communicate (positive / negative, written / oral, private / public)
 2. disclose information and risks
 3. make estimates and promises
 4. address each other and customers / users
 5. express disagreement and frustration
-6. manage conflict
+6. manage conflicts
 7. negotiate and share decisions
 8. register & write down dissenting opinions
 
@@ -141,7 +144,7 @@ How we should interact when we:
 ## Asking Questions: SPIN
 - **Situation (of users):** context, systems, business processes, regulations, user's role
 - **Problems (affecting user):** mistakes, latency, time-outs
-- **Implications (cause-effect):** cognitive load $\to$ mistakes | delays $\to$ low satisfaction of users | sequential reprocessing of item $\to$ time-outs
+- **Implications (cause-effects):** cognitive load $\to$ mistakes | delays $\to$ low satisfaction of users | sequential reprocessing of item $\to$ time-outs
 - **Needs-Payoff (solution-benefits):** usability $\to$ intuitive, easy to find functions and keep track of $n$ number of inputs, indexing $\to$ speed up queries by $x$% | distributed processing $\to$ eliminate time-outs
 
 ---

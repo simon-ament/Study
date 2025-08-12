@@ -60,7 +60,7 @@ title: Anforderungen & Design
 Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen** (Antwort in eigenen Worten) sein
 
 - Individuelle Interviews: einzelne Wissensträger $\to$ Meinung einzelner Wissensträger wird sichtbar
-- **Gruppeninterviews:** mehrere Wissensträger $\to$ Gruppenmeinung wird sichtbar, Einzelmeinungen evtl. nicht
+- **Gruppeninterviews:** mehrere Wissensträger $\to$ Gruppenmeinung wird sichtbar, Einzelmeinungen eventuell nicht
 
 ## 3. Verhandlung
 *Einigung zwischen Stakeholdern erreichen!*
@@ -96,7 +96,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 - **Conversation (Gespräch):** Eine User Story ist ein Versprechen zu Gesprächen (anhaltender Dialog) über die Details einer Anforderung
 - **Confirmation (Bestätigung):** Akzeptanzkriterien (Einigung zwischen Entwicklungsteam und Product Owner) und Akzeptanztests
 
-**Nichtfunktionale Anforderungen:** Beschränkungen auf Systemebenen (z.B. Browsersupport) sollten möglichst in die Definition of Done aufgenommen werden
+**Nichtfunktionale Anforderungen:** Beschränkungen auf Systemebenen (z.B. Browsersupport) sollten möglichst in die [[04_agile_scrum#Definitions|Definition of Done]] aufgenommen werden
 
 **Stories zum Wissenserwerb:** Product-Backlog-Elemente können auch dem Erwerb von neuem Wissen dienen
 - Erkundungen / Untersuchungen mithilfe von Prototypen / Experimenten / Studien
@@ -136,7 +136,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 ![[Screenshot from 2025-08-07 20-22-33.png|500]]
 
 - Gemeinschaftsarbeit $\to$ fördert **Dialog** und **gemeinsames Verständnis**, verhindert Missverständnisse
-- Am Ende der Pflege ist eine User Story **Ready** ([[04_agile_scrum#Definitions|Definition of Ready]]) | Product Backlog kann als **Pipeline** von wenig verstandenen Anforderungen hin zu fertigen Stories verstanden werden
+- Am Ende der Pflege ist eine User Story [[04_agile_scrum#Definitions|Ready]] | Product Backlog kann als **Pipeline** von wenig verstandenen Anforderungen hin zu fertigen Stories verstanden werden
 - **Release-Linie:** trennt *must have* und *nice to have* von *won't have*
 
 ![[Screenshot from 2025-08-07 20-23-59.png|500]]
@@ -145,7 +145,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 **Was ist die Aufgabe bei Software-Produkten?**
 - **Irrglaube:** Sammeln von Anforderungen
 - **Wahrheit:** die Welt verändern
-	- War und Warum, nicht nur Was
+	- Wer und Warum, nicht nur Was
 
 **Design-Thinking:**
 - früher: eine große Idee haben, sie produzieren und dann das Beste hoffen
@@ -174,15 +174,15 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 ![[Screenshot from 2025-08-09 15-19-30.png|400]]
 
 **Advantages:**
-1. Risk mitigation: Requirements take the system context into account (*react to changes*)
-2. Speed: alternatives through prototyping (*I'll know it when I see it*)
-3. Cost effective: Reuse of Commercial off-the-shelf software | workload of requirements can be estimated using first rough architecture plan $\Rightarrow$ reduction of cost by deleting "unrealistic" requirements
+1. **Risk mitigation:** Requirements take the system context into account (*react to changes*)
+2. **Speed:** alternatives through prototyping (*I'll know it when I see it*)
+3. **Cost effective:** Reuse of Commercial off-the-shelf software | workload of requirements can be estimated using first rough architecture plan $\Rightarrow$ reduction of cost by deleting "unrealistic" requirements
 
-## Agile Design SOLID Principles
+## Agile Design — SOLID Principles
 1. **Single Responsibility Principle (SRP):** A class should have only one reason to change
 2. **Open/Closed Principle:** Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification
 3. **Babara Liskov's Substitution Principle (LSP):** Derived or child classes must be substitutable for their base of parent class
-4. **Interfrace Segregation Principle (ISP):** do not force any client to implement an interface which is irrelevant to them
+4. **Interfrace Segregation Principle (ISP):** Do not force any client to implement an interface which is irrelevant to them
 5. **Dependency Inversion Principle:** High-level modules should not depend on low-level modules. Both should depend on abstractions
 
 ---
@@ -190,20 +190,20 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 ## Design Structured Matrix
 ![[Screenshot from 2025-08-09 15-19-38.png|500]]
 
-- row or column = a separate domain-specific sub-model
-- cell = link or dependency from the element listed on a row to the element listed on the column
+- Row or column $=$ a separate domain-specific sub-model
+- Cell $=$ link or dependency from the element listed on a row to the element listed on the column
 	- **cell values:** number of links between the models
-- red region = mission design models | blue region = models responsible for the margin calculations | green region = models responsible for the spacecraft subsystem sizing
+- Red region $=$ mission design models | blue region $=$ models responsible for the margin calculations | green region $=$ models responsible for the spacecraft subsystem sizing
 
 **Advantages:**
-1. Summarized dependencies
-2. Ease of visualization
-3. Matrix form can be used to execute algebraic operations
-4. Dependencies can be represented as vectors (each row or each column), which can in turn be used to map to other spaces
+- Summarized dependencies
+- Ease of visualization
+- Matrix form can be used to execute algebraic operations
+- Dependencies can be represented as vectors (each row or each column), which can in turn be used to map to other spaces
 
 **Disadvantages:**
-1. Order of tasks (sequence of rows) depend on different goals (parallelization, sequencing, consistency, coupling)
-2. Matrix for large systems might not be easy to visualize
+- Order of tasks (sequence of rows) depend on different goals (parallelization, sequencing, consistency, coupling)
+- Matrix for large systems might not be easy to visualize
 
 ![[Screenshot from 2025-08-09 15-20-02.png|500]]
 
@@ -211,7 +211,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 *A service-oriented architecture is a software architecture based on the concepts of application front end, services, service repositories and service bus*
 
 - A service is a software component with a specific functional meaning that typically encapsulates an abstract concept of the business world
-	- Basic services form stable units that can be reused
+	- basic services form stable units that can be reused
 - Process-centered services form flexible layers that can be adapted in line with business processes
 
 ![[Screenshot from 2025-08-09 15-21-08.png|500]]
@@ -219,7 +219,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 1. Application front end (lightweight, uses services)
 2. Services (include contracts, interfaces and implementations consisting of business logic and data)
 3. Service repositories (connection option to existing services is provided | service contracts are provided as information)
-	- Options: at the time of development, or at runtime
+	- options: at the time of development, or at runtime
 4. Service bus (enables connection, bridges heterogeneity, technical services)
 
 ![[Screenshot from 2025-08-09 15-21-13.png|500]]
@@ -233,8 +233,8 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 
 **Typical Problems:**
 - **Hasty decomposition:** Splitting an application into microservices too early can cause problems, as there is a lack of experience in the domain and the costs for changes to the interfaces and across the microservices can be very high
-- **Thinking in terms of data instead of capabalities:** Instead of identifying the truly relevant capabilities, generic CRUD (create, read, update, delete) interfaces are often used, leading to unnecessary coupling of domain models
-- **Primary decomposition according to technical transitions:** technical transitions (e.g. for data access) should not be used for an initial division into microservices, as they lead to a horizontal and not the desired vertical decomposition
+- **Thinking in terms of data instead of capabilities:** Instead of identifying the truly relevant capabilities, generic CRUD (create, read, update, delete) interfaces are often used, leading to unnecessary coupling of domain models
+- **Primary decomposition according to technical transitions:** Technical transitions (e.g. for data access) should not be used for an initial division into microservices, as they lead to a horizontal and not the desired vertical decomposition
 
 ![[Screenshot from 2025-08-09 15-21-35.png|500]]
 
@@ -246,7 +246,7 @@ Fragen können **geschlossen** (Auswahl aus möglichen Antworten) oder **offen**
 - **Inversion of Control:** The framework controls the program flow, calling user-defined code via predefined hooks or templates (Template Method Pattern), unlike libraries where user code is in charge
 - **Default Behavior:** Provides out-of-the-box functionality within a predefined structure, reducing setup effort (typically defined by invariant methods on abstract classes)
 - **Extensibility:** Supports structured extension via hooks, APIs, or subclassing, enabling developers to override or add functionality
-- **Non-Modifiable Core:** The framework’s internal code is fixed and extended through user code (e.g., plugins), not modified directly
+- **Non-Modifiable Core:** The framework’s internal code is fixed and extended through user code (e.g. plugins), not modified directly
 
 ## Software Product Lines
 A set of software-intensive systems that share a common, managed set of features satisfying the specific needs of a particular market segment or mission and that are developed from a common set of core assets in a prescribed way
@@ -260,12 +260,12 @@ A set of software-intensive systems that share a common, managed set of features
 	- **Variations:** desktop vs. web versions, business vs. personal editions, language / localization differences
 3. Android Operating System – Google
 	- **Features:** phones, tablets, TVs, wearables
-	- **Variations:** OEMs (e.g. Samsung, Xiaomi) extend core Android with customized UIs and services
+	- **Variations:** OEMs (original equipment manufacturers | e.g. Samsung, Xiaomi) extend core Android with customized UIs and services
 4. Siemens Industrial Automation Systems
-	- **Features:** Programmable Controllers, Touch panels, Communication networks, IoT support
+	- **Features:** programmable controllers, touch panels, communication networks, IoT support
 	- **Variations:** power plants, automotive, pharmaceutical
 5. Eclipse IDE
-	- **Features:** Java, C++, Web development, Model-Based Engineering
+	- **Features:** Java, C++, web development, model-based engineering
 	- **Variations:** composable via plugins
 
 **Advantages:**
@@ -289,7 +289,7 @@ ML algorithms **shouldn't** be use under any of the following conditions:
 - It's unethical
 - Simpler solutions do the trick
 - It's not cost-effective
-- **however:** the problem might still be partially solvable with ML algorithms
+- **However:** the problem might still be partially solvable with ML algorithms
 
 **Use Cases:**
 
@@ -298,14 +298,14 @@ ML algorithms **shouldn't** be use under any of the following conditions:
 ![[Screenshot from 2025-08-09 15-22-28.png|500]]
 
 **Comparison to Traditional Software:**
-- Traditional assumption: code and data are separated
-- ML: part code, part data, and part artifacts created from the two
-- Trend: applications developed with the most/best data win $\Rightarrow$ focus on improving data
-- Still relevant: test and version the data
+- **Traditional assumption:** code and data are separated
+- **ML:** part code, part data, and part artifacts created from the two
+- **Trend:** applications developed with the most / best data win $\Rightarrow$ focus on improving data
+- **New task:** test and version the data (instead of code)
 
 **Challenges:**
 - Not all data samples are equal (some are more valuable, e.g. more trustworthy)
 - Size and runtime of ML models (especially on edge devices)
 - Monitoring and debugging ML models is nontrivial
-- In theory: small problem with single model | In practice: many features per application, up to one model per feature $\Rightarrow$ huge amount of models in one company
+- **In theory:** small problem with single model | **In practice:** many features per application, up to one model per feature $\Rightarrow$ huge amount of models in one company
 	- e.g. Uber with thousands of models
