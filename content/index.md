@@ -1,6 +1,10 @@
 ---
 title: IT Systems Engineering - Lernzettel
 ---
+# ❄️ WiSe 2025/26
+1. [[🎯 Projektentwicklung und Teammanagement/]]
+
+---
 # ☀️ SoSe 2025
 1. [[🗽 Politikwissenschaften/]]
 2. [[🎲 Game Theory/]]
