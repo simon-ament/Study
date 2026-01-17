@@ -2,16 +2,17 @@
 title: Projekte
 ---
 # Projekt
+> Projekte sind das Ergebnis einer Managemententscheidung; die Befähigung hin zur selbstorganisierten Arbeit an Problemen und Problemlösungen.
+
 1. Ein Projekt ist ein temporäres Mandat, durch das sich Einzelakteure (oder eine bereits bestehenden [[#Team vs. Gruppe|Gruppe]]) zu einem [[#Team]] konstituieren kann
-2. Ein Projekt hat ein Ziel, sondern bietet aber Offenheit, Unsicherheit und Bewegung. Projekte existieren nur, wenn Entscheidungen notwendig und möglich sind
+2. Ein Projekt hat ein Ziel, bietet aber Offenheit, Unsicherheit und Bewegung. Projekte existieren nur, wenn Entscheidungen notwendig und möglich sind
 3. Jedes Projekt verfügt über einen formalen **Projektanfang** und ein formales **Projektende**
-4. Um ein Projekt zu verstehen, bietet sich die Unterscheidung [[#Projekt vs. Routine]] an
-5. Dort, wo das Projekt endet, beginnt die Routine
+4. Dort, wo das Projekt endet, beginnt die Routine
 
 ## Projekt vs. Routine
 Das [[#Projekt]] ist und bleibt die Ausnahme, ein temporärer Zustand, in dem unvorhersehbare Entscheidungen getroffen werden können.
 
-Die Außenseite des Projekts ist die **Routine**, in der bereits alle wesentlichen Entscheidungen getroffen wurden.
+Das Gegenteil des Projekts ist die **Routine**, in der bereits alle wesentlichen Entscheidungen getroffen wurden.
 
 | Projekt             | Routine               |
 | ------------------- | --------------------- |
@@ -24,7 +25,7 @@ Teams treffen Entscheidungen mit Konsequenzen für sich und andere.
 ## Teams und Projekte
 Unternehmen haben Teams und [[#Projekt|Projekte]] als Ressource eingeführt, um abseits von Befehlen, Belohnungen und Preissignalen auf "schwache Signale" aus der Umwelt reagieren zu können. 
 
-Die Arbeitsform aller Teams sind [[#Projekt|Projekte]], ob innerhalb eines Vereins, eines Konzerns oder in einem Startup. 
+Die Arbeitsform aller Teams sind [[#Projekt|Projekte]], ob innerhalb eines Vereins, eines Konzerns oder in einem Startup.
 
 Der Wert von Teams und Projekten hat sich insbesondere im **Lean** gezeigt, im Sinne einer japanischen Erfolgsgeschichte.
 
@@ -79,7 +80,7 @@ Ein Team ist eine Anzahl von Akteuren, die gemeinsam Entscheidungen treffen, die
 
 > "we define a team as three or more individuals who are brought together to make a decision, or provide a recommendation, about a situation of interest or concern."
 
-Ein Team entsteht, wenn Entscheidungsfähigkeit nicht verteilt, sondern per Mandat geteilt wird. Ohne Entscheidung gibt es kein Team – nur Koordination. 
+Ein Team entsteht, wenn Entscheidungsfähigkeit nicht verteilt, sondern per Mandat geteilt wird. Ohne Entscheidung gibt es kein Team – nur Koordination.
 
 ## Team vs. Gruppe
 Teams treffen Entscheidungen mit Konsequenzen für sich und andere. Gruppen folgen Entscheidungen.
@@ -101,22 +102,17 @@ Der Sonderfall eines Team, das defacto nur eine Gruppe ist, ist das **Pseudo Tea
 # Entscheidung
 Eine Entscheidung ist eine spezifische **Kommunikation**. Sie ist das Ergebnis von Kommunikationen und sie zieht weitere Kommunikationen nach sich.
 
-Strenggenommen ist eine Entscheidung erst dann eine Entscheidung, wenn weitere Entscheidungen auf sie Bezug nehmen, und an sie anschließen.
-
-Die Entscheidung markiert, dass die der Entscheidung vorangegangene Kommunikation bis auf weiteres abgeschlossen ist. ("Gut. Das haben wir.").
-
-Entscheidungen sind Kommunikationen mit der Konsequenz, das daraus weitere Entscheidungen entstehen.
-
-Entscheidung ist ein Ereignis mit Folgen für zukünftige Entscheidungen.
+- Strenggenommen ist eine Entscheidung erst dann eine Entscheidung, wenn weitere Entscheidungen auf sie Bezug nehmen, und an sie anschließen.
+- Die Entscheidung markiert, dass die der Entscheidung vorangegangene Kommunikation bis auf weiteres abgeschlossen ist. ("Gut. Das haben wir.").
+- Entscheidungen sind Kommunikationen mit der Konsequenz, das daraus weitere Entscheidungen entstehen.
+- Entscheidung ist ein Ereignis mit Folgen für zukünftige Entscheidungen.
 
 **Beispiele:**
 - „Das ist heute aber ein wieder schlechtes Wetter“ (keine Entscheidung)
 - „Bei dem Wetter ziehe ich mir eine Jacke ein“ (kommunizierte Entscheidung)
 
 ## Entscheidung vs. Entscheidungsprämissen
-Entscheidungen entstehen im Rahmen von [[#Entscheidungsprämisse|Entscheidungsprämissen]], die selbst wiederum Ergebnis früherer Entscheidungen sind.
-
-Entscheidungen werden im Kontext von Entscheidungsprämissen möglich, die wiederum das Ergebnis wiederkehrender Entscheidungen sind.
+Entscheidungen entstehen im Rahmen von [[#Entscheidungsprämisse|Entscheidungsprämissen]], die selbst wiederum Ergebnis früherer / wiederkehrender Entscheidungen sind.
 
 | Entscheidung                                 | Entscheidungsprämisse                  |
 | -------------------------------------------- | -------------------------------------- |
@@ -129,17 +125,16 @@ Empirische Studien deuten an, dass Teams schlechtere Entscheidungen als Individu
 - Teams neigen gegenüber Individuen eher dazu, sich zu überschätzen
 - Teams sind eher vom sogenannten **Sunk-Cost Bias** betroffen
 
-## Entscheidungsprämisse
+---
+# Entscheidungsprämisse
 Entscheidungsprämissen sind Voraussetzungen unter denen Entscheidungen getroffen werden.
 
-### Kommunikation
+## Kommunikation
 Die Systemtheorie versteht unter einer Entscheidungsprämisse einen kommunizierten Rahmen, in dem Individuen oder [[#Team|Teams]] [[#Entscheidung|Entscheidungen]] verhandeln können.
 
-Entscheidungsprämissen sind das Ergebnis früherer Entscheidungen im Sinne eines **Sensemakings**.
+- Entscheidungsprämissen sind das Ergebnis früherer Entscheidungen im Sinne eines **Sensemakings**
 
-### Arten
-Es gibt organisierte und implizite [[#Entscheidungsprämisse|Entscheidungsprämissen]].
-
+## Arten
 **Organisierte Entscheidungsprämissen:**
 - Strategie
 - Werte (z.B. Nachhaltigkeit)
@@ -151,16 +146,15 @@ Es gibt organisierte und implizite [[#Entscheidungsprämisse|Entscheidungsprämi
 - Präferenzen
 - Heuristiken (mentale Modelle, z.B. Social Proof)
 
-### Filterfunktion
+## Filterfunktion
 Entscheidungsprämissen, wie beispielsweise Normen sind zunächst einmal nichts anderes als Filter, die gewisse Informationen durchlassen und andere nicht.
 
 > "Aber wer garantiert, dass das, was gestern brauchbar war, es heute auch noch ist? Wer kann sicherstellen, dass das Unbrauchbare von gestern nicht das Brauchbare von morgen ist?"
 
-### Managementfunktion
+## Managementfunktion
 Für Manager sind Entscheidungsprämissen die Art und Weise, wie sie unterschiedliche [[#Entscheidung|Entscheidungen]], die beispielsweise in Teams und Projekten getroffen werden, wiederum mit anderen Einheiten der Organisation koordinieren können: *"Nicht die Personen müssen koordiniert werden, sondern die Entscheidungen"*
 
-### Learnings
-
+## Learnings
 Aus Entscheidungen lässt sich nur wenig lernen, auch wenn uns Business Ratgeber, Berater und Podcasts von der Relevanz von Best Practices zu überzeugen versuchen: "so hat Unternehmer x in Situation y reagiert". 
 
 Entscheidungsprämissen sind begrenzt lehrreicher, da sie Variabilität in der Entscheidungsfindung bieten, gleichzeitig aber Komplexität managen und operativ nutzbar sind.
