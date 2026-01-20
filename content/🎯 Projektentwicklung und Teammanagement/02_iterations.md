@@ -44,10 +44,10 @@ Sich am Nutzer und dessen **Nutzerbedürfnissen** zu orientieren, bzw. dessen Pr
 
 ---
 # Frameworks
-# User Journey
+## User Journey
 ![[Screenshot from 2026-01-01 20-51-54.png|500]]
 
-# Risiko Matrix
+## Risiko Matrix
 **Risiko:** Unsicheres Ereignis, das bei Eintritt eine negative (oder positive) Auswirkung auf die Projektziele (und den Projekterfolg) hat
 - **Annahme:** Noch nicht bestätigte Aussage / Arbeitshypothese
 - **Risiko:** Eintrittswahrscheinlichkeiten eines Ereignisses sind bekannt
