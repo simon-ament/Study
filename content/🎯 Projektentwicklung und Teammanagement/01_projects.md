@@ -78,7 +78,7 @@ Der Wert von Teams und Projekten hat sich insbesondere im **Lean** gezeigt, im S
 ## Teams und Entscheidungen
 Ein Team ist eine Anzahl von Akteuren, die gemeinsam Entscheidungen treffen, die ihr weiteres Vorgehen beeinflussen.
 
-> "we define a team as three or more individuals who are brought together to make a decision, or provide a recommendation, about a situation of interest or concern."
+> "We define a team as three or more individuals who are brought together to make a decision, or provide a recommendation, about a situation of interest or concern."
 
 Ein Team entsteht, wenn Entscheidungsfähigkeit nicht verteilt, sondern per Mandat geteilt wird. Ohne Entscheidung gibt es kein Team – nur Koordination.
 
@@ -93,14 +93,14 @@ Das [[#Projekt]] ist das primäre Umfeld für Teams, insofern hier Entscheidunge
 | Arbeit in Projekten    | Arbeit in Routinen    |
 
 ## Sonderfall: Skin in the Game
-Ein Team existiert, mit **Skin in the Game**, insofern es die Konsequenzen der eigenen Entscheidungen mit trägt.
+Ein Team existiert, mit **Skin in the Game**, insofern es die Konsequenzen der eigenen Entscheidungen mitträgt.
 
 ## Sonderfall: Pseudo Teams
-Der Sonderfall eines Team, das defacto nur eine Gruppe ist, ist das **Pseudo Team**.
+Der Sonderfall eines Team, das defacto nur eine Gruppe ist, ist das **Pseudo Team.**
 
 ---
 # Entscheidung
-Eine Entscheidung ist eine spezifische **Kommunikation**. Sie ist das Ergebnis von Kommunikationen und sie zieht weitere Kommunikationen nach sich.
+Eine Entscheidung ist eine spezifische **Kommunikation.** Sie ist das Ergebnis von Kommunikationen und sie zieht weitere Kommunikationen nach sich.
 
 - Strenggenommen ist eine Entscheidung erst dann eine Entscheidung, wenn weitere Entscheidungen auf sie Bezug nehmen und an sie anschließen
 - Die Entscheidung markiert, dass die der Entscheidung vorangegangene Kommunikation bis auf weiteres abgeschlossen ist
@@ -153,7 +153,7 @@ Entscheidungsprämissen wie beispielsweise Normen sind zunächst einmal nichts a
 > "Aber wer garantiert, dass das, was gestern brauchbar war, es heute auch noch ist? Wer kann sicherstellen, dass das Unbrauchbare von gestern nicht das Brauchbare von morgen ist?"
 
 ## Managementfunktion
-Für Manager sind Entscheidungsprämissen die Art und Weise, wie sie unterschiedliche [[#Entscheidung|Entscheidungen]], die beispielsweise in Teams und Projekten getroffen werden, wiederum mit anderen Einheiten der Organisation koordinieren können: *"Nicht die Personen müssen koordiniert werden, sondern die Entscheidungen"*
+Für Manager sind Entscheidungsprämissen die Art und Weise wie sie unterschiedliche [[#Entscheidung|Entscheidungen]], die beispielsweise in Teams und Projekten getroffen werden, wiederum mit anderen Einheiten der Organisation koordinieren können: *"Nicht die Personen müssen koordiniert werden, sondern die Entscheidungen"*
 
 ## Learnings
 Aus Entscheidungen lässt sich nur wenig lernen, auch wenn uns Business Ratgeber, Berater und Podcasts von der Relevanz von Best Practices zu überzeugen versuchen: *"so hat Unternehmer x in Situation y reagiert"*.

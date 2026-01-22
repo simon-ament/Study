@@ -27,7 +27,7 @@ title: Early Adopters
 5. Sind sie von dem Produkt angetan, werden sie **loyale Fans**: 
 	- *“It’s better to make a few users love you than a lot ambivalent. You don’t need a lot of users to make something big. If you get just a hundred people who really love what you're doing, that's enough”*
 6. Early Adopters sind **fehlertolerant**
-7. Während Early Adopters primär Performance in einem neuen Produkt wertschätzen, verlangen spätere Nutzersegmente (die Mehrheit der Nutzer) primär Convenience. Möglicherweise setzen sie ohnehin Performance voraus
+7. Während Early Adopters **primär Performance** in einem neuen Produkt wertschätzen, verlangen spätere Nutzersegmente (die Mehrheit der Nutzer) primär Convenience. Möglicherweise setzen sie ohnehin Performance voraus
 
 ![[Screenshot from 2026-01-01 21-01-24.png|500]]
 

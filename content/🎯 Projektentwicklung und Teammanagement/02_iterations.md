@@ -25,7 +25,9 @@ Die Natur der **Wicked Problems** macht es notwendig, sich iterativ an zumindest
 # Iteration
 Iteration ist eine **Heuristik** in der agilen Projektarbeit.
 
-Iteration ist der Prozess der wiederkehrenden Anpassung an die Realität, genauer: Anpassung einer Idee an ein Problem, noch genauer: der **wechselseitigen Weiterentwicklung** eines **Lösungsraums** und eines **Problemraums**.
+Iteration ist der Prozess der wiederkehrenden Anpassung an die Realität
+- genauer: Anpassung einer Idee an ein Problem
+- noch genauer: Prozess der **wechselseitigen Weiterentwicklung** eines **Lösungsraums** und eines **Problemraums.**
 
 ## Projektarbeit
 Um Iteration zu ermöglichen, brauchen [[01_projects#Team|Teams]] in [[01_projects#Projekt|Projekten]] Entscheidungsfreiheiten, genauer: die Abwesenheit von [[01_projects#Entscheidungsprämisse|Entscheidungsprämissen]], die eine Idee oder ein Problem bereits verbindlich vorwegnehmen.
@@ -40,7 +42,7 @@ Gutes Design entsteht über Iterationen:
 
 ---
 # Nutzerzentrierung
-Sich am Nutzer und dessen **Nutzerbedürfnissen** zu orientieren, bzw. dessen Probleme zu verstehen, ist eine vielversprechende Heuristik für die [[01_projects#Projekt|Projekt]]arbeit.
+Sich am Nutzer und dessen **Nutzerbedürfnissen** zu orientieren bzw. dessen Probleme zu verstehen, ist eine vielversprechende Heuristik für die [[01_projects#Projekt|Projekt]]arbeit.
 
 ---
 # Frameworks
@@ -50,8 +52,8 @@ Sich am Nutzer und dessen **Nutzerbedürfnissen** zu orientieren, bzw. dessen Pr
 ## Risiko Matrix
 **Risiko:** Unsicheres Ereignis, das bei Eintritt eine negative (oder positive) Auswirkung auf die Projektziele (und den Projekterfolg) hat
 - **Annahme:** Noch nicht bestätigte Aussage / Arbeitshypothese
-- **Risiko:** Eintrittswahrscheinlichkeiten eines Ereignisses sind bekannt
 - **Unsicherheit:** Eintrittswahrscheinlichkeiten eines Ereignisses sind unbekannt
+- **Risiko:** Eintrittswahrscheinlichkeiten eines Ereignisses sind bekannt
 
 **Risiko analysieren:**
 - Eintrittswahrscheinlichkeit ($1$ sehr gering - sehr hoch $5$)
