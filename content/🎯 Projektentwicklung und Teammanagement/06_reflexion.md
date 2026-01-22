@@ -2,11 +2,11 @@
 title: Reflexion
 ---
 # Teams
-Teams - im Gegensatz zu Gruppen - treffen gemeinsam Entscheidungen. Entscheidungen sind der konstituierende Faktor von Teamarbeit – und nicht etwa das Label, oder die Anzahl der Beteiligten.
+Teams – im Gegensatz zu Gruppen – treffen gemeinsam Entscheidungen. Entscheidungen sind der konstituierende Faktor von Teamarbeit – und nicht etwa das Label oder die Anzahl der Beteiligten.
 
 **Stärkung der Performanz:**
 - Etablierung von Dringlichkeit und Richtung
-- Zusammenstellung des Teams aus der Basis von Skills und Fähigkeiten, Skills zu entwickeln, nicht Persönlichkeitsmerkmalen
+- Zusammenstellung des Teams auf der Basis von Skills und Fähigkeiten, Skills zu entwickeln (nicht Persönlichkeitsmerkmalen)
 - Bedeutung der Teambuilding-Phase und **ersten Entscheidungen**
 - **Etablierung von Verhaltensregeln (Team-Charter)**
 - Setzen und Erreichen erster performanz-orientierter Aufgaben
@@ -15,7 +15,7 @@ Teams - im Gegensatz zu Gruppen - treffen gemeinsam Entscheidungen. Entscheidung
 
 ![[Screenshot from 2026-01-01 21-18-10.png|500]]
 
-> A team is a small number of people with **complementary skills** who are committed to a **common purpose, performance goals, and approach** to which they hold themselves **mutually accountable**.
+> A team is a small number of people with **complementary skills** who are committed to a **common purpose, performance goals, and approach** to which they hold themselves **mutually accountable.**
 
 ## Groupthink
 **Performante Teams:**

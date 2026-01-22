@@ -2,7 +2,7 @@
 title: Iterationen
 ---
 # Wicked Problem vs. Tame Problem
-Die Natur der Wicked Problems macht es notwendig, sich iterativ an zumindest temporäre Lösungen anzunähern, während Tame Problems systematisch erschlossen werden können.
+Die Natur der **Wicked Problems** macht es notwendig, sich iterativ an zumindest temporäre Lösungen anzunähern, während **Tame Problems** systematisch erschlossen werden können.
 
 | Tame Problems | Wicked Problems |
 | ------------- | --------------- |
@@ -11,7 +11,7 @@ Die Natur der Wicked Problems macht es notwendig, sich iterativ an zumindest tem
 | lösbar        | unlösbar        |
 
 - **Probleme** lassen sich danach unterscheiden, ob sie unlösbar oder lösbar sind
-- Komplexe, oftmals soziale Probleme, sind **Wicked Problems**, insofern sie nicht vollumfänglich kontrollier- und damit lösbar werden
+- Komplexe, oftmals soziale Probleme sind **Wicked Problems**, insofern sie nicht vollumfänglich kontrollier- und damit lösbar werden
 - **Tame Problems** sind möglicherweise derart umfänglich, dass sie heute praktisch nicht lösbar sind, aber theoretisch schon, weil sie umfänglich erfassbar sind
 
 ---
@@ -54,8 +54,8 @@ Sich am Nutzer und dessen **Nutzerbedürfnissen** zu orientieren, bzw. dessen Pr
 - **Unsicherheit:** Eintrittswahrscheinlichkeiten eines Ereignisses sind unbekannt
 
 **Risiko analysieren:**
-- Eintrittswahrscheinlichkeit (1 sehr gering - sehr hoch 5)
-- Auswirkung (1 kaum Effekt - Projektziele gefährdet 5)
+- Eintrittswahrscheinlichkeit ($1$ sehr gering - sehr hoch $5$)
+- Auswirkung ($1$ kaum Effekt - Projektziele gefährdet $5$)
 
 **Schwellen:**
 - Rot: Management-Entscheidung (mögliche Scope-Anpassung / Stop)

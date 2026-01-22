@@ -4,7 +4,7 @@ title: Projekte
 # Projekt
 > Projekte sind das Ergebnis einer Managemententscheidung; die Befähigung hin zur selbstorganisierten Arbeit an Problemen und Problemlösungen.
 
-1. Ein Projekt ist ein temporäres Mandat, durch das sich Einzelakteure (oder eine bereits bestehenden [[#Team vs. Gruppe|Gruppe]]) zu einem [[#Team]] konstituieren kann
+1. Ein Projekt ist ein temporäres Mandat, durch das sich Einzelakteure (oder eine bereits bestehende [[#Team vs. Gruppe|Gruppe]]) zu einem [[#Team]] konstituieren kann
 2. Ein Projekt hat ein Ziel, bietet aber Offenheit, Unsicherheit und Bewegung. Projekte existieren nur, wenn Entscheidungen notwendig und möglich sind
 3. Jedes Projekt verfügt über einen formalen **Projektanfang** und ein formales **Projektende**
 4. Dort, wo das Projekt endet, beginnt die Routine
@@ -85,7 +85,7 @@ Ein Team entsteht, wenn Entscheidungsfähigkeit nicht verteilt, sondern per Mand
 ## Team vs. Gruppe
 Teams treffen Entscheidungen mit Konsequenzen für sich und andere. Gruppen folgen Entscheidungen.
 
-Das [[#Projekt]] das primäre Umfeld für Teams, insofern hier Entscheidungen möglich sind.
+Das [[#Projekt]] ist das primäre Umfeld für Teams, insofern hier Entscheidungen möglich sind.
 
 | Team                   | Gruppe                |
 | ---------------------- | --------------------- |
@@ -102,14 +102,15 @@ Der Sonderfall eines Team, das defacto nur eine Gruppe ist, ist das **Pseudo Tea
 # Entscheidung
 Eine Entscheidung ist eine spezifische **Kommunikation**. Sie ist das Ergebnis von Kommunikationen und sie zieht weitere Kommunikationen nach sich.
 
-- Strenggenommen ist eine Entscheidung erst dann eine Entscheidung, wenn weitere Entscheidungen auf sie Bezug nehmen, und an sie anschließen.
-- Die Entscheidung markiert, dass die der Entscheidung vorangegangene Kommunikation bis auf weiteres abgeschlossen ist. ("Gut. Das haben wir.").
-- Entscheidungen sind Kommunikationen mit der Konsequenz, das daraus weitere Entscheidungen entstehen.
-- Entscheidung ist ein Ereignis mit Folgen für zukünftige Entscheidungen.
+- Strenggenommen ist eine Entscheidung erst dann eine Entscheidung, wenn weitere Entscheidungen auf sie Bezug nehmen und an sie anschließen
+- Die Entscheidung markiert, dass die der Entscheidung vorangegangene Kommunikation bis auf weiteres abgeschlossen ist
+	- z.B. *"Gut. Das haben wir."*
+- Entscheidungen sind Kommunikationen mit der Konsequenz, das daraus weitere Entscheidungen entstehen
+- Eine Entscheidung ist ein Ereignis mit Folgen für zukünftige Entscheidungen
 
 **Beispiele:**
-- „Das ist heute aber ein wieder schlechtes Wetter“ (keine Entscheidung)
-- „Bei dem Wetter ziehe ich mir eine Jacke ein“ (kommunizierte Entscheidung)
+- „Das ist heute aber wieder ein schlechtes Wetter“ (keine Entscheidung)
+- „Bei dem Wetter ziehe ich mir eine Jacke an“ (kommunizierte Entscheidung)
 
 ## Entscheidung vs. Entscheidungsprämissen
 Entscheidungen entstehen im Rahmen von [[#Entscheidungsprämisse|Entscheidungsprämissen]], die selbst wiederum Ergebnis früherer / wiederkehrender Entscheidungen sind.
@@ -147,7 +148,7 @@ Die Systemtheorie versteht unter einer Entscheidungsprämisse einen kommuniziert
 - Heuristiken (mentale Modelle, z.B. Social Proof)
 
 ## Filterfunktion
-Entscheidungsprämissen, wie beispielsweise Normen sind zunächst einmal nichts anderes als Filter, die gewisse Informationen durchlassen und andere nicht.
+Entscheidungsprämissen wie beispielsweise Normen sind zunächst einmal nichts anderes als Filter, die gewisse Informationen durchlassen und andere nicht.
 
 > "Aber wer garantiert, dass das, was gestern brauchbar war, es heute auch noch ist? Wer kann sicherstellen, dass das Unbrauchbare von gestern nicht das Brauchbare von morgen ist?"
 
@@ -155,7 +156,7 @@ Entscheidungsprämissen, wie beispielsweise Normen sind zunächst einmal nichts 
 Für Manager sind Entscheidungsprämissen die Art und Weise, wie sie unterschiedliche [[#Entscheidung|Entscheidungen]], die beispielsweise in Teams und Projekten getroffen werden, wiederum mit anderen Einheiten der Organisation koordinieren können: *"Nicht die Personen müssen koordiniert werden, sondern die Entscheidungen"*
 
 ## Learnings
-Aus Entscheidungen lässt sich nur wenig lernen, auch wenn uns Business Ratgeber, Berater und Podcasts von der Relevanz von Best Practices zu überzeugen versuchen: "so hat Unternehmer x in Situation y reagiert". 
+Aus Entscheidungen lässt sich nur wenig lernen, auch wenn uns Business Ratgeber, Berater und Podcasts von der Relevanz von Best Practices zu überzeugen versuchen: *"so hat Unternehmer x in Situation y reagiert"*.
 
 Entscheidungsprämissen sind begrenzt lehrreicher, da sie Variabilität in der Entscheidungsfindung bieten, gleichzeitig aber Komplexität managen und operativ nutzbar sind.
 
