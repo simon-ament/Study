@@ -7,7 +7,7 @@ Teams – im Gegensatz zu Gruppen – treffen gemeinsam Entscheidungen. Entschei
 **Stärkung der Performanz:**
 - Etablierung von Dringlichkeit und Richtung
 - Zusammenstellung des Teams auf der Basis von Skills und Fähigkeiten, Skills zu entwickeln (nicht Persönlichkeitsmerkmalen)
-- Bedeutung der Teambuilding-Phase und **ersten Entscheidungen**
+- Bedeutung von Teambuilding-Phase und **ersten Entscheidungen**
 - **Etablierung von Verhaltensregeln (Team-Charter)**
 - Setzen und Erreichen erster performanz-orientierter Aufgaben
 - “Quality Time” im Team

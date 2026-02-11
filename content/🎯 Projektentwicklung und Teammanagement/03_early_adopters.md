@@ -36,7 +36,7 @@ title: Early Adopters
 - hohes Problembewusstsein
 - aktiv auf der Suche nach Lösungen
 - bereit, ihr Verhalten anzupassen, um die Lösung zu nutzen
-- benötigen kein Social Proof
+- benötigen keinen Social Proof
 - sind tolerant gegenüber Bugs
 - meist untereinander vernetzt
 - kommunikativ und feedbackfreundlich (z.B. in Foren)

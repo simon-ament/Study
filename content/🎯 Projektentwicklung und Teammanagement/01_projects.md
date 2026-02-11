@@ -140,7 +140,7 @@ Die Systemtheorie versteht unter einer Entscheidungsprämisse einen kommuniziert
 - Strategie
 - Werte (z.B. Nachhaltigkeit)
 - Prozesse (z.B. Scrum, Wasserfall, SOPs)
-- Anforderung (z.B. Briefing, Spezifikationen)
+- Anforderungen (z.B. Briefing, Spezifikationen)
 - Frameworks (z.B. Service Blueprint, Risiko-Matrix)
 
 **Implizite Entscheidungsprämissen:**
